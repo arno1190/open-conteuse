@@ -63,6 +63,9 @@ class CoreTests(unittest.TestCase):
 
     def test_tamper_and_quota(self):
         self.asset()
+        with patch('conteuse.packages.MAX_TOTAL',4):
+            with self.assertRaisesRegex(ValueError,'pack quota exceeded'):
+                check_pack(self.source)
         (self.source / "audio.bin").write_bytes(b"wrong")
         with self.assertRaisesRegex(ValueError, "changed asset"):
             check_pack(self.source)
@@ -222,6 +225,11 @@ class ImportTests(unittest.TestCase):
             with self.assertRaises(ValueError):import_playlist([audio],root/'pack')
 
     def test_bad_audio_reference_and_bookmark(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/'manifest.json').write_text(json.dumps({'format_version':1,'id':'x','title':'X','start':'x','nodes':None}))
+            with self.assertRaisesRegex(ValueError,'nodes must be a non-empty list'):
+                check_pack(root)
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);pack=json.loads((EXAMPLE/'manifest.json').read_text())
             pack['nodes'][0]['audio']=[]

@@ -65,6 +65,8 @@ def check_pack(root):
     root = Path(root).resolve()
     pack = read_manifest(root)
     errors = validate(pack)
+    if errors:
+        raise ValueError("; ".join(errors))
     assets = pack.get("assets", []) if isinstance(pack, dict) else []
     if not isinstance(assets, list):
         raise ValueError("assets must be a list")
@@ -82,6 +84,8 @@ def check_pack(root):
             errors.append(f"invalid size/hash: {name}")
             continue
         total += size
+        if total > MAX_TOTAL:
+            raise ValueError("pack quota exceeded")
         path = root / name
         # Reject symlinks at every level, including links that stay inside root.
         if any(p.is_symlink() for p in [path, *path.parents] if p != root.parent):
@@ -95,8 +99,6 @@ def check_pack(root):
                 raise ValueError("hash")
         except (OSError, ValueError):
             errors.append(f"missing or changed asset: {name}")
-    if total > MAX_TOTAL:
-        errors.append("pack quota exceeded")
     for node in pack.get("nodes", []) if isinstance(pack, dict) else []:
         if isinstance(node, dict) and "audio" in node and (not isinstance(node["audio"], str) or node["audio"] not in names):
             errors.append("unknown audio asset")
