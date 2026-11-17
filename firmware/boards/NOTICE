@@ -1,0 +1,4 @@
+conteuse_s3_n16r8.json adapts ESP32-S3-DevKitC-1 board metadata from
+PlatformIO Espressif32 6.9.0, https://github.com/platformio/platform-espressif32
+Copyright PlatformIO contributors; Apache License 2.0 (LICENSE in this directory).
+Changes: N16R8 target description, flash capacity/partitions, QSPI/OPI memory mode.

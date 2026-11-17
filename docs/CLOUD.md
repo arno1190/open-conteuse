@@ -4,7 +4,7 @@ This repository is designed for bounded autonomous tasks. AGENTS.md provides the
 
 ## Environment
 
-Python 3.11+ and Git are sufficient for M1. Run `sh scripts/check.sh`. GitHub Actions uses Python 3.12. A future firmware environment should install the selected pinned toolchain only after the board and upstream decision; do not require it for host tests.
+Python 3.11+ and Git are sufficient for M1. Run `sh scripts/check.sh`. GitHub Actions uses Python 3.12. The bench board/toolchain and licensing decision now live in `firmware/README.md` and `firmware/THIRD_PARTY.md`. Install the pinned build requirements separately; host tests do not require them. CAD checks require KiCad 9 and OpenSCAD, see `scripts/cad-check.sh`.
 
 Configure a reusable Codex Cloud environment with this repository on main and GitHub write access. No AI/content-provider secrets are required for M1. Do not copy cloud login tokens into the repository. A task that runs only on a transient default computer must push its commits before ending, following the publication policy in AGENTS.md.
 
@@ -25,3 +25,7 @@ To unblock: create an empty GitHub repository named `arno1190/open-conteuse` (wi
 ## GitHub access resolved (2026-11-17)
 
 The owner created the public repository. Verified ADMIN access and successfully pushed the prepared main branch to https://github.com/arno1190/open-conteuse. The earlier repository-creation blocker is resolved; cloud task authentication is a separate check.
+
+## Current handoff (2026-11-17)
+
+Host/studio, firmware bench and CAD source slices have been implemented and checked; use the updated ROADMAP and VALIDATION record instead of repeating the historical M1 bootstrap prompt. The next physical milestone needs exact modules/drawings, adult bench instruments and separately authorized prototypes. No ongoing background agent or automation was configured by this task. Publishing remains feature branch + PR, without auto-merge or hardware orders.

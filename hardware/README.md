@@ -1,6 +1,6 @@
 # Hardware design and bench gates
 
-Status: requirements and candidates only; no validated schematic, PCB or enclosure.
+Status: [native KiCad controls schematic and routed PCB](controls), [BOM](BOM.csv), [pinout](PINOUT.md), [assembly procedure](ASSEMBLY.md), and [OpenSCAD fit studies](../enclosure/DIMENSIONS.md) now exist. Controls ERC/DRC and enclosure CAD checks pass; no physical hardware is validated. The final audio/headphone/power carrier is not designed or released. See [validation results](../docs/VALIDATION.md).
 
 Candidates: ESP32-S3 module with 16 MB flash/8 MB PSRAM; microSD; PN532 module initially; I2S codec/DAC with real headphone path and separate mono speaker amp; jack detection; protected replaceable 1S battery; USB-C charger with power-path management; 3.3 V regulation; optional SPI TFT. BQ24074 is a charger candidate, not a complete power supply. A MAX98357A speaker amplifier alone is not a headphone solution.
 
