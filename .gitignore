@@ -18,3 +18,7 @@ work/
 *.kicad_prl
 *.kicad_sch.lck
 *.kicad_pcb.lck
+# Versioned integration reference meshes and prototype print exports only.
+!enclosure/integrated/models/*.stl
+!enclosure/integrated/print/*.stl
+enclosure/integrated/print/*.log

@@ -39,3 +39,7 @@ Follow AGENTS.md: independent review, resolve actionable findings, confirm check
 ## Post-merge review material
 
 Merged PR #1 on 2026-11-17 after successful host/firmware/CAD checks and explicit owner instruction. Added PNG exterior/PCB views and a labelled provisional component-integration plan in `docs/previews`; these do not close physical fit gates. Revised hardware/prototype cost allowances and current module-price evidence are in `docs/HARDWARE_COST.md`.
+
+## Integrated modular revision (2026-11-17)
+
+Detailed catalogue, sourcing/search links, manufacturer-CAD meshes and conservative envelopes now drive `hardware/integration/layout.json` and `enclosure/integrated/integrated.scad`. This supersedes the original shell for component integration. New 45×45 mm independent mute-latch PCB is routed with native KiCad sources. Prototype STL exports and source-derived PNGs are provided; exact quote gaps, unavailable parts, uncertain MCU assembled height/switch actuator, integrated codec firmware and all physical validation remain release gates. See `hardware/integration/README.md`; do not interpret downloadable STLs as a verified-fit production release.

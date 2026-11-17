@@ -1,0 +1,297 @@
+{
+  "format_version": 1,
+  "revision": "integrated-modular-v1",
+  "units": "mm",
+  "case": {
+    "width": 112,
+    "height": 210,
+    "depth": 50,
+    "wall": 2.4,
+    "radius": 8,
+    "front_depth": 47.6,
+    "lid_thickness": 2.4,
+    "fit_clearance": 0.35,
+    "carrier_z": 27,
+    "carrier_thickness": 2.4,
+    "nut_af": 5,
+    "nut_height": 2,
+    "nut_af_clearance": 0.3,
+    "nut_height_clearance": 0.25,
+    "screw_clearance": 2.9,
+    "case_fasteners": [
+      [
+        7,
+        7
+      ],
+      [
+        105,
+        7
+      ],
+      [
+        7,
+        203
+      ],
+      [
+        105,
+        203
+      ]
+    ],
+    "carrier_fasteners": [
+      [
+        7.5,
+        45
+      ],
+      [
+        104.5,
+        45
+      ],
+      [
+        7.5,
+        178
+      ],
+      [
+        104.5,
+        178
+      ]
+    ]
+  },
+  "common": [
+    {
+      "part": "controls",
+      "xyz": [
+        20,
+        137,
+        8.9
+      ],
+      "rotate_z": 0,
+      "mount": "front",
+      "component_side": "toward_front"
+    },
+    {
+      "part": "mcu",
+      "xyz": [
+        12,
+        8,
+        29.4
+      ],
+      "rotate_z": 0,
+      "mount": "carrier",
+      "note": "64 mm adjustable cradle; assembled height is a reservation pending hardware measurement"
+    },
+    {
+      "part": "regulator",
+      "xyz": [
+        43,
+        10,
+        32.4
+      ],
+      "rotate_z": 0,
+      "mount": "carrier"
+    },
+    {
+      "part": "charger",
+      "xyz": [
+        57,
+        3.3,
+        32.4
+      ],
+      "rotate_z": 180,
+      "mount": "carrier"
+    },
+    {
+      "part": "sd",
+      "xyz": [
+        43,
+        43,
+        32.4
+      ],
+      "rotate_z": 270,
+      "mount": "carrier"
+    },
+    {
+      "part": "battery",
+      "xyz": [
+        55,
+        79,
+        30.4
+      ],
+      "rotate_z": 90,
+      "mount": "carrier"
+    },
+    {
+      "part": "headphone",
+      "xyz": [
+        77,
+        151,
+        32.4
+      ],
+      "rotate_z": 0,
+      "mount": "carrier"
+    },
+    {
+      "part": "mute_latch",
+      "xyz": [
+        8,
+        157,
+        32.4
+      ],
+      "rotate_z": 0,
+      "mount": "carrier"
+    },
+    {
+      "part": "speaker_amp",
+      "xyz": [
+        76,
+        180,
+        32.4
+      ],
+      "rotate_z": 0,
+      "mount": "carrier"
+    },
+    {
+      "part": "power_switch",
+      "xyz": [
+        104.2,
+        45,
+        33
+      ],
+      "rotate_z": 0,
+      "mount": "side",
+      "orientation": "actuator_outward_right"
+    }
+  ],
+  "mini": [
+    {
+      "part": "nfc",
+      "xyz": [
+        12,
+        12,
+        5.4
+      ],
+      "rotate_z": 90,
+      "mount": "front"
+    },
+    {
+      "part": "speaker",
+      "xyz": [
+        64,
+        52,
+        6.4
+      ],
+      "rotate_z": 90,
+      "mount": "front"
+    }
+  ],
+  "explore": [
+    {
+      "part": "display",
+      "xyz": [
+        14.36,
+        12,
+        2.9
+      ],
+      "rotate_z": 90,
+      "mount": "front"
+    },
+    {
+      "part": "speaker",
+      "xyz": [
+        20,
+        82,
+        6.4
+      ],
+      "rotate_z": 0,
+      "mount": "front"
+    }
+  ],
+  "speaker_gasket_thickness": 4,
+  "front_button_gap": 0.2,
+  "port_access": {
+    "usb_c": {
+      "part": "charger",
+      "normal": "negative_y",
+      "centre_local": [
+        15.875,
+        26.386,
+        2.67
+      ],
+      "opening_mm": [
+        14.4,
+        9.6
+      ],
+      "plug_space_mm": [
+        16,
+        20,
+        12
+      ]
+    },
+    "headphone": {
+      "part": "headphone",
+      "normal": "positive_x",
+      "centre_local": [
+        33.537,
+        16.75915,
+        3.87248
+      ],
+      "opening_diameter_mm": 13,
+      "plug_space_mm": [
+        20,
+        16,
+        16
+      ]
+    }
+  },
+  "service_clearances": [
+    {
+      "id": "sd_card_removal",
+      "xyz": [
+        65.86,
+        49,
+        33.9
+      ],
+      "size_mm": [
+        18,
+        11.2,
+        3.6
+      ],
+      "allowed_contact_parts": [
+        "sd"
+      ]
+    },
+    {
+      "id": "upper_wire_channel",
+      "xyz": [
+        38.5,
+        34,
+        43
+      ],
+      "size_mm": [
+        60,
+        8,
+        4.5
+      ],
+      "allowed_contact_parts": []
+    },
+    {
+      "id": "lower_wire_channel",
+      "xyz": [
+        56,
+        145,
+        43.5
+      ],
+      "size_mm": [
+        14,
+        60,
+        4
+      ],
+      "allowed_contact_parts": []
+    }
+  ],
+  "release_notes": [
+    "All coordinates describe a nominal manufacturer-CAD fit prototype, not verified physical fit.",
+    "Case size increased from the original placeholder to accommodate the actual 120 x 50 mm PN532 board.",
+    "Explore is a fixed no-NFC build in this revision; no unmodelled optional reader is implied.",
+    "Stock/quote and MCU assembled-height gaps remain explicit release gates.",
+    "Switch 805 STEP is an undetailed body box: actuator slot and retention need a received-part measurement before printing a final case."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "checked_date": "2026-11-17",
+  "quotes": [
+    {
+      "manufacturer": "Adafruit",
+      "sku": "3111",
+      "description": "22AWG stranded six 25ft spools",
+      "url": "https://www.adafruit.com/product/3111",
+      "currency": "USD",
+      "unit_price": 19.95,
+      "moq": 1,
+      "stock": "In stock",
+      "jacket_od_mm": 1.5
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "2517",
+      "description": "26AWG stranded silicone black25ft spool",
+      "url": "https://www.adafruit.com/product/2517",
+      "currency": "USD",
+      "unit_price": 4.95,
+      "moq": 1,
+      "stock": "In stock",
+      "jacket_od_mm": 1.5,
+      "od_tolerance_mm": 0.1
+    },
+    {
+      "manufacturer": "Adafruit",
+      "sku": "2518",
+      "description": "26AWG stranded silicone white25ft spool",
+      "url": "https://www.adafruit.com/product/2518",
+      "currency": "USD",
+      "unit_price": 4.95,
+      "moq": 1,
+      "stock": "In stock",
+      "jacket_od_mm": 1.5,
+      "od_tolerance_mm": 0.1
+    },
+    {
+      "manufacturer": "HellermannTyton",
+      "sku": "T18L0C2",
+      "vendor_sku": "329-T18L0C2",
+      "url": "https://www.mouser.com/en/ProductDetail/HellermannTyton/T18L0C2?qs=5aG0NVq1C4wUudKezEtVDQ%3D%3D",
+      "currency": "USD",
+      "unit_price": 0.13,
+      "moq": 1,
+      "multiple": 1,
+      "stock": 755,
+      "length_mm": 205,
+      "width_mm": 2.5,
+      "material": "PA66/Nylon6.6"
+    },
+    {
+      "manufacturer": "Prusa",
+      "sku": "Prusament PETG Jet Black1kg1.75mm",
+      "url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+      "currency": "EUR",
+      "unit_price": 26.39,
+      "price_ex_vat": 21.99,
+      "vat_percent": 20,
+      "locale": "France",
+      "moq": 1,
+      "stock": "In stock;4-7businessdays preparation",
+      "note": "Current20%discount versus32.99EURlist"
+    }
+  ],
+  "missing": [
+    {
+      "sku": "SDSDQAF3-008G-I",
+      "status": "No public quote/stock verified"
+    },
+    {
+      "sku": "SDCIT2/8GB",
+      "status": "Mouser non-stocked, requestquote; manufacturer11x15x1mm3.3VFAT32; SPI not explicitly confirmed in manufacturerdatasheet"
+    }
+  ]
+}

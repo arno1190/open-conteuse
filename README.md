@@ -36,3 +36,7 @@ The studio prints a loopback address and a per-launch token. It imports local au
 - [Roadmap](docs/ROADMAP.md) · [Validation](docs/VALIDATION.md) · [Cloud handoff](docs/CLOUD.md) · [Agent instructions](AGENTS.md)
 
 Original host Python, original CAD and documentation: MIT. Original firmware: GPL-3.0-or-later; dependencies retain their own licences and codec terms. KiCad library footprints retain the upstream library licence/exception. Original example content: CC0-1.0. No commercial story catalogues, proprietary firmware or keys are included.
+
+### Detailed component integration
+
+The [integrated modular design](hardware/integration/README.md) includes exact component identifiers and supplier/search links for every [BOM row](hardware/integration/BOM.csv), native mute-latch KiCad sources, [parametric SCAD and prototype STL files](enclosure/integrated/), and [source-derived integration/exploded PNGs](docs/previews/integrated/). [Updated cost evidence](docs/HARDWARE_COST.md) separates known supplier subtotals from missing quotes and shipping. Physical fit, integrated codec firmware and procurement availability remain explicit release gates.

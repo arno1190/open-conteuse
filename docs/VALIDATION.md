@@ -26,3 +26,9 @@ The committed `hardware/reports/controls-erc.rpt` and `controls-drc.rpt` are act
 Coverage includes invalid paths/symlinks, truncated/changed/oversized assets, graph traps, stale approval, interrupted staging, corrupt-active fallback, pairing expiry/reuse/authentication, dynamic episode bytes, hostile URL/redirect/response boundaries, editorial invalidation, canonical WAV export limits and debounce timer wraparound. Fixture network tests make no external requests. No live station availability or content suitability is claimed.
 
 Pending physical evidence is listed in `hardware/ASSEMBLY.md`; dimensions/fit assumptions are in `enclosure/DIMENSIONS.md`. CAD correctness cannot establish electrical/acoustic/mechanical/battery safety or child-product compliance.
+
+## Integrated modular sources, 2026-11-17
+
+39 host tests pass, including collision detection, corrupt supplier-model hashes, exact identity requirements, missing quotes and purchase-pack rounding. Existing Mini/Explore/default-muted and both bench-audio firmware builds pass with native policy/content tests; these are the historical bench wiring, **not a TLV320 integrated driver build**. The integrated firmware profile remains unimplemented.
+
+The new mute-latch schematic/PCB passes KiCad9 ERC and full DRC including schematic parity with0violations/0unconnected items/0parity issues using configured stock/local libraries. Reports are in `hardware/integration/checks`. The controls PCB remains checked by the same command. New prototype exports are checked for OpenSCAD simple single solid, two-manifold STL edges, nonnegative printZ and recorded bounds/hashes. Digital geometry and supplier files do not establish physicalfit, electrical/acoustic/thermal/drop safety or print strength. MCU assembledheight, switchactuator, slicer review and all physicaltests remain pending. Source-derived PNGs show reference geometry, with simplified envelopes explicitly labelled.

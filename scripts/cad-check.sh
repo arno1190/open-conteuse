@@ -23,3 +23,6 @@ for variant in mini explore; do
     rg -q '^ *Volumes: *2$' "work/cad/$variant-$part.log"
   done
 done
+kicad-cli sch erc hardware/integration/mute-latch/mute-latch.kicad_sch --exit-code-violations --severity-all -o work/cad/mute-erc.rpt
+kicad-cli pcb drc hardware/integration/mute-latch/mute-latch.kicad_pcb --schematic-parity --exit-code-violations --severity-all -o work/cad/mute-drc.rpt
+python3 scripts/export_integrated.py
