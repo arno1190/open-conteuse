@@ -30,6 +30,7 @@ The studio prints a loopback address and a per-launch token. It imports local au
 - [Requirements](docs/REQUIREMENTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Research](docs/RESEARCH.md)
 - [Content schema](schemas/pack-v1.schema.json) · [Content/studio workflow](docs/CONTENT.md)
 - [Firmware and limits](firmware/README.md) · [Firmware licences](firmware/THIRD_PARTY.md)
+- [PNG design/integration previews](docs/previews) · [Revised hardware cost](docs/HARDWARE_COST.md)
 - [Controls schematic/layout](hardware/controls) · [BOM](hardware/BOM.csv) · [Pinout](hardware/PINOUT.md)
 - [Assembly and physical validation](hardware/ASSEMBLY.md) · [Enclosure assumptions](enclosure/DIMENSIONS.md)
 - [Roadmap](docs/ROADMAP.md) · [Validation](docs/VALIDATION.md) · [Cloud handoff](docs/CLOUD.md) · [Agent instructions](AGENTS.md)
