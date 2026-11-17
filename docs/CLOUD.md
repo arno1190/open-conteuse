@@ -21,3 +21,7 @@ Record the returned cloud task URL and check its status before claiming it is ru
 The current managed cloud computer runs the host checks successfully. Creating `arno1190/open-conteuse` with the connected GitHub integration failed with `Resource not accessible by integration (createRepository)`. No remote repository was created by that attempt. The Codex CLI reports a ChatGPT login, but `codex cloud list --json` fails with HTTP 401 (`Could not parse your authentication token`). No separate Codex Cloud task has been submitted.
 
 To unblock: create an empty GitHub repository named `arno1190/open-conteuse` (without an initial README/licence/gitignore), grant the connected GitHub app access, then push this committed main branch. Reauthenticate the Codex Cloud CLI or use the Codex UI to create a Cloud environment for the new repository and run the first-task prompt above. Verify the task URL/status. These are service permission/authentication failures, not code-test failures.
+
+## GitHub access resolved (2026-11-17)
+
+The owner created the public repository. Verified ADMIN access and successfully pushed the prepared main branch to https://github.com/arno1190/open-conteuse. The earlier repository-creation blocker is resolved; cloud task authentication is a separate check.
