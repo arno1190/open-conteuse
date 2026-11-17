@@ -1,0 +1,14 @@
+name: CAD checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  cad:
+    runs-on: ubuntu-latest
+    container: debian:trixie
+    steps:
+      - uses: actions/checkout@v4
+      - run: apt-get update && apt-get install -y --no-install-recommends kicad kicad-symbols kicad-footprints openscad python3 ripgrep
+      - run: sh scripts/cad-check.sh

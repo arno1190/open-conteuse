@@ -60,4 +60,15 @@ def validate(pack):
             pending.extend(graph[current])
         for key in sorted(graph.keys() - seen):
             errors.append(f"unreachable node: {key}")
+    # Every reachable node must have a path to a terminal node. Optional loops
+    # with an exit remain useful; a closed strongly connected region is trapped.
+    escaping = {key for key, targets in graph.items() if not targets}
+    changed = True
+    while changed:
+        previous = len(escaping)
+        escaping.update(key for key, targets in graph.items()
+                        if any(target in escaping for target in targets))
+        changed = len(escaping) != previous
+    for key in sorted(graph.keys() - escaping):
+        errors.append(f"trapped node: {key}")
     return errors
