@@ -34,7 +34,7 @@ Next is **adult bench bring-up**, starting with exact module markings/drawings a
 
 Before final carrier integration: freeze the headphone DAC/amp/jack and independent insertion-mute circuit; choose a protected cell and review power-path/regulator/USB-C/thermal design; measure board/module/harness/plug dimensions. Then revise exact mounts, connector cutouts, battery retention and fastener lengths, and repeat ERC/DRC/CAD plus physical tests. Record electrical, acoustic, thermal, runtime, NFC, drop and retention results explicitly. Home Lunii/Merlin generations also remain unidentified; no proprietary interoperation was attempted.
 
-Follow AGENTS.md: focused feature branch and reviewable PR; no auto-merge, purchasing, fabrication order or public studio exposure.
+Follow AGENTS.md: independent review, resolve actionable findings, confirm checks for the exact PR head, record the reviewed SHA/merge authorization, and merge when satisfied without another owner confirmation. No purchasing, fabrication order or public studio exposure.
 
 ## Post-merge review material
 
