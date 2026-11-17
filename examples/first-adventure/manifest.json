@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "id": "first-adventure",
+  "title": "The little garden expedition",
+  "start": "gate",
+  "nodes": [
+    {
+      "id": "gate",
+      "text": "You find a little garden gate. Shall we visit the pond or the apple tree?",
+      "choices": [
+        {
+          "label": "The pond",
+          "target": "pond"
+        },
+        {
+          "label": "The apple tree",
+          "target": "tree"
+        }
+      ]
+    },
+    {
+      "id": "pond",
+      "text": "A frog rests beside the pond. You watch quietly, then walk home."
+    },
+    {
+      "id": "tree",
+      "text": "A leaf floats down from the apple tree. You catch it, then walk home."
+    }
+  ]
+}
