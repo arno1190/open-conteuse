@@ -9,6 +9,7 @@ Executed in the managed Linux workspace. No board, battery, transducer, printer 
 | `sh scripts/cad-check.sh` — KiCad 9.0.2 ERC | Zero errors/warnings; all severities, no exclusions |
 | Same — KiCad DRC with `--schematic-parity` | Zero violations, zero unconnected pads, zero parity issues; all severities, no exclusions |
 | Same — OpenSCAD 2021.01 | Eight STL renders: Mini/Explore × front/back/coupon/plunger; all `Simple: yes`, `Volumes: 2` (one bounded solid plus exterior), no warning/error |
+| Live HTTPS smoke check to the owned public repository example | Connection refused by this environment network path; no live fetch/stream validation claimed |
 | Studio UI inline JavaScript `node --check` | Syntax check passed; HTTP mutation auth/Host/Origin and approval workflow exercised by host tests |
 | Python `compileall`, Draft 2020-12 schema/example validation, `git diff --check` | Passed |
 

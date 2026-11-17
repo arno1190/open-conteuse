@@ -100,7 +100,7 @@ void setup() {
     pinMode(SpeakerEnable,OUTPUT);digitalWrite(SpeakerEnable,LOW);
     pinMode(HeadphoneDetect,INPUT_PULLUP);
     for(int pin:Controls)pinMode(pin,INPUT_PULLUP);
-    Serial.begin(115200);WiFi.mode(WIFI_OFF);
+    Serial.begin(115200);WiFi.persistent(false);WiFi.mode(WIFI_OFF);
     SPI.begin(12,13,11,SdCS);
     pinMode(14,OUTPUT);digitalWrite(14,HIGH); // deselect TFT on shared SPI
     const bool mounted=SD.begin(SdCS,SPI,1000000);
