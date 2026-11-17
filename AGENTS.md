@@ -4,7 +4,7 @@
 
 Build the two Open Conteuse variants and shared parent studio described in docs/REQUIREMENTS.md. Work autonomously on implementation, research, tests, firmware, KiCad and OpenSCAD sources. Choose routine implementation details, record meaningful decisions and continue independent work when hardware is unavailable.
 
-Use focused branches and reviewable PRs. Do not auto-merge, spend money, order PCBs, change repository access, provision paid services, publish commercial audio or expose a running studio publicly. No API keys are needed for the offline foundation. Provider credentials must stay outside Git and on the studio server. Ask only for genuinely missing authorization or hardware evidence; do not repeatedly ask about reversible implementation choices.
+For the first iteration, a single agent doing all work itself may commit and push directly to `main` after checks pass. If the agent spawns subagents or delegates implementation, use a focused feature branch and a reviewable PR for the resulting work; do not push delegated changes directly to `main`. This rule permits delegation where the task host allows it; delegation is optional. Never force-push or overwrite other contributors' work. Do not auto-merge, spend money, order PCBs, change repository access, provision paid services, publish commercial audio or expose a running studio publicly. No API keys are needed for the offline foundation. Provider credentials must stay outside Git and on the studio server. Ask only for genuinely missing authorization or hardware evidence; do not repeatedly ask about reversible implementation choices.
 
 ## Workflow
 
@@ -13,7 +13,7 @@ Use focused branches and reviewable PRs. Do not auto-merge, spend money, order P
 3. Run the meaningful checks for changes. Current check: python3 -m unittest discover -s tests -v.
 4. Add/update tests for meaningful behaviour, including failure recovery. Document commands and actual results.
 5. Update docs/ROADMAP.md with implemented, tested and blocked work. Leave the next task explicit.
-6. Commit, push the feature branch and open a PR when GitHub access allows. If a task host exposes a PR attachment tool, attach it.
+6. For the first iteration without subagents, commit and push directly to `main` after checks pass. Fetch first and integrate remote changes safely; if concurrent edits cannot be reconciled safely, preserve the work on a branch and open a PR. If subagents were used, push a feature branch and open a PR. If a task host exposes a PR attachment tool, attach any created PR.
 
 ## Boundaries and engineering rules
 
