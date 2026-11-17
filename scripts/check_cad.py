@@ -15,3 +15,9 @@ assert 15 > 2.4 and 15+70 < 100-2.4
 assert 98 > 2.4 and 98+65 < 174-2.4
 assert 2.4+6.5+1.6 < 19
 print('CAD source dimensions agree; physical fit remains pending')
+# New integrated source is separately versioned from the historical bench shell.
+from integrated_hardware import read_data, validate
+catalog, layout = read_data()
+errors = validate(catalog, layout)
+assert not errors, '\n'.join(errors)
+print('Integrated supplier model hashes, nominal envelopes and service corridors agree')

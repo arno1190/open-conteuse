@@ -1,0 +1,227 @@
+{
+  "catalog_revision": "integrated-modular-v1",
+  "nominal_geometry_errors": [],
+  "release_gates": [
+    "nfc: manufacturer nominal model and retail dimension text disagree",
+    "mcu: assembled/header height not verified; cradle is a design reservation",
+    "supplier quote missing: controls",
+    "supplier quote missing: mute_latch",
+    "supplier quote missing: memory_card",
+    "quoted item unavailable at observed supplier: nfc",
+    "quoted item unavailable at observed supplier: mcu",
+    "delivery postcode/country not confirmed; no exact shipping/tax quote",
+    "power_switch: undetailed source model; actuator/retention measurement pending",
+    "integrated TLV320/latch firmware profile not implemented; old bench mapping incompatible",
+    "slicer/support review and physical print fit pending",
+    "physical fit/electrical/acoustic/thermal/drop validation pending"
+  ],
+  "one_mini_one_explore": {
+    "known_subtotals": {
+      "USD": "242.76",
+      "GBP": "37.07",
+      "EUR": "21.99"
+    },
+    "lines": [
+      {
+        "part": "nfc",
+        "needed": 1,
+        "buy_quantity": 1,
+        "currency": "USD",
+        "subtotal": "39.95"
+      },
+      {
+        "part": "display",
+        "needed": 1,
+        "buy_quantity": 1,
+        "currency": "USD",
+        "subtotal": "29.95"
+      },
+      {
+        "part": "sd",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "7.00"
+      },
+      {
+        "part": "headphone",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "13.90"
+      },
+      {
+        "part": "speaker_amp",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "11.90"
+      },
+      {
+        "part": "speaker",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "7.90"
+      },
+      {
+        "part": "battery",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "29.90"
+      },
+      {
+        "part": "charger",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "13.90"
+      },
+      {
+        "part": "power_switch",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "1.90"
+      },
+      {
+        "part": "mcu",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "26.48"
+      },
+      {
+        "part": "regulator",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "11.90"
+      },
+      {
+        "part": "component-SN74HC74N",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "2.26"
+      },
+      {
+        "part": "component-SN74HC08N",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "1.58"
+      },
+      {
+        "part": "component-2N3904BU",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "0.58"
+      },
+      {
+        "part": "component-MRS25000C1002FCT00",
+        "needed": 12,
+        "buy_quantity": 12,
+        "currency": "USD",
+        "subtotal": "2.88"
+      },
+      {
+        "part": "component-MRS25000C1003FCT00",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "0.48"
+      },
+      {
+        "part": "component-C315C104K5R5TA",
+        "needed": 4,
+        "buy_quantity": 4,
+        "currency": "USD",
+        "subtotal": "2.48"
+      },
+      {
+        "part": "component-TSW-107-07-G-S",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "1.26"
+      },
+      {
+        "part": "component-TSW-109-07-G-S",
+        "needed": 2,
+        "buy_quantity": 2,
+        "currency": "USD",
+        "subtotal": "1.64"
+      },
+      {
+        "part": "component-B3F-1000",
+        "needed": 13,
+        "buy_quantity": 13,
+        "currency": "USD",
+        "subtotal": "4.55"
+      },
+      {
+        "part": "case_screw",
+        "needed": 86,
+        "buy_quantity": 100,
+        "currency": "GBP",
+        "subtotal": "25.81"
+      },
+      {
+        "part": "hex_nut",
+        "needed": 86,
+        "buy_quantity": 250,
+        "currency": "GBP",
+        "subtotal": "11.26"
+      },
+      {
+        "part": "wire_power",
+        "needed": 1,
+        "buy_quantity": 1,
+        "currency": "USD",
+        "subtotal": "19.95"
+      },
+      {
+        "part": "wire_signal",
+        "needed": 1,
+        "buy_quantity": 1,
+        "currency": "USD",
+        "subtotal": "4.95"
+      },
+      {
+        "part": "battery_strap",
+        "needed": 4,
+        "buy_quantity": 4,
+        "currency": "USD",
+        "subtotal": "0.52"
+      },
+      {
+        "part": "petg",
+        "needed": 1,
+        "buy_quantity": 1,
+        "currency": "EUR",
+        "subtotal": "21.99"
+      },
+      {
+        "part": "wire_signal_white",
+        "needed": 1,
+        "buy_quantity": 1,
+        "currency": "USD",
+        "subtotal": "4.95"
+      }
+    ],
+    "missing_quotes": [
+      "controls",
+      "mute_latch",
+      "memory_card"
+    ],
+    "unavailable_quoted_parts": [
+      "nfc",
+      "mcu"
+    ],
+    "shipping": "awaiting_delivery_details",
+    "is_complete_landed_quote": false
+  }
+}

@@ -1,0 +1,1485 @@
+{
+  "format_version": 1,
+  "revision": "integrated-modular-v1",
+  "observed_on": "2026-11-17",
+  "units": "mm",
+  "quote_currency": "USD",
+  "physical_validation": "pending",
+  "parts": [
+    {
+      "id": "nfc",
+      "manufacturer": "Adafruit",
+      "part_number": "364",
+      "description": "PN532 v1.6 reader",
+      "quantity": {
+        "mini": 1,
+        "explore": 0
+      },
+      "dimensions_mm": [
+        120.0,
+        50.0,
+        2.97
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/nfc.stl",
+        "sha256": "c21d7be8887c3797e814da15513069c97194ec58d73857b47add464e3c0bdfae",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/364%20NFC%20Breakout/364%20NFC%20Breakout.step",
+        "source_git_blob_sha1": "d137713ddc4f28c22fd79a123fb78efcd4031960",
+        "source_sha256": "edb6dc2652a3aac9a875645446ea8693bbf43919cc695a31c58b5aca350d3aca",
+        "normalization_translation_mm": [
+          0.056,
+          0.0,
+          -0.0
+        ]
+      },
+      "pcb": {
+        "origin_in_model_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_mm": [
+          120.0,
+          50.0,
+          1.57
+        ],
+        "holes_mm": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            45
+          ],
+          [
+            115,
+            5
+          ],
+          [
+            115,
+            45
+          ]
+        ]
+      },
+      "product_url": "https://www.adafruit.com/product/364",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "364",
+        "url": "https://www.adafruit.com/product/364",
+        "currency": "USD",
+        "unit_price": 39.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "out_of_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Manufacturer v1.6 Eagle and STEP agree 120 x 50 mm. Retail prose lists 117.7 x 51 mm; verify received PCB revision before final fit claim. No headers fitted; use soldered leads trimmed to <=2 mm on underside."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%20364",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%20364",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%20364"
+      }
+    },
+    {
+      "id": "display",
+      "manufacturer": "Adafruit",
+      "part_number": "2090",
+      "description": "ILI9341 capacitive display, touch unused",
+      "quantity": {
+        "mini": 0,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        62.484,
+        81.28,
+        6.95
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/display.stl",
+        "sha256": "658455a642815bf7c55b2f8930881f1cbc1f99d6b2889db92e49278494fb7efb",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/2090%202.8in%20TFT%20Cap%20Touch/2090%202.8in%20TFT%20Cap%20Touch.step",
+        "source_git_blob_sha1": "30ac53e724ac61e6029a64be436140a4bc61ab56",
+        "source_sha256": "c98e5b0589d65890e81aecbe1d5ae37ac17c664d2474dce514e96fec145bdc9d",
+        "normalization_translation_mm": [
+          31.242,
+          40.64,
+          3.5
+        ]
+      },
+      "pcb": {
+        "origin_in_model_mm": [
+          0.0,
+          0.0,
+          3.5
+        ],
+        "size_mm": [
+          62.484,
+          81.28,
+          1.57
+        ],
+        "holes_mm": [
+          [
+            2.667,
+            2.54
+          ],
+          [
+            59.817,
+            2.54
+          ],
+          [
+            2.667,
+            78.74
+          ],
+          [
+            59.817,
+            78.74
+          ]
+        ]
+      },
+      "product_url": "https://www.adafruit.com/product/2090",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "2090",
+        "url": "https://www.adafruit.com/product/2090",
+        "currency": "USD",
+        "unit_price": 29.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Selected product 2090, not the earlier 1770. Display remains ILI9341; capacitive touch controller is unused. Native STEP represents manufacturer nominal body; EYESPI/header lead space is reserved separately."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%202090",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%202090",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%202090"
+      }
+    },
+    {
+      "id": "sd",
+      "manufacturer": "Adafruit",
+      "part_number": "4682",
+      "description": "3 V microSD breakout",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        25.4,
+        22.86,
+        3.45
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/sd.stl",
+        "sha256": "89b4883e8dea4990bdf3149c8c5ac4c35ff7b635067b139d8b61572931530819",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/4682%20Micro%20SD%20Breakout/4682%20Micro%20SD%20Breakout.step",
+        "source_git_blob_sha1": "cef97734b94627472b629c22fdfa87c62d0ca6c6",
+        "source_sha256": "195927fa6892b80caf19cd01887e84f1202026665b393f9c8c9f399fa6b4d6e8",
+        "normalization_translation_mm": [
+          0.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "pcb": {
+        "origin_in_model_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_mm": [
+          25.4,
+          22.86,
+          1.57
+        ],
+        "holes_mm": [
+          [
+            2.54,
+            20.32
+          ],
+          [
+            22.86,
+            20.32
+          ]
+        ]
+      },
+      "product_url": "https://www.adafruit.com/product/4682",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "4682",
+        "url": "https://www.adafruit.com/product/4682",
+        "currency": "USD",
+        "unit_price": 3.5,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%204682",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%204682",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%204682"
+      }
+    },
+    {
+      "id": "headphone",
+      "manufacturer": "Adafruit",
+      "part_number": "6309",
+      "description": "TLV320DAC3100 stereo headphone DAC and detector",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        33.53701,
+        25.4,
+        6.37248
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/headphone.stl",
+        "sha256": "567180fc3eafa2a28edff8537edbb777290a3408fd43b846b1651ce534e3dbb2",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/6309%20TLV320DAC3100%20I2S%20DAC/6309%20TLV320DAC3100%20I2S%20DAC.step",
+        "source_git_blob_sha1": "e20f1fb1d0dca6d2f15e6413adc7b0ddc29ff438",
+        "source_sha256": "3eba386a14eb87e26fc5a287a6e5b4a30515306079798d11c45fc202c79b4627",
+        "normalization_translation_mm": [
+          0.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "pcb": {
+        "origin_in_model_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_mm": [
+          31.75,
+          25.4,
+          1.57
+        ],
+        "holes_mm": [
+          [
+            29.21,
+            2.54
+          ],
+          [
+            2.54,
+            22.86
+          ],
+          [
+            29.21,
+            22.86
+          ]
+        ]
+      },
+      "product_url": "https://www.adafruit.com/product/6309",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "6309",
+        "url": "https://www.adafruit.com/product/6309",
+        "currency": "USD",
+        "unit_price": 6.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Mounting-hole centres cross-checked against manufacturer Eagle PCB 6309.brd."
+      ],
+      "jack_bores_yzr_mm": [
+        [
+          16.75915,
+          3.87248,
+          1.8
+        ]
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%206309",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%206309",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%206309"
+      }
+    },
+    {
+      "id": "speaker_amp",
+      "manufacturer": "Adafruit",
+      "part_number": "3006",
+      "description": "MAX98357A speaker amplifier, raw LOAD supply",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        17.78,
+        19.05,
+        2.5701
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/speaker_amp.stl",
+        "sha256": "1fabad4df4980bff9add2e86c0fb7643d58e6ab521fcd81e18cf9b8277959c3f",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/3006%20MAX98357/3006%20MAX98357.step",
+        "source_git_blob_sha1": "5f247019f1d9f91c1c014b5bf65d5624b0156fe6",
+        "source_sha256": "bdc3c4c3dcbb7402eb73427a87efb1fe99a8b674fa7217ac56fc2315b027ec93",
+        "normalization_translation_mm": [
+          -0.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "pcb": {
+        "origin_in_model_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_mm": [
+          17.78,
+          19.05,
+          1.57
+        ],
+        "holes_mm": [
+          [
+            2.54,
+            16.51
+          ],
+          [
+            15.24,
+            16.51
+          ]
+        ]
+      },
+      "product_url": "https://www.adafruit.com/product/3006",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "3006",
+        "url": "https://www.adafruit.com/product/3006",
+        "currency": "USD",
+        "unit_price": 5.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%203006",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%203006",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%203006"
+      }
+    },
+    {
+      "id": "speaker",
+      "manufacturer": "Adafruit",
+      "part_number": "3351",
+      "description": "Enclosed 4 ohm 3 W speaker",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        70.0,
+        30.0,
+        19.7
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/speaker.stl",
+        "sha256": "d38b40213b62e902c7d06baf68acfb757726314d99bcc0c0a7efb39946bcbdac",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/3351%20Enclosed%20Speaker%203W%204Ohm/3351%20Enclosed%20Speaker%203W%204Ohm.step",
+        "source_git_blob_sha1": "41aac260c8ecaa3acc613d48ae3ce40aabf6211e",
+        "source_sha256": "76387fbd0679e1938dceeb968abbe0bccb9e17077559d9f66fd737c6a31f1c62",
+        "normalization_translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "pcb": null,
+      "product_url": "https://www.adafruit.com/product/3351",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "3351",
+        "url": "https://www.adafruit.com/product/3351",
+        "currency": "USD",
+        "unit_price": 3.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Retail height 17 mm; native STEP depth 19.7 mm. Design to 19.7 mm. Factory speaker cable may be shortened by an adult; do not open the sealed acoustic enclosure.",
+        "Native mesh bearing annuli sampled at radius2.1mm every30degrees at all four holes: lowerZ1.0, upperZ2.7; standoffs support the lower bearing plane, not the body bounding-box minimum."
+      ],
+      "mounting": {
+        "kind": "flange_holes",
+        "holes_mm": [
+          [
+            3.5,
+            3
+          ],
+          [
+            66.5,
+            3
+          ],
+          [
+            3.5,
+            27
+          ],
+          [
+            66.5,
+            27
+          ]
+        ],
+        "hole_diameter_mm": 3.4,
+        "hole_tolerance_fraction": 0.2,
+        "source_url": "https://www.adafruit.com/product/3351",
+        "flange_bearing_local_z_mm": [
+          1.0,
+          2.7
+        ]
+      },
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%203351",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%203351",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%203351"
+      }
+    },
+    {
+      "id": "battery",
+      "manufacturer": "Adafruit",
+      "part_number": "328",
+      "description": "Protected 1S 2500 mAh battery",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        61.0,
+        47.7,
+        7.9
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/battery.stl",
+        "sha256": "7f5eb48bf9e72a1e1649dd665e9a4f58d8490bcc8f201de502fac5d47bff4a3c",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/328%202500mAh%20battery/328%202500mAh%20battery.step",
+        "source_git_blob_sha1": "33b19ee999aa0df9b36a1a0b7e26bd362b34e700",
+        "source_sha256": "fd09eff2cdb25962ae02105c606ddb63a55dbb365f3efa6e972367e49eaa9195",
+        "normalization_translation_mm": [
+          0.0,
+          47.7,
+          -0.0
+        ]
+      },
+      "pcb": null,
+      "product_url": "https://www.adafruit.com/product/328",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "328",
+        "url": "https://www.adafruit.com/product/328",
+        "currency": "USD",
+        "unit_price": 14.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Retail nominal 60 x 50 x 7.3 mm; STEP 61 x 47.7 x 7.9 mm. Reserve coordinate-wise maximum, then non-compressive clearance. Manufacturer maximum charging current 1.2 A; chosen charger defaults to 1 A."
+      ],
+      "clearance_envelope_mm": [
+        61,
+        50,
+        7.9
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%20328",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%20328",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%20328"
+      }
+    },
+    {
+      "id": "charger",
+      "manufacturer": "Adafruit",
+      "part_number": "6091",
+      "description": "BQ25185 1 A charger and power path",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        31.75,
+        26.386,
+        6.37
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/charger.stl",
+        "sha256": "cd4ce82f7a1876156ef9d1b3eb81f4d68cbba50306d63540f82dcf3ccf45b5b4",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/6091%20bq25185%20USB%20Charger/6091%20bq25185%20USB%20Charger.step",
+        "source_git_blob_sha1": "aa44c4f4fbca0cb7d92e9ccc3c2c152ebc6aad69",
+        "source_sha256": "83b5b96c6088e4452de7dd0382b527478b74e2fe9def1779dccf9003c6d3a7c3",
+        "normalization_translation_mm": [
+          0.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "pcb": {
+        "origin_in_model_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "size_mm": [
+          31.75,
+          25.4,
+          1.57
+        ],
+        "holes_mm": [
+          [
+            2.54,
+            2.54
+          ],
+          [
+            29.21,
+            2.54
+          ],
+          [
+            2.54,
+            22.86
+          ],
+          [
+            29.21,
+            22.86
+          ]
+        ]
+      },
+      "product_url": "https://www.adafruit.com/product/6091",
+      "quote": {
+        "supplier": "DigiKey",
+        "sku": "6091",
+        "url": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/6091/25805553",
+        "currency": "USD",
+        "unit_price": 6.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Default 4.2 V lithium chemistry and 1 A charging. Use LOAD/VSYS, not BAT, for the system. Adafruit listing out of stock; quoted DigiKey listing in stock on observed date.",
+        "Mounting-hole centres cross-checked against manufacturer Eagle PCB 6091.brd."
+      ],
+      "clearance_envelope_mm": [
+        32,
+        26.4,
+        7.2
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%206091",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%206091",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%206091"
+      }
+    },
+    {
+      "id": "power_switch",
+      "manufacturer": "Adafruit",
+      "part_number": "805",
+      "description": "SPDT slide switch, EN-to-GND only",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        11.7,
+        4.0,
+        8.0
+      ],
+      "dimensional_evidence": "manufacturer_STEP_nominal",
+      "model": {
+        "path": "enclosure/integrated/models/power_switch.stl",
+        "sha256": "03cc749bdd83689c8625d9d8dce1917ed2e4e5ded84d5ff17eed5fb179f04f27",
+        "license": "MIT (Adafruit Industries)",
+        "source_url": "https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/main/805%20slide%20switch/805%20slide%20switch.step",
+        "source_git_blob_sha1": "17b9a4f04afc2a7916fae7a06e411051df15be39",
+        "source_sha256": "192359d794292afb0ccaab33378a2671377e973f2e7fa6e93527f8b6fa5d2a4c",
+        "normalization_translation_mm": [
+          -0.0,
+          4.0,
+          6.3
+        ]
+      },
+      "pcb": null,
+      "product_url": "https://www.adafruit.com/product/805",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "805",
+        "url": "https://www.adafruit.com/product/805",
+        "currency": "USD",
+        "unit_price": 0.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%20805",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%20805",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%20805"
+      }
+    },
+    {
+      "id": "mcu",
+      "manufacturer": "Espressif",
+      "part_number": "ESP32-S3-DevKitC-1-N16R8",
+      "pcb_revision": "V1.1",
+      "description": "16 MB flash / 8 MB OPI PSRAM dev board",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        25.4,
+        62.865,
+        0
+      ],
+      "dimensional_evidence": "manufacturer_2D_only_height_unverified",
+      "clearance_envelope_mm": [
+        26,
+        64,
+        14.5
+      ],
+      "pcb": {
+        "origin_in_model_mm": [
+          0.3,
+          0.55,
+          10
+        ],
+        "size_mm": [
+          25.4,
+          62.865,
+          1.6
+        ],
+        "holes_mm": []
+      },
+      "product_url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+      "drawing_url": "https://dl.espressif.com/dl/schematics/esp_idf/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.pdf",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "356-ESP32S3DKC1N16R8",
+        "url": "https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-DevKitC-1-N16R8",
+        "currency": "USD",
+        "unit_price": 13.24,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "out_of_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "2D drawing text says 62.74 mm; DXF outline measures 62.865 mm. Cradle reserves 64 mm. No assembled-height drawing verified: 14.5 mm is a design reservation, NOT a measured module dimension.",
+        "V1.1 RGB is GPIO38; integrated firmware must use GPIO48 for TFT DC. Do not substitute initial PCB revision without pin/profile review.",
+        "Power from common external regulated 3V3/GND only. Do not simultaneously connect either native USB/5V input. Service programming requires power isolation."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Espressif%20ESP32-S3-DevKitC-1-N16R8",
+        "mouser": "https://www.mouser.com/c/?q=Espressif%20ESP32-S3-DevKitC-1-N16R8",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Espressif%20ESP32-S3-DevKitC-1-N16R8"
+      }
+    },
+    {
+      "id": "regulator",
+      "manufacturer": "Pololu",
+      "part_number": "S9V11F3S5C3",
+      "supplier_sku": "2873",
+      "description": "3.3 V buck-boost with fixed 3 V undervoltage cutoff",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        12.7,
+        15.3,
+        4.3
+      ],
+      "dimensional_evidence": "manufacturer_assembled_dimensions",
+      "product_url": "https://www.pololu.com/product/2873",
+      "mounting": {
+        "kind": "edge_cradle",
+        "clearance_mm": 0.35
+      },
+      "quote": {
+        "supplier": "Pololu",
+        "sku": "2873",
+        "url": "https://www.pololu.com/product/2873",
+        "currency": "USD",
+        "unit_price": 5.95,
+        "quantity_break": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Default 3.3 V; do not jumper SEL to 5 V. Approximately 1.5 A typical near VIN=VOUT, NOT guaranteed 2 A. Startup limited ~700 mA; delay heavy loads.",
+        "EN pulled to GND by power switch; never drive EN HIGH or bypass the fixed undervoltage divider. Approximate cutoff 3.0 V, restart 3.4 V."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Pololu%20S9V11F3S5C3",
+        "mouser": "https://www.mouser.com/c/?q=Pololu%20S9V11F3S5C3",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Pololu%20S9V11F3S5C3"
+      }
+    },
+    {
+      "id": "controls",
+      "manufacturer": "Open Conteuse",
+      "part_number": "CONTROLS-V0.1",
+      "description": "Common routed controls daughterboard, variant population",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        70,
+        65,
+        1.6
+      ],
+      "dimensional_evidence": "native_KiCad",
+      "source_path": "hardware/controls/controls.kicad_pcb",
+      "pcb": {
+        "origin_in_model_mm": [
+          0,
+          0,
+          0
+        ],
+        "size_mm": [
+          70,
+          65,
+          1.6
+        ],
+        "holes_mm": [
+          [
+            4,
+            4
+          ],
+          [
+            66,
+            4
+          ],
+          [
+            4,
+            61
+          ],
+          [
+            66,
+            61
+          ]
+        ]
+      },
+      "product_url": "https://github.com/arno1190/open-conteuse/tree/main/hardware/controls",
+      "quote": {
+        "status": "requires_fabrication_quote",
+        "unit_price": null
+      },
+      "source_notes": [
+        "Switches face front; solder tails <=1.5 mm. PCB geometry is checked, not physically manufactured."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Open%20Conteuse%20CONTROLS-V0.1",
+        "mouser": "https://www.mouser.com/c/?q=Open%20Conteuse%20CONTROLS-V0.1",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Open%20Conteuse%20CONTROLS-V0.1"
+      }
+    },
+    {
+      "id": "mute_latch",
+      "manufacturer": "Open Conteuse",
+      "part_number": "MUTE-LATCH-V1",
+      "description": "Codec event latch and speaker-enable gate, 3.3 V HC logic",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        45,
+        45,
+        1.6
+      ],
+      "clearance_envelope_mm": [
+        45,
+        45,
+        10
+      ],
+      "dimensional_evidence": "native_KiCad_with_component_height_reservation",
+      "source_path": "hardware/integration/mute-latch/mute-latch.kicad_pcb",
+      "pcb": {
+        "origin_in_model_mm": [
+          0,
+          0,
+          0
+        ],
+        "size_mm": [
+          45,
+          45,
+          1.6
+        ],
+        "holes_mm": [
+          [
+            4,
+            4
+          ],
+          [
+            41,
+            4
+          ],
+          [
+            4,
+            41
+          ],
+          [
+            41,
+            41
+          ]
+        ]
+      },
+      "product_url": "https://github.com/arno1190/open-conteuse/tree/main/hardware/integration/mute-latch",
+      "quote": {
+        "status": "requires_fabrication_quote",
+        "unit_price": null
+      },
+      "source_notes": [
+        "Solder tails <=1.5 mm. PDIP/TO92/radial component height reservation 10 mm; mount all components flush as specified.",
+        "Independent loop-stall mute after codec configuration; not a mechanical insertion switch or protection against codec reset/wire failure."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Open%20Conteuse%20MUTE-LATCH-V1",
+        "mouser": "https://www.mouser.com/c/?q=Open%20Conteuse%20MUTE-LATCH-V1",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Open%20Conteuse%20MUTE-LATCH-V1"
+      }
+    },
+    {
+      "id": "component-SN74HC74N",
+      "manufacturer": "Texas Instruments",
+      "part_number": "SN74HC74N",
+      "description": "SN74HC74N",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Texas-Instruments/SN74HC74N?qs=p6YqzpSxLIzMm7Vo1aTZ0w%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "595-SN74HC74N",
+        "url": "https://www.mouser.com/en/ProductDetail/Texas-Instruments/SN74HC74N?qs=p6YqzpSxLIzMm7Vo1aTZ0w%3D%3D",
+        "currency": "USD",
+        "unit_price": "1.13",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 9096,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        ""
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Texas%20Instruments%20SN74HC74N",
+        "mouser": "https://www.mouser.com/c/?q=Texas%20Instruments%20SN74HC74N",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Texas%20Instruments%20SN74HC74N"
+      }
+    },
+    {
+      "id": "component-SN74HC08N",
+      "manufacturer": "Texas Instruments",
+      "part_number": "SN74HC08N",
+      "description": "SN74HC08N",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Texas-Instruments/SN74HC08N?qs=UGVLDq%2F29uh3etwCLMoeTA%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "595-SN74HC08N",
+        "url": "https://www.mouser.com/en/ProductDetail/Texas-Instruments/SN74HC08N?qs=UGVLDq%2F29uh3etwCLMoeTA%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.79",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 6371,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        ""
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Texas%20Instruments%20SN74HC08N",
+        "mouser": "https://www.mouser.com/c/?q=Texas%20Instruments%20SN74HC08N",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Texas%20Instruments%20SN74HC08N"
+      }
+    },
+    {
+      "id": "component-2N3904BU",
+      "manufacturer": "onsemi",
+      "part_number": "2N3904BU",
+      "description": "2N3904BU",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/onsemi/2N3904BU?qs=or4AE2qAS%252Bd0Jdpn%2F8ktKg%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "512-2N3904BU",
+        "url": "https://www.mouser.com/en/ProductDetail/onsemi/2N3904BU?qs=or4AE2qAS%252Bd0Jdpn%2F8ktKg%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.29",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 183560,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        ""
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=onsemi%202N3904BU",
+        "mouser": "https://www.mouser.com/c/?q=onsemi%202N3904BU",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=onsemi%202N3904BU"
+      }
+    },
+    {
+      "id": "component-MRS25000C1002FCT00",
+      "manufacturer": "Vishay / BC Components",
+      "part_number": "MRS25000C1002FCT00",
+      "description": "MRS25000C1002FCT00",
+      "quantity": {
+        "mini": 6,
+        "explore": 6
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Vishay-BC-Components/MRS25000C1002FCT00?qs=H30XFsNYD%2FEwip42ZXddDQ%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "594-MRS25000C1002FCT",
+        "url": "https://www.mouser.com/en/ProductDetail/Vishay-BC-Components/MRS25000C1002FCT00?qs=H30XFsNYD%2FEwip42ZXddDQ%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.24",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 28536,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "",
+        "Five 10k resistors on mute PCB plus mandatory sixth resistor locally at MAX98357 SD/GND, so a disconnected gate wire remains muted."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Vishay%20/%20BC%20Components%20MRS25000C1002FCT00",
+        "mouser": "https://www.mouser.com/c/?q=Vishay%20/%20BC%20Components%20MRS25000C1002FCT00",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Vishay%20/%20BC%20Components%20MRS25000C1002FCT00"
+      }
+    },
+    {
+      "id": "component-MRS25000C1003FCT00",
+      "manufacturer": "Vishay / BC Components",
+      "part_number": "MRS25000C1003FCT00",
+      "description": "MRS25000C1003FCT00",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Vishay-BC-Components/MRS25000C1003FCT00?qs=H30XFsNYD%2FEhT0WfRQ%2FARA%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "594-MRS25000C1003FCT",
+        "url": "https://www.mouser.com/en/ProductDetail/Vishay-BC-Components/MRS25000C1003FCT00?qs=H30XFsNYD%2FEhT0WfRQ%2FARA%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.24",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 13503,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        ""
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Vishay%20/%20BC%20Components%20MRS25000C1003FCT00",
+        "mouser": "https://www.mouser.com/c/?q=Vishay%20/%20BC%20Components%20MRS25000C1003FCT00",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Vishay%20/%20BC%20Components%20MRS25000C1003FCT00"
+      }
+    },
+    {
+      "id": "component-C315C104K5R5TA",
+      "manufacturer": "KEMET",
+      "part_number": "C315C104K5R5TA",
+      "description": "C315C104K5R5TA",
+      "quantity": {
+        "mini": 2,
+        "explore": 2
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/KEMET/C315C104K5R5TA?qs=AHmto%252BvZ7OG2Mx7li%2Fn8YQ%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "80-C315C104K5R5TA",
+        "url": "https://www.mouser.com/en/ProductDetail/KEMET/C315C104K5R5TA?qs=AHmto%252BvZ7OG2Mx7li%2Fn8YQ%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.62",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 43,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Lead pitch is2.54mm, NOT5mm",
+        "2.54 mm lead pitch: matched by project-local MuteLatch capacitor footprint, not the old 5 mm footprint."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=KEMET%20C315C104K5R5TA",
+        "mouser": "https://www.mouser.com/c/?q=KEMET%20C315C104K5R5TA",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=KEMET%20C315C104K5R5TA"
+      }
+    },
+    {
+      "id": "component-TSW-107-07-G-S",
+      "manufacturer": "Samtec",
+      "part_number": "TSW-107-07-G-S",
+      "description": "TSW-107-07-G-S",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Samtec/TSW-107-07-G-S?qs=iT52DjcXuduhnXKBhaMEyg%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "200-TSW10707GS",
+        "url": "https://www.mouser.com/en/ProductDetail/Samtec/TSW-107-07-G-S?qs=iT52DjcXuduhnXKBhaMEyg%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.63",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 4487,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        ""
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Samtec%20TSW-107-07-G-S",
+        "mouser": "https://www.mouser.com/c/?q=Samtec%20TSW-107-07-G-S",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Samtec%20TSW-107-07-G-S"
+      }
+    },
+    {
+      "id": "component-TSW-109-07-G-S",
+      "manufacturer": "Samtec",
+      "part_number": "TSW-109-07-G-S",
+      "description": "TSW-109-07-G-S",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "custom_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Samtec/TSW-109-07-G-S?qs=FESYatJ8odKgJbMoqjluRA%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "200-TSW10907GS",
+        "url": "https://www.mouser.com/en/ProductDetail/Samtec/TSW-109-07-G-S?qs=FESYatJ8odKgJbMoqjluRA%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.82",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 2138,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        ""
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Samtec%20TSW-109-07-G-S",
+        "mouser": "https://www.mouser.com/c/?q=Samtec%20TSW-109-07-G-S",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Samtec%20TSW-109-07-G-S"
+      }
+    },
+    {
+      "id": "component-B3F-1000",
+      "manufacturer": "Aratas (formerly Omron Components)",
+      "part_number": "B3F-1000",
+      "description": "B3F-1000",
+      "quantity": {
+        "mini": 5,
+        "explore": 8
+      },
+      "assembly_scope": "controls_board_component",
+      "product_url": "https://www.mouser.com/en/ProductDetail/Aratas/B3F-1000?qs=lK7M36XCk6JQHckSc1xIsg%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "653-B3F-1000",
+        "url": "https://www.mouser.com/en/ProductDetail/Aratas/B3F-1000?qs=lK7M36XCk6JQHckSc1xIsg%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.35",
+        "quantity_break": 1,
+        "minimum_order_quantity": 1,
+        "stock": "in_stock",
+        "observed_stock_quantity": 23891,
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Former-Omron brand continuity corroborated by DigiKeySW400-ND primarypage."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Aratas%20%28formerly%20Omron%20Components%29%20B3F-1000",
+        "mouser": "https://www.mouser.com/c/?q=Aratas%20%28formerly%20Omron%20Components%29%20B3F-1000",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Aratas%20%28formerly%20Omron%20Components%29%20B3F-1000"
+      }
+    },
+    {
+      "id": "case_screw",
+      "manufacturer": "TR Fastenings",
+      "part_number": "TR00005514-000",
+      "description": "A2 M2.5 x 6 ISO4762 / DIN912 socket-cap screw",
+      "quantity": {
+        "mini": 43,
+        "explore": 43
+      },
+      "dimensions_mm": {
+        "under_head_length": 6,
+        "head_diameter": 4.5,
+        "head_height": 2.5,
+        "hex_key": 2
+      },
+      "product_url": "https://uk.farnell.com/tr-fastenings/tr00005514-000/screw-cap-head-hex-m2-5x6-ss-a2/dp/4156915",
+      "drawing_url": "https://www.farnell.com/cad/3930415.pdf",
+      "quote": {
+        "supplier": "Farnell UK",
+        "sku": "4156915",
+        "url": "https://uk.farnell.com/tr-fastenings/tr00005514-000/screw-cap-head-hex-m2-5x6-ss-a2/dp/4156915",
+        "currency": "GBP",
+        "pack_price": "25.81",
+        "pack_quantity": 100,
+        "minimum_order_packs": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "42 per unit is provisional allocation until generated assembly count is checked; do not use it as the final order count. Screw heads are outside the flat rear lid; assembled height includes them."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=TR%20Fastenings%20TR00005514-000",
+        "mouser": "https://www.mouser.com/c/?q=TR%20Fastenings%20TR00005514-000",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=TR%20Fastenings%20TR00005514-000"
+      }
+    },
+    {
+      "id": "hex_nut",
+      "manufacturer": "RS PRO",
+      "part_number": "527-224",
+      "description": "A2 M2.5 x 0.45 DIN934 / ISO4032 plain hex nut",
+      "quantity": {
+        "mini": 43,
+        "explore": 43
+      },
+      "dimensions_mm": {
+        "across_flats_min": 4.82,
+        "across_flats_max": 5,
+        "height_min": 1.75,
+        "height_max": 2
+      },
+      "product_url": "https://uk.rs-online.com/web/p/hex-nuts/0527224",
+      "drawing_url": "https://docs.rs-online.com/6260/A700000007925536.pdf",
+      "quote": {
+        "supplier": "RS UK",
+        "sku": "527-224",
+        "url": "https://uk.rs-online.com/web/p/hex-nuts/0527224",
+        "currency": "GBP",
+        "pack_price": "11.26",
+        "pack_quantity": 250,
+        "minimum_order_packs": 1,
+        "observed_on": "2026-11-17",
+        "stock": "in_stock",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Plain 2 mm-high nut. DIN985 nyloc is NOT a substitute: its 3.8 mm height does not fit these pockets."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=RS%20PRO%20527-224",
+        "mouser": "https://www.mouser.com/c/?q=RS%20PRO%20527-224",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=RS%20PRO%20527-224"
+      }
+    },
+    {
+      "id": "memory_card",
+      "manufacturer": "SanDisk",
+      "part_number": "SDSDQAF3-008G-I",
+      "description": "8 GB industrial microSD; standard 15 x 11 x 1 mm card envelope",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "dimensions_mm": [
+        15,
+        11,
+        1
+      ],
+      "product_url": "https://www.westerndigital.com/products/memory-cards/industrial-sd-microsd",
+      "quote": {
+        "status": "requires_supplier_quote",
+        "unit_price": null
+      },
+      "source_notes": [
+        "Exact industrial SKU, not an unspecified brand-swapped retail card. Verify availability before procurement; no unverified unit price is inserted."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=SanDisk%20SDSDQAF3-008G-I",
+        "mouser": "https://www.mouser.com/c/?q=SanDisk%20SDSDQAF3-008G-I",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=SanDisk%20SDSDQAF3-008G-I"
+      }
+    },
+    {
+      "id": "wire_power",
+      "manufacturer": "Adafruit",
+      "part_number": "3111",
+      "description": "22AWG stranded six 25ft spools",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "consumable",
+      "product_url": "https://www.adafruit.com/product/3111",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "3111",
+        "url": "https://www.adafruit.com/product/3111",
+        "currency": "USD",
+        "unit_price": "19.95",
+        "stock": "in_stock",
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Cut lengths and strain relief require physical assembly validation; do not compress the pouch cell."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%203111",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%203111",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%203111"
+      },
+      "purchase_scope": "shared_project_pack"
+    },
+    {
+      "id": "wire_signal",
+      "manufacturer": "Adafruit",
+      "part_number": "2517",
+      "description": "26AWG stranded silicone black25ft spool",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "consumable",
+      "product_url": "https://www.adafruit.com/product/2517",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "2517",
+        "url": "https://www.adafruit.com/product/2517",
+        "currency": "USD",
+        "unit_price": "4.95",
+        "stock": "in_stock",
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Cut lengths and strain relief require physical assembly validation; do not compress the pouch cell."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%202517",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%202517",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%202517"
+      },
+      "purchase_scope": "shared_project_pack"
+    },
+    {
+      "id": "battery_strap",
+      "manufacturer": "HellermannTyton",
+      "part_number": "T18L0C2",
+      "description": "205 x 2.5 mm PA66 tie for rigid battery cage",
+      "quantity": {
+        "mini": 2,
+        "explore": 2
+      },
+      "assembly_scope": "consumable",
+      "product_url": "https://www.mouser.com/en/ProductDetail/HellermannTyton/T18L0C2?qs=5aG0NVq1C4wUudKezEtVDQ%3D%3D",
+      "quote": {
+        "supplier": "Mouser",
+        "sku": "T18L0C2",
+        "url": "https://www.mouser.com/en/ProductDetail/HellermannTyton/T18L0C2?qs=5aG0NVq1C4wUudKezEtVDQ%3D%3D",
+        "currency": "USD",
+        "unit_price": "0.13",
+        "stock": "in_stock",
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Cut lengths and strain relief require physical assembly validation; do not compress the pouch cell."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=HellermannTyton%20T18L0C2",
+        "mouser": "https://www.mouser.com/c/?q=HellermannTyton%20T18L0C2",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=HellermannTyton%20T18L0C2"
+      }
+    },
+    {
+      "id": "petg",
+      "manufacturer": "Prusa Research",
+      "part_number": "Prusament PETG Jet Black 1.75 mm 1 kg",
+      "description": "Rigid printed case/tray/retainers/caps material",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "print_material",
+      "product_url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+      "quote": {
+        "supplier": "Prusa Research",
+        "sku": "Prusament PETG Jet Black 1kg",
+        "url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+        "currency": "EUR",
+        "pack_price": "21.99",
+        "pack_quantity": 1,
+        "minimum_order_packs": 1,
+        "stock": "in_stock",
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "One spool is a shared first-purchase pack; required print grams must be determined by slicing. Observed \u20ac26.39 including assumed French20%VAT, \u20ac21.99 excluding VAT."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Prusa%20Research%20Prusament%20PETG%20Jet%20Black%201.75%20mm%201%20kg",
+        "mouser": "https://www.mouser.com/c/?q=Prusa%20Research%20Prusament%20PETG%20Jet%20Black%201.75%20mm%201%20kg",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Prusa%20Research%20Prusament%20PETG%20Jet%20Black%201.75%20mm%201%20kg"
+      },
+      "purchase_scope": "shared_project_pack"
+    },
+    {
+      "id": "wire_signal_white",
+      "manufacturer": "Adafruit",
+      "part_number": "2518",
+      "description": "26AWG stranded silicone white25ft spool",
+      "quantity": {
+        "mini": 1,
+        "explore": 1
+      },
+      "assembly_scope": "consumable",
+      "product_url": "https://www.adafruit.com/product/2518",
+      "quote": {
+        "supplier": "Adafruit",
+        "sku": "2518",
+        "url": "https://www.adafruit.com/product/2518",
+        "currency": "USD",
+        "unit_price": "4.95",
+        "stock": "in_stock",
+        "observed_on": "2026-11-17",
+        "tax_included": false,
+        "shipping_included": false
+      },
+      "source_notes": [
+        "Cut lengths and strain relief require physical assembly validation; do not compress the pouch cell."
+      ],
+      "sourcing_queries": {
+        "digikey": "https://www.digikey.com/en/products?keywords=Adafruit%202518",
+        "mouser": "https://www.mouser.com/c/?q=Adafruit%202518",
+        "aliexpress": "https://www.aliexpress.com/wholesale?SearchText=Adafruit%202518"
+      },
+      "purchase_scope": "shared_project_pack"
+    }
+  ],
+  "quote_requirements": {
+    "delivery_country": null,
+    "delivery_postcode": null,
+    "quantity_mini": 1,
+    "quantity_explore": 1,
+    "shipping_quote_status": "awaiting_delivery_details",
+    "orders_authorized": false
+  },
+  "notes": [
+    "Published source dimensions and geometrical clearances are not physical validation.",
+    "No purchases, fabrication submissions or printed prototypes are authorized by this catalogue.",
+    "All Adafruit native CAD-derived meshes retain the supplied MIT licence and source hashes."
+  ],
+  "source_evidence": {
+    "mute_quotes": "hardware/integration/vendor_commodity_evidence.json",
+    "fastener_quotes": "hardware/integration/vendor_fastener_evidence.json",
+    "consumables": "hardware/integration/vendor_consumable_evidence.json"
+  }
+}

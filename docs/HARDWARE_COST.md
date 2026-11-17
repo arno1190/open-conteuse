@@ -1,55 +1,33 @@
-# Hardware budget revision — 17 November 2026
+# Integrated hardware cost — 17 November 2026
 
-The original EUR 70–110 Mini / EUR 85–135 Explore targets are too low for the currently selected branded breakout modules plus a complete battery/headphone/power path. This estimate prices **one complete unit**, including a printed shell, rather than only the USB-powered bench electronics. Unselected circuitry receives an explicit allowance; it is not a frozen or purchasable final BOM.
+The detailed successor BOM is [hardware/integration/BOM.csv](../hardware/integration/BOM.csv), with exact MPNs, supplier offers and search links on every row. Its [machine-readable status](../hardware/integration/status.json) supersedes the earlier modular allowances for this revision.
 
-## Current supplier evidence
+The current modular design replaces the earlier UDA1334A/headphone and power allowances with exact TLV320DAC3100, latch, charger and regulator selections. Explore uses Adafruit2090 and omits NFC. Historical figures remain in Git history.
 
-Public Adafruit product pages checked on 17 November 2026:
+| Build | Known USD purchase | Known GBP purchase | Known EUR purchase |
+| --- | ---: | ---: | ---: |
+| One Mini, first purchase |140.78|37.07|21.99|
+| One Explore, first purchase |131.83|37.07|21.99|
+| One Mini + one Explore, shared packs |242.76|37.07|21.99|
 
-| Selected module | Listed USD, before tax/shipping | Source |
-| --- | ---: | --- |
-| PN532 v1.6 reader | $39.95 | https://www.adafruit.com/product/364 |
-| 2.8-inch ILI9341 display | $29.95 | https://www.adafruit.com/product/1770 |
-| UDA1334A line DAC | $6.95 | https://www.adafruit.com/product/3678 |
-| MAX98357A speaker amp | $5.95 | https://www.adafruit.com/product/3006 |
-| 3 V microSD breakout | $3.50 | https://www.adafruit.com/product/4682 |
+Do not add the single-device rows to price a combined build: shared wire, fastener and filament packs would be counted twice.
 
-ECB daily reference dated 2026-11-17: **EUR 1 = USD 1.0989** ([ECB XML](https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml)). For the indicative VAT-inclusive equivalent, use `USD / 1.0989 × 1.20`, assuming French 20% VAT. Product amounts below are rounded allowances for small-quantity European sourcing/markup; they are not distributor quotes or guaranteed landed prices. Shipping/minimum batches are budgeted separately. Tools, labour, instruments, certification and development time are excluded.
+For **one Mini plus one Explore**,  the known minimum purchase-pack amounts are **US$242.76 + £37.07 + €21.99**, excluding tax and shipping. Keep currencies separate: no unverified exchange rate or fictitious landed total is implied. The USD amount includes two sets of electronics, the exact latch/controls components, one shared22AWG wire kit, two shared26AWG spools and four cage ties. GBP purchases are one100-pack of M2.5×6 screws (£25.81) and one250-pack of plain M2.5 nuts (£11.26), rather than charging fractional pack usage. EUR is one shared1kg PETG spool, subject to actual slicer consumption (not yet known). The PETG observed French gross price was€26.39/€21.99exVAT; destination may change tax.
 
-## Per-unit parts/material allowances, EUR including assumed VAT
+**This is a known subtotal, not an exact complete quote.** Two custom controls PCBs, two mute-latch PCBs and two exact SanDisk8GB cards remain unquoted. Delivery country/postcode, destination tax, shipping, battery freight and any supplier minimum surcharges are unknown. For budgeting only, retain an additional **US$40–100 allowance** for those unquoted PCB/card items and prototype waste; this allowance is not supplier evidence. Assembly labour, printer time/electricity, instruments and tools are excluded. Shipping/tax can be substantial across these suppliers.
 
-| Item | Mini | Explore, without optional NFC |
-| --- | ---: | ---: |
-| Exact N16R8 dev board | 18–28 | 18–28 |
-| microSD memory card | 8–14 | 8–14 |
-| microSD breakout | 5–7 | 5–7 |
-| Selected PN532 reader | 44–55 | — |
-| Selected display | — | 33–45 |
-| UDA1334A line DAC | 8–11 | 8–11 |
-| MAX98357A speaker amp | 7–10 | 7–10 |
-| Headphone amplifier/mute components — unselected | 8–18 | 8–18 |
-| Speaker | 4–9 | 4–9 |
-| Protected battery pack | 15–25 | 15–25 |
-| USB-C, charger/power path, regulator/protection — unselected | 12–22 | 12–22 |
-| Controls PCB, switches, harness/header | 12–25 | 13–28 |
-| Printed shell/plungers, material and print allowance | 6–15 | 6–15 |
-| Jack, wiring and fasteners | 6–12 | 6–12 |
-| **Arithmetic total** | **153–251** | **143–244** |
+Adafruit364 and the exact EspressifN16R8 MCU were unavailable at the observed suppliers. Their published prices remain in the subtotal for comparability, but are not currently executable offers. Other identified offers are dated snapshots; availability, discount and price can change. Do not buy an apparently similar board without reviewing its dimensions, power behavior and pinout.
 
-Explore adds an allowance of EUR 1–3 for the three additional switches. Add EUR 44–55 for Explore's optional selected NFC reader: **EUR 187–299** total. This breakout display also includes a microSD socket; later validated integration could remove the separate SD breakout and save roughly EUR 5–7 per Explore. That saving is not assumed above.
+Final landed quote requires delivery details, available authorized sellers for the unavailable exact modules, current fabrication quotes and exact memory-card offer, followed by supplier basket totals. No purchase, basket checkout or fabrication submission was performed.
 
-The headphone line uses an allowance for a small final circuit, **not the TI evaluation board** mentioned as a bench candidate in the BOM. No EVM price is included. Buying an EVM, outsourcing printing, or fabricating a separate custom audio/power carrier during development can add materially to prototype spending. Exact audio/power parts must be selected before a final procurement total can be quoted.
+## Indicative complete prototype budget
 
-## Practical first-prototype budget
+For planning only, assume USD1=EUR0.91, GBP1=EUR1.18,20%VAT on parts, USD20–50 perdevice for unquoted PCBs/cards/waste, and EUR30–65 shipping perindividualbuild or EUR40–90 for the combinedbuild. These are **explicit budget assumptions, not current FX evidence or supplier quotes**. Rounded first-purchase budgets are:
 
-| Build | Rounded complete-unit parts/materials | First-prototype cash allowance |
-| --- | ---: | ---: |
-| Mini | 155–250 | **185–315** |
-| Explore without NFC | 145–245 | **175–310** |
-| Explore with NFC | 190–300 | **220–365** |
-| Mini + Explore without Explore NFC | 300–500 | **340–590 combined** |
-| Mini + Explore both with NFC | 340–550 | **380–640 combined** |
+| Build | Indicative cash budget, EUR |
+| --- | ---: |
+| Mini |285–355|
+| Explore, no NFC |275–345|
+| One Mini + one Explore, shared packs |430–550|
 
-The single-unit prototype column adds roughly EUR 30–65 for shipping, minimum PCB quantity, fit coupons and basic spares; the combined builds share an approximate EUR 40–90 allowance. These are planning ranges, not assurances of available inventory, exact import fees or iteration count. A redesign/reprint, evaluation board or additional carrier fabrication can exceed them. No purchases or fabrication orders were made.
-
-The largest obvious cost reduction is replacing the USD 39.95 Adafruit PN532 with a cheaper PN532 module. That is **not** a drop-in cost revision: exact supply/logic levels, antenna, firmware interface, dimensions and mounting would need to be selected and rechecked. A future consolidated PCB might reduce recurring module cost but increases development/fabrication work. Do not silently substitute those savings into the current branded-module BOM.
+This includes minimum packs rather than fractional consumed material. It excludes labour, printer/tools/instruments, certification and additional redesign iterations. Different delivery taxes, exchange rates, battery freight or unavailable-item substitutions can exceed the range. The original EUR70–110/EUR85–135 targets are not credible for this branded-module prototype. A cheaper PN532 or consolidated PCB would require a separate electrical/mechanical redesign before savings can be counted.
