@@ -43,3 +43,8 @@ Merged PR #1 on 2026-11-17 after successful host/firmware/CAD checks and explici
 ## Integrated modular revision (2026-11-17)
 
 Detailed catalogue, sourcing/search links, manufacturer-CAD meshes and conservative envelopes now drive `hardware/integration/layout.json` and `enclosure/integrated/integrated.scad`. This supersedes the original shell for component integration. New 45×45 mm independent mute-latch PCB is routed with native KiCad sources. Prototype STL exports and source-derived PNGs are provided; exact quote gaps, unavailable parts, uncertain MCU assembled height/switch actuator, integrated codec firmware and all physical validation remain release gates. See `hardware/integration/README.md`; do not interpret downloadable STLs as a verified-fit production release.
+
+
+## Visual design atlas 2026-11-18
+
+The combined Mini/Explore atlas adds72 shaded source-derived PNG views, including16 section cuts, native custom-board detail and service/mount close-ups, plus a printable PDF and full-resolution figure index in `docs/visual-atlas`. Colours distinguish PCB laminate, packages, metal and proposed printed finishes. Rigid native-board transforms preserve handedness; exact solid clipping preserves hollow sections. Regression checks cover case section area and all eight actuator centres. The source/artifact and complete-render receipts bind the exported views to the reviewed inputs. Existing manufacturing and firmware sources remain the baseline; received-part dimensions, slicing and all physical validation remain pending.
