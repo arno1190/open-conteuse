@@ -48,3 +48,11 @@ Detailed catalogue, sourcing/search links, manufacturer-CAD meshes and conservat
 ## Visual design atlas 2026-11-18
 
 The combined Mini/Explore atlas adds72 shaded source-derived PNG views, including16 section cuts, native custom-board detail and service/mount close-ups, plus a printable PDF and full-resolution figure index in `docs/visual-atlas`. Colours distinguish PCB laminate, packages, metal and proposed printed finishes. Rigid native-board transforms preserve handedness; exact solid clipping preserves hollow sections. Regression checks cover case section area and all eight actuator centres. The source/artifact and complete-render receipts bind the exported views to the reviewed inputs. Existing manufacturing and firmware sources remain the baseline; received-part dimensions, slicing and all physical validation remain pending.
+
+## Compact hardware and Telmi streams 2026-11-18
+
+The owner requests a Miyoo Mini sized, much cheaper successor and a separate console-software assessment. `docs/research/COMPACT_HARDWARE.md` records65×95×22mm screenless Mini and65×100×24mm2.4inch Explore **targets**, integration choices, cost assumptions and a same-scale comparison. `enclosure/compact-study` is an envelope study, not a fitted or printable compact design. The previous112×210×50mm manufacturing baseline and atlas remain intact.
+
+`docs/research/TELMI_ASSESSMENT.md` assesses pinned TelmiOS/Sync sources against the full brief. Upstream already has desktop RSS podcast import. The preferred first experiment is an approved-content export bridge to stock Telmi, with a small GPL device fork/integration later for safe library activation, authenticated wireless sync or radio. Original Mini has no Wi-Fi; model/revision compatibility must be checked. The pinned upstream build produces ARM binaries, with an unresolved libbz2 linker-search warning and no device runtime proof; see `hardware/compact/verification.json`.
+
+Next: freeze compact card interaction, exact thin speaker/cell, display outline and hardware mute/power design before new KiCad placement; separately implement and fixture-test the Telmi export subset and storage-recovery protocol. No remote fork, purchasing or fabrication order was performed. Physical validation remains pending.

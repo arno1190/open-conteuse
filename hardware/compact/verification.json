@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-18",
+  "telmi_source_commit": "465fdb41bc83d628266e3e349ca2686ff0d301a6",
+  "telmi_sync_review_commit": "2efd1afe716d5a2a1474f750b6ba39e434f21681",
+  "toolchain": "aemiii91/miyoomini-toolchain@sha256:a8da1021449c80c0ccb75e263f1dfc75b5a004278fefa8a54151e55698a352f4",
+  "platform": "miyoomini",
+  "network_during_compile": "disabled",
+  "make_exit": 0,
+  "binaries": [
+    {
+      "name": "axp",
+      "architecture": "ELF32 little-endian ARM EABI5 hard-float",
+      "bytes": 5564,
+      "sha256": "839dd07d6b95fb9fe5c6014f850b170cc1f8b8f1b084fd5b78d86befc5d355c1"
+    },
+    {
+      "name": "batmon",
+      "architecture": "ELF32 little-endian ARM EABI5 hard-float",
+      "bytes": 26368,
+      "sha256": "7bedd33a308cee70ea2cc9a7e90420fa06f2beecf33e1a57e103d4d7a5191e3d"
+    },
+    {
+      "name": "bootScreen",
+      "architecture": "ELF32 little-endian ARM EABI5 hard-float",
+      "bytes": 46892,
+      "sha256": "330ebb221ad327f7547a734b44d5517aae0b96d9bead4edd2b0b255f24d7c4d2"
+    },
+    {
+      "name": "chargingState",
+      "architecture": "ELF32 little-endian ARM EABI5 hard-float",
+      "bytes": 60644,
+      "sha256": "447a2215c6191f73b6550da6406abc8184b189b484cef0a316269a301d4c904a"
+    },
+    {
+      "name": "storyTeller",
+      "architecture": "ELF32 little-endian ARM EABI5 hard-float",
+      "bytes": 114236,
+      "sha256": "d12b08d60ecd6d76ff2e22c81666b9f1c8cd29d95ddfd2a11913abf1fcbdf79c"
+    }
+  ],
+  "binary_distribution": false,
+  "runtime_test": "not_run_no_console",
+  "warnings": [
+    "Linker reports libbz2.so.1.0 required by libSDL2_ttf.so not found in link search paths; actual device dependency closure not validated.",
+    "The legacy ONION_VERSION compile macro falls back to1.0.0 in child makes; source revision and root Telmi version are pinned separately."
+  ],
+  "host_tests": 39,
+  "existing_esp32_firmware_builds": [
+    "mini",
+    "explore",
+    "mini-bench-audio",
+    "explore-bench-audio"
+  ],
+  "compact_CAD_check": "OpenSCAD hardwarnings CSG export passed; envelope-only, no fitted PCB/enclosure",
+  "physical_validation": "pending",
+  "no_remote_fork_or_orders": true,
+  "reproduction_command": "source /root/.bashrc; mkdir -p cache; make PLATFORM=miyoomini dist",
+  "actual_container_command": "source /root/.bashrc; cd /root/workspace; make PLATFORM=miyoomini dist",
+  "preparation": "Created cache directory before successful build; source copied into isolated container, no host bind mounts.",
+  "build_log_sha256": "4ff7ef75d3d7ec0f5d9ee91dcb2a6d24f12b92e5addf57a22f6317e9411c5485"
+}

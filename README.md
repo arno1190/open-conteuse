@@ -40,3 +40,7 @@ Original host Python, original CAD and documentation: MIT. Original firmware: GP
 ### Detailed component integration
 
 The [integrated modular design](hardware/integration/README.md) includes exact component identifiers and supplier/search links for every [BOM row](hardware/integration/BOM.csv), native mute-latch KiCad sources, [parametric SCAD and prototype STL files](enclosure/integrated/), and [source-derived integration/exploded PNGs](docs/previews/integrated/). [Updated cost evidence](docs/HARDWARE_COST.md) separates known supplier subtotals from missing quotes and shipping. Physical fit, integrated codec firmware and procurement availability remain explicit release gates.
+
+### Compact successor and console software study
+
+The [compact hardware assessment](docs/research/COMPACT_HARDWARE.md) compares the first design with Miyoo-sized targets and a much cheaper integrated-board direction. The separate [Telmi assessment](docs/research/TELMI_ASSESSMENT.md) maps existing RSS/story features and the remaining sync, radio, approval and recovery work. These are architecture studies; the original manufacturing files and their physical-validation gates remain the baseline.

@@ -1,0 +1,109 @@
+{
+  "envelopes": [
+    {
+      "id": "first_design",
+      "label": "Current modular Mini / Explore",
+      "size": [
+        112,
+        210,
+        50
+      ],
+      "basis": "existing CAD",
+      "source": "hardware/integration/layout.json",
+      "volume_cm3": 1176.0,
+      "volume_reduction_percent": 0.0
+    },
+    {
+      "id": "miyoo_mini_reference",
+      "label": "Miyoo Mini reference",
+      "size": [
+        65,
+        93.5,
+        18
+      ],
+      "basis": "seller-advertised comparison envelope; not a measured mechanical drawing",
+      "source": "https://www.kibotek.com/en/kibonews/new-miyoo-mini-portable-retro-console/",
+      "volume_cm3": 109.39,
+      "volume_reduction_percent": 90.7
+    },
+    {
+      "id": "miyoo_plus_reference",
+      "label": "Miyoo Mini Plus reference",
+      "size": [
+        78,
+        108,
+        22
+      ],
+      "basis": "rounded seller-advertised comparison envelope; not a measured mechanical drawing",
+      "source": "https://www.kibotek.com/fr/kibonews/miyoo-mini-plus-maintenant-disponible-en-pre-achat-chez-kibotek/",
+      "volume_cm3": 185.33,
+      "volume_reduction_percent": 84.24
+    },
+    {
+      "id": "compact_mini_target",
+      "label": "Custom Mini target",
+      "size": [
+        65,
+        95,
+        22
+      ],
+      "basis": "design target only",
+      "screen": "none",
+      "nfc": "tap area or partial slot; new antenna design required",
+      "volume_cm3": 135.85,
+      "volume_reduction_percent": 88.45
+    },
+    {
+      "id": "compact_explore_target",
+      "label": "Custom Explore target",
+      "size": [
+        65,
+        100,
+        24
+      ],
+      "basis": "design target only",
+      "screen": "2.4 inch raw panel; deviation from original approximately 2.8 inch requirement",
+      "nfc": "not included",
+      "volume_cm3": 156.0,
+      "volume_reduction_percent": 86.73
+    },
+    {
+      "id": "compact_explore_28_target",
+      "label": "Explore 2.8 inch fallback target",
+      "size": [
+        73,
+        105,
+        24
+      ],
+      "basis": "design target only; exact raw panel not selected",
+      "screen": "2.8 inch raw panel, not Adafruit breakout",
+      "nfc": "not included",
+      "volume_cm3": 183.96,
+      "volume_reduction_percent": 84.36
+    }
+  ],
+  "recurring_targets_eur": {
+    "5": {
+      "mini": [
+        41,
+        78
+      ],
+      "explore": [
+        43,
+        81
+      ]
+    },
+    "25": {
+      "mini": [
+        34,
+        63
+      ],
+      "explore": [
+        36,
+        66
+      ]
+    }
+  },
+  "quote_status": "engineering_targets_not_supplier_quotes",
+  "physical_validation": "pending"
+}
