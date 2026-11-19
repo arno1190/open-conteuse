@@ -1,0 +1,108 @@
+(footprint "SJ43514"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "1e62377b-2c62-4985-915e-6745449d2ace")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "e6bf943f-244b-4f27-8445-7c38b6a396c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "637b9a86-1afa-4794-bfe6-db2726a94799")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d066c583-b24e-45e2-94f7-089439b8f292")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.3 -4.8)
+		(end 18.3 4.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ef92f652-edff-4e2b-802b-e7351c171407")
+	)
+	(fp_rect
+		(start 0 -4.5)
+		(end 18 4.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "41640ebd-53bb-430b-94f5-953729e66989")
+	)
+	(pad "1" smd roundrect
+		(at 0.6 3.5)
+		(size 2 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "751d36a0-a31c-4be0-b176-ccaa8d0ae4db")
+	)
+	(pad "2" smd roundrect
+		(at 13 3.5)
+		(size 2 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "b5e29c3c-aad1-4322-9ed4-a2983d4eaa2c")
+	)
+	(pad "3" smd roundrect
+		(at 5.3 -3.5)
+		(size 2 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "ce1ecade-42c5-4e1c-a9b5-1b9ceaf868f6")
+	)
+	(pad "4" smd roundrect
+		(at 3.5 3.5)
+		(size 2 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "fc35f226-379d-4493-afc7-f6b3c734b3d0")
+	)
+	(embedded_fonts no)
+)

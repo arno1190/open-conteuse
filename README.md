@@ -9,7 +9,7 @@ An open-source, self-buildable audio handheld project: one platform, two Game Bo
 
 ## Current state
 
-Working host content/player/studio prototypes, four compiling ESP32-S3 firmware configurations, a routed/checkable KiCad controls PCB and two OpenSCAD enclosure variants. **No physical hardware, audio limits, battery circuit or mechanical fit has been validated.** The controls board is not a complete audio/power carrier; the shell is a dimensional fit study. Read the [roadmap](docs/ROADMAP.md) and [actual validation record](docs/VALIDATION.md) for implemented behaviour and limits.
+Working host content/player/studio prototypes, four baseline firmware builds and two compact bring-up builds. The new [compact R1 dossier](docs/compact-r1/README.md) brings together **Mini65×95×22mm** and **Explore67×100×24mm** custom four-layer PCBs, schematics, printable enclosure sources, coloured integration/cutaway views, exact-identity BOMs, cost assumptions and assembly instructions. **Physical hardware, audio limits, battery circuits and mechanical fit remain unvalidated.** Compact diagnostics are muted; the finished integrated-codec playback driver remains a bench milestone. Read the [roadmap](docs/ROADMAP.md) and [compact validation record](docs/compact-r1/VALIDATION.md) for limits.
 
 ## Run locally
 
@@ -43,4 +43,4 @@ The [integrated modular design](hardware/integration/README.md) includes exact c
 
 ### Compact successor and console software study
 
-The [compact hardware assessment](docs/research/COMPACT_HARDWARE.md) compares the first design with Miyoo-sized targets and a much cheaper integrated-board direction. The separate [Telmi assessment](docs/research/TELMI_ASSESSMENT.md) maps existing RSS/story features and the remaining sync, radio, approval and recovery work. These are architecture studies; the original manufacturing files and their physical-validation gates remain the baseline.
+The [compact hardware assessment](docs/research/COMPACT_HARDWARE.md) compares the first design with Miyoo-sized targets and a much cheaper integrated-board direction. The separate [Telmi assessment](docs/research/TELMI_ASSESSMENT.md) maps existing RSS/story features and the remaining sync, radio, approval and recovery work. The [compact R1 implementation](docs/compact-r1/README.md) now develops the custom hardware direction; the prior modular files and atlas remain available as historical prototypes. The Telmi stream remains a separate assessment.

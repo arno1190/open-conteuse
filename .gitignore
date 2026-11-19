@@ -22,3 +22,7 @@ work/
 !enclosure/integrated/models/*.stl
 !enclosure/integrated/print/*.stl
 enclosure/integrated/print/*.log
+
+# Compact R1 reviewed prototype mesh exports.
+!enclosure/compact-r1/print/*.stl
+logs/

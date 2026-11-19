@@ -1,0 +1,41 @@
+{
+  "nominal_envelopes": true,
+  "physical_validation": "pending",
+  "sources": {
+    "hardware/compact-r1/mini-mechanical.json": "e004a0bd6a5ad3033bc2c95248175119de7b0057eadc732e2ac37af1ac94f8c7",
+    "hardware/compact-r1/mini-copper.json": "ea802a5ca9f27d3894739b9307ebd275e8b71661df6959d5d45258eda490fb41",
+    "hardware/compact-r1/mini/mini.kicad_pcb": "76533389ff121e52f43658cf9d2d48d0293b1b0513df58b53371af38af0ab93e",
+    "scripts/render_compact.py": "b75ec7d19127dc37f960f9aae7222f13f98d6b14aa2f7756ee78c99a65796957",
+    "enclosure/compact-r1/compact.scad": "3cd227a8d178846620e2b62034c28f6d01828bf9877e65cc4720d60d2a3c2d04",
+    "enclosure/compact-r1/mini-data.scad": "92e898b5a73d04e5b59b8cd9074401e10fdded24ecd36f84ee8262fc8ce87fb6",
+    "enclosure/compact-r1/print/mini-front.stl": "16aa106a550df2f9084ec14bded1164e1843d972bc9b143ede60d240475bd8c7",
+    "enclosure/compact-r1/print/mini-back.stl": "3023da54fb167e60dc3c1bb4aa1e10a86fefce7712196aaea45b594445081341",
+    "enclosure/compact-r1/print/mini-button.stl": "df34006ffe03077f901a53bc7db690c083503d51ffc0231a95aec82d06d9a770",
+    "enclosure/compact-r1/print/mini-bridge.stl": "758228a61cc414bc80aeb4254445b683978b6f604a752954b1115c3b7b455f27"
+  },
+  "prepared_meshes": {
+    "work/compact-r1/mini-pcb.stl": "cb35a9063e36d46630fa53d171be8a1a989d2e8e86e230e27de8a615df6137d0"
+  },
+  "images": {
+    "docs/compact-r1/images/mini-hero-front.png": "b0b164d029b3edb720e863e7a4d8afb3fc7105fcbbdace3b2d7774b173df676d",
+    "docs/compact-r1/images/mini-hero-rear.png": "c2c8b4c45a760c792da3ee9936e290f8e1afd8860ad869cd18ef9145f3a372f2",
+    "docs/compact-r1/images/mini-front.png": "6b4a841368807fc1af2871e8977b831e06451433f4245497716a1c790b7e29f1",
+    "docs/compact-r1/images/mini-rear.png": "249a2992727d83060241447a7db5b2bba636c73850a5d3d6d1f312988e77bfc1",
+    "docs/compact-r1/images/mini-left.png": "de16ecdd47f3d083607124b85249fc7616f5bc25de0561f8a5e31b4585e59e82",
+    "docs/compact-r1/images/mini-right.png": "c1d2205a0e97e279bc01c637e8e77c15048f15d08e7518914c80071cbd866802",
+    "docs/compact-r1/images/mini-top.png": "97ac16136565d3f04f8fd7be0f7c6427110185ea4b37171d3a329f4ac20cb8b9",
+    "docs/compact-r1/images/mini-bottom.png": "30d25e45bb9f406e8f939c592d512f89e12ec3fb353c3984a5e34e4741b30ea4",
+    "docs/compact-r1/images/mini-open-front.png": "4a0e122bd48b0240801042e8c119c2d1accded8a068d9681b6be1433a9ec780f",
+    "docs/compact-r1/images/mini-open-rear.png": "4c8fe42c25c8980dfe33f0885dda399b1a1a596f7bb4bcdf5abf8086067c57ce",
+    "docs/compact-r1/images/mini-exploded.png": "b557a0c936ca9bd7ef515802757eae8a0eed4d81937248d2449dd73e79000842",
+    "docs/compact-r1/images/mini-pcb-front.png": "fc7554654588fcb722c097d0ade5aacfd1653bb2263ef2d9db0a1deb0ce40342",
+    "docs/compact-r1/images/mini-pcb-rear.png": "c1a0789d06503d71a4ef96b91a6db324efa8793cccc6417f445d07fa5cfb9ed0",
+    "docs/compact-r1/images/mini-battery-service.png": "0a02e0ecb3ab7890d3e0b63c3b71a13599fc5095df07cd2bd9bd8e7b7f336675",
+    "docs/compact-r1/images/mini-cut-x-centre.png": "a2af212abb0712abf894b5e68c9b4bb4105c39f806108a9aac9d95880e9b38eb",
+    "docs/compact-r1/images/mini-cut-x-jack.png": "8ba60b87472103de87352bfcf4649fead70c573fbd8a642ff4729641e9032311",
+    "docs/compact-r1/images/mini-cut-y-antenna.png": "900d671fa227eebf1ed94001ec313226b314b2fd94dd1a72321c95bf9918cdcf",
+    "docs/compact-r1/images/mini-cut-y-controls.png": "620c81f461a1723a21d154de37fec3e4dcc199db53a1a2176c2f06fe483f2e36",
+    "docs/compact-r1/images/mini-cut-z-battery.png": "ba4d56d880d6bc140777f2ffb71dc15a54b997d85c6be88224f07a5972dd494d",
+    "docs/compact-r1/images/mini-cut-z-front.png": "fcc52ba7d8f2001ba71fc26cb2572a6d50ac5861dffbb226188ff72e2eff3d3b"
+  }
+}

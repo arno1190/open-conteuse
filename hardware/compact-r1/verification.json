@@ -1,0 +1,107 @@
+{
+  "date_utc": "2026-11-19",
+  "physical_validation": "pending",
+  "fabrication_release": false,
+  "orders_placed": false,
+  "source_hashes": {
+    "hardware/compact-r1/explore/explore.kicad_pcb": "0f5500df2f20b7467f7ffe3f8265686a17e165d80524af7dc7c92056ce2cde9b",
+    "hardware/compact-r1/mini/mini.kicad_pcb": "76533389ff121e52f43658cf9d2d48d0293b1b0513df58b53371af38af0ab93e",
+    "hardware/compact-r1/explore/explore.kicad_sch": "201a492faeb10d1f90b3d6c859e23ef69b70301f44818ed1cb35c250e586cf60",
+    "hardware/compact-r1/mini/mini.kicad_sch": "0410ec57899cda2f3db0ffa9332c1ed67bf1ee0189a849758efd3c5a8b0162c5",
+    "firmware/src/compact_bringup.cpp": "bcb86eda38e0e97c4c2158801ee9b81d91abebe42cd607f784a5ec0ab84a94c3",
+    "firmware/platformio.ini": "68c32360591c7d20b6f39ade9430a3533e7b4569e3784a546ac09b7ed6555057"
+  },
+  "results": {
+    "host_unit_tests": {
+      "command": "python3 -m unittest discover -s tests -v",
+      "passed": 39
+    },
+    "baseline_atlas": {
+      "command": "python3 scripts/check_atlas.py",
+      "png_views": 72,
+      "section_views": 16,
+      "integrity": "pass"
+    },
+    "firmware": {
+      "command": "sh scripts/firmware-check.sh",
+      "environments": [
+        "mini",
+        "explore",
+        "mini-bench-audio",
+        "explore-bench-audio",
+        "compact-mini-bringup",
+        "compact-explore-bringup"
+      ],
+      "result": "pass; native policy/content checks also pass",
+      "compact_scope": "muted diagnostics; integrated codec playback driver pending"
+    },
+    "native_kicad": {
+      "mini": {
+        "erc_violations": 0,
+        "drc_violations": 0,
+        "unconnected": 0,
+        "schematic_parity_issues": 0,
+        "reports": [
+          "checks/mini-erc.rpt",
+          "checks/mini-drc.rpt"
+        ]
+      },
+      "explore": {
+        "erc_violations": 0,
+        "drc_violations": 0,
+        "unconnected": 0,
+        "schematic_parity_issues": 0,
+        "reports": [
+          "checks/explore-erc.rpt",
+          "checks/explore-drc.rpt"
+        ]
+      }
+    },
+    "power_distribution": {
+      "command": "/usr/bin/python3 scripts/check_compact_native.py --write-power-report",
+      "result": "pass",
+      "report": "power-distribution.json",
+      "scope": "sampled geometric core existence, no electrical/thermal proof"
+    },
+    "mechanical": {
+      "print_meshes": 14,
+      "manifold_and_positive_volume": "pass",
+      "handedness_and_nominal_body_fit": "pass",
+      "shell_and_body_intersections_empty": 4,
+      "report": "../../enclosure/compact-r1/mesh-receipt.json"
+    },
+    "bom_query": {
+      "rows": 231,
+      "query_checks": [
+        "all rows",
+        "NFC_EX_MINI",
+        "explore",
+        "Semitec"
+      ],
+      "result": "pass"
+    },
+    "visual_package": {
+      "png_views": 40,
+      "section_views": 12,
+      "nominal_component_envelopes": true,
+      "physical_validation": "pending",
+      "receipts": "../../docs/compact-r1/*-render-receipt.json"
+    }
+  },
+  "open_qualification": [
+    "Print tolerance, small keeper screw clearances and actual part dimensions",
+    "Received-cell protection/lead envelope and connector polarity",
+    "Panel FPC contact face/bend and NFC module/antenna revision",
+    "TPS61040 reference-layout/noise review before fabrication release; 14.72mm SW and 17.72mm feedback/two vias",
+    "Power, charging, thermal, RF, acoustic, EMC, endurance and drop testing",
+    "Integrated codec playback driver and complete compact product firmware",
+    "Supplier stock, binding fabrication/assembly/print quotes, yield and test plan"
+  ],
+  "cost_status": "engineering allowances only; no binding quotes",
+  "tools": {
+    "KiCad": "9.0.2",
+    "OpenSCAD": "2021.01",
+    "Blender": "4.3.2",
+    "Freerouting": "1.9.0 (development routing; native final boards authoritative)"
+  }
+}

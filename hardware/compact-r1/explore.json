@@ -1,0 +1,3234 @@
+{
+  "variant": "explore",
+  "status": "engineering_prototype_not_release",
+  "case": [
+    67,
+    100,
+    24
+  ],
+  "pcb": {
+    "outline": [
+      2.5,
+      9,
+      60,
+      83
+    ],
+    "thickness": 1.2,
+    "z": 10.5,
+    "holes": [
+      [
+        6,
+        56
+      ],
+      [
+        59,
+        56
+      ],
+      [
+        6,
+        88
+      ],
+      [
+        59,
+        88
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "ref": "U1",
+      "mpn": "ESP32-S3-WROOM-1-N16R8",
+      "footprint": "RF_Module:ESP32-S3-WROOM-1",
+      "xy": [
+        32.5,
+        15.75
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "3V2",
+        "3": "MCU_EN",
+        "4": "IO4",
+        "5": "IO5",
+        "6": "IO6",
+        "7": "IO7",
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": "IO8",
+        "13": "USB_DN",
+        "14": "USB_DP",
+        "15": null,
+        "16": null,
+        "17": "IO9",
+        "18": "SD_CS",
+        "19": "SPI_MOSI",
+        "20": "SPI_SCK",
+        "21": "SPI_MISO",
+        "22": "LCD_CS",
+        "23": "CODEC_IRQ",
+        "24": "SPK_REQUEST",
+        "25": "LED_STATUS",
+        "26": null,
+        "27": "BOOT_N",
+        "28": null,
+        "29": null,
+        "30": null,
+        "31": "LCD_DC",
+        "32": null,
+        "33": "I2S_BCLK",
+        "34": "I2S_LRCLK",
+        "35": "I2S_DATA",
+        "36": "UART_RX",
+        "37": "UART_TX",
+        "38": "I2C_SCL",
+        "39": "I2C_SDA",
+        "40": "GND",
+        "41": "GND"
+      },
+      "size": [
+        18,
+        25.5,
+        3.1
+      ],
+      "cost_eur": [
+        3.8,
+        6.8
+      ],
+      "section": "mcu",
+      "source": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "U2",
+      "mpn": "BQ24074RGTR",
+      "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "xy": [
+        47,
+        42
+      ],
+      "pins": {
+        "1": "CELL_NTC",
+        "2": "BAT",
+        "3": "BAT",
+        "4": "GND",
+        "5": "GND",
+        "6": "VBUS",
+        "7": null,
+        "8": "GND",
+        "9": null,
+        "10": "SYS",
+        "11": "SYS",
+        "12": "CHG_ILIM",
+        "13": "VBUS",
+        "14": null,
+        "15": "CHG_ITERM",
+        "16": "CHG_ISET",
+        "17": "GND"
+      },
+      "size": [
+        3,
+        3,
+        0.9
+      ],
+      "cost_eur": [
+        1.5,
+        3
+      ],
+      "section": "power",
+      "source": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R1",
+      "mpn": "RC0603FR-071K78L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        39
+      ],
+      "pins": {
+        "1": "CHG_ILIM",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "power",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "1.78k"
+    },
+    {
+      "ref": "R2",
+      "mpn": "RC0603FR-073K57L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        46
+      ],
+      "pins": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "power",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "3.57k"
+    },
+    {
+      "ref": "R3",
+      "mpn": "RC0603FR-073K01L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        45
+      ],
+      "pins": {
+        "1": "CHG_ITERM",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "power",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "3.01k"
+    },
+    {
+      "ref": "C1",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        49,
+        37
+      ],
+      "pins": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "C2",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        51,
+        40
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "C3",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        55,
+        41.5
+      ],
+      "pins": {
+        "1": "BAT",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "U3",
+      "mpn": "TPS63020DSJR",
+      "footprint": "Compact:TPS63020_DSJ",
+      "xy": [
+        52,
+        45
+      ],
+      "pins": {
+        "1": "VINA",
+        "2": "GND",
+        "3": "REG_FB",
+        "4": "3V2",
+        "5": "3V2",
+        "6": "SW_L2",
+        "7": "SW_L2",
+        "8": "SW_L1",
+        "9": "SW_L1",
+        "10": "SYS",
+        "11": "SYS",
+        "12": "PWR_EN",
+        "13": "SYS",
+        "14": null,
+        "15": "GND"
+      },
+      "size": [
+        3,
+        4,
+        1
+      ],
+      "cost_eur": [
+        2.2,
+        4.5
+      ],
+      "section": "power",
+      "source": "https://www.ti.com/lit/ds/symlink/tps63020.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "L1",
+      "mpn": "XFL4020-152MEC",
+      "footprint": "Inductor_SMD:L_Coilcraft_XxL4020",
+      "xy": [
+        52,
+        51
+      ],
+      "pins": {
+        "1": "SW_L1",
+        "2": "SW_L2"
+      },
+      "size": [
+        4,
+        4,
+        2.1
+      ],
+      "cost_eur": [
+        0.9,
+        1.8
+      ],
+      "section": "power",
+      "source": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/",
+      "angle": 180
+    },
+    {
+      "ref": "C4",
+      "mpn": "GRM21BR61A226ME44L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        47,
+        46
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.12,
+        0.35
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 180,
+      "value": "22u"
+    },
+    {
+      "ref": "C5",
+      "mpn": "GRM21BR61A226ME44L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        43.5,
+        48.5
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.12,
+        0.35
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 180,
+      "value": "22u"
+    },
+    {
+      "ref": "C6",
+      "mpn": "GRM21BR61A226ME44L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        43.5,
+        51.5
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.12,
+        0.35
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 180,
+      "value": "22u"
+    },
+    {
+      "ref": "R45",
+      "mpn": "RT0603BRD071ML",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        47,
+        49
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "REG_FB"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.08,
+        0.3
+      ],
+      "section": "power",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "1M"
+    },
+    {
+      "ref": "R46",
+      "mpn": "RT0603BRD07187KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        47,
+        52
+      ],
+      "pins": {
+        "1": "REG_FB",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.08,
+        0.3
+      ],
+      "section": "power",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "187k"
+    },
+    {
+      "ref": "C7",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        57,
+        44
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "C8",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        49.45,
+        42.75
+      ],
+      "pins": {
+        "1": "VINA",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 270,
+      "value": "100n"
+    },
+    {
+      "ref": "R4",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        47,
+        58
+      ],
+      "pins": {
+        "1": "PWR_EN",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "power",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "100k"
+    },
+    {
+      "ref": "SW9",
+      "mpn": "JS102011SAQN",
+      "footprint": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN",
+      "xy": [
+        5,
+        45
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "PWR_EN",
+        "3": "GND"
+      },
+      "size": [
+        9,
+        5.6,
+        3.5
+      ],
+      "cost_eur": [
+        0.5,
+        1.5
+      ],
+      "section": "power",
+      "source": "https://www.ckswitches.com/media/1422/js.pdf",
+      "angle": 270
+    },
+    {
+      "ref": "U4",
+      "mpn": "TLV75518PDBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "xy": [
+        15,
+        35
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND",
+        "3": "3V2",
+        "4": null,
+        "5": "1V8"
+      },
+      "size": [
+        2.9,
+        2.8,
+        1.45
+      ],
+      "cost_eur": [
+        0.2,
+        0.7
+      ],
+      "section": "audio",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "C9",
+      "mpn": "GRM188R61A105KA61D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        11,
+        35
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.03,
+        0.12
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "1u"
+    },
+    {
+      "ref": "C10",
+      "mpn": "GRM188R61A105KA61D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        19,
+        35
+      ],
+      "pins": {
+        "1": "1V8",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.03,
+        0.12
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "1u"
+    },
+    {
+      "ref": "U5",
+      "mpn": "TLV320DAC3100IRHBR",
+      "footprint": "Package_DFN_QFN:Texas_RHB0032E_VQFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm",
+      "xy": [
+        25,
+        43
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "3V2",
+        "3": "1V8",
+        "4": null,
+        "5": "I2S_DATA",
+        "6": "I2S_LRCLK",
+        "7": "I2S_BCLK",
+        "8": "GND",
+        "9": "I2C_SDA",
+        "10": "I2C_SCL",
+        "11": "MICDET",
+        "12": "MICBIAS",
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": "GND",
+        "17": "3V2",
+        "18": "GND",
+        "19": null,
+        "20": "GND",
+        "21": "3V2",
+        "22": null,
+        "23": null,
+        "24": "3V2",
+        "25": "GND",
+        "26": null,
+        "27": "HPL",
+        "28": "3V2",
+        "29": "GND",
+        "30": "HPR",
+        "31": "IO4",
+        "32": "CODEC_IRQ",
+        "33": "GND"
+      },
+      "size": [
+        5,
+        5,
+        1
+      ],
+      "cost_eur": [
+        2,
+        4
+      ],
+      "section": "audio",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv320dac3100.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "C11",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        21,
+        38
+      ],
+      "pins": {
+        "1": "1V8",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C12",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        25,
+        38
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C13",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        29,
+        38
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C14",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        21,
+        48
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C15",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        25,
+        48
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C16",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        29,
+        48
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "R5",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        32,
+        42
+      ],
+      "pins": {
+        "1": "MICBIAS",
+        "2": "MICDET"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "2.2k"
+    },
+    {
+      "ref": "C17",
+      "mpn": "GRM32ER60J107ME20L",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "xy": [
+        13,
+        76
+      ],
+      "pins": {
+        "1": "HPL",
+        "2": "HP_L"
+      },
+      "size": [
+        3.2,
+        2.5,
+        2.7
+      ],
+      "cost_eur": [
+        0.5,
+        1.2
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100u"
+    },
+    {
+      "ref": "C18",
+      "mpn": "GRM32ER60J107ME20L",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "xy": [
+        19,
+        76
+      ],
+      "pins": {
+        "1": "HPR",
+        "2": "HP_R"
+      },
+      "size": [
+        3.2,
+        2.5,
+        2.7
+      ],
+      "cost_eur": [
+        0.5,
+        1.2
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100u"
+    },
+    {
+      "ref": "J3",
+      "mpn": "SJ-43514-SMT-TR",
+      "footprint": "Compact:SJ43514",
+      "xy": [
+        29,
+        91
+      ],
+      "pins": {
+        "1": "MICDET",
+        "2": "HP_L",
+        "3": "HP_R",
+        "4": "GND"
+      },
+      "size": [
+        18,
+        9,
+        5.05
+      ],
+      "cost_eur": [
+        0.8,
+        2
+      ],
+      "section": "audio",
+      "source": "https://jp.sameskydevices.com/product/resource/sj-4351x-smt.pdf",
+      "angle": 90
+    },
+    {
+      "ref": "U6",
+      "mpn": "SN74LVC1G74DCUR",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "xy": [
+        35,
+        49
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "LATCH_ALLOW",
+        "4": "GND",
+        "5": "MUTED",
+        "6": "IO5",
+        "7": "MUTE_PRE_N",
+        "8": "3V2"
+      },
+      "size": [
+        2.3,
+        3.1,
+        1.1
+      ],
+      "cost_eur": [
+        0.25,
+        0.7
+      ],
+      "section": "audio",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "Q1",
+      "mpn": "MMBT3904LT1G",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "xy": [
+        35,
+        44
+      ],
+      "pins": {
+        "1": "IRQ_BASE",
+        "2": "GND",
+        "3": "MUTE_PRE_N"
+      },
+      "size": [
+        2.9,
+        2.4,
+        1.1
+      ],
+      "cost_eur": [
+        0.03,
+        0.12
+      ],
+      "section": "audio",
+      "source": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R6",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        35,
+        39
+      ],
+      "pins": {
+        "1": "CODEC_IRQ",
+        "2": "IRQ_BASE"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R7",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        39,
+        39
+      ],
+      "pins": {
+        "1": "IRQ_BASE",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "100k"
+    },
+    {
+      "ref": "R8",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        39,
+        43
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "MUTE_PRE_N"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R9",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        39,
+        47
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "IO5"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "U7",
+      "mpn": "SN74LVC1G08DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "xy": [
+        35,
+        55
+      ],
+      "pins": {
+        "1": "LATCH_ALLOW",
+        "2": "SPK_REQUEST",
+        "3": "GND",
+        "4": "SPK_GATE",
+        "5": "3V2"
+      },
+      "size": [
+        2.9,
+        2.8,
+        1.45
+      ],
+      "cost_eur": [
+        0.15,
+        0.45
+      ],
+      "section": "audio",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R10",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        31,
+        54
+      ],
+      "pins": {
+        "1": "SPK_REQUEST",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "100k"
+    },
+    {
+      "ref": "R11",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        35,
+        59
+      ],
+      "pins": {
+        "1": "SPK_GATE",
+        "2": "AMP_SD"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R12",
+      "mpn": "RC0603FR-0720KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        39,
+        59
+      ],
+      "pins": {
+        "1": "AMP_SD",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "20k"
+    },
+    {
+      "ref": "U8",
+      "mpn": "MAX98357AETE+T",
+      "footprint": "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm",
+      "xy": [
+        34,
+        66
+      ],
+      "pins": {
+        "1": "I2S_DATA",
+        "2": "AMP_GAIN",
+        "3": "GND",
+        "4": "AMP_SD",
+        "5": null,
+        "6": null,
+        "7": "SYS",
+        "8": "SYS",
+        "9": "SPK_P",
+        "10": "SPK_N",
+        "11": "GND",
+        "12": null,
+        "13": null,
+        "14": "I2S_LRCLK",
+        "15": "GND",
+        "16": "I2S_BCLK",
+        "17": "GND"
+      },
+      "size": [
+        3,
+        3,
+        0.8
+      ],
+      "cost_eur": [
+        1.3,
+        3
+      ],
+      "section": "audio",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R13",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        30,
+        69
+      ],
+      "pins": {
+        "1": "AMP_GAIN",
+        "2": "SYS"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "audio",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "100k"
+    },
+    {
+      "ref": "C19",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        30,
+        63
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C20",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        38,
+        63
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "C21",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        31,
+        49
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C22",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        31,
+        57
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "audio",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "J4",
+      "mpn": "S2B-PH-SM4-TB",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+      "xy": [
+        42,
+        79
+      ],
+      "pins": {
+        "1": "SPK_P",
+        "2": "SPK_N"
+      },
+      "size": [
+        8,
+        6,
+        3.7
+      ],
+      "cost_eur": [
+        0.15,
+        0.6
+      ],
+      "section": "audio",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "U9",
+      "mpn": "TCA9534PWR",
+      "footprint": "Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
+      "xy": [
+        10,
+        55
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "GND",
+        "3": "GND",
+        "4": "KEY_UP",
+        "5": "KEY_A",
+        "6": "KEY_DOWN",
+        "7": "KEY_LEFT",
+        "8": "GND",
+        "9": "KEY_RIGHT",
+        "10": "KEY_B",
+        "11": "KEY_VOL_DOWN",
+        "12": "KEY_VOL_UP",
+        "13": null,
+        "14": "I2C_SCL",
+        "15": "I2C_SDA",
+        "16": "3V2"
+      },
+      "size": [
+        5,
+        6.4,
+        1.2
+      ],
+      "cost_eur": [
+        0.7,
+        1.6
+      ],
+      "section": "controls",
+      "source": "https://www.ti.com/lit/ds/symlink/tca9534.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "C23",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        6,
+        55
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "R14",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        10,
+        30
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "I2C_SDA"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "logic",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "2.2k"
+    },
+    {
+      "ref": "R15",
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        15,
+        30
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "I2C_SCL"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "logic",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "2.2k"
+    },
+    {
+      "ref": "R16",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        30
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "MCU_EN"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "logic",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "C24",
+      "mpn": "GRM188R61A105KA61D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        47,
+        30
+      ],
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.03,
+        0.12
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "1u"
+    },
+    {
+      "ref": "R17",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        52,
+        30
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "BOOT_N"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "logic",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "SW10",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        55,
+        24
+      ],
+      "pins": {
+        "1": "BOOT_N",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "service",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW11",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        49,
+        24
+      ],
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "service",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW1",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        17,
+        57
+      ],
+      "pins": {
+        "1": "KEY_UP",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW2",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        44,
+        66
+      ],
+      "pins": {
+        "1": "KEY_A",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW3",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        17,
+        73
+      ],
+      "pins": {
+        "1": "KEY_DOWN",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW4",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        9,
+        65
+      ],
+      "pins": {
+        "1": "KEY_LEFT",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW5",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        25,
+        65
+      ],
+      "pins": {
+        "1": "KEY_RIGHT",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW6",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        54,
+        76
+      ],
+      "pins": {
+        "1": "KEY_B",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW7",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        40,
+        56
+      ],
+      "pins": {
+        "1": "KEY_VOL_DOWN",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "SW8",
+      "mpn": "KMR221GLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "xy": [
+        50,
+        56
+      ],
+      "pins": {
+        "1": "KEY_VOL_UP",
+        "2": "GND"
+      },
+      "size": [
+        4.2,
+        2.8,
+        1.9
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "controls",
+      "source": "https://www.ckswitches.com/media/1479/kmr2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R30",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        8,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_UP"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R31",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        13,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_A"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R32",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        18,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_DOWN"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R33",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        23,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_LEFT"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R34",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        28,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_RIGHT"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R35",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        33,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_B"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R36",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        38,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_VOL_DOWN"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "R37",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        51
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "KEY_VOL_UP"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "controls",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "J1",
+      "mpn": "USB4105-GF-A",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "xy": [
+        51,
+        89.7
+      ],
+      "pins": {
+        "A1": "GND",
+        "A4": "VBUS",
+        "A5": "CC1",
+        "A6": "USB_P",
+        "A7": "USB_N",
+        "A8": null,
+        "A9": "VBUS",
+        "A12": "GND",
+        "B1": "GND",
+        "B4": "VBUS",
+        "B5": "CC2",
+        "B6": "USB_P",
+        "B7": "USB_N",
+        "B8": null,
+        "B9": "VBUS",
+        "B12": "GND",
+        "S1": "GND"
+      },
+      "size": [
+        8.94,
+        7.35,
+        3.2
+      ],
+      "cost_eur": [
+        0.25,
+        0.9
+      ],
+      "section": "usb",
+      "source": "https://gct.co/connector/usb4105",
+      "angle": 0
+    },
+    {
+      "ref": "R18",
+      "mpn": "RC0603FR-075K1L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        46,
+        83
+      ],
+      "pins": {
+        "1": "CC1",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "usb",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "5.1k"
+    },
+    {
+      "ref": "R19",
+      "mpn": "RC0603FR-075K1L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        51,
+        83
+      ],
+      "pins": {
+        "1": "CC2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "usb",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "5.1k"
+    },
+    {
+      "ref": "U10",
+      "mpn": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "xy": [
+        52,
+        78
+      ],
+      "pins": {
+        "1": "USB_P",
+        "2": "GND",
+        "3": "USB_N",
+        "4": "USB_N",
+        "5": "VBUS",
+        "6": "USB_P"
+      },
+      "size": [
+        2.9,
+        2.8,
+        1.45
+      ],
+      "cost_eur": [
+        0.2,
+        0.6
+      ],
+      "section": "usb",
+      "source": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R20",
+      "mpn": "RC0603FR-0727RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        56,
+        76
+      ],
+      "pins": {
+        "1": "USB_P",
+        "2": "USB_DP"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "usb",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "27"
+    },
+    {
+      "ref": "R21",
+      "mpn": "RC0603FR-0727RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        56,
+        79
+      ],
+      "pins": {
+        "1": "USB_N",
+        "2": "USB_DN"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "usb",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "27"
+    },
+    {
+      "ref": "J2",
+      "mpn": "DM3D-SF",
+      "footprint": "Connector_Card:microSD_HC_Hirose_DM3D-SF",
+      "xy": [
+        53,
+        18
+      ],
+      "pins": {
+        "1": null,
+        "2": "SD_CS",
+        "3": "SPI_MOSI",
+        "4": "3V2",
+        "5": "SPI_SCK",
+        "6": "GND",
+        "7": "SPI_MISO",
+        "8": null,
+        "9": "GND",
+        "10": "GND",
+        "11": "GND"
+      },
+      "size": [
+        14,
+        14.5,
+        1.85
+      ],
+      "cost_eur": [
+        0.7,
+        1.8
+      ],
+      "section": "storage",
+      "source": "https://www.hirose.com/product/p/CL0609-0028-0-00",
+      "angle": 90
+    },
+    {
+      "ref": "C25",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        45,
+        19
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "100n"
+    },
+    {
+      "ref": "C26",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        45,
+        15
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "R22",
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        45,
+        11
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "SD_CS"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "logic",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "10k"
+    },
+    {
+      "ref": "J5",
+      "mpn": "S2B-PH-SM4-TB",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+      "xy": [
+        8,
+        25
+      ],
+      "pins": {
+        "1": "BAT",
+        "2": "GND"
+      },
+      "size": [
+        8,
+        6,
+        3.7
+      ],
+      "cost_eur": [
+        0.2,
+        0.6
+      ],
+      "section": "power",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "J6",
+      "mpn": "S2B-PH-SM4-TB",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal",
+      "xy": [
+        7,
+        36
+      ],
+      "pins": {
+        "1": "CELL_NTC",
+        "2": "GND"
+      },
+      "size": [
+        8,
+        6,
+        3.7
+      ],
+      "cost_eur": [
+        0.2,
+        0.6
+      ],
+      "section": "power",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "TP1",
+      "mpn": "GND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        9.0,
+        90
+      ],
+      "pins": {
+        "1": "GND"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP2",
+      "mpn": "3V2",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        13.5,
+        90
+      ],
+      "pins": {
+        "1": "3V2"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP3",
+      "mpn": "UART_TX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        18.0,
+        90
+      ],
+      "pins": {
+        "1": "UART_TX"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP4",
+      "mpn": "UART_RX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        22.5,
+        90
+      ],
+      "pins": {
+        "1": "UART_RX"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP5",
+      "mpn": "MUTED",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        27.0,
+        90
+      ],
+      "pins": {
+        "1": "MUTED"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP6",
+      "mpn": "IO6",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        31.5,
+        90
+      ],
+      "pins": {
+        "1": "IO6"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP7",
+      "mpn": "IO7",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        36.0,
+        90
+      ],
+      "pins": {
+        "1": "IO7"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP8",
+      "mpn": "SYS",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        40.5,
+        90
+      ],
+      "pins": {
+        "1": "SYS"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP9",
+      "mpn": "BAT",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        45.0,
+        90
+      ],
+      "pins": {
+        "1": "BAT"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "TP10",
+      "mpn": "1V8",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "xy": [
+        49.5,
+        90
+      ],
+      "pins": {
+        "1": "1V8"
+      },
+      "size": [
+        1,
+        1,
+        0.05
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "service",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "R23",
+      "mpn": "RC0603JR-070RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        38,
+        52
+      ],
+      "pins": {
+        "1": "MUTED",
+        "2": "IO6"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.05
+      ],
+      "section": "logic",
+      "source": "",
+      "angle": 0
+    },
+    {
+      "ref": "D1",
+      "mpn": "LTST-C190KGKT",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "xy": [
+        10,
+        11
+      ],
+      "pins": {
+        "1": "LED_K",
+        "2": "LED_STATUS"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.8
+      ],
+      "cost_eur": [
+        0.03,
+        0.15
+      ],
+      "section": "controls",
+      "source": "https://optoelectronics.liteon.com/upload/download/DS22-2000-0266/LTST-C190KGKT.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R24",
+      "mpn": "RC0603FR-071KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        15,
+        11
+      ],
+      "pins": {
+        "1": "LED_K",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "logic",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "1k"
+    },
+    {
+      "ref": "J8",
+      "mpn": "FH12-18S-0.5SH(55)",
+      "footprint": "Connector_FFC-FPC:Hirose_FH12-18S-0.5SH_1x18-1MP_P0.50mm_Horizontal",
+      "xy": [
+        37,
+        37.5
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "IO9",
+        "3": "SPI_SCK",
+        "4": "LCD_DC",
+        "5": "LCD_CS",
+        "6": "SPI_MOSI",
+        "7": "SPI_MISO",
+        "8": "GND",
+        "9": "3V2",
+        "10": "LCD_5V",
+        "11": "LED_K1",
+        "12": "LED_K2",
+        "13": "LED_K3",
+        "14": "LED_K4",
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null
+      },
+      "size": [
+        13,
+        5.6,
+        2
+      ],
+      "cost_eur": [
+        0.5,
+        1.1
+      ],
+      "section": "lcd",
+      "source": "https://www.ronboe.com/shop/rb024d18n01b1/",
+      "angle": 90
+    },
+    {
+      "ref": "U11",
+      "mpn": "TPS61040DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "xy": [
+        15,
+        41
+      ],
+      "pins": {
+        "1": "LCD_SW",
+        "2": "GND",
+        "3": "LCD_FB",
+        "4": "PWR_EN",
+        "5": "SYS"
+      },
+      "size": [
+        2.9,
+        2.8,
+        1.45
+      ],
+      "cost_eur": [
+        0.6,
+        1.4
+      ],
+      "section": "lcd",
+      "source": "https://www.ti.com/lit/ds/symlink/tps61040.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "L2",
+      "mpn": "LPS4018-103MRB",
+      "footprint": "Inductor_SMD:L_Coilcraft_LPS4018",
+      "xy": [
+        15,
+        47
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "LCD_SW"
+      },
+      "size": [
+        4,
+        4,
+        1.8
+      ],
+      "cost_eur": [
+        0.6,
+        1.2
+      ],
+      "section": "lcd",
+      "source": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/lps/lps4018/",
+      "angle": 0
+    },
+    {
+      "ref": "D2",
+      "mpn": "SK14-TP",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "xy": [
+        19,
+        41
+      ],
+      "pins": {
+        "1": "LCD_5V",
+        "2": "LCD_SW"
+      },
+      "size": [
+        3.7,
+        1.8,
+        1.35
+      ],
+      "cost_eur": [
+        0.05,
+        0.2
+      ],
+      "section": "lcd",
+      "source": "https://www.mccsemi.com/pdf/Products/SK12-SK110(SOD-123).pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R27",
+      "mpn": "RC0603FR-071ML",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        10,
+        40
+      ],
+      "pins": {
+        "1": "LCD_5V",
+        "2": "LCD_FB"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "1M"
+    },
+    {
+      "ref": "R28",
+      "mpn": "RC0603FR-07332KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        10,
+        43
+      ],
+      "pins": {
+        "1": "LCD_FB",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "332k"
+    },
+    {
+      "ref": "C27",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        20,
+        45
+      ],
+      "pins": {
+        "1": "LCD_5V",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "lcd",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "C28",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        11,
+        47
+      ],
+      "pins": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "lcd",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 0,
+      "value": "10u"
+    },
+    {
+      "ref": "Q2",
+      "mpn": "AO3400A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "xy": [
+        42,
+        35
+      ],
+      "pins": {
+        "1": "LCD_PWM",
+        "2": "GND",
+        "3": "LCD_SINK"
+      },
+      "size": [
+        2.9,
+        2.4,
+        1.1
+      ],
+      "cost_eur": [
+        0.05,
+        0.2
+      ],
+      "section": "lcd",
+      "source": "https://www.aosmd.com/sites/default/files/res/data_sheets/AO3400A.pdf",
+      "angle": 0
+    },
+    {
+      "ref": "R29",
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        42,
+        32
+      ],
+      "pins": {
+        "1": "IO8",
+        "2": "LCD_PWM"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "100"
+    },
+    {
+      "ref": "R38",
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        42,
+        37
+      ],
+      "pins": {
+        "1": "LCD_PWM",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "100k"
+    },
+    {
+      "ref": "R40",
+      "mpn": "RC0603FR-07120RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        30,
+        30
+      ],
+      "pins": {
+        "1": "LED_K1",
+        "2": "LCD_SINK"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "120"
+    },
+    {
+      "ref": "R41",
+      "mpn": "RC0603FR-07120RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        34,
+        30
+      ],
+      "pins": {
+        "1": "LED_K2",
+        "2": "LCD_SINK"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "120"
+    },
+    {
+      "ref": "R42",
+      "mpn": "RC0603FR-07120RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        38,
+        30
+      ],
+      "pins": {
+        "1": "LED_K3",
+        "2": "LCD_SINK"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "120"
+    },
+    {
+      "ref": "R43",
+      "mpn": "RC0603FR-07120RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        42,
+        30
+      ],
+      "pins": {
+        "1": "LED_K4",
+        "2": "LCD_SINK"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "lcd",
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "angle": 0,
+      "value": "120"
+    },
+    {
+      "ref": "C29",
+      "mpn": "GRM21BR61A106KE19L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        20.5,
+        15
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        2,
+        1.25,
+        1.35
+      ],
+      "cost_eur": [
+        0.06,
+        0.2
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 180,
+      "value": "10u"
+    },
+    {
+      "ref": "C30",
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        21,
+        11.75
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.9
+      ],
+      "cost_eur": [
+        0.02,
+        0.08
+      ],
+      "section": "power",
+      "source": "https://www.murata.com/en-global/products/capacitor/mlcc",
+      "angle": 180,
+      "value": "100n"
+    }
+  ],
+  "sources": {
+    "mcu": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+    "codec": "https://www.ti.com/lit/ds/symlink/tlv320dac3100.pdf",
+    "charger": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "regulator": "https://www.ti.com/lit/ds/symlink/tps63020.pdf",
+    "amp": "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf",
+    "latch": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+    "gate": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+    "io": "https://www.ti.com/lit/ds/symlink/tca9534.pdf",
+    "ldo": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+    "boost": "https://www.ti.com/lit/ds/symlink/tps61040.pdf",
+    "jack": "https://jp.sameskydevices.com/product/resource/sj-4351x-smt.pdf",
+    "nfc": "https://www.elechouse.com/product/pn532-mini/",
+    "nfc_manual": "https://www.elechouse.com/docs/pn5321-mini/",
+    "lcd": "https://www.ronboe.com/shop/rb024d18n01b1/",
+    "cell": "https://www.adafruit.com/product/258",
+    "speaker": "https://puiaudio.com/product/speakers-and-receivers/as01508ao-wp-r"
+  }
+}

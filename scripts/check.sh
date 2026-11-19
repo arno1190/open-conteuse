@@ -7,3 +7,5 @@ python3 -m conteuse.demo
 python3 scripts/check_cad.py
 
 python3 scripts/check_atlas.py
+
+python3 scripts/check_compact.py
