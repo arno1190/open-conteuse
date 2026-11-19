@@ -284,7 +284,6 @@
         ]
       ],
       "components": 1,
-      "sha256": "2c4c86c1f173ced76db8818c65e7927f34336497cde8ebccc113b887e0dc6204",
       "triangles": 812,
       "volume_cm3": 5.9554
     },
@@ -302,7 +301,6 @@
         ]
       ],
       "components": 1,
-      "sha256": "cb35a9063e36d46630fa53d171be8a1a989d2e8e86e230e27de8a615df6137d0",
       "triangles": 812,
       "volume_cm3": 5.9554
     }
@@ -314,7 +312,7 @@
     "hardware/compact-r1/explore-mechanical.json": "402e5536a613896594a76023bb9d1f4f9a2284f4a8ec6965ea56d346853dbbf1",
     "hardware/compact-r1/mini-mechanical.json": "e004a0bd6a5ad3033bc2c95248175119de7b0057eadc732e2ac37af1ac94f8c7",
     "scripts/compact_mesh.py": "68918151c4c7f4c1808d97c7e62be3433c9d9b9af275217318b66760857c976f",
-    "scripts/export_compact_meshes.py": "f0c5541c9619654af4050776e6fff610452f8ff00005a4c2a757168dadd0c4c1",
+    "scripts/export_compact_meshes.py": "3b73c1e637c50eba9a67ac05f5060e34af089d9a11d2f26003f7f042bafdf376",
     "scripts/export_integrated.py": "195d45aa5e811aae6017d2053b6a2a0cabe6da2963fcd47a4868dbe9cbc0f092"
   }
 }

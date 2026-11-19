@@ -29,6 +29,9 @@ def render(job):
 jobs=[(v,part) for v in ['mini','explore'] for part in PARTS+['pcb','interference','shell_interference']]
 with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(render,jobs))
 assert sources=={str(p.relative_to(ROOT)):sha(p) for p in inputs},'Inputs changed during mesh export'
-receipt={'physical_validation':'pending','fabrication_release':False,'sources':sources,'meshes':{str((E/f'print/{v}-{part}.stl').relative_to(ROOT)):r for v,part,r in results if part in PARTS},'intersections':{v+'/'+part:r for v,part,r in results if part.endswith('interference')},'reference_meshes':{v:r for v,part,r in results if part=='pcb'}}
+# Temporary PCB reference meshes are regenerated on fresh runners. Their
+# geometric statistics are stable; their triangle-order byte hashes are not.
+# The render receipt separately records the exact prepared mesh actually used.
+receipt={'physical_validation':'pending','fabrication_release':False,'sources':sources,'meshes':{str((E/f'print/{v}-{part}.stl').relative_to(ROOT)):r for v,part,r in results if part in PARTS},'intersections':{v+'/'+part:r for v,part,r in results if part.endswith('interference')},'reference_meshes':{v:{k:value for k,value in r.items() if k!='sha256'} for v,part,r in results if part=='pcb'}}
 (E/'mesh-receipt.json').write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
 print('14 printable meshes and both nominal assemblies checked. Physical validation pending.')
