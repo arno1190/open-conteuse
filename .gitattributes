@@ -1,1 +1,3 @@
 enclosure/integrated/**/*.stl binary
+enclosure/compact-r1/**/*.stl binary
+*.pdf binary
