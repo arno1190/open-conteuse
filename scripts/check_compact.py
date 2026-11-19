@@ -35,7 +35,7 @@ def run(check_manifest=True):
    if p['section']=='controls' and p['ref'].startswith('SW'):
     x,y=p['xy'];assert (round(x+3.7,3),round(case[1]-y,3),case[2]) in vertices,(v,p['ref'],'assembly handedness')
     assert (round(x+3.7,3),round(y,3),0) in printed,(v,p['ref'],'front print orientation')
-  receipt=ROOT/f'docs/compact-r1/{v}-render-receipt.json' 
+  receipt=ROOT/f'docs/compact-r1/{v}-render-receipt.json'
   if check_manifest:
    r=json.loads(receipt.read_text());assert len(r['images'])==20
    for fn,h in r['sources'].items():assert sha(ROOT/fn)==h,('render source stale',fn)

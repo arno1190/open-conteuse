@@ -74,4 +74,3 @@ def antenna(board):
  z.SetLayerSet(layers);z.Outline().NewOutline()
  for x,y in [(38.5,18),(86.5,18),(86.5,39),(38.5,39)]:z.Outline().Append(p.FromMM(x),p.FromMM(y))
  board.Add(z)
-
