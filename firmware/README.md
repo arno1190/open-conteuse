@@ -54,3 +54,8 @@ In an audio opt-in build, send `wifi SSID<TAB>PASSWORD` and newline over the phy
 No battery monitor, charger/power-path controller, verified headphone DAC/amp/jack circuit, finished volume UI or measured sleep current. The default build logs volume and up/down inputs but does not promise a finished UI. No over-the-air transfer/pairing or persistent device bookmark store; authenticated pairing/transfer recovery is exercised in the host simulator. Host POSIX `fsync`/rename tests cannot establish SD FAT brownout behaviour. Wi-Fi/decoder contention, buffering, reconnect timing and insertion mute latency must be measured. Do not interpret compiler success as a completed child-facing player.
 
 Original firmware source: GPL-3.0-or-later, see `LICENSE` and `THIRD_PARTY.md`. Host Python and original CAD remain MIT. No ESPuino or STUdio source was copied.
+
+
+## Compact R1 diagnostic profiles
+
+`compact-mini-bringup` and `compact-explore-bringup` target the new custom boards. They check the GPIO expander, storage and variant peripheral while holding the speaker request low and the codec muted. Use these profiles for the staged [compact assembly procedure](../docs/compact-r1/ASSEMBLY.md); baseline modular images have different hardware assumptions. These are compiling diagnostic images, not completed integrated-codec playback firmware. Physical flashing, rail/audio/RF tests and the finished codec driver remain pending.

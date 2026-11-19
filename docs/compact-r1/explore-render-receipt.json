@@ -1,0 +1,41 @@
+{
+  "nominal_envelopes": true,
+  "physical_validation": "pending",
+  "sources": {
+    "hardware/compact-r1/explore-mechanical.json": "402e5536a613896594a76023bb9d1f4f9a2284f4a8ec6965ea56d346853dbbf1",
+    "hardware/compact-r1/explore-copper.json": "4bd781d92bb788165f5173ba9f48317acdf1b1293580f0a8ddd061cc3ccc00e9",
+    "hardware/compact-r1/explore/explore.kicad_pcb": "0f5500df2f20b7467f7ffe3f8265686a17e165d80524af7dc7c92056ce2cde9b",
+    "scripts/render_compact.py": "b75ec7d19127dc37f960f9aae7222f13f98d6b14aa2f7756ee78c99a65796957",
+    "enclosure/compact-r1/compact.scad": "3cd227a8d178846620e2b62034c28f6d01828bf9877e65cc4720d60d2a3c2d04",
+    "enclosure/compact-r1/explore-data.scad": "966dd996d2287da9ddc29542e44041becddacf56b120796ec2801c272e81fd73",
+    "enclosure/compact-r1/print/explore-front.stl": "e3ad94afa8efdc8afde5c74d645c419f6b7ee01d2b3d858c742b3adb1a2ae2d5",
+    "enclosure/compact-r1/print/explore-back.stl": "ac7212f5cfbc54c8022f6a39c0bb7018a46f57aa701e77f9c4d106119bafe7f5",
+    "enclosure/compact-r1/print/explore-button.stl": "011fd9bfd5e67c9acdd451b2978eefc5967e9ea008545524cbd630a508857b33",
+    "enclosure/compact-r1/print/explore-bridge.stl": "0a9257bfe5c592c04dafb97a840947acd271c7d9f1cc704f94a806f6ea37e510"
+  },
+  "prepared_meshes": {
+    "work/compact-r1/explore-pcb.stl": "2c4c86c1f173ced76db8818c65e7927f34336497cde8ebccc113b887e0dc6204"
+  },
+  "images": {
+    "docs/compact-r1/images/explore-hero-front.png": "ba8789902fde83b0dfc00a1ac2dce621f159b78677ed3a917a5215f7c3c40153",
+    "docs/compact-r1/images/explore-hero-rear.png": "4ae60391ccb79629d4680968b299c2f5180dbf92cd5d79fc678c405e796c88f0",
+    "docs/compact-r1/images/explore-front.png": "c7136f065f257893b66d12bb4c2a3caad362fe9da0779df7f4bac7711c000107",
+    "docs/compact-r1/images/explore-rear.png": "478644c47d77cd45fbd165ad28e7584012a2b7e83499288adbeeb9967032708b",
+    "docs/compact-r1/images/explore-left.png": "872b24108173d24f19b073a94086ab99c47b3291b5124b7a60975b9fd66b174b",
+    "docs/compact-r1/images/explore-right.png": "387b3f10ce730197e38b4bd70a84a983e737d720f5705cca2375948af2306903",
+    "docs/compact-r1/images/explore-top.png": "48e6166511770bd6368b0d1efff467b8ae2858912551fd30bbb31d8d60e5b621",
+    "docs/compact-r1/images/explore-bottom.png": "736335522b156209efe492118a7fcf799e8be4567767793acdca000fb4de6bcc",
+    "docs/compact-r1/images/explore-open-front.png": "4404dd2118dfd4dbffba350385889d98e88c09047cdf487af4af13b908d9491f",
+    "docs/compact-r1/images/explore-open-rear.png": "aa2a66eee0ffc38f5c4ab644f2774124b62178da3c6cee5a0de7d3e817429fb0",
+    "docs/compact-r1/images/explore-exploded.png": "aadd498a911567dfda16d674a5816a8b2156a6f580981ba100f5df031675a54f",
+    "docs/compact-r1/images/explore-pcb-front.png": "fa6982359fd92ba3a74121a85db00a5dd9802a9f537ecbf2f551d9971e069539",
+    "docs/compact-r1/images/explore-pcb-rear.png": "101aefb5c885db1fe9b5c5214adaa7e66bc4bc15bef170d26456a62714fffa19",
+    "docs/compact-r1/images/explore-battery-service.png": "5a2e990de5ff227519ec31f88ad12346d1ae7b41054e726304a3dfcd998ecdb9",
+    "docs/compact-r1/images/explore-cut-x-centre.png": "63f84ab0d57eeb8d9788dfd1ed7039f2e49ab98928004df9efac4d47180d54a1",
+    "docs/compact-r1/images/explore-cut-x-jack.png": "eba971a6f2606e039af2ae4fba6bf1d8c219f7a7a3450207edcd6d52bbffeb01",
+    "docs/compact-r1/images/explore-cut-y-antenna.png": "51872eb36817bcb4c3ce363454f0c2509d59c48e2ae59056019aa39f29f8776e",
+    "docs/compact-r1/images/explore-cut-y-controls.png": "e29d2c6165b25c0d7c876a79f214cff7737c39a261a2f78b8c291dab6daa63cf",
+    "docs/compact-r1/images/explore-cut-z-battery.png": "649fca6491c9216d07a9ac6478c7c3b1e3216e437ddc90a2ec2c5f6a0644095e",
+    "docs/compact-r1/images/explore-cut-z-front.png": "c4062bd868ec1124f8f0244e6e7d07e60b3daa64448000618c4b778004c358bd"
+  }
+}

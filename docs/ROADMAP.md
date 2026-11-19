@@ -1,6 +1,6 @@
 # Roadmap and handoff state
 
-Updated 2026-11-17. This is a source-only bench prototype, not a complete validated handheld. See [VALIDATION.md](VALIDATION.md) for commands/results and [hardware assembly gates](../hardware/ASSEMBLY.md) for pending measurements.
+Updated 2026-11-19. This is a source-only bench prototype, not a complete validated handheld. See [VALIDATION.md](VALIDATION.md) for commands/results and [hardware assembly gates](../hardware/ASSEMBLY.md) for pending measurements.
 
 ## M1 — host content core and simulator: implemented and host tested
 
@@ -55,4 +55,13 @@ The owner requests a Miyoo Mini sized, much cheaper successor and a separate con
 
 `docs/research/TELMI_ASSESSMENT.md` assesses pinned TelmiOS/Sync sources against the full brief. Upstream already has desktop RSS podcast import. The preferred first experiment is an approved-content export bridge to stock Telmi, with a small GPL device fork/integration later for safe library activation, authenticated wireless sync or radio. Original Mini has no Wi-Fi; model/revision compatibility must be checked. The pinned upstream build produces ARM binaries, with an unresolved libbz2 linker-search warning and no device runtime proof; see `hardware/compact/verification.json`.
 
-Next: freeze compact card interaction, exact thin speaker/cell, display outline and hardware mute/power design before new KiCad placement; separately implement and fixture-test the Telmi export subset and storage-recovery protocol. No remote fork, purchasing or fabrication order was performed. Physical validation remains pending.
+The compact custom R1 milestone below now carries those hardware choices into native CAD; separately implement and fixture-test the Telmi export subset and storage-recovery protocol. No remote fork, purchasing or fabrication order was performed. Physical validation remains pending.
+
+
+## Compact custom R1 — full digital prototypes; physical qualification pending
+
+The [combined compact dossier](compact-r1/README.md) supersedes the envelope-only study for the custom hardware stream. Mini is65×95×22mm and Explore67×100×24mm, excluding0.6mm keys. Both have native four-layer1.2mm PCB/schematic sources, selected power/charging/headphone/speaker circuits, documented pin contracts, source-derived coloured3D views, six sections each, printable shells/keys/coupons, searchable exact-identity BOMs, quantity-sensitive cost assumptions and staged assembly/qualification instructions. The larger Explore width reserves the display FPC fold; Mini uses the specified small NFC module/antenna.
+
+Six firmware environments compile: four existing baseline images plus two muted compact diagnostic images. The compact codec playback integration is not complete. Native ERC/DRC, mesh/handedness, nominal body clearance, source/hash and host checks are recorded in the compact validation artefacts. Clean digital checks do not establish physical safety or fit. No purchase, fabrication order or physical build occurred.
+
+Next: print coupons and inspect actual received cells/connectors/panel/NFC parts, obtain binding procurement/assembly quotes, assemble a current-limited first article, validate power/charging/audio/RF/thermal behaviour and complete the compact codec driver. Production release remains blocked on these measurements. The independent Telmi export/recovery stream remains separate.

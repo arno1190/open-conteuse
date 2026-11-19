@@ -11,5 +11,5 @@ jobs:
     container: debian:trixie
     steps:
       - uses: actions/checkout@v4
-      - run: apt-get update && apt-get install -y --no-install-recommends kicad kicad-symbols kicad-footprints openscad python3 ripgrep
+      - run: apt-get update && apt-get install -y --no-install-recommends kicad kicad-symbols kicad-footprints openscad python3 ripgrep fonts-dejavu-core
       - run: sh scripts/cad-check.sh

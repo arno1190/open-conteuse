@@ -1,0 +1,118 @@
+{
+  "mini": {
+    "materials_excluding_print_eur": [
+      73.31,
+      123.5
+    ],
+    "print_allowance_eur": [
+      2.5,
+      5
+    ],
+    "recurring_per_unit_eur": {
+      "1": [
+        100.81,
+        178.5
+      ],
+      "5": [
+        87.81,
+        153.5
+      ],
+      "25": [
+        80.81,
+        138.5
+      ]
+    },
+    "first_batch_including_setup_rework_reserve_eur": {
+      "1": [
+        200.81,
+        428.5
+      ],
+      "5": [
+        539.05,
+        1017.5
+      ],
+      "25": [
+        2120.25,
+        3712.5
+      ]
+    },
+    "bom_rows": 108,
+    "component_count": 92,
+    "five_unit_france_planning_total_with20pctVAT_shipping_eur": [
+      694.86,
+      1329.0
+    ]
+  },
+  "explore": {
+    "materials_excluding_print_eur": [
+      44.41,
+      101.06
+    ],
+    "print_allowance_eur": [
+      2.5,
+      5
+    ],
+    "recurring_per_unit_eur": {
+      "1": [
+        71.91,
+        156.06
+      ],
+      "5": [
+        58.91,
+        131.06
+      ],
+      "25": [
+        51.91,
+        116.06
+      ]
+    },
+    "first_batch_including_setup_rework_reserve_eur": {
+      "1": [
+        171.91,
+        406.06
+      ],
+      "5": [
+        394.55,
+        905.3
+      ],
+      "25": [
+        1397.75,
+        3151.5
+      ]
+    },
+    "bom_rows": 123,
+    "component_count": 107,
+    "five_unit_france_planning_total_with20pctVAT_shipping_eur": [
+      521.46,
+      1194.36
+    ]
+  },
+  "assumptions": {
+    "date": "2026-11-18",
+    "currency": "EUR",
+    "nfc_observed_usd": 35.5,
+    "planning_EUR_per_USD": 0.95,
+    "fx_is_not_live_quote": true,
+    "vat_rate_example_france": 0.2,
+    "shipping_first_batch_eur": [
+      40,
+      90
+    ],
+    "setup_rework_spares_reserve_per_batch_eur": [
+      100,
+      250
+    ],
+    "excludes": [
+      "engineering labour",
+      "manual enclosure/harness assembly and debug labour",
+      "tools and print hardware",
+      "certification",
+      "extra PCB spins",
+      "commercial audio",
+      "tax and shipping in recurring tables"
+    ],
+    "quote_status": "no binding supplier or fabrication quote",
+    "physical_validation": "pending",
+    "orders_placed": false
+  }
+}
