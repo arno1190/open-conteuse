@@ -1,7 +1,7 @@
 {
   "physical_validation": "pending",
   "sources": {
-    "scripts/build_dossier.py": "bc0bdb168db094fe585de4b83115197d5ea333778a1913f93a082f4540c6220b",
+    "scripts/build_dossier.py": "517c549223760efd13da2583a7e2550a5f5b3be161a7bedf4482db3875e2a442",
     "docs/design/CARDS.md": "37524430e0f1b3803a7a81bdeda26c41f05424bca9c99d9ea828768d320d40a2",
     "rfq/LAUNCH-PLAYBOOK.md": "0777c0c12f08fb5ace8234804f7d714469b396fc044988dd2f68ea8b122f9080",
     "docs/AUDIT.md": "4f8acd1daba4eb01e7cf0955eb2eecaf7088f1bf8698df3cb475e473010d5265",
@@ -15,6 +15,7 @@
     "site/PRICING.md": "99a972b061100b050c097ee7413fbc5e2605d8ac8b323ce70696065c407f0a84",
     "content/starter/cards-preview.png": "3e386c4530a728389a3bbe4caf0d20f134d0255977175f8c64d690ced490eea4",
     "content/starter/cartridge-labels-preview.png": "cd77aeb63d48bc09c1ca673f3041c1339633171d2813df9dad1d30d5e6e3ffe2",
+    "content/starter/cartridge-labels.json": "257763c3a4334aceb01dc5592f63b5f5dd8e4f3f8bc7e6bbd47d7d1e6c2fa6ed",
     "hardware/mini/BOM.csv": "110e7490ce643f17c5f30901144ff0b165d5b8a16c50bd0219ccf3123fb81901",
     "hardware/explore/BOM.csv": "4ca946f2ab27a11c3799fe11729edeb6c5d4a32d69d5b81442983afbbd598808",
     "hardware/card-reader/BOM.csv": "dd50dded973ee3fead3f212ca44479fded574b447e5daa7127ae1427c8d31fd6",
@@ -71,7 +72,7 @@
     "docs/design/images/mini-top.png": "20fd84e6718c981f98eac5e43c96840220f65bf3453c5464041f59a6906e9fd2"
   },
   "outputs": {
-    "rfq/engineering-dossier.pdf": "847e1762c5d7e2f28d9ceecbaa2b60ea7101796a79f3fd1d6d3749e4e6528ed2",
+    "rfq/engineering-dossier.pdf": "77c27e1c108d5ae7f5dffa4a5058ab5a7e3508dda7abff45afdd42d2a7e71a2a",
     "docs/design/gallery.html": "0cd7f74b90e87d645cd577bef6f5b48ef921ac84a60258acfddd5ce581313b1e",
     "docs/design/bom.html": "d891e2813c727d6fa1b718cd36cd016171271c974e82df466a10d80286aab840"
   }

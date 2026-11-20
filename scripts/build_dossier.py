@@ -16,7 +16,7 @@ styles=getSampleStyleSheet()
 for k in styles.byName:styles[k].fontName='D'
 styles.add(ParagraphStyle(name='Tiny',fontName='D',fontSize=6.5,leading=9))
 styles['BodyText'].fontSize=9;styles['BodyText'].leading=13
-inputs=[ROOT/p for p in ['scripts/build_dossier.py','docs/design/CARDS.md','rfq/LAUNCH-PLAYBOOK.md','docs/AUDIT.md','rfq/README.md','rfq/manufacturing-notes.md','docs/design/README.md','docs/design/UX.md','docs/PERSONALIZATION.md','docs/design/ELECTRICAL.md','docs/VALIDATION.md','site/PRICING.md','content/starter/cards-preview.png','content/starter/cartridge-labels-preview.png']]+[HARDWARE/n/'BOM.csv' for n in BOARDS]+sorted((DOCS/'images').glob('*.png'))
+inputs=[ROOT/p for p in ['scripts/build_dossier.py','docs/design/CARDS.md','rfq/LAUNCH-PLAYBOOK.md','docs/AUDIT.md','rfq/README.md','rfq/manufacturing-notes.md','docs/design/README.md','docs/design/UX.md','docs/PERSONALIZATION.md','docs/design/ELECTRICAL.md','docs/VALIDATION.md','site/PRICING.md','content/starter/cards-preview.png','content/starter/cartridge-labels-preview.png','content/starter/cartridge-labels.json']]+[HARDWARE/n/'BOM.csv' for n in BOARDS]+sorted((DOCS/'images').glob('*.png'))
 frozen={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}
 def board_label(name):
  return {'card':'Galia Mini story card','mini':'Galia Mini','explore':'Galia Explore','card-reader':'Contact-ID reader','story-card':'Story cartridge'}.get(name,name)
@@ -64,10 +64,17 @@ for name in BOARDS:
  t=Table(rows,colWidths=[45,145,215,58],repeatRows=1,hAlign='LEFT');t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BACKGROUND',(0,0),(-1,0),'#d7e8e0'),('LINEBELOW',(0,0),(-1,-1),.25,'#d0d0d0'),('TOPPADDING',(0,0),(-1,-1),4),('BOTTOMPADDING',(0,0),(-1,-1),4)]));flow.append(t)
 images=sorted((DOCS/'images').glob('*.png'))
 for p in images:
- flow.append(PageBreak());para(view_label(p),'Heading1');para('Actual current CAD geometry with nominal component envelopes. Colours aid reading; orange shows section faces. Physical validation pending. Harness routes are assumptions.');flow.append(Spacer(1,10));buffer=io.BytesIO();RasterImage.open(p).convert('RGB').save(buffer,format='JPEG',quality=90,subsampling=0);buffer.seek(0);flow.append(Image(buffer,width=465,height=465))
+ flow.append(PageBreak());para(view_label(p),'Heading1');para('Actual current CAD geometry with nominal component envelopes. Colours aid reading; orange shows section faces. Physical validation pending. Harness routes are assumptions.');flow.append(Spacer(1,10));buffer=io.BytesIO();picture=RasterImage.open(p).convert('RGB');picture.save(buffer,format='JPEG',quality=90,subsampling=0);buffer.seek(0);w,h=picture.size;scale=min(465/w,600/h);flow.append(Image(buffer,width=w*scale,height=h*scale))
 flow.append(PageBreak());para('Original bilingual listening collection','Heading1');para('Three original tales, six scripts and six card faces are supplied separately in content/starter. Printable cards and the read-aloud booklet are public preview assets. These are paper artwork, not electronic cartridges. Scripts and final recordings need separate approval; six downloadable local synthetic recordings and optional browser speech are demonstrations only.')
 flow.append(Image(str(ROOT/'content/starter/cards-preview.png'),width=350,height=495))
-flow.append(PageBreak());para('Electronic cartridge artwork labels','Heading1');para('Labels33.6×38.6mm fit the nominal34×39mm recess with0.2mm per-edge clearance. Total adhesive and paper thickness≤0.15mm is an unvalidated assumption. These artworks contain catalogue keys, not DS2401 ROM IDs. Physical fit and child suitability remain pending.');flow.append(Image(str(ROOT/'content/starter/cartridge-labels-preview.png'),width=350,height=495))
+spec=json.loads((ROOT/'content/starter/cartridge-labels.json').read_text())
+def dimensions(values):return '×'.join(f'{value:g}' for value in values)
+window=[spec['window_xy'][i+2]-spec['window_xy'][i] for i in (0,1)]
+pocket=[spec['pocket_xy'][i+2]-spec['pocket_xy'][i] for i in (0,1)]
+flow.append(PageBreak());para('Electronic cartridge picture inserts','Heading1')
+para(f"Replaceable paper {dimensions(spec['label_size'])}mm, maximum {spec['maximum_paper_thickness']:g}mm thick, no adhesive. It fits behind a {dimensions(window)}mm clear window inside the {dimensions(pocket)}mm pocket. Paper inset from the window is {spec['label_inset_from_window_edge']:g}mm per edge; paper-to-pocket clearance is {spec['label_to_pocket_clearance_per_edge']:g}mm per edge. These pictures contain catalogue keys, not DS2401 ROM IDs. Adult screw access, physical fit, window retention and child suitability remain unvalidated.")
+flow.append(Image(str(ROOT/'content/starter/cartridge-labels-preview.png'),width=350,height=495))
+
 def foot(c,d):c.setFont('D',7);c.drawString(40,24,'Galia · RFQ engineering reference · physical validation pending');c.drawRightString(555,24,str(d.page))
 SimpleDocTemplate(str(RFQ/'engineering-dossier.pdf'),pagesize=A4,rightMargin=38,leftMargin=38,topMargin=35,bottomMargin=40,title='Galia current engineering RFQ dossier',author='Galia').build(flow,onFirstPage=foot,onLaterPages=foot)
 # Browse all views without requiring a CAD viewer.
