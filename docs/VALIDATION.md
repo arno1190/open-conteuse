@@ -4,7 +4,7 @@
 
 | Check | Result and practical limit |
 |---|---|
-| Host | `npm ci --ignore-scripts` then `sh scripts/check.sh`: 52 unit tests, content/demo, rollback/interruption/restart, typed HTTP errors, firmware export boundaries and artifact checks. Host behaviour does not prove device playback. |
+| Host | `npm ci --ignore-scripts` then `sh scripts/check.sh`: 54 unit tests, content/demo, rollback/interruption/restart, typed HTTP errors, firmware export boundaries and artifact checks. Host behaviour does not prove device playback. |
 | Firmware | Both muted Mini/Explore profiles compile with pinned PlatformIO/platform/framework. Native policy/WAV/content/card/control executables and shared Python/C++ parser fixtures pass. Incremental SD/hash verification and parent Wi-Fi transfer/mapping are active engineering sources; the legacy pointer loader is compile-covered. No board flashed. |
 | Electronics | All-severity KiCad ERC/DRC and schematic parity on all four boards: zero violations/unrouted/parity errors. Every numbered native pad, including duplicate-number pads, matches declared contracts. Shared GPIO/address/key definitions are checked. Native source/report hashes and tool version are recorded. |
 | Mechanical CAD | 58 exports/checks pass: closed positive-volume meshes, full component counts, shell/body/internal/cap-pair/motion checks, reference USB/headphone plugs, 41-position card sweep, wrong-orientation positive interference and both band-slot gauges. These are nominal/coarse mesh checks, not physical fit or comprehensive self-intersection certification. |
@@ -24,3 +24,5 @@ Pending physical/DFM evidence includes received parts and mated plugs/wires; scr
 No purchase, fabrication, supplier acceptance, binding quote or physical prototype is claimed. Source/RFQ publication is not a child-ready product launch. Provider/MCP/subscription integration remains a separate future adapter; standalone example narration is not a connected parent-studio feature.
 
 Card feature software evidence: native strict-base64 all-byte tests, pre-allocation body bounds and wrap-safe receive deadlines, injected mapping short/corrupt write and remove/rename failures; HTTP peer upload/approval/retry/corrupt-commit/verification polling tests; actual parent-UI decode ordering and local Chromium picture/print-size checks. These do not execute the ESP32 Wi-Fi/SD hardware. See design/CARDS.md for setup and remaining qualification.
+
+Mounted-SD interoperability: actual CLI export is read by the shared firmware mapping decoder; host tests cover compatible records, failed inactive-slot writes, unsupported IDs and missing/unapproved revisions.

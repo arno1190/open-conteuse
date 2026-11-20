@@ -42,6 +42,12 @@ The local studio contacts only192.168.4.1, without redirects or an arbitrary dev
 
 The IDs and integrity hashes are not authentication credentials. Parent authentication is the independent ephemeral setup token carried inside the WPA2-protected private AP. No TLS/cloud endpoint or public studio is provided. Transfer/parser limits and software recovery tests do not prove SD power-loss behaviour, radio reliability, throughput or physical safety.
 
+## Mounted-SD export uses the same mapping records
+
+Power the player off before removing its SD card. The existing `python3 -m conteuse.tools --root .studio export SOURCE MOUNTED_SD/library` command now writes the same per-ROM two-slot records consumed by firmware, as well as legacy host snapshots in cards.json/stations.json. Only CRC-valid DS2401 IDs pointing to an approved, device-compatible revision actually verified on that SD are emitted. Missing/unapproved content, legacy non-DS2401 IDs and conflicting case aliases are reported as skipped rather than silently becoming physical assignments. Physical ID spelling is normalized on new assignments. The export preserves the previous mapping slot and confirms the new record; failed writes do not deliberately overwrite the active slot.
+
+The firmware test job runs the actual CLI export and feeds its generated record into the shared firmware mapping decoder. This verifies the producer/consumer format, not physical SD power-loss behaviour. Wi-Fi assignment and powered-off SD export use the same ID/revision/generation/checksum contract.
+
 ## Qualification still pending
 
 Real-board upload/CRC/SD fault tests; reset/removal/brownout during commit and mapping writes; timeout/radio shutdown measurements; finished parent onboarding; received window/paper tolerances; screw/peg/frame strength, contact wear and repeated opening; and integrated playback/acoustic validation. No purchases, supplier outreach or fabrication orders are authorized by these sources.

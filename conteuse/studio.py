@@ -69,6 +69,17 @@ class Studio:
     def assign_card(self, uid, digest):
         if not isinstance(uid, str) or not 1 <= len(uid) <= 64 or digest not in self.state["approvals"]:
             raise ValueError("invalid card or unapproved content")
+        # Physical ROM text has one canonical representation; retain legacy host IDs.
+        from .wifi import card_uid
+        try:
+            physical = card_uid(uid)
+        except ValueError:
+            physical = None
+        if physical:
+            for old in list(self.state["cards"]):
+                if old.upper() == physical:
+                    del self.state["cards"][old]
+            uid = physical
         self.state["cards"][uid] = digest
         self.save()
 

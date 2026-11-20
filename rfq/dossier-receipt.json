@@ -2,16 +2,16 @@
   "physical_validation": "pending",
   "sources": {
     "scripts/build_dossier.py": "bc0bdb168db094fe585de4b83115197d5ea333778a1913f93a082f4540c6220b",
-    "docs/design/CARDS.md": "f77f5d216726813ccccc1b726f21789149bcb8a69093a5f8fc3266a206d37fdb",
+    "docs/design/CARDS.md": "0ad5b829bc8cd6ccefb1af4f08b2f1ec313992d6e8fa7549016887181b19ee64",
     "rfq/LAUNCH-PLAYBOOK.md": "0777c0c12f08fb5ace8234804f7d714469b396fc044988dd2f68ea8b122f9080",
-    "docs/AUDIT.md": "7bb26b61cc08cd087a707ea101139f9090abb3051a91aebd603f2d481c92dbb2",
+    "docs/AUDIT.md": "df37df7a180f421c7924e2f31118328e44e842ed07aa535989649088b6311aea",
     "rfq/README.md": "59a0d1d74c06d6c2f34aa30976e2ac0dfa14435c7eb4877cdd9c1ee5ef10f10a",
     "rfq/manufacturing-notes.md": "483d72950607b6fa2c45266ffc41a18142b97ff09cfb2e86c856a36f178c68c0",
     "docs/design/README.md": "e6cf2a32f598d6d8e11a5a9376662007693fa78db7af99ab4a5dec48f62dbe0e",
     "docs/design/UX.md": "ec1eecede5b49896b71f7d4d1b04d99d21b531172ff18ef273bbb149725b4dbd",
     "docs/PERSONALIZATION.md": "e0e9483655cd945a69a600f5ad90bcc593bbde8a4d8a20876e2ddc20b4f02917",
     "docs/design/ELECTRICAL.md": "19e939e41b4e13b3c2e11e2a96acd953fca4623ea7dba4deda353aceee5d6fe8",
-    "docs/VALIDATION.md": "6bdb6c10e5225a745124704073d17f194c55568146b942418af93e742949ca8b",
+    "docs/VALIDATION.md": "3eb1f93ad00c15bf3249d632649ba9b26d70cfca86135960737982090051e6e5",
     "site/PRICING.md": "99a972b061100b050c097ee7413fbc5e2605d8ac8b323ce70696065c407f0a84",
     "content/starter/cards-preview.png": "3e386c4530a728389a3bbe4caf0d20f134d0255977175f8c64d690ced490eea4",
     "content/starter/cartridge-labels-preview.png": "cd77aeb63d48bc09c1ca673f3041c1339633171d2813df9dad1d30d5e6e3ffe2",
@@ -71,7 +71,7 @@
     "docs/design/images/mini-top.png": "20fd84e6718c981f98eac5e43c96840220f65bf3453c5464041f59a6906e9fd2"
   },
   "outputs": {
-    "rfq/engineering-dossier.pdf": "346caeb69b7a35dbab30df4c7bd76030e96599b114b4cb2bacf8bdbc342337f2",
+    "rfq/engineering-dossier.pdf": "8bf089695abcaaa6ee16c9a36baec49b99c302df452bfe59b854d680096d21b5",
     "docs/design/gallery.html": "0cd7f74b90e87d645cd577bef6f5b48ef921ac84a60258acfddd5ce581313b1e",
     "docs/design/bom.html": "d891e2813c727d6fa1b718cd36cd016171271c974e82df466a10d80286aab840"
   }

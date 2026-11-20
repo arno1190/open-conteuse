@@ -17,3 +17,5 @@ c++ -std=c++17 -Wall -Wextra -Werror firmware/controls_test.cpp -o /tmp/conteuse
 
 c++ -std=c++17 -Wall -Wextra -Werror -Ifirmware/.pio/libdeps/mini/ArduinoJson/src firmware/admin_protocol_test.cpp -o work/admin-protocol-test
 work/admin-protocol-test
+
+python3 scripts/check_card_export.py

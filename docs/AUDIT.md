@@ -35,6 +35,8 @@ This is an engineering-source/RFQ audit, **not a declaration of a finished child
 
 New-feature review caught and corrected raw-binary truncation in Arduino WebServer, synchronous full-file verification exceeding request timeouts, body allocation before application limits, drip-fed request locking, an image-decode ordering race, ambiguous assignment-timeout wording, and dedicated-render transform/contact-placement errors. The implementation now uses bounded esp_http_server, strict binary-safe base64 chunks, incremental verification/status polling, enforced connection closure and absolute body deadlines, fault-testable two-slot mapping storage and generation-guarded local picture printing. Firmware-native tests cover all byte values, bounds/deadline wrap and corrupt/interrupted mapping operations; host HTTP peer and actual-UI tests cover transfer/approval/retry and picture ordering. No real board test is claimed.
 
+The same review found the legacy SD exporter still wrote only cards.json while the new selector consumes per-ROM slots. Export now emits the current format, gates approval/presence/ROM validity, preserves the old slot, reports skips and has an actual CLI-to-shared-decoder check.
+
 ## Evidence and verification boundaries
 
 - Four native board projects: all-severity ERC, DRC, schematic parity, complete declared native pad nets (including duplicate-number pads), GPIO/address/key mappings. `hardware/check-receipt.json` binds exact inputs and reports.

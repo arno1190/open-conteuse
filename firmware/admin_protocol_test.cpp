@@ -1,5 +1,7 @@
 #include "include/card_mapping.h"
 #include <cassert>
+#include <fstream>
+#include <iterator>
 #include <map>
 struct FakeStore {
   std::map<std::string, std::string> files;
@@ -35,7 +37,22 @@ std::string testHash(const std::string &value) {
     out[63 - i] = "0123456789abcdef"[(h >> (i * 4)) & 15];
   return out;
 }
-int main() {
+int main(int argc, char **argv) {
+  if (argc == 6) {
+    std::ifstream file(argv[1]);
+    std::string raw((std::istreambuf_iterator<char>(file)), {});
+    std::string uid = argv[2], revision = argv[3], generation = argv[4],
+                expected = argv[5];
+    auto hash = [&](const std::string &input) {
+      assert(input == uid + ":" + revision + ":" + generation);
+      return expected;
+    };
+    auto record = admin::decodeMapping(raw, uid, 0, hash);
+    assert(record.revision == revision &&
+           std::to_string(record.generation) == generation);
+    return 0;
+  }
+  assert(argc == 1);
   card::Rom r{{1, 2, 3, 4, 5, 6, 7, 0}};
   r[7] = card::crc(r.data(), 7);
   auto id = admin::uid(r);

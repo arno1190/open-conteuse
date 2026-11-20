@@ -106,6 +106,7 @@ class WifiTests(unittest.TestCase):
         self.assertEqual(self.peer.mapping[UID],'old')
     def test_uid_requires_family_and_crc(self):
         self.assertEqual(card_uid(UID.lower()),UID)
+        self.studio.assign_card(UID.lower(),self.digest);self.assertIn(UID,self.studio.state['cards'])
         for value in ['../bad','0'*16,UID[:-2]+'00',None]:
             with self.assertRaises(ValueError):card_uid(value)
     def test_incremental_verification_polling_and_deadline(self):
@@ -132,6 +133,30 @@ class WifiTests(unittest.TestCase):
         manifest['assets'].append(other);manifest_path.write_bytes(canonical(manifest))
         with self.assertRaisesRegex(ValueError,'FAT-compatible'):
             Player(TOKEN).send_card(self.source,UID,{revision(manifest)})
+
+    def test_sd_export_slots_reassignment_and_failed_write(self):
+        from conteuse.card_export import export_assignments,read_slot,checksum
+        from conteuse.packages import activate
+        target=self.root/'sd';activate(self.source,target,self.digest)
+        export_assignments(target,{UID:self.digest},self.studio.state['approvals'])
+        first=target/'cards'/f'{UID}.0.json';record=read_slot(first,UID)
+        self.assertEqual(record,{'revision':self.digest,'generation':1,'sha256':checksum(UID,self.digest,1)})
+        manifest=self.source/'manifest.json';changed=json.loads(manifest.read_text());changed['title']='Second';manifest.write_bytes(canonical(changed))
+        second=self.studio.approve(self.source);activate(self.source,target,second)
+        with patch('conteuse.card_export.atomic_json',side_effect=OSError('interrupted')):
+            with self.assertRaises(OSError):export_assignments(target,{UID:second},self.studio.state['approvals'])
+        self.assertEqual(read_slot(first,UID),record)
+        export_assignments(target,{UID:second},self.studio.state['approvals'])
+        self.assertEqual(read_slot(target/'cards'/f'{UID}.1.json',UID)['generation'],2)
+
+    def test_sd_export_skips_legacy_unapproved_and_missing_content(self):
+        from conteuse.card_export import export_assignments
+        result=export_assignments(self.root/'empty',{'legacy-card':self.digest,UID:self.digest},self.studio.state['approvals'])
+        self.assertEqual(result['exported_cards'],[]);self.assertEqual(len(result['skipped_cards']),2)
+        result=export_assignments(self.root/'empty',{UID:self.digest},{})
+        self.assertEqual(result['skipped_cards'][UID],'revision is not approved')
+        result=export_assignments(self.root/'empty',{UID:self.digest,UID.lower():'b'*64},self.studio.state['approvals'])
+        self.assertEqual(result['exported_cards'],[]);self.assertIn('conflicting',result['skipped_cards'][UID])
 
     def test_print_tool_is_local_and_has_fixed_physical_dimensions(self):
         from conteuse.studio import UI
