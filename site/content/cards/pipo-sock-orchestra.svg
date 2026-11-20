@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="400" height="600" preserveAspectRatio="xMinYMin meet" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Pipo et l’orchestre des chaussettes / Pipo and the Sock Orchestra</title>
+	<desc>Original printable paper artwork. Does not activate the electronic reader.</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="400" height="600"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-600)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="400" height="600" rx="24" ry="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<rect x="0" y="250" width="400" height="350" rx="24" ry="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,60%,50%); fill-rule: evenodd;"/>
+			<text x="30" y="563" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 18px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,1126) scale(1,-1)">LES PETITS DÉTOURS</text>
+			<rect x="74" y="355" width="52" height="119" rx="11" ry="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,85%,47%); fill-rule: evenodd;"/>
+			<rect x="54" y="335" width="72" height="49" rx="18" ry="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,85%,47%); fill-rule: evenodd;"/>
+			<path d="M 78,451 L 122,451 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<circle cx="91" cy="420" r="3.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<circle cx="110" cy="420" r="3.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<path d="M 77,368 L 122,368 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 3;"/>
+			<path d="M 77,384 L 122,384 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 3;"/>
+			<path d="M 77,400 L 122,400 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 3;"/>
+			<rect x="174" y="394" width="52" height="119" rx="11" ry="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<rect x="154" y="374" width="72" height="49" rx="18" ry="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<path d="M 178,490 L 222,490 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<circle cx="191" cy="459" r="3.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<circle cx="210" cy="459" r="3.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<circle cx="186" cy="412" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,60%,50%); fill-rule: evenodd;"/>
+			<circle cx="208" cy="428" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,60%,50%); fill-rule: evenodd;"/>
+			<circle cx="189" cy="436" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,60%,50%); fill-rule: evenodd;"/>
+			<rect x="270" y="350" width="52" height="119" rx="11" ry="11" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,84%,82%); fill-rule: evenodd;"/>
+			<rect x="250" y="330" width="72" height="49" rx="18" ry="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,84%,82%); fill-rule: evenodd;"/>
+			<path d="M 274,446 L 318,446 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<circle cx="287" cy="415" r="3.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<circle cx="306" cy="415" r="3.5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<ellipse cx="290.0" cy="355.0" rx="8.0" ry="5.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<path d="M 61,463 L 61,500 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<circle cx="53" cy="463" r="9" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<path d="M 61,500 L 78,494 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<path d="M 318,450 L 318,487 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<circle cx="310" cy="450" r="9" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<path d="M 318,487 L 335,481 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<text x="30" y="215" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,430) scale(1,-1)">Pipo et l’orchestre</text>
+			<text x="30" y="181.96" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,363) scale(1,-1)">des chaussettes</text>
+			<text x="30" y="139.92000000000002" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 23px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,279) scale(1,-1)">Pipo and the Sock Orchestra</text>
+			<text x="30" y="25" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 16px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,50) scale(1,-1)">4–7 · ~4 min · FR / EN</text>
+		</g>
+	</g>
+</svg>

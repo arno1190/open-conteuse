@@ -1,0 +1,48 @@
+{
+  "status": "engineering_draft",
+  "units": "mm",
+  "label_size": [
+    33.6,
+    38.6
+  ],
+  "recess_xy": [
+    3,
+    4,
+    37,
+    43
+  ],
+  "label_xy": [
+    3.2,
+    4.2,
+    36.8,
+    42.8
+  ],
+  "nominal_edge_clearance": 0.2,
+  "maximum_total_paper_adhesive_thickness": 0.15,
+  "physical_validation": "pending",
+  "inserted_cartridge_exposed_y": [
+    0,
+    20
+  ],
+  "label_visible_height_when_inserted": 15.8,
+  "recognition_header_label_top_y": [
+    1.2,
+    14.0
+  ],
+  "recognition_header_cartridge_y": [
+    5.4,
+    18.2
+  ],
+  "recognition_header_contents": [
+    "distinct character icon",
+    "MILO / NORI / PIPO short name"
+  ],
+  "recognition_header_assumption": "Label top maps to handleward canonical Y4.2; nominal inserted exposure ends at cartridge Y20. Physical placement, occlusion and readability remain pending.",
+  "electronic_rom_supplied": false,
+  "requires": "assembled DS2401 cartridge and parent-created local assignment",
+  "artwork_keys": {
+    "milo-moon-post": "MILO-01",
+    "nori-cloud-pocket": "NORI-02",
+    "pipo-sock-orchestra": "PIPO-03"
+  }
+}

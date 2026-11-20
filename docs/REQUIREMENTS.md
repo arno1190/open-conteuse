@@ -1,28 +1,11 @@
-# Product requirements
+# Current requirements
 
-User brief accepted 2026-11-17; live Internet radio explicitly added.
+Mini must be close to the Miyoo Mini footprint, screen-free, with a keyed plug-in **ID** cartridge selecting parent-approved audio already stored on microSD. Explore adds a 2.4-inch display and button navigation. Current envelopes: Mini65×95×24 mm; Explore67×95×24 mm.
 
-## Variants
+Both use USB-C charging/data, retain 3.5mm headphones, provide physical playback/volume/navigation controls, protected rechargeable cell with bonded thermistor, native USB and Wi-Fi for parent-managed functions. Offline playback is the intended normal mode. No microphone/cloud conversation is required. Card IDs are selectors, not authentication.
 
-Mini: approximately 3–5 years, no display, NFC card slot in the upper front, previous/play/next buttons, volume rocker, spoken choices and status LED. Explore: approximately 6–15 years, roughly 2.8-inch 320x240 colour TFT, D-pad/A/B, volume rocker, optional NFC. Both use a rounded portrait Game Boy inspired form, shared electronics, replaceable battery, Wi-Fi, mono speaker, headphone jack, USB-C and microSD. Dimensions remain provisional until components are measured.
+Parent software must support original/local content, bounded podcast import and subscriptions, exact-byte approval of new episodes/revisions, staged verified libraries and previous-library fallback. Existing host foundations are implemented; unattended subscriptions, production on-device codec playback/sync and finished firmware remain open milestones.
 
-## Content
+Supply an RFQ-ready engineering package: native electronics, printable enclosure sources/STLs, illustrated integration, component identity and source/query for each BOM row, assembly/test plan, cost assumptions and quote questions. Use machine PCBA assembly rather than asking the owner to solder QFN parts. No purchases or fabrication orders.
 
-Support imported audio and family recordings, publisher RSS podcast downloads, linear playlists, offline branching stories, bookmarks and bedtime timers. Apple/Spotify links are discovery inputs: resolve public publisher RSS where available with parent confirmation. They do not grant audio export or access to exclusives. No DRM bypass is part of this project.
-
-Live radio: parent-approved configurable station registry; card selection on Mini, menu on Explore. Direct MP3/AAC first; HLS requires a separate capability decision and tests. Bounded reconnects, buffering, clear offline indication, separate volume limits and sleep timers. Radio station approval cannot guarantee the suitability of every live programme. No radio recording in the initial scope.
-
-## Parent studio
-
-Local responsive web UI; optional self-hosted service for background RSS, transcoding and AI. Direct player upload must remain possible without the service. Device pairing requires physical presence and a per-device secret; no default shared admin credential. Manage multiple devices, library revisions, cards, offline readiness, quotas, backups and updates.
-
-AI: choose age/topic/length/objective, gather sources, draft, editorial/factual review, explicit script approval, narration, audio preview, explicit publication approval. Keep transcript, citations, attribution and revision. Learn from the accessible explanations of Petit/ Mini Vulgaire and narrative history of Les Odyssées; use original writing and licensed voices. No child-facing unrestricted AI chat.
-
-## Acceptance priorities
-
-1. Playback survives missing Wi-Fi and unavailable studio.
-2. Interrupted download or power loss cannot replace a good library with a partial one.
-3. Content revisions require renewed approval; only approved final assets sync.
-4. Unknown cards and dead stations fail understandably.
-5. Headphone insertion mutes the speaker; output limits require physical measurement.
-6. Every deliverable distinguishes host tests, firmware builds and bench results.
+Public FR/EN showcase must use original identity/copy and transparent development status; target prices are conditional. Original stories/cards must distinguish drafts and synthetic previews from approved final audio. All physical validation remains pending until measurements are available.

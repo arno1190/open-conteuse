@@ -1,4 +1,5 @@
-enclosure/integrated/**/*.stl binary
-enclosure/compact-r1/**/*.stl binary
+*.stl binary
 *.pdf binary
-hardware/compact-r1/*-BOM.csv whitespace=cr-at-eol
+# Preserve upstream licence notices verbatim.
+content/starter/FONT-LICENSE.txt whitespace=-blank-at-eol,-blank-at-eof
+content/starter/tts-notices/*.txt whitespace=-blank-at-eol,-blank-at-eof

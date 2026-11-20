@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="400" height="600" preserveAspectRatio="xMinYMin meet" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Milo et le courrier de la Lune / Milo and the Moon Post</title>
+	<desc>Original printable paper artwork. Does not activate the electronic reader.</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="400" height="600"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-600)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="400" height="600" rx="24" ry="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<rect x="0" y="250" width="400" height="350" rx="24" ry="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,71%,27%); fill-rule: evenodd;"/>
+			<text x="30" y="563" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 18px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,1126) scale(1,-1)">LES PETITS DÉTOURS</text>
+			<circle cx="276" cy="439" r="73" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<circle cx="301" cy="462" r="68" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,71%,27%); fill-rule: evenodd;"/>
+			<polygon points="64 499, 61.21978 491.8267, 53.53838 491.3992, 59.5015 486.5383, 57.53436 479.1008, 64 483.27, 70.46564 479.1008, 68.4985 486.5383, 74.46162 491.3992, 66.78022 491.8267" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<polygon points="323 343, 320.7253 337.1309, 314.4405 336.7812, 319.3194 332.8041, 317.7099 326.7188, 323 330.13, 328.2901 326.7188, 326.6806 332.8041, 331.5595 336.7812, 325.2747 337.1309" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<polygon points="74 358, 71.97802 352.783, 66.39155 352.4721, 70.72837 348.937, 69.29772 343.5279, 74 346.56, 78.70228 343.5279, 77.27163 348.937, 81.60845 352.4721, 76.02198 352.783" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<rect x="88" y="305" width="214" height="127" rx="12" ry="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<path d="M 93,421 L 194,351 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<path d="M 194,351 L 297,421 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<path d="M 94,309 L 152,357 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<path d="M 296,309 L 239,357 Z" style="stroke: rgb(9%,24%,23%); stroke-linecap: round; stroke-width: 5;"/>
+			<circle cx="170" cy="385" r="5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<circle cx="218" cy="385" r="5" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,24%,23%); fill-rule: evenodd;"/>
+			<text x="30" y="215" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,430) scale(1,-1)">Milo et le courrier de</text>
+			<text x="30" y="181.96" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 28px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,363) scale(1,-1)">la Lune</text>
+			<text x="30" y="139.92000000000002" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 23px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,279) scale(1,-1)">Milo and the Moon Post</text>
+			<text x="30" y="25" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 16px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,50) scale(1,-1)">4–7 · ~4 min · FR / EN</text>
+		</g>
+	</g>
+</svg>

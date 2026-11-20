@@ -24,11 +24,4 @@ int main() {
     p.failed(); p.failed(); assert(p.state == conteuse::State::Buffering);
     p.failed(); p.failed(); assert(p.state == conteuse::State::Offline);
     p.local(); assert(!p.wifi && !p.speaker());
-    conteuse::Button b;
-    assert(!b.update(true, UINT32_MAX - 10));
-    assert(!b.update(false, UINT32_MAX - 5));
-    assert(!b.update(true, UINT32_MAX - 2));
-    assert(!b.update(true, 10));
-    assert(b.update(true, 28));
-    assert(!b.update(true, 60));
 }

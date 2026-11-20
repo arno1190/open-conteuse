@@ -1,0 +1,9 @@
+reference,mpn,description,quantity,unit_eur_low,unit_eur_high,source,footprint,basis,search
+J1,OC-WIRE-3,card,1,0,0,drawing-defined solder-wire termination,Compact:Wire3_Top,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=OC-WIRE-3
+P1,P70-1000045R,card,1,0.8,1.8,https://www.harwin.com/products/P70-1000045R,Compact:Pogo_P70_1000045,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=P70-1000045R
+P2,P70-1000045R,card,1,0.8,1.8,https://www.harwin.com/products/P70-1000045R,Compact:Pogo_P70_1000045,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=P70-1000045R
+R1,RC0603FR-074K3L,card,1,0.01,0.06,https://www.yageo.com/en/Product/Index/product_type/chip-resistors,Resistor_SMD:R_0603_1608Metric,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=RC0603FR-074K3L
+R2,RC0603FR-07330RL,card,1,0.01,0.06,https://www.yageo.com/en/Product/Index/product_type/chip-resistors,Resistor_SMD:R_0603_1608Metric,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=RC0603FR-07330RL
+D1,TPD1E10B06DPYR,card,1,0.15,0.5,https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf,Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=TPD1E10B06DPYR
+D2,"BAT54S,215",card,1,0.05,0.2,https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf,Package_TO_SOT_SMD:SOT-23,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=BAT54S%2C215
+PCB,OC-ID-READER-PCB,50x11x1.6mm 2layer FR4 reader; MOQ/NRE excluded,1,1,3,hardware/card-reader/card-reader.kicad_pcb,external,engineering allowance; not a quote,https://www.google.com/search?q=OC-ID-READER-PCB

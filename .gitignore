@@ -18,11 +18,14 @@ work/
 *.kicad_prl
 *.kicad_sch.lck
 *.kicad_pcb.lck
-# Versioned integration reference meshes and prototype print exports only.
-!enclosure/integrated/models/*.stl
-!enclosure/integrated/print/*.stl
-enclosure/integrated/print/*.log
-
-# Compact R1 reviewed prototype mesh exports.
-!enclosure/compact-r1/print/*.stl
+# Current source-derived engineering print exports.
+!enclosure/print/**/*.stl
 logs/
+
+site/.openai/
+.openai/
+
+rfq/*.zip
+
+!content/starter/audio/*.mp3
+!site/content/audio/*.mp3

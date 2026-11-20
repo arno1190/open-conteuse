@@ -1,0 +1,3 @@
+#include "include/card_id.h"
+#include <cassert>
+int main(){const uint8_t check[]={49,50,51,52,53,54,55,56,57};assert(card::crc(check,9)==0xA1);card::Rom a{1,2,3,4,5,6,7,0};a[7]=card::crc(a.data(),7);assert(card::valid(a));card::Filter f;assert(!f.sample(&a));assert(!f.sample(&a));assert(f.sample(&a)&&f.present);auto bad=a;bad[3]^=1;assert(!card::valid(bad));assert(!f.sample(&bad)&&f.present);assert(f.sample(nullptr)&&!f.present);f.sample(&a);f.sample(&a);assert(f.sample(&a)&&f.present);auto b=a;b[2]++;b[7]=card::crc(b.data(),7);assert(f.sample(&b)&&!f.present);f.sample(&b);assert(f.sample(&b)&&f.present&&f.active==b);}

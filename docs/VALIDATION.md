@@ -1,38 +1,22 @@
-# Validation record — 2026-11-17
+# Current release validation
 
-Executed in the managed Linux workspace. No board, battery, transducer, printer or instruments were attached. Results below are host/build/CAD evidence only. No purchasing/fabrication, flashing or physical safety validation occurred.
+20 November 2026. Digital engineering checks pass; all physical validation remains pending. Reports and hash receipts are part of this source release.
 
-| Check | Actual result |
-| --- | --- |
-| `sh scripts/check.sh` | 32 standard-library unit tests passed; draft example, recovery/player demo and CAD coordinate assertions passed |
-| `sh scripts/firmware-check.sh` (PlatformIO 6.1.18, see environment below) | Mini, Explore, Mini bench-audio and Explore bench-audio all compiled/linked successfully; native C++ policy/WAV and content-parser tests passed with `-Wall -Wextra -Werror` |
-| `sh scripts/cad-check.sh` — KiCad 9.0.2 ERC | Zero errors/warnings; all severities, no exclusions |
-| Same — KiCad DRC with `--schematic-parity` | Zero violations, zero unconnected pads, zero parity issues; all severities, no exclusions |
-| Same — OpenSCAD 2021.01 | Eight STL renders: Mini/Explore × front/back/coupon/plunger; all `Simple: yes`, `Volumes: 2` (one bounded solid plus exterior), no warning/error |
-| Live HTTPS smoke check to the owned public repository example | Connection refused by this environment network path; no live fetch/stream validation claimed |
-| Studio UI inline JavaScript `node --check` | Syntax check passed; HTTP mutation auth/Host/Origin and approval workflow exercised by host tests |
-| Python `compileall`, Draft 2020-12 schema/example validation, `git diff --check` | Passed |
+| Check | Current result and practical limit |
+|---|---|
+| Host | `sh scripts/check.sh`:32 unit tests plus content/demo, library interruption/restart and artifact/content checks. Host behaviour does not prove device playback. |
+| Firmware | `sh scripts/firmware-check.sh`:Mini and Explore muted profiles compile with pinned PlatformIO dependencies. Native policy/WAV, content-parser, Dallas CRC/debounce and control-policy executables pass. No board flashed. |
+| Electronics | KiCad9 ERC and native DRC with all severities and schematic parity on all4 boards:zero violations, zero unrouted pads, zero parity issues. Actual reports are in each board’s checks/. |
+| Mechanical CAD | `sh scripts/cad-check.sh`:54 exports/gates pass, including manifold/positive-volume plastic meshes, shell/body and main-board/peripheral intersections, cap pairs, sampled cap/shell motion, reference plugs against shell/PCB,41-position Mini card sweep and wrong-orientation interference. The compliant detent bump is deliberately excluded from the rigid insertion sweep; its nominal lateral deflection is0.35mm. |
+| Views and document |46 current coloured views and the consolidated PDF/gallery/BOM are source-bound by frozen-input receipts. The release checker verifies sources, published outputs and available prepared inputs, plus the full RFQ manifest. Images use nominal component envelopes and proposed finish colours/ink, not measured fit or supplier-certified models. |
+| Manufacturing reference |64 quote-only Gerber/drill/map/placement files are bound to the current native board hashes. They carry no fabrication authorization. |
+| Original collection |3 bilingual stories,6 scripts and6 local synthetic MP3s; SVG/PDF cards and cartridge labels. All MP3s decode; script/audio hashes and public mirrors match. Scripts, listening suitability and final recording approval remain pending. |
+| Showcase | Static checks cover128 translated labels,13 local references and3 bilingual stories; JS syntax passes. An independent Node VM/DOM simulation with mock Audio covers sources/durations/downloads, play/stop, language/close/pageleave cancellation, stale callbacks, errors, path rejection and voice fallback. This is UI logic verification, not visual browser or actual-listening QA. |
 
-Build reproduction used:
+Managed browser preview could not start: its relay timed out opening port4173. No alternative browser infrastructure or public parent studio was started. Browser layout, narration quality and the deployed public route need separate observation; release/publication notes record any later checks.
 
-```sh
-PLATFORMIO_CORE_DIR="$PWD/work/pio" PIO="$PWD/work/toolenv/bin/pio" sh scripts/firmware-check.sh
-```
+The control tests include release-to-arm, debounce, nonrepeating navigation, pause-priority chords with full-release inhibition, bounded volume repeat/ceiling, choice/prompt context, end/help actions and timer wrap. Diagnostics log readable actions and keep speaker request LOW and mute-latch clear asserted. They do not implement the finished integrated-codec playback or production synchronization flow.
 
-Framework 2.0.17 (PlatformIO package 3.20017.241212+sha.dcc1105b), Espressif32 platform 6.9.0, exact direct libraries in `firmware/platformio.ini`. The final local build reported at most 46,220 bytes static RAM and approximately 1.07 MB flash for Explore bench-audio. Linker size is not runtime free heap, decoder load, performance or battery consumption. Runtime codec allocations still need board measurements.
+Pending physical/DFM evidence: received component envelopes; standard reader screw fit/thread engagement/pullout; wire bends/strain relief; reader stiffness and spring travel over tolerances; card force, recovery, wear and contamination; cap retention, feel, wobble and mechanical overtravel protection; actual plug compatibility; LCD/FPC fit; cell/charger/power/thermal faults; RF; USB/SD/brownout recovery; codec/headphone event mute and acoustic limits; finish durability; child/adult usability and applicable conformity. The Explore boost layout remains an electrical DFM qualification item before fabrication release.
 
-The committed `hardware/reports/controls-erc.rpt` and `controls-drc.rpt` are actual clean check snapshots, not hand-edited summaries. Intermediate meshes/logs, dependencies, tokens and binaries remain ignored under `work`/`.pio`. No built firmware binary is published. CI workflows repeat host checks, the four firmware configurations/native tests, and CAD checks using Debian trixie packages; remote CI results are separate from this local record.
-
-Coverage includes invalid paths/symlinks, truncated/changed/oversized assets, graph traps, stale approval, interrupted staging, corrupt-active fallback, pairing expiry/reuse/authentication, dynamic episode bytes, hostile URL/redirect/response boundaries, editorial invalidation, canonical WAV export limits and debounce timer wraparound. Fixture network tests make no external requests. No live station availability or content suitability is claimed.
-
-Pending physical evidence is listed in `hardware/ASSEMBLY.md`; dimensions/fit assumptions are in `enclosure/DIMENSIONS.md`. CAD correctness cannot establish electrical/acoustic/mechanical/battery safety or child-product compliance.
-
-## Integrated modular sources, 2026-11-17
-
-39 host tests pass, including collision detection, corrupt supplier-model hashes, exact identity requirements, missing quotes and purchase-pack rounding. Existing Mini/Explore/default-muted and both bench-audio firmware builds pass with native policy/content tests; these are the historical bench wiring, **not a TLV320 integrated driver build**. The integrated firmware profile remains unimplemented.
-
-The new mute-latch schematic/PCB passes KiCad9 ERC and full DRC including schematic parity with0violations/0unconnected items/0parity issues using configured stock/local libraries. Reports are in `hardware/integration/checks`. The controls PCB remains checked by the same command. New prototype exports are checked for OpenSCAD simple single solid, two-manifold STL edges, nonnegative printZ and recorded bounds/hashes. Digital geometry and supplier files do not establish physicalfit, electrical/acoustic/thermal/drop safety or print strength. MCU assembledheight, switchactuator, slicer review and all physicaltests remain pending. Source-derived PNGs show reference geometry, with simplified envelopes explicitly labelled.
-
-## Visual atlas 2026-11-18
-
-The visual atlas uses the existing manufacturing sources and adds rendering/documentation tools. Its coverage/integrity check verifies72 PNG views,16 sections, complete orthographic coverage for both variants, source/image hashes and the PDF page count. A complete render receipt records every finished figure against frozen renderer inputs. Blender regression checks verify positive native-board transform determinants, front/back orientation, alignment of all eight actuator centres and a hollow case section (about1957.33mm² of actual cut faces rather than a disk filling the enclosure). Opaque material/Boolean comparisons also confirmed that the display-only mirrored lid/button meshes produce the same rendered result as corrected winding; they are not exported manufacturing geometry. All physical fit, electrical, acoustic, thermal and retention gates remain pending.
+No purchases, fabrication, supplier acceptance, written quote or physical prototype. Public source/RFQ publication is not a production-ready or child-ready product claim. MCP, provider/TTS and subscription-plan eligibility remain a later assessment; no provider is connected or billed. The public site contains original draft content and no ordering flow.

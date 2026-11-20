@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="400" height="600" preserveAspectRatio="xMinYMin meet" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Nori et le nuage de poche / Nori and the Pocket Cloud</title>
+	<desc>Original printable paper artwork. Does not activate the electronic reader.</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="400" height="600"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-600)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="400" height="600" rx="24" ry="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,97%,93%); fill-rule: evenodd;"/>
+			<rect x="0" y="490" width="400" height="110" rx="24" ry="24" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(72%,84%,82%); fill-rule: evenodd;"/>
+			<text x="30" y="540" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 21px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,1080) scale(1,-1)">À TOI D’IMAGINER</text>
+			<text x="30" y="511" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 19px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,1022) scale(1,-1)">YOUR LITTLE DETOUR</text>
+			<text x="30" y="452" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 16px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,904) scale(1,-1)">FR</text>
+			<text x="30" y="420" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 25px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,840) scale(1,-1)">Invente un nuage-bateau.</text>
+			<text x="30" y="390.5" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 25px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,781) scale(1,-1)">Où ferait-il sa petite</text>
+			<text x="30" y="361.0" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 25px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,722) scale(1,-1)">promenade ?</text>
+			<text x="30" y="297.5" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 16px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,595) scale(1,-1)">EN</text>
+			<text x="30" y="265.5" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 25px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,531) scale(1,-1)">Imagine a cloud shaped</text>
+			<text x="30" y="236.0" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 25px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,472) scale(1,-1)">like a boat. Where would it</text>
+			<text x="30" y="206.5" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 25px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,413) scale(1,-1)">take a little walk?</text>
+			<text x="30" y="47" style="font-family: DejaVu Sans, Arial, sans-serif; font-weight: bold; font-size: 16px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,94) scale(1,-1)">PAPIER / PAPER · CC0</text>
+			<text x="30" y="24" style="font-family: DejaVu Sans, Arial, sans-serif; font-size: 13px;fill: rgb(9%,24%,23%); stroke:none;" transform="translate(0,48) scale(1,-1)">Ne déclenche pas le lecteur / Artwork only</text>
+		</g>
+	</g>
+</svg>

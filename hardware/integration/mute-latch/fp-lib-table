@@ -1,1 +1,0 @@
-(fp_lib_table (version 7) (lib (name "MuteLatch") (type "KiCad") (uri "${KIPRJMOD}/MuteLatch.pretty") (options "") (descr "Exact 2.54 mm capacitor pitch, derived from KiCad library")))

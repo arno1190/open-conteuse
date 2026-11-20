@@ -1,24 +1,11 @@
-# Architecture decisions (provisional)
+# Current architecture
 
-## Layers
+The common ESP32-S3-WROOM-1-N16R8 custom main board contains USB-C, BQ24074 charger/power path, TPS63020 nominal3.174V logic rail, TLV75518 codec supply, TLV320DAC3100 headphones, separate MAX98357A speaker amp, hardware event mute latch, microSD and TCA9534 eight-button controls.
 
-- Player: ESP32-S3 with PSRAM candidate; C/C++ audio engine, microSD, Wi-Fi sync, buttons/NFC and optional display. Validate upstream compatibility before adopting ESPuino hardware or firmware.
-- Parent studio: Python service and responsive web UI, initially local-only. RSS fetching, media preparation, review workflow and device library management.
-- Portable content: versioned JSON manifest, assets, checksums, provenance and approval bound to immutable content revisions.
-- Host core: deterministic story graph/state machine, manifest checks and sync logic tested without electronics.
+Mini exposes GPIO8 through a 330ohm protected reader with 4.3k pull-up, primary TVS and secondary Schottky clamps. A passive DS2401P+ in the cartridge answers with factory ROM serial/family/CRC. The firmware accepts three matching CRC-valid reads, removes after two misses and clears a changed selection before new debounce. One card only; no audio storage/authentication on the token. Explore uses GPIO8/9 for LCD backlight/reset instead.
 
-The draft CLI validator checks graph structure only. `packages.check_pack` additionally checks actual asset paths/sizes/hashes; canonical SHA-256 binds all manifest fields and declared audio bytes. Parent approval is stored outside the pack by the local studio and must match that revision before publish/export/simulated sync. It is a trusted local decision, not a digital signature. Firmware validates exported canonical bytes and assets before using the current or previous pointer; its capability limits and decoder formats are deliberately narrower than the host core.
+The card is keyed mechanically and has longer ground wear pad. Its leading ramp avoids sweeping full rear plastic thickness over spring contacts. Received-part tolerances and repeated insertion require physical qualification.
 
-The local studio uses the Python standard library HTTP server on loopback, a per-launch parent token, Host/Origin checks and private state. Pairing and authenticated staged transfers are host simulations. Production network onboarding, multi-pack indexes and OTA are separate integrations, not exposed by a default unauthenticated service.
+Host modules remain split into immutable content validation, playback state, staging/library activation, import/feed policy and local parent studio. Firmware diagnostics prove compilation and interfaces only, keep speaker request LOW, and do not implement finished integrated-codec playback. No public parent studio is deployed.
 
-## Implemented host sync contract / device integration pending
-
-Device requests an approved library manifest; downloads into staging; validates sizes, hashes and references; atomically activates only a complete revision. Retain the previous revision until activation succeeds. Local card assignments and bookmarks survive failed sync. Store device pairing credentials separately from content and reject unauthenticated writes.
-
-## Audio and networking
-
-Decode local files from microSD; use bounded stream buffers for live radio. Keep UI tasks independent of decoding. Never put AI provider secrets on the player. Parent studio network fetches need redirect/IP validation, response limits, timeouts and quotas to prevent SSRF and resource exhaustion. Network-dependent tests use fixtures by default.
-
-## Licence strategy
-
-Original foundation is MIT; original demonstration content is CC0. The bench radio selects ESP8266Audio, so original firmware is explicitly GPL-3.0-or-later with component notices and an AAC redistribution review gate. No upstream firmware was copied. If ESPuino is reused later, preserve its GPL obligations in derived firmware. Study STUdio formats or add an adapter with the appropriate notices; do not assume the whole repository can remain MIT after copying upstream code.
+The proposed parent-personalization/MCP boundary is specified in PERSONALIZATION.md. It is not a live provider integration. The current UX contract separates button/input policy already implemented from device playback/transfer and physical qualification still pending.

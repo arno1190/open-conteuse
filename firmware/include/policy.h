@@ -22,16 +22,4 @@ struct Policy {
     }
     bool speaker() const { return state == State::Playing && !headphones; }
 };
-struct Button {
-    bool stable = false, last = false;
-    uint32_t changed = 0;
-    bool update(bool pressed, uint32_t now) {
-        if (pressed != last) { last = pressed; changed = now; }
-        if (pressed != stable && uint32_t(now - changed) >= 30) {
-            stable = pressed;
-            return stable;
-        }
-        return false;
-    }
-};
 }
