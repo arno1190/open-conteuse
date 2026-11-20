@@ -1,0 +1,5 @@
+supplier,release_reviewed,scope_base_pilot,explore_option,currency,incoterm,engineering_nre,firmware_completion,pcb_pcba_setup,base_parts_assembly,base_enclosure_finish,three_cartridges,spare_boards,qa_fixture,packaging_shipping,tax_duty_basis,base_delivered_total,explore_increment,q5_unit,q25_unit,q100_unit,q1000_unit,moq,lead_time,quote_validity,substitution_delta,excluded_work,source_tooling_ownership,rework_terms,technical_score_30,dfm_score_20,evidence_score_15,cost_score_15,lead_score_10,terms_score_10,decision_notes
+PCBWay,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Elecrow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Seeed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JLCPCB_partial_comparison,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

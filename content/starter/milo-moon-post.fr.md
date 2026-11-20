@@ -1,44 +1,56 @@
 # Milo et le courrier de la Lune
 
-milo-moon-post · fr · CC0-1.0 · Editorial draft / Brouillon éditorial
+milo-moon-post · fr · CC0-1.0 · Editorial revision 2
 
-Script approval: pending. Final audio approval: pending. No final audio included.
+Script approval: pending. Final audio approval: pending.
 
 ## Recording direction / Direction de lecture
 
-Warm, unhurried voice, 85–105 words/minute. Leave 2 seconds between paragraphs and 8 seconds after the listener invitation. Speak the story only: these directions are not narration. No sudden effects; music is optional and none is supplied. Child may listen without answering or moving.
+Warm, conversational storyteller. Distinct but restrained dialogue; no cartoon squeaks. Natural pace, short scene pauses and one optional reflection pause. Read only the script. No music or effects are supplied. Never imply a listener answer was heard. Full listening/editorial approval remains pending.
 
 ## Story / Histoire
 
-Ce soir-là, Milo trouva une enveloppe sur son oreiller. Elle était vide. Sur le devant, on avait écrit : « Pour la Lune. À remplir avec quelque chose qui ne tient pas dans une boîte. »
+Trois coups minuscules résonnèrent à la fenêtre de Milo. Toc, toc, toc. Dehors, une factrice tenait son vélo par le guidon. Sa sacoche brillait comme une boîte de biscuits.
 
-Milo regarda sous son lit. Une chaussette ? Elle tenait dans une boîte. Un caillou ? Aussi. Son bâillement, en revanche, s'envola avant qu'il puisse l'attraper.
+« Dernier courrier pour la Lune ! annonça-t-elle. Je m'appelle Plume. Tu as quelque chose à envoyer ? »
 
-« Voilà une piste », murmura-t-il.
+Milo chercha dans sa poche. Il en sortit un bouton rouge, un mouchoir et une miette de goûter. Plume secoua doucement la tête.
 
-À la fenêtre attendait une petite factrice à vélo. Son vélo avait deux roues rondes et une sonnette en forme de croissant.
+« Des cailloux et des miettes, là-haut, il y en a déjà beaucoup. La Lune voudrait savoir comment on rit dans ta maison. Je repasse quand la grande aiguille sera tout en bas. »
 
-« Je m'appelle Plume. Tu as du courrier ? »
+Puis elle repartit, avec une sonnette qui faisait un drôle de petit hoquet.
 
-« Pas encore. Comment envoie-t-on un bâillement ? »
+Milo regarda l'horloge. Il avait le temps d'un bain pour préparer sa lettre. Mais comment mettre un rire dans une enveloppe ?
 
-« On le raconte. La Lune aime les lettres qui lui font imaginer la Terre. »
+Il essaya d'abord de rire dans un bocal. Ha, ha ! Vite, le couvercle ! Il colla l'oreille contre le verre. Rien. Il rouvrit le bocal. Toujours rien, sauf une odeur de confiture.
 
-Milo prit alors un crayon. Il dessina sa bouche toute ronde. Puis il ajouta le bruit de la pluie sur le toit, le parfum du pain grillé et le rire de son voisin.
+« Mon rire s'est échappé. Ou bien il est devenu fraise. »
 
-Si tu écrivais à la Lune, quel petit moment de ta journée choisirais-tu ? Tu peux le dire tout bas, ou simplement y penser.
+Il dessina ensuite sa bouche avec toutes ses dents. Le dessin ressemblait à une fermeture éclair. Milo le regarda longtemps. Ce n'était pas drôle du tout.
 
-Milo glissa son dessin dans l'enveloppe. Mais un coin dépassait : il avait dessiné le rire beaucoup trop grand.
+Dans la cuisine, son papa tirait une chaise. La chaise poussa un petit cri de canard. Son papa s'arrêta. Il tira encore la chaise. Le canard recommença.
 
-« Il faut le plier ? » demanda-t-il.
+Milo éclata de rire. Son papa aussi. Et plus ils essayaient de se taire, plus le canard semblait les encourager.
 
-Plume secoua la tête. « Certains rires voyagent mieux dehors. »
+Cette fois, Milo ne courut pas chercher son bocal. Il prit une grande feuille. Il dessina son papa, la chaise et un canard très étonné. En dessous, il écrivit : « Chez nous, on rit quand les meubles se prennent pour des animaux. »
 
-Elle fixa l'enveloppe à son porte-bagages. Le rire flottait derrière comme un ruban. Le vélo partit sur le chemin, puis disparut au tournant. Milo ne vit pas comment Plume rejoignait la Lune. Cela resta le secret de la factrice.
+Il ajouta le hoquet de la sonnette de Plume. Puis son rire à lui : un grand chemin jaune qui tournait autour du dessin.
 
-Le lendemain, une petite réponse attendait sur l'oreiller. Il n'y avait qu'un rond jaune et ces mots : « Merci. Ici, nous avons imaginé ton rire. Il était immense. »
+Si tu veux, imagine une chaise qui fait un bruit complètement différent. Tu peux garder cette idée pour toi.
 
-Milo sourit. Il rangea la lettre dans une boîte. Le sourire, lui, resta dehors.
+Toc, toc, toc. Plume était revenue. L'aiguille pointait tout en bas.
+
+Milo lui tendit son dessin. Mais le chemin jaune dépassait des deux côtés de l'enveloppe. Il essaya de le plier. Le papa disparut. Il essaya dans l'autre sens. Plus de canard !
+
+Alors Milo prit une deuxième enveloppe, ouvrit ses côtés et la colla à la première. Voilà une lettre assez large pour laisser tout le monde rire ensemble.
+
+Plume lut la phrase. Elle regarda le canard. Sa sonnette eut un hoquet, et elle se mit à rire à son tour.
+
+« Il fonctionne ! dit Milo. Même sans bocal ! »
+
+Le lendemain soir, une enveloppe très longue attendait sur son oreiller. À l'intérieur, la Lune avait dessiné un cratère en forme de chaise. Sur la chaise, un canard tenait un petit panneau : « Encore ! »
+
+Milo appela son papa. Dans la cuisine, la chaise répondit avant lui.
 
 ## Away from the screen / Loin de l’écran
 

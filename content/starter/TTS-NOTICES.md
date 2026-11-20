@@ -1,18 +1,23 @@
-# Local synthetic demonstration generation
+# Neural narration sources and voice credits
 
-The six draft recordings use the original scripts in this collection. They do not sample competitor stories, music or a named performer's voice. They are generated with the built-in eSpeak NG formant voices `fr-fr` and `en-gb`.
+The current six original-script demonstrations use **Kokoro 82M v1.0**, run locally through **kokoro-onnx 0.6.1** on CPU. French preset **ff_siwis** and British English preset **bf_emma** are fixed model voices. No celebrity voice, competitor recording, uploaded reference voice or custom clone is used. These are synthetic interpretations, not recordings by a hired performer.
 
-The generation environment downloaded and extracted these official Debian packages locally, without installing them system-wide:
+Kokoro is one of [Voicebox's documented preset engines](https://github.com/jamiepine/voicebox/blob/main/docs/content/docs/overview/preset-voices.mdx). We used the engine directly; we did **not** install or operate the Voicebox desktop application. The [Voicebox site](https://voicebox.sh/) describes its local studio/API/MCP workflow. That separate app is a useful authoring option, not an already connected Galia provider.
 
-| Component | Version | Source / notice |
-| --- | --- | --- |
-| eSpeak NG binary | 1.52.0+dfsg-5 | [Upstream](https://github.com/espeak-ng/espeak-ng), [Debian copyright](tts-notices/espeak-ng-copyright.txt) |
-| eSpeak NG shared library | 1.52.0+dfsg-5 | [Debian copyright](tts-notices/libespeak-ng1-copyright.txt) |
-| eSpeak NG voice data | 1.52.0+dfsg-5 | [Debian copyright](tts-notices/espeak-ng-data-copyright.txt) |
-| pcaudiolib | 1.3-1 | [Debian copyright](tts-notices/libpcaudio0-copyright.txt) |
-| Sonic library | 0.2.0-13+b1 | [Debian copyright](tts-notices/libsonic0-copyright.txt) |
-| FFmpeg, local encoder | 7.1.5-0+deb13u1 | [FFmpeg licensing](https://ffmpeg.org/legal.html); installed build enables GPL and libmp3lame |
+| Dependency | Source and terms | Reproduction record |
+|---|---|---|
+| Kokoro model and voice presets | [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M), declared Apache-2.0 | ONNX/voice release URLs and full SHA-256 in `tts-engine-lock.json`; [Apache text](tts-notices/Kokoro-model-Apache-2.0.txt) |
+| ONNX conversion/runtime wrapper | [thewh1teagle/kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx), MIT | Pinned 0.6.1; [licence](tts-notices/kokoro-onnx-MIT.txt) |
+| Text phonemization | [phonemizer](https://github.com/bootphon/phonemizer), GPL-3.0; [eSpeak NG](https://github.com/espeak-ng/espeak-ng), GPL-3.0-or-later | Pinned Python package/loader versions; [phonemizer licence](tts-notices/phonemizer-GPL.txt), [eSpeak licence](tts-notices/espeak-ng-GPL.txt). eSpeak supplies phonemes, **not** the synthesized acoustic voice |
+| Encoder | [FFmpeg](https://ffmpeg.org/legal.html), installed build and its configuration | Actual version and audio filter recorded in the generation receipt; encoder binaries are not distributed |
+| Numeric/audio libraries | ONNX Runtime, NumPy, SoundFile and transitive packages retain their own licences | Exact install versions in `requirements-narration.txt`; no dependency binaries bundled |
 
-The exact package download URLs and SHA-256 values are preserved in [tts-engine-lock.json](tts-engine-lock.json). eSpeak NG's main upstream licence is GPL-3.0-or-later; individual files retain their notices. The Debian pcaudiolib notice has per-file GPL/BSD terms. Sonic is Apache-2.0. These notices remain separate from this collection's CC0 dedication. None of these engine binaries, library binaries or voice-data files are bundled in `content/starter` or the published website; only the generated draft MP3 recordings and reproduction utilities are included.
+## French voice dataset attribution
 
-The repository's MIT licence covers the original generation utility, not the engine. The original story text and illustrations have the separate CC0 dedication. No endorsement, voice-service licence or competitor licence is implied. The generated recordings remain labelled synthetic drafts; exact script review and final-audio review are separate and still pending.
+Kokoro's [voice table](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md) and [model card](https://huggingface.co/hexgrad/Kokoro-82M) credit **SIWIS**, licensed **CC BY 4.0**, among its training data. Credit: Junichi Yamagishi, Pierre-Edouard Honnet, Philip Garner and Alexandros Lazaridis (2017), *The SIWIS French Speech Synthesis Database, 2016*, University of Edinburgh, Centre for Speech Technology Research. [Dataset and licence record](https://doi.org/10.7488/ds/1705).
+
+The Galia recordings are newly synthesized from revised original scripts, with pacing adjustments and digital loudness processing; they are not copies of the dataset's recordings. No author, speaker or institution endorsement is implied. Preserve this attribution with redistributed French previews. English **bf_emma** is the model's named preset, not a claim to imitate a named performer.
+
+Original story text/card art remains CC0 under `LICENSE.txt`. That dedication does not override model, dataset, font, dependency or voice-service terms. Model weights, phonemizer data, engine and encoder binaries are not included in the public site or RFQ package.
+
+All script and final-audio approvals remain pending. Hashes, decoding, format, loudness and automatic transcript checks are engineering QA, not listening/editorial approval or child-suitability evidence. Digital normalization does not establish safe acoustic output on the hardware.

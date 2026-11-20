@@ -115,8 +115,9 @@ module design(dims,holes,buttons,button_names,bodies,body_refs,extras,extra_name
   for(x=[13.3,50.7])translate([x,24,1.7])cube([.8,62,2.8]);
   translate([14.1,22,1.7])cube([37.4,.8,2.8]);
   translate([14.1,87.2,1.7])cube([37.4,.8,2.8]);
-  // Strap anchors accept a soft hook-and-loop band; never clamp the pouch.
-  for(x=[10.5,53.5])translate([x,49,1.7])cube([2,8,2.5]);
+  // Nominal 10mm-wide, <=1.5mm-thick soft band envelope, supplier to confirm.
+  // 11x2mm slots leave 0.8mm top/bottom material; never clamp the pouch.
+  for(x=[10.5,53.5])translate([x,46.5,1.7])cube([2,13,3.6]);
  }
  ports();edge_bevel(false);
  for(h=holes)translate([h[0],h[1],11.6])cylinder(d=6.4,h=3);
@@ -124,7 +125,7 @@ module design(dims,holes,buttons,button_names,bodies,body_refs,extras,extra_name
  translate([22.9,2.5,11.6])cube([19.2,1.2,2.3]);
  for(h=holes){translate([h[0],h[1],-.1])cylinder(d=2.3,h=11);translate([h[0],h[1],-.1])cylinder(d=4.2,h=2.3);}
  for(x=[10,W-10])translate([x-2.3,1.3,12])cube([4.6,2,4.5]);
- for(x=[10.5,53.5])translate([x-.1,50,2.4])cube([2.2,6,1]);
+ for(x=[10.5,53.5])translate([x-.1,47.5,2.5])cube([2.2,11,2]);
  }}
  module bridge(){difference(){union(){
   intersection(){translate([0,0,S-.8])linear_extrude(.8)hull()for(q=keeper_posts)translate(q)circle(r=2);translate([0,0,0])cube([W,93.1,D]);}
@@ -188,6 +189,7 @@ module design(dims,holes,buttons,button_names,bodies,body_refs,extras,extra_name
  else if(part=="shell_interference")intersection(){front();back();}
  else if(part=="interference")intersection(){union(){front();back();bridge();keeper_heads();}union(){components();peripherals(true);}}
  else if(part=="exploded")assembly(20);
+ else if(part=="strap_clearance")intersection(){back();union()for(x=[10.25,53.25])translate([x,48,2.75])cube([2.5,10,1.5]);}
  else if(part=="wrong_card_interference")intersection(){front();translate([12.5,-30,17.3])translate([40,0,4.3])rotate([0,180,0])card_assembly();}
  else if(part=="card_sweep_interference")intersection(){union(){front(true);back();bridge();keeper_heads();components();reader_assembly();}union()for(t=[0:1:40])card_at(t);}
  else if(part=="section_x")intersection(){assembly();translate([W/2,-1,-1])cube([W,H+2,D+2]);}

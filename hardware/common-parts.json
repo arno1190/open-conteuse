@@ -1,0 +1,186 @@
+{
+  "shared": [
+    {
+      "reference": "BAT1",
+      "mpn": "Adafruit 258",
+      "description": "Protected1S1200mAh cell nominal34x62x5mm",
+      "quantity": "1",
+      "unit_eur_low": "9.5",
+      "unit_eur_high": "12",
+      "source": "https://www.adafruit.com/product/258",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=Adafruit%20258"
+    },
+    {
+      "reference": "SP1",
+      "mpn": "AS01508AO-WP-R",
+      "description": "PUI8ohm0.7W wired micro-speaker15x11x3mm",
+      "quantity": "1",
+      "unit_eur_low": "2",
+      "unit_eur_high": "5",
+      "source": "https://puiaudio.com/product/speakers-and-receivers/as01508ao-wp-r",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=AS01508AO-WP-R"
+    },
+    {
+      "reference": "SD1",
+      "mpn": "SDSQUAC-032G-GN6MA",
+      "description": "SanDisk Ultra32GB microSD, clean original-content library",
+      "quantity": "1",
+      "unit_eur_low": "5",
+      "unit_eur_high": "9",
+      "source": "https://shop.sandisk.com/products/memory-cards/microsd-cards/sandisk-ultra-uhs-i-microsd-150mbps",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=SDSQUAC-032G-GN6MA"
+    },
+    {
+      "reference": "TH1",
+      "mpn": "103AT-2",
+      "description": "Semitec10k NTC bonded to pouch; insulated leads",
+      "quantity": "1",
+      "unit_eur_low": "0.5",
+      "unit_eur_high": "1.5",
+      "source": "https://www.semitec-global.com/product/at-thermistor/",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=103AT-2"
+    },
+    {
+      "reference": "INS1",
+      "mpn": "RX-M2x3x3.2",
+      "description": "Ruthex M2 heat-set insert, coupon pilot trial",
+      "quantity": "4",
+      "unit_eur_low": "0.08",
+      "unit_eur_high": "0.2",
+      "source": "https://www.ruthex.de/products/ruthex-gewindeeinsatz-m2-100-stuck-rx-m2x3x3-2",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=RX-M2x3x3.2"
+    },
+    {
+      "reference": "SCR1",
+      "mpn": "ISO4762-M2x14-A2",
+      "description": "M2x14 socket cap screw, unambiguous standard; supplier not frozen",
+      "quantity": "4",
+      "unit_eur_low": "0.04",
+      "unit_eur_high": "0.15",
+      "source": "https://www.accu.co.uk/socket-cap-screws/4777-SSCF-M2-14-A2",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=ISO4762-M2x14-A2"
+    },
+    {
+      "reference": "SCR2",
+      "mpn": "ISO7045-Z-M1.6x4-A2",
+      "description": "Two M1.6x4 pan-head keeper screws; tap PETG1.25mm pilots, qualify pullout",
+      "quantity": "2",
+      "unit_eur_low": "0.04",
+      "unit_eur_high": "0.15",
+      "source": "https://www.accu.co.uk/pozi-pan-head-screws",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=ISO7045-M1.6x4-A2"
+    },
+    {
+      "reference": "HAR1",
+      "mpn": "PHR-2 + SPH-002T-P0.5S",
+      "description": "JST PH2 insulated speaker harness24AWG, polarity continuity checked",
+      "quantity": "1",
+      "unit_eur_low": "0.3",
+      "unit_eur_high": "1",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=PHR-2%20%2B%20SPH-002T-P0.5S"
+    },
+    {
+      "reference": "HAR2",
+      "mpn": "PHR-2 + SPH-002T-P0.5S",
+      "description": "JST PH2 thermistor harness26AWG, heatshrink",
+      "quantity": "1",
+      "unit_eur_low": "0.3",
+      "unit_eur_high": "1",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=PHR-2%20%2B%20SPH-002T-P0.5S"
+    },
+    {
+      "reference": "PAD1",
+      "mpn": "3M5413 12mm",
+      "description": "Polyimide insulation, cut strips; not bare-cell compression",
+      "quantity": "0.1",
+      "unit_eur_low": "1",
+      "unit_eur_high": "3",
+      "source": "https://www.3m.com/3M/en_US/p/d/b40068383/",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=3M5413%2012mm"
+    },
+    {
+      "reference": "STR1",
+      "mpn": "VELCRO ONE-WRAP10mm",
+      "description": "Soft pouch-retention band, cut120mm; nominal10mm width and max1.5mm thickness allowance; supplier must confirm",
+      "quantity": "0.12",
+      "unit_eur_low": "2",
+      "unit_eur_high": "4",
+      "source": "https://www.velcro.com/products/for-cable-management/",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=VELCRO%20ONE-WRAP10mm"
+    },
+    {
+      "reference": "FOM1",
+      "mpn": "closed-cell silicone0.5mm",
+      "description": "Light battery support only; drawing-defined material, supplier unqualified",
+      "quantity": "1",
+      "unit_eur_low": "0.1",
+      "unit_eur_high": "0.4",
+      "source": "docs/design/README.md",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=closed-cell%20silicone0.5mm"
+    },
+    {
+      "reference": "GSK1",
+      "mpn": "OC-GSK-SPK-R1",
+      "description": "15x11mm outer /11x7mm opening silicone foam1mm; nominal20pctcompression, qualify supplier",
+      "quantity": "1",
+      "unit_eur_low": "0.1",
+      "unit_eur_high": "0.4",
+      "source": "enclosure/speaker-gasket.svg",
+      "footprint": "external",
+      "basis": "engineering allowance; supplier confirmation pending",
+      "search": "https://www.google.com/search?q=OC-GSK-SPK-R1"
+    }
+  ],
+  "explore_display": [
+    {
+      "reference": "LCD1",
+      "mpn": "RB024D18N01B1",
+      "description": "2.4inch SPI18pin0.5FPC, drawing uses2.55mm thickness",
+      "quantity": "1",
+      "unit_eur_low": "3",
+      "unit_eur_high": "12",
+      "source": "https://www.ronboe.com/shop/rb024d18n01b1/",
+      "footprint": "external",
+      "basis": "planning allowance; not a quote",
+      "search": "https://www.google.com/search?q=RB024D18N01B1"
+    },
+    {
+      "reference": "LENS1",
+      "mpn": "OC-LENS-EX-R1",
+      "description": "Drawing-defined clear polycarbonate55x40x0.5mm lens, supplier not frozen",
+      "quantity": "1",
+      "unit_eur_low": "0.5",
+      "unit_eur_high": "2",
+      "source": "enclosure/lens.svg",
+      "footprint": "external",
+      "basis": "planning allowance; not a quote",
+      "search": "https://www.google.com/search?q=OC-LENS-EX-R1"
+    }
+  ]
+}

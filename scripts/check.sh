@@ -9,6 +9,8 @@ c++ -std=c++17 -Wall -Wextra -Werror firmware/card_id_test.cpp -o /tmp/conteuse-
 python3 content/starter/validate.py
 python3 site/check.py
 node --check site/app.js
+node --check site/strings.js
+npm run test:site
 python3 scripts/check_release.py
 
 c++ -std=c++17 -Wall -Wextra -Werror firmware/controls_test.cpp -o /tmp/conteuse-controls-test

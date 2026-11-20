@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #pragma once
 #include <stdint.h>
+#include "board_pins.h"
 
 namespace controls {
 // TCA9534 active-high pressed mask after inversion of the hardware register.
-enum Key : uint8_t { Up=1, A=2, Down=4, Left=8, Right=16, B=32, Minus=64, Plus=128 };
+enum Key : uint8_t { Up=board::Up, A=board::A, Down=board::Down, Left=board::Left, Right=board::Right, B=board::B, Minus=board::Minus, Plus=board::Plus };
 enum class Model { Mini, Explore };
 enum class Mode { NoCard, Library, Playing, Paused, Choice, ChoicePlaying, ChoicePaused, Ended, Busy };
 enum class Action {
@@ -69,10 +70,16 @@ struct Decoder {
     Model model;
     uint8_t candidate=0, stable=0;
     uint32_t changed=0, pressedAt=0, repeatAt=0;
-    bool armed=false, chord=false;
+    bool armed=false, chord=false, observed=false;
     explicit Decoder(Model value):model(value) {}
+    void invalidate(uint32_t now) {
+        candidate=stable=0;
+        changed=pressedAt=repeatAt=now;
+        armed=chord=observed=false;
+    }
     Action update(uint8_t pressed, uint32_t now, Mode mode) {
         if (model==Model::Mini) pressed &= uint8_t(A|Left|Right|Minus|Plus);
+        if (!observed) { observed=true; candidate=pressed; changed=now; return Action::None; }
         if (pressed!=candidate) { candidate=pressed; changed=now; }
         if (uint32_t(now-changed)<25) return Action::None;
         if (!armed) { if (!candidate) armed=true; stable=candidate; return Action::None; }

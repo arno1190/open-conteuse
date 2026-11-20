@@ -1,0 +1,93 @@
+{
+  "method": "faster-whisper base, local CPU int8, fixed language, beam3; FFmpeg mono16k float PCM",
+  "purpose": "Screen for omissions and inspect approximate transcripts; ASR mistakes are not proof of voice errors.",
+  "generator_sha256": "24f0e1928b900f955fe608d1d091910df1114e7c2958b252a0cc35cd3728d2dd",
+  "model_id": "Systran/faster-whisper-base",
+  "model_weights_sha256": "d01c3014881c9c6f3133c182f3d2887eb6ca1c789a7538c5c007196857a0a6a9",
+  "runtime_versions": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.9.0",
+    "numpy": "2.5.5"
+  },
+  "human_listening_approval": "pending",
+  "results": [
+    {
+      "story_id": "milo-moon-post",
+      "language": "fr",
+      "audio_sha256": "6753b7c2caf4c2f1909beb183c9aa7d2815d7a2d6d7960b12731989b3aaa344b",
+      "script_sha256": "c5d2fb4e4e8d7a118df0176e8536302a746437d64860ccd7453a4014d12f89c7",
+      "transcript_file": "qa/milo-moon-post.fr.txt",
+      "transcript_sha256": "119b656f3db59d0a0bae228a636e0e58a14276298222cdf2c207716aeab197da",
+      "reference_tokens": 488,
+      "recognized_tokens": 496,
+      "word_error_rate": 0.1332,
+      "editorial_words_per_minute": 134.0,
+      "listening_approval": "pending"
+    },
+    {
+      "story_id": "milo-moon-post",
+      "language": "en",
+      "audio_sha256": "e3ba491b7177ff973fdd7e520fe8bc7999a5951d15098a6e38e576123c9e4ef7",
+      "script_sha256": "225c8c4171a994372dad65add63590ae8cc41ebe7def47a57c08a9e60746d43a",
+      "transcript_file": "qa/milo-moon-post.en.txt",
+      "transcript_sha256": "3dfc0a7d1fd326d3f3c2159a7d87a6a023e7edd6a81226050d231d51c6f7469a",
+      "reference_tokens": 473,
+      "recognized_tokens": 473,
+      "word_error_rate": 0.0148,
+      "editorial_words_per_minute": 144.6,
+      "listening_approval": "pending"
+    },
+    {
+      "story_id": "nori-cloud-pocket",
+      "language": "fr",
+      "audio_sha256": "713b193ad601aa7adebf0d6417eb7556d2cd235766bec63166e12fe573a8296a",
+      "script_sha256": "2dfa6295adf293f301f8678ca0e656298a1994cc928bba4df680f0d545149a6e",
+      "transcript_file": "qa/nori-cloud-pocket.fr.txt",
+      "transcript_sha256": "193d37f3d45ddb71c65255b776db6faa2568943679a0dbc9d87fc843f276c685",
+      "reference_tokens": 521,
+      "recognized_tokens": 529,
+      "word_error_rate": 0.1478,
+      "editorial_words_per_minute": 149.4,
+      "listening_approval": "pending"
+    },
+    {
+      "story_id": "nori-cloud-pocket",
+      "language": "en",
+      "audio_sha256": "aff8e0ed3bf9da8608a1939bca1c4cac51f6675d48f2026ccb740ec5bd03d54f",
+      "script_sha256": "22a86bdc8ffc861d70778d96e32b29d1eb7acc66668603d3101170d833a06761",
+      "transcript_file": "qa/nori-cloud-pocket.en.txt",
+      "transcript_sha256": "d649a8384141ecb7bcf2732da9a378f6b2bfe134b390ae6640a3835239e02b5c",
+      "reference_tokens": 510,
+      "recognized_tokens": 510,
+      "word_error_rate": 0.002,
+      "editorial_words_per_minute": 156.5,
+      "listening_approval": "pending"
+    },
+    {
+      "story_id": "pipo-sock-orchestra",
+      "language": "fr",
+      "audio_sha256": "bdc82285d5137f7a623cfacadc81412c0544d544ed993724c258c22865645ccf",
+      "script_sha256": "e9499d2498bcb19c4a0031dd4bcf0500e60150135badca4acb5a0c1c940e04fd",
+      "transcript_file": "qa/pipo-sock-orchestra.fr.txt",
+      "transcript_sha256": "39b4edbc24902b21dc7eaa90fcde50fd0942efb9e4b6e4b500a928bc557dd82c",
+      "reference_tokens": 479,
+      "recognized_tokens": 506,
+      "word_error_rate": 0.2505,
+      "editorial_words_per_minute": 143.9,
+      "listening_approval": "pending"
+    },
+    {
+      "story_id": "pipo-sock-orchestra",
+      "language": "en",
+      "audio_sha256": "c28cb70f148f8c260ef0d26a6077fbaa16ed582b72c7cf155e7e951d807edec9",
+      "script_sha256": "a5c3ec8cbf4746d06e73a09f428523249624e57e06d2b381a9e56e89aaa052fe",
+      "transcript_file": "qa/pipo-sock-orchestra.en.txt",
+      "transcript_sha256": "90ced1fb988b6692123ab8ffa410acf82bf48db59eea53f0e2c61fc76b3b6b6f",
+      "reference_tokens": 483,
+      "recognized_tokens": 484,
+      "word_error_rate": 0.029,
+      "editorial_words_per_minute": 146.8,
+      "listening_approval": "pending"
+    }
+  ]
+}

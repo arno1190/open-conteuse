@@ -2,7 +2,7 @@
 
 Original static French/English showcase for the Galia engineering project. The identity is a working name; no trademark clearance is implied. `index.html?lang=fr` and `index.html?lang=en` select the language. Everything uses relative asset paths for GitHub Pages project hosting.
 
-Serve this directory over HTTP (fetch is required for the story collection). No build dependencies, analytics, account, form or microphone permission. The six local eSpeak NG recordings are downloadable synthetic demonstrations, not approved final narration. Browser speech synthesis remains a device-dependent fallback and may use a network voice service. Stop, closing the story, changing language and leaving the page cancel the reading. Text remains available when voice support is missing.
+Build with `python3 scripts/build_site.py`, then serve `work/site-public/` over HTTP (fetch is required). The build copies current source-derived CAD images rather than keeping duplicate hero renders in this directory. No build dependencies, analytics, account, form or microphone permission. The six local Kokoro neural recordings are downloadable synthetic demonstrations, not approved final narration. Browser speech is an explicit opt-in fallback after a recording fails or is absent; it may use a network voice service. Stop, closing the story, changing language and leaving the page cancel the reading. Text remains available when voice support is missing.
 
 `content/` is generated from the canonical starter collection. Printable paper artwork does not operate the physical contact-ID reader. All story/voice review states remain pending. Product drawings are labelled styling studies; the hardware still requires physical, safety and manufacturing validation. The €99/€129 VAT-inclusive figures are unquoted retail objectives, never an order offer.
 
@@ -28,3 +28,5 @@ These are planned URLs until the owner verifies a successful Pages deployment. N
 See [PRICING.md](PRICING.md) for dated official market observations and the direct-sales price-target model.
 
 The Pages workflow runs `python3 scripts/build_site.py` to assemble `work/site-public/`: showcase, full CAD gallery/images and the engineering PDF/cost downloads. This includes only public static sources, never the local parent studio or private state.
+
+Development UI regressions: `npm ci --ignore-scripts && npm run test:site`. The maintained test runs the real HTML, separate FR/EN copy and playback code against controlled DOM/media. No test dependencies are shipped to the public site.

@@ -179,7 +179,9 @@ def activate(source, library, approved_revision, interrupt=False):
             try:
                 previous = json.loads(current.read_text())
                 previous_digest = previous["revision"]
-                if HEX.fullmatch(previous_digest) and revision(check_pack(versions / previous_digest)) == previous_digest:
+                if (isinstance(previous_digest, str) and previous_digest != digest
+                        and HEX.fullmatch(previous_digest)
+                        and revision(check_pack(versions / previous_digest)) == previous_digest):
                     atomic_json(library / "previous.json", previous)
             except (OSError, ValueError, KeyError, TypeError):
                 pass

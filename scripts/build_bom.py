@@ -2,11 +2,12 @@
 import csv,json,urllib.parse
 from pathlib import Path
 from project import ROOT,HARDWARE,BOARDS,RFQ
-base=list(csv.DictReader((HARDWARE/'explore/BOM.csv').open()))
-external=[r for r in base if r['footprint']=='external' and r['reference'] not in ('LCD1','LENS1','CASE')]
+extras=json.loads((HARDWARE/'common-parts.json').read_text())
+external=extras['shared']
+base=extras['explore_display']
 for r in external:
  if r['reference']=='SCR2':r['mpn']='ISO7045-Z-M1.6x4-A2'
- r['source']=r['source'].replace('enclosure/compact-r1/speaker-gasket.svg','enclosure/speaker-gasket.svg');r['basis']='engineering allowance; supplier confirmation pending'
+ r['basis']='engineering allowance; supplier confirmation pending'
 fields=['reference','mpn','description','quantity','unit_eur_low','unit_eur_high','source','footprint','basis','search']
 allrows={}
 def extra(ref,mpn,desc,q,low,high,source=''):
@@ -15,13 +16,13 @@ for name in BOARDS:
  d=json.loads((HARDWARE/name/'components.json').read_text());rows=[]
  for r in d['parts']:
   if r['ref'].startswith('H'):continue
-  rows.append(dict(zip(fields,[r['ref'],r['mpn'],r.get('section',''),1,*r['cost_eur'],r['source'] or ('hardware/'+name+'/'+name+'.kicad_pcb' if r['ref'].startswith('TP') else 'https://www.yageo.com/en/Product/Index/product_type/chip-resistors'),r['footprint'],'copper pad, not purchased' if r['ref'].startswith('TP') else 'planning allowance; not supplier quote','https://www.digikey.fr/en/products?keywords='+urllib.parse.quote(r['mpn'])])))
+  rows.append(dict(zip(fields,[r['ref'],r['mpn'],r.get('section',''),1,*r['cost_eur'],r['source'] or ('hardware/'+name+'/'+name+'.kicad_pcb' if r['ref'].startswith('TP') else 'https://www.yageo.com/en/Product/Index/product_type/chip-resistors'),r['footprint'],'copper pad, not purchased' if r['ref'].startswith('TP') else 'manual solder termination, not purchased' if r['mpn']=='OC-WIRE-3' else 'selective hard-gold copper contacts, not purchased' if r['mpn']=='OC-ID-CONTACTS' else 'planning allowance; not supplier quote','https://www.digikey.fr/en/products?keywords='+urllib.parse.quote(r['mpn'])])))
  if name in ('mini','explore'):
   rows += [dict(r) for r in external]
   rows +=[extra('CASE','OC-'+name.upper()+'-CASE','Current source-defined PETG housing, caps, bridge',1,2.5,6,'enclosure/design.scad')]
   if name=='explore':
    for ref in ('LCD1','LENS1'):
-    r=dict(next(r for r in base if r['reference']==ref));r['basis']='planning allowance; not a quote';r['source']=r['source'].replace('enclosure/compact-r1/lens-explore.svg','enclosure/lens.svg');rows.append(r)
+    r=dict(next(r for r in base if r['reference']==ref));r['basis']='planning allowance; not a quote';rows.append(r)
   else:
    rows +=[extra('HAR3','SHR-07V-S + SSH-003T-P0.2','7way JSTSH housing; only positions1,2,6 populated, 28AWG three-wire harness',1,.6,2,'https://www.jst-mfg.com/product/pdf/eng/eSH.pdf'),extra('SCR3','ISO7045-Z-M1.6x4-A2','Two standard M1.6x4 pan-head reader screws; head envelope3.2x1.3mm; qualify actual fit/pullout',2,.04,.15,'https://www.accu.co.uk/pozi-pan-head-screws')]
  elif name=='story-card':rows +=[extra('CASE','OC-ID-CARD-CASE','Two printed cartridge halves and label; no audio storage',1,.5,2,'enclosure/card.scad'),extra('SCR','ISO7045-Z-M1.6x3-A2','Two cartridge handle panhead screws',2,.04,.15),extra('PCB','OC-ID-CARD-PCB','20x12x0.8mm 2layer selective hardgold wear pads; MOQ/NRE excluded',1,1,4,'hardware/story-card/story-card.kicad_pcb')]

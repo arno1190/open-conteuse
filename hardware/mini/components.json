@@ -2873,58 +2873,6 @@
       "angle": 0
     },
     {
-      "ref": "R25",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        16.0,
-        48.0
-      ],
-      "pins": {
-        "1": "3V2",
-        "2": "IO8"
-      },
-      "size": [
-        1.6,
-        0.8,
-        0.55
-      ],
-      "cost_eur": [
-        0.01,
-        0.06
-      ],
-      "section": "nfc",
-      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
-      "angle": 0,
-      "value": "10k"
-    },
-    {
-      "ref": "R26",
-      "mpn": "RC0603FR-0710KL",
-      "footprint": "Resistor_SMD:R_0603_1608Metric",
-      "xy": [
-        11.5,
-        48.0
-      ],
-      "pins": {
-        "1": "3V2",
-        "2": null
-      },
-      "size": [
-        1.6,
-        0.8,
-        0.55
-      ],
-      "cost_eur": [
-        0.01,
-        0.06
-      ],
-      "section": "nfc",
-      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
-      "angle": 0,
-      "value": "10k"
-    },
-    {
       "ref": "C29",
       "mpn": "GRM21BR61A106KE19L",
       "footprint": "Capacitor_SMD:C_0805_2012Metric",

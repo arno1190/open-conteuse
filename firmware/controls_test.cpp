@@ -37,13 +37,13 @@ int main() {
     d.update(0,1900,Mode::Paused);d.update(0,1925,Mode::Paused);
     d.update(Right,1930,Mode::Playing);assert(d.update(Right,1955,Mode::Playing)==Action::NextTrack);
     assert(d.update(Right,4000,Mode::Playing)==Action::None);
-    Decoder chord(Model::Mini);chord.update(0,25,Mode::Playing);
+    Decoder chord(Model::Mini);chord.update(0,0,Mode::Playing);chord.update(0,25,Mode::Playing);
     chord.update(A|Plus,30,Mode::Playing);assert(chord.update(A|Plus,55,Mode::Playing)==Action::Pause);
     chord.update(A,60,Mode::Paused);assert(chord.update(A,85,Mode::Paused)==Action::None);
     assert(chord.update(A,1000,Mode::Paused)==Action::None);
     chord.update(0,1001,Mode::Paused);chord.update(0,1026,Mode::Paused);
     chord.update(A,1030,Mode::Paused);assert(chord.update(A,1055,Mode::Paused)==Action::Resume);
-    Decoder ambiguous(Model::Mini);ambiguous.update(0,25,Mode::Paused);
+    Decoder ambiguous(Model::Mini);ambiguous.update(0,0,Mode::Paused);ambiguous.update(0,25,Mode::Paused);
     ambiguous.update(Plus|Minus,30,Mode::Paused);assert(ambiguous.update(Plus|Minus,55,Mode::Paused)==Action::None);
     ambiguous.update(Plus,60,Mode::Paused);assert(ambiguous.update(Plus,85,Mode::Paused)==Action::None);
     assert(ambiguous.update(Plus,1000,Mode::Paused)==Action::None);
@@ -55,4 +55,19 @@ int main() {
     assert(volumeStep(5,1,5)==5);assert(volumeStep(0,-1,5)==0);
     assert(volumeStep(20,1,255)==20);assert(volumeStep(12,1,4)==4);
     assert(volumeStep(3,1,0)==0);
+    Decoder outage(Model::Mini);outage.update(0,0,Mode::Paused);outage.update(0,25,Mode::Paused);
+    outage.update(Plus,30,Mode::Paused);assert(outage.update(Plus,55,Mode::Paused)==Action::VolumeUp);
+    outage.invalidate(700); // Lost I2C samples must not preserve a repeating hold.
+    assert(outage.update(Plus,1000,Mode::Paused)==Action::None);
+    assert(outage.update(Plus,2000,Mode::Paused)==Action::None);
+    outage.update(0,2010,Mode::Paused);outage.update(0,2035,Mode::Paused);
+    outage.update(Plus,2040,Mode::Paused);assert(outage.update(Plus,2065,Mode::Paused)==Action::VolumeUp);
+    outage.update(A,2100,Mode::Paused);outage.invalidate(2110);
+    assert(outage.update(A,2150,Mode::Paused)==Action::None);
+    assert(outage.update(A,2200,Mode::Paused)==Action::None);
+    outage.invalidate(3000);
+    assert(outage.update(0,5000,Mode::Paused)==Action::None);
+    assert(!outage.armed); // Unknown outage time is not observed release time.
+    outage.update(0,5024,Mode::Paused);assert(!outage.armed);
+    outage.update(0,5025,Mode::Paused);assert(outage.armed);
 }

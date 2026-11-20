@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iterator>
 int main(int argc,char** argv) {
-    assert(argc==2);
+    assert(argc==2 || argc==3);
     std::ifstream file(argv[1]);std::string raw((std::istreambuf_iterator<char>(file)),{});
     conteuse::Content c;assert(conteuse::parseContent(raw,c));
     assert(c.nodes.size()==3 && c.start=="gate");
@@ -16,4 +16,13 @@ int main(int argc,char** argv) {
     assert(!conteuse::parseContent(unsafe,c));
     assert(!conteuse::pathValid("a/../b") && !conteuse::pathValid("a//b"));
     assert(conteuse::pathValid("audio/a.wav"));
+    if(argc==3) {
+        std::ifstream fixtures(argv[2]);std::string encoded((std::istreambuf_iterator<char>(fixtures)),{});
+        DynamicJsonDocument cases(65536);
+        assert(!deserializeJson(cases,encoded,DeserializationOption::NestingLimit(20)));
+        for(JsonVariantConst test:cases.as<JsonArrayConst>()) {
+            std::string candidate;serializeJson(test["pack"],candidate);
+            assert(conteuse::parseContent(candidate,c)==test["accept"].as<bool>());
+        }
+    }
 }

@@ -1,30 +1,19 @@
 {
-  "platform": "Debian amd64",
-  "packages": [
+  "engine": "Kokoro 82M v1.0",
+  "runtime": "kokoro-onnx 0.6.1",
+  "model_release": "model-files-v1.1",
+  "model_license": "Apache-2.0",
+  "runtime_license": "MIT",
+  "assets": [
     {
-      "filename": "espeak-ng-data_1.52.0+dfsg-5_amd64.deb",
-      "url": "https://deb.debian.org/debian/pool/main/e/espeak-ng/espeak-ng-data_1.52.0+dfsg-5_amd64.deb",
-      "sha256": "7c239b30e419897313b5b8c98123cf3ec871cfedbf43bbb956b985a492e37f19"
+      "name": "kokoro-v1.0.onnx",
+      "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+      "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a"
     },
     {
-      "filename": "espeak-ng_1.52.0+dfsg-5_amd64.deb",
-      "url": "https://deb.debian.org/debian/pool/main/e/espeak-ng/espeak-ng_1.52.0+dfsg-5_amd64.deb",
-      "sha256": "b64da7b5e21b3540a5cfe5a2fd5c650f6f366ffccb9b810eb337ea4677435d31"
-    },
-    {
-      "filename": "libespeak-ng1_1.52.0+dfsg-5_amd64.deb",
-      "url": "https://deb.debian.org/debian/pool/main/e/espeak-ng/libespeak-ng1_1.52.0+dfsg-5_amd64.deb",
-      "sha256": "845886095f5be3ba7680c8e15de068f76d67600275cbd7b6f6c7d00e53c05b34"
-    },
-    {
-      "filename": "libpcaudio0_1.3-1_amd64.deb",
-      "url": "https://deb.debian.org/debian/pool/main/p/pcaudiolib/libpcaudio0_1.3-1_amd64.deb",
-      "sha256": "db95c30434707a60774ed9ad0193ba680e061ae7d99f354a1a93f147317a4ea5"
-    },
-    {
-      "filename": "libsonic0_0.2.0-13+b1_amd64.deb",
-      "url": "https://deb.debian.org/debian/pool/main/s/sonic/libsonic0_0.2.0-13+b1_amd64.deb",
-      "sha256": "07a1d67546465f07638be05f0931d79e0d6bb1a7831e1f67ac6611d1ba297009"
+      "name": "voices-v1.0.bin",
+      "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+      "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d"
     }
   ]
 }

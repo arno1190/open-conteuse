@@ -1,5 +1,5 @@
 reference,mpn,description,quantity,unit_eur_low,unit_eur_high,source,footprint,basis,search
-J1,OC-WIRE-3,card,1,0,0,drawing-defined solder-wire termination,Compact:Wire3_Top,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=OC-WIRE-3
+J1,OC-WIRE-3,card,1,0,0,hardware/card-reader/Compact.pretty/Wire3_Top.kicad_mod,Compact:Wire3_Top,"manual solder termination, not purchased",https://www.digikey.fr/en/products?keywords=OC-WIRE-3
 P1,P70-1000045R,card,1,0.8,1.8,https://www.harwin.com/products/P70-1000045R,Compact:Pogo_P70_1000045,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=P70-1000045R
 P2,P70-1000045R,card,1,0.8,1.8,https://www.harwin.com/products/P70-1000045R,Compact:Pogo_P70_1000045,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=P70-1000045R
 R1,RC0603FR-074K3L,card,1,0.01,0.06,https://www.yageo.com/en/Product/Index/product_type/chip-resistors,Resistor_SMD:R_0603_1608Metric,planning allowance; not supplier quote,https://www.digikey.fr/en/products?keywords=RC0603FR-074K3L

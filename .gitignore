@@ -27,5 +27,7 @@ site/.openai/
 
 rfq/*.zip
 
-!content/starter/audio/*.mp3
-!site/content/audio/*.mp3
+!content/starter/audio/**/*.mp3
+!site/content/audio/**/*.mp3
+
+node_modules/

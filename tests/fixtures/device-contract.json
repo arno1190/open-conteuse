@@ -1,0 +1,149 @@
+[
+  {
+    "name": "plain",
+    "accept": true,
+    "pack": {
+      "format_version": 1,
+      "id": "sample",
+      "title": "Sample",
+      "start": "end",
+      "nodes": [
+        {
+          "id": "end",
+          "text": "The end."
+        }
+      ]
+    }
+  },
+  {
+    "name": "NUL_id",
+    "accept": false,
+    "pack": {
+      "format_version": 1,
+      "id": "sample",
+      "title": "Sample",
+      "start": "end\u0000hidden",
+      "nodes": [
+        {
+          "id": "end\u0000hidden",
+          "text": "The end."
+        }
+      ]
+    }
+  },
+  {
+    "name": "NUL_text",
+    "accept": false,
+    "pack": {
+      "format_version": 1,
+      "id": "sample",
+      "title": "Sample",
+      "start": "end",
+      "nodes": [
+        {
+          "id": "end",
+          "text": "The end.\u0000hidden"
+        }
+      ]
+    }
+  },
+  {
+    "name": "NUL_metadata",
+    "accept": false,
+    "pack": {
+      "format_version": 1,
+      "id": "sample",
+      "title": "Sample",
+      "start": "end",
+      "nodes": [
+        {
+          "id": "end",
+          "text": "The end."
+        }
+      ],
+      "metadata": {
+        "visible": "hidden\u0000tail"
+      }
+    }
+  },
+  {
+    "name": "depth_12",
+    "accept": true,
+    "pack": {
+      "format_version": 1,
+      "id": "sample",
+      "title": "Sample",
+      "start": "end",
+      "nodes": [
+        {
+          "id": "end",
+          "text": "The end."
+        }
+      ],
+      "metadata": {
+        "next": {
+          "next": {
+            "next": {
+              "next": {
+                "next": {
+                  "next": {
+                    "next": {
+                      "next": {
+                        "next": {
+                          "next": {
+                            "next": "leaf"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "depth_13",
+    "accept": false,
+    "pack": {
+      "format_version": 1,
+      "id": "sample",
+      "title": "Sample",
+      "start": "end",
+      "nodes": [
+        {
+          "id": "end",
+          "text": "The end."
+        }
+      ],
+      "metadata": {
+        "next": {
+          "next": {
+            "next": {
+              "next": {
+                "next": {
+                  "next": {
+                    "next": {
+                      "next": {
+                        "next": {
+                          "next": {
+                            "next": {
+                              "next": "leaf"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

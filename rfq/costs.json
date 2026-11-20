@@ -1,8 +1,8 @@
 {
   "mini": {
     "reference_materials_including_print_and_one_card_eur": [
-      50.01,
-      108.52
+      49.99,
+      108.4
     ],
     "main_pcb_and_machine_assembly_allowance_eur": [
       25,
@@ -13,12 +13,12 @@
       10
     ],
     "one_off_recurring_reference_eur": [
-      78.01,
-      173.52
+      77.99,
+      173.4
     ],
     "first_unit_with_setup_reserve_eur": [
-      178.01,
-      423.52
+      177.99,
+      423.4
     ],
     "retail_target_vat_included_eur": 99,
     "volume_landed_cogs_goal_eur": 35
@@ -48,12 +48,12 @@
     "volume_landed_cogs_goal_eur": 45
   },
   "both_players_reference_recurring_eur": [
-    149.92,
-    335.58
+    149.9,
+    335.46
   ],
   "both_players_first_batch_with_shared_setup_reserve_eur": [
-    249.92,
-    585.58
+    249.9,
+    585.46
   ],
   "story_card_reference_materials_eur": [
     5.23,

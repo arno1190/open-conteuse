@@ -6,7 +6,7 @@ Two current custom handheld designs and an original bilingual listening collecti
 - **Galia Explore:** 67 × 95 × 24 mm, 2.4-inch display and button navigation. USB-C charging/data and 3.5 mm headphones on both.
 - **Parent studio:** existing local import, exact-revision approval, card assignment and export foundation. Never deployed publicly.
 
-[French showcase](https://arno1190.github.io/open-conteuse/?lang=fr) · [English showcase](https://arno1190.github.io/open-conteuse/?lang=en) · [RFQ](rfq/README.md) · [Design/assembly dossier](docs/design/README.md)
+[French showcase](https://arno1190.github.io/open-conteuse/?lang=fr) · [English showcase](https://arno1190.github.io/open-conteuse/?lang=en) · [RFQ launch playbook](rfq/LAUNCH-PLAYBOOK.md) · [RFQ scope](rfq/README.md) · [Design/assembly dossier](docs/design/README.md)
 
 The intended differentiator is parent-controlled, highly personal listening made with their chosen tools and authorised sources. [MCP and provider/TTS connections remain under assessment](docs/PERSONALIZATION.md); no subscription/API compatibility is claimed. [Control UX and tactile-cap design](docs/design/UX.md) define the current refinement.
 
@@ -16,9 +16,10 @@ The intended differentiator is parent-controlled, highly personal listening made
 
 ## Sources and checks
 
-[Native KiCad](hardware/) · [OpenSCAD and prototype print meshes](enclosure/) · [BOM/cost assumptions](rfq/costs.json) · [Firmware](firmware/README.md) · [Validation](docs/VALIDATION.md) · [Roadmap](docs/ROADMAP.md)
+[Native KiCad](hardware/) · [OpenSCAD and prototype print meshes](enclosure/) · [BOM/cost assumptions](rfq/costs.json) · [Firmware](firmware/README.md) · [Independent audit](docs/AUDIT.md) · [Validation](docs/VALIDATION.md) · [Roadmap](docs/ROADMAP.md)
 
 ```sh
+npm ci --ignore-scripts
 sh scripts/check.sh
 sh scripts/cad-check.sh
 PIO=pio sh scripts/firmware-check.sh

@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "rfq/LAUNCH-PLAYBOOK.md": "1539867674d4a0181a6e896e332034aab9893f010bf1f4a512cc5990f0dc8730",
+    "rfq/quote-comparison.csv": "4725010394802474d6b7b01e10eca683b88593b593cf0f3c42c2fb9e31fc1e38",
+    "scripts/build_playbook.py": "fe985348af7ff7bf01285f63cfdfb61cdea629f709e18ce6a03b5311115393bc"
+  },
+  "outputs": {
+    "rfq/rfq-launch-playbook.pdf": "fd3a5d73e1038a4af261a4dfff87fd1e29906011c11d02727a34f728a966dabd",
+    "rfq/rfq-launch-playbook.html": "40b16ff97861322df908914e05dc49b85dad6681869ebf0a3c1a160e660e98fe"
+  },
+  "fabrication_release": false
+}

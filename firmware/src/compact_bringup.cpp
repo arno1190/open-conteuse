@@ -7,13 +7,14 @@
 #include <WiFi.h>
 #include "card_id.h"
 #include "controls.h"
+#include "library.h" // SDK compile coverage; SD loader remains an inactive prototype.
 #include <Adafruit_ILI9341.h>
 
 namespace {
-constexpr uint8_t Io=0x20, Codec=0x18;
-constexpr int SpeakerRequest=47, CodecReset=4, LatchClear=5, LatchState=6;
+using namespace board;
+constexpr uint8_t Io=IoAddress, Codec=CodecAddress;
 #ifdef CONTEUSE_MINI
-constexpr int CardPin=8;
+constexpr int CardPin=Card;
 card::Filter cards;
 void low(){digitalWrite(CardPin,LOW);pinMode(CardPin,OUTPUT);}
 void release(){pinMode(CardPin,INPUT);}
@@ -23,7 +24,7 @@ bool readSlot(){noInterrupts();low();delayMicroseconds(3);release();delayMicrose
 bool readCard(card::Rom& r){if(!resetCard())return false;for(unsigned i=0;i<8;i++)writeSlot((0x33>>i)&1);for(auto& b:r){b=0;for(unsigned i=0;i<8;i++)b|=uint8_t(readSlot())<<i;}return card::valid(r);}
 
 #else
-Adafruit_ILI9341 display(14,38,9);
+Adafruit_ILI9341 display(LcdCs,LcdDc,LcdReset);
 #endif
 bool writeReg(uint8_t address,uint8_t reg,uint8_t value) {
     Wire.beginTransmission(address);Wire.write(reg);Wire.write(value);
@@ -48,30 +49,30 @@ void setup() {
     digitalWrite(SpeakerRequest,LOW);pinMode(SpeakerRequest,OUTPUT);
     digitalWrite(CodecReset,LOW);pinMode(CodecReset,OUTPUT);
     digitalWrite(LatchClear,LOW);pinMode(LatchClear,OUTPUT);
-    pinMode(LatchState,INPUT);pinMode(21,INPUT_PULLDOWN);
-    digitalWrite(48,LOW);pinMode(48,OUTPUT);
+    pinMode(LatchState,INPUT);pinMode(CodecIrq,INPUT_PULLDOWN);
+    digitalWrite(StatusLed,LOW);pinMode(StatusLed,OUTPUT);
     Serial.begin(115200);WiFi.persistent(false);WiFi.mode(WIFI_OFF);
-    Wire.begin(1,2);Wire.setTimeOut(20);
+    Wire.begin(I2cSda,I2cScl);Wire.setTimeOut(20);
     bool io=writeReg(Io,3,0xff)&&writeReg(Io,2,0x00);
     delay(10);digitalWrite(CodecReset,HIGH);delay(10);
     // Fresh hardware/software reset keeps all DAC/HP/Class-D paths powered down.
     bool codec=writeReg(Codec,0,0)&&writeReg(Codec,1,1);delay(10);
     codec=codec&&writeReg(Codec,0,0)&&writeReg(Codec,64,0x0c);
     // Leave async /CLR asserted. Audio event/detection register bring-up is separate.
-    SPI.begin(12,13,11,10);pinMode(14,OUTPUT);digitalWrite(14,HIGH);
+    SPI.begin(SpiClock,SpiMiso,SpiMosi,SdCs);pinMode(LcdCs,OUTPUT);digitalWrite(LcdCs,HIGH);
 #ifdef CONTEUSE_MINI
     release(); // External 4.3k pull-up; GPIO9 is unconnected.
 #endif
-    bool sd=SD.begin(10,SPI,1000000);
+    bool sd=SD.begin(SdCs,SPI,1000000);
 #ifdef CONTEUSE_MINI
     Serial.println("Contact ID DS2401 on GPIO8; IDs are selectors, not authentication");
 #else
     // Off until SPI panel reset/init completes; PWM limited for first visual test.
-    pinMode(8,OUTPUT);digitalWrite(8,LOW);
+    pinMode(Backlight,OUTPUT);digitalWrite(Backlight,LOW);
     display.begin(10000000);display.setRotation(1);display.fillScreen(ILI9341_BLACK);
     display.setTextColor(ILI9341_WHITE);display.setTextSize(2);display.setCursor(10,16);
-    display.println("Explore RFQ");display.println("MUTED diagnostics");
-    ledcSetup(0,2000,8);ledcAttachPin(8,0);ledcWrite(0,32);
+    display.println("Galia Explore");display.println("MUTED diagnostics");
+    ledcSetup(0,2000,8);ledcAttachPin(Backlight,0);ledcWrite(0,32);
 #endif
     Serial.printf("RFQ IO=%d CODEC=%d SD=%d PSRAM=%u; audio locked LOW; WiFi OFF\n",io,codec,sd,ESP.getPsramSize());
 }
@@ -87,9 +88,14 @@ void loop() {
     }
 #endif
     uint8_t keys=0xff;
-    if(!readReg(Io,0,keys)){digitalWrite(48,LOW);return;}
+    if(!readReg(Io,0,keys)){
+        inputs.invalidate(millis());
+        previous=0xff;
+        digitalWrite(StatusLed,LOW);
+        return;
+    }
     if(keys!=previous){Serial.printf("Keys active-low=0x%02x; latch=%d\n",keys,digitalRead(LatchState));previous=keys;}
     auto action=inputs.update(uint8_t(~keys),millis(),controls::Mode::Paused);
     if(action!=controls::Action::None)Serial.printf("UX action=%s (muted diagnostic only)\n",controls::name(action));
-    digitalWrite(48,keys!=0xff);
+    digitalWrite(StatusLed,keys!=0xff);
 }

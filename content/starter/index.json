@@ -13,146 +13,354 @@
     {
       "story_id": "milo-moon-post",
       "language": "fr",
-      "path": "content/audio/milo-moon-post.fr.mp3",
       "status": "synthetic_draft_demo",
       "approval": "pending",
-      "script_sha256": "c4ca1bec439eb2ca73b83800b082b032b4abf36c46df29fbea8ec7628ef49b68",
-      "ssml_sha256": "a4e5899a35046308c4f851694d6ff69b19a3d5655cbd6d1375440d930b9678c7",
-      "audio_sha256": "48d48fc6d6e0732f19238cda6c2f15c4b5536f2462a213b7e192da0cdb903b22",
-      "bytes": 1445972,
-      "duration_seconds": 180.715,
+      "final_audio_approval": "pending",
+      "script_sha256": "c5d2fb4e4e8d7a118df0176e8536302a746437d64860ccd7453a4014d12f89c7",
+      "render_plan": {
+        "voice": "ff_siwis",
+        "language": "fr-fr",
+        "speed": 0.78,
+        "leading_silence_ms": 350,
+        "sentence_pause_seconds": 0.22,
+        "clause_pause_seconds": 0.08,
+        "segments": [
+          {
+            "text": "Trois coups minuscules résonnèrent à la fenêtre de Milo. Toc, toc, toc. Dehors, une factrice tenait son vélo par le guidon. Sa sacoche brillait comme une boîte de biscuits.\n\n« Dernier courrier pour la Lune ! annonça-t-elle. Je m'appelle Plume. Tu as quelque chose à envoyer ? »\n\nMilo chercha dans sa poche. Il en sortit un bouton rouge, un mouchoir et une miette de goûter. Plume secoua doucement la tête.\n\n« Des cailloux et des miettes, là-haut, il y en a déjà beaucoup. La Lune voudrait savoir comment on rit dans ta maison. Je repasse quand la grande aiguille sera tout en bas. »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Puis elle repartit, avec une sonnette qui faisait un drôle de petit hoquet.\n\nMilo regarda l'horloge. Il avait le temps d'un bain pour préparer sa lettre. Mais comment mettre un rire dans une enveloppe ?\n\nIl essaya d'abord de rire dans un bocal. Ha, ha ! Vite, le couvercle ! Il colla l'oreille contre le verre. Rien. Il rouvrit le bocal. Toujours rien, sauf une odeur de confiture.\n\n« Mon rire s'est échappé. Ou bien il est devenu fraise. »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Il dessina ensuite sa bouche avec toutes ses dents. Le dessin ressemblait à une fermeture éclair. Milo le regarda longtemps. Ce n'était pas drôle du tout.\n\nDans la cuisine, son papa tirait une chaise. La chaise poussa un petit cri de canard. Son papa s'arrêta. Il tira encore la chaise. Le canard recommença.\n\nMilo éclata de rire. Son papa aussi. Et plus ils essayaient de se taire, plus le canard semblait les encourager.\n\nCette fois, Milo ne courut pas chercher son bocal. Il prit une grande feuille. Il dessina son papa, la chaise et un canard très étonné. En dessous, il écrivit : « Chez nous, on rit quand les meubles se prennent pour des animaux. »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Il ajouta le hoquet de la sonnette de Plume. Puis son rire à lui : un grand chemin jaune qui tournait autour du dessin.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Si tu veux, imagine une chaise qui fait un bruit complètement différent. Tu peux garder cette idée pour toi.",
+            "pause_after_ms": 3000
+          },
+          {
+            "text": "Toc, toc, toc. Plume était revenue. L'aiguille pointait tout en bas.\n\nMilo lui tendit son dessin. Mais le chemin jaune dépassait des deux côtés de l'enveloppe. Il essaya de le plier. Le papa disparut. Il essaya dans l'autre sens. Plus de canard !\n\nAlors Milo prit une deuxième enveloppe, ouvrit ses côtés et la colla à la première. Voilà une lettre assez large pour laisser tout le monde rire ensemble.\n\nPlume lut la phrase. Elle regarda le canard. Sa sonnette eut un hoquet, et elle se mit à rire à son tour.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "« Il fonctionne ! dit Milo. Même sans bocal ! »\n\nLe lendemain soir, une enveloppe très longue attendait sur son oreiller. À l'intérieur, la Lune avait dessiné un cratère en forme de chaise. Sur la chaise, un canard tenait un petit panneau : « Encore ! »\n\nMilo appela son papa. Dans la cuisine, la chaise répondit avant lui.",
+            "pause_after_ms": 800
+          }
+        ]
+      },
+      "render_plan_sha256": "91231b4bd077665cef38633dccca4cae1722ca4bf156964676c3c2cc1cc1356c",
+      "audio_sha256": "6753b7c2caf4c2f1909beb183c9aa7d2815d7a2d6d7960b12731989b3aaa344b",
+      "bytes": 2671817,
+      "duration_seconds": 222.589,
       "codec": "mp3",
       "sample_rate_hz": 22050,
       "channels": 1,
-      "engine": "eSpeak NG 1.52.0",
-      "voice": "fr-fr",
-      "speed_words_per_minute": 105,
-      "pitch": 45,
-      "amplitude": 70,
-      "paragraph_pause_ms": 2000,
-      "invitation_pause_ms": 8000,
-      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
-      "final_audio_approval": "pending"
+      "engine": "Kokoro 82M v1.0",
+      "voice": "ff_siwis",
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.fr.mp3"
     },
     {
       "story_id": "milo-moon-post",
       "language": "en",
-      "path": "content/audio/milo-moon-post.en.mp3",
       "status": "synthetic_draft_demo",
       "approval": "pending",
-      "script_sha256": "cc04585817b29fb655ab3b77402c2ebc5c37bc61f0635b19295253d2791418fe",
-      "ssml_sha256": "61e3caccb24afef0d404e45c26420d8ba4decc0882ae45f649d907b32541e98a",
-      "audio_sha256": "4edf5970fa93dda06fa18d7562831cd676c6087c513695272db11f6afb94283e",
-      "bytes": 1563837,
-      "duration_seconds": 195.448,
+      "final_audio_approval": "pending",
+      "script_sha256": "225c8c4171a994372dad65add63590ae8cc41ebe7def47a57c08a9e60746d43a",
+      "render_plan": {
+        "voice": "bf_emma",
+        "language": "en-gb",
+        "speed": 0.84,
+        "leading_silence_ms": 350,
+        "sentence_pause_seconds": 0.22,
+        "clause_pause_seconds": 0.08,
+        "segments": [
+          {
+            "text": "Three tiny knocks came at Milo's window. Tap, tap, tap. A postwoman stood outside, holding a bicycle. Her mailbag shone like a biscuit tin.\n\n“Last post for the Moon!” she called. “I'm Feather. Have you got anything to send?”\n\nMilo searched his pocket. Out came a red button, a tissue and a crumb from his afternoon snack. Feather shook her head gently.\n\n“They've plenty of stones and crumbs up there already. The Moon would like to know what makes your family laugh. I'll come back when the big hand points straight down.”",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Off she went. Her bicycle bell gave a funny little hiccup.\n\nMilo looked at the clock. He had about as long as a bath to make his letter. But how could he put a laugh inside an envelope?\n\nFirst he laughed into a jam jar. Ha, ha! Quick, on with the lid! He pressed his ear against the glass. Nothing. He opened the jar. Still nothing, except the smell of strawberries.\n\n“My laugh has escaped. Or turned into jam.”",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Next he drew his mouth, including every tooth. The picture looked like a zip. Milo stared at it. It wasn't funny at all.\n\nIn the kitchen, Dad pulled out a chair. It made a small, indignant duck noise. Dad stopped. He pulled the chair again. The duck complained again.\n\nMilo burst out laughing. So did Dad. The harder they tried to stop, the more the duck seemed to encourage them.\n\nThis time, Milo didn't fetch his jar. He found a big sheet of paper. He drew Dad, the chair and a very surprised duck. Underneath, he wrote, “In our house, we laugh when the furniture thinks it's an animal.”",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "He added Feather's hiccupping bell. Then he drew his own laugh: a long yellow path curling all the way round the picture.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "If you like, imagine a chair that makes a completely different noise. You can keep your idea to yourself.",
+            "pause_after_ms": 3000
+          },
+          {
+            "text": "Tap, tap, tap. Feather was back. The big hand pointed straight down.\n\nMilo showed her the picture. But his yellow laugh stuck out on both sides of the envelope. He tried folding the paper. Dad vanished. He folded it the other way. No more duck!\n\nThen Milo fetched a second envelope. He opened its sides and joined it to the first. Now the letter was wide enough for everyone to laugh together.\n\nFeather read the words. She looked at the duck. Her bell gave a hiccup, and she started laughing too.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“It works!” said Milo. “Even without a jar!”\n\nThe next evening, a very long envelope lay on his pillow. Inside, the Moon had drawn a crater shaped like a chair. A duck sat on it, holding a little sign. The sign said, “Again!”\n\nMilo called Dad. In the kitchen, the chair answered first.",
+            "pause_after_ms": 800
+          }
+        ]
+      },
+      "render_plan_sha256": "6f5aa0aa8e29db7adda010ee9c360ed7c18195c0e93a5009920381cc87977950",
+      "audio_sha256": "e3ba491b7177ff973fdd7e520fe8bc7999a5951d15098a6e38e576123c9e4ef7",
+      "bytes": 2315906,
+      "duration_seconds": 192.94,
       "codec": "mp3",
       "sample_rate_hz": 22050,
       "channels": 1,
-      "engine": "eSpeak NG 1.52.0",
-      "voice": "en-gb",
-      "speed_words_per_minute": 105,
-      "pitch": 45,
-      "amplitude": 70,
-      "paragraph_pause_ms": 2000,
-      "invitation_pause_ms": 8000,
-      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
-      "final_audio_approval": "pending"
+      "engine": "Kokoro 82M v1.0",
+      "voice": "bf_emma",
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.en.mp3"
     },
     {
       "story_id": "nori-cloud-pocket",
       "language": "fr",
-      "path": "content/audio/nori-cloud-pocket.fr.mp3",
       "status": "synthetic_draft_demo",
       "approval": "pending",
-      "script_sha256": "3a6d1ace2e3bd9474f4a68a26d57558ea5562f073bb43ec0ff50317cbafc9bfa",
-      "ssml_sha256": "c9b8454e99183b15b96124135fe8600836b02e38f47c7becf7cc1bbf84f2ff35",
-      "audio_sha256": "abf62845f2bea05f4cd86fb9a803849a1573a862b251d8bec9da910ffe695698",
-      "bytes": 1494247,
-      "duration_seconds": 186.749,
+      "final_audio_approval": "pending",
+      "script_sha256": "2dfa6295adf293f301f8678ca0e656298a1994cc928bba4df680f0d545149a6e",
+      "render_plan": {
+        "voice": "ff_siwis",
+        "language": "fr-fr",
+        "speed": 0.78,
+        "leading_silence_ms": 350,
+        "sentence_pause_seconds": 0.22,
+        "clause_pause_seconds": 0.08,
+        "segments": [
+          {
+            "text": "Nori avait trois trésors dans sa poche : une plume, un bouton bleu et un ruban jaune. Elle les avait comptés au départ du jardin. Au bord de la barrière, elle en compta quatre.\n\nLe quatrième trésor éternua.\n\n« Pardon », dit une toute petite voix.\n\nEntre le bouton et la plume flottait un nuage de la taille d'une madeleine. Il avait deux bosses et l'air très embarrassé.\n\n« Je ne voulais pas entrer. Le vent m'a poussé. Ma famille est passée au-dessus du pommier, et maintenant je suis tout seul. »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Nori regarda le ciel. Des nuages traversaient le jardin, mais aucun ne s'arrêtait.\n\n« On va trouver comment tu peux les rejoindre. Moi, c'est Nori. »\n\n« Moi, je n'ai pas encore de nom. Je n'ai que trois jours. »\n\nNori sortit sa plume. Elle souffla dessus. La plume virevolta au-dessus de sa main, puis retomba dans sa paume. Le nuage, lui, resta sur son doigt.\n\n« Essaie d'être léger comme elle ! »\n\nLe nuage devint si plat qu'on aurait dit une crêpe. Il décolla un peu, tourna sur lui-même et atterrit sur le nez de Nori.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "« Pas si près ! » dit-elle en riant. Son nez était tout frais.\n\nElle posa ensuite le bouton bleu sur le muret.\n\n« Peut-être qu'il te faut une belle forme ronde. »\n\nLe nuage se roula en boule. Cette fois, il monta jusqu'à la poignée de la barrière. Puis il redescendit, lentement, comme une bulle qui avait oublié de flotter.\n\nNori allait proposer une autre forme quand le nuage murmura :\n\n« Chez nous, on voyage plutôt en bateau. »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Il s'étira. Un petit creux apparut au milieu. Une pointe se forma de chaque côté. C'était un bateau tout blanc, avec un ventre pour attraper l'air.\n\n« Alors, on cherche du vent », décida Nori.\n\nElle tint son ruban jaune près de la barrière. Le ruban pendait. Près du pommier, il bougea à peine. Au bout du jardin, à côté de l'arrosoir, il se mit à danser.\n\nLà-haut, trois nuages formaient de grands bateaux. Le plus petit faisait toujours demi-tour. Il cherchait quelqu'un.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "« Les voilà ! » souffla le petit nuage.\n\nNori resta près du ruban. Elle ne poussa pas son nouvel ami. Elle attendit qu'il soit prêt.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Si tu veux, imagine le petit bateau qui gonfle son ventre. Tout doucement. Il n'y a rien à réussir.",
+            "pause_after_ms": 3000
+          },
+          {
+            "text": "Le nuage s'installa dans le courant d'air. Il monta au-dessus de l'arrosoir, puis du pommier. Une de ses pointes s'allongea pour saluer Nori.\n\nLes trois grands bateaux ralentirent. Le petit trouva sa place entre eux. Ensemble, ils prirent la forme d'un immense voilier.\n\nNori remit la plume et le bouton dans sa poche. Elle noua le ruban à la barrière, pour retrouver le courant d'air une autre fois.\n\nLe lendemain, une goutte tomba sur le bouton bleu. Une seule. Nori leva les yeux. Un petit bateau blanc passait au-dessus du jardin.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "« Bonjour, Quatre », dit-elle.\n\nCette fois, quand elle compta ses trésors, elle n'eut pas besoin de tous les garder dans sa poche.",
+            "pause_after_ms": 800
+          }
+        ]
+      },
+      "render_plan_sha256": "4e54d03b756c0d786c5a7163632044c8c443974d5bd502111747056fca4a998c",
+      "audio_sha256": "713b193ad601aa7adebf0d6417eb7556d2cd235766bec63166e12fe573a8296a",
+      "bytes": 2473391,
+      "duration_seconds": 206.054,
       "codec": "mp3",
       "sample_rate_hz": 22050,
       "channels": 1,
-      "engine": "eSpeak NG 1.52.0",
-      "voice": "fr-fr",
-      "speed_words_per_minute": 105,
-      "pitch": 45,
-      "amplitude": 70,
-      "paragraph_pause_ms": 2000,
-      "invitation_pause_ms": 8000,
-      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
-      "final_audio_approval": "pending"
+      "engine": "Kokoro 82M v1.0",
+      "voice": "ff_siwis",
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.fr.mp3"
     },
     {
       "story_id": "nori-cloud-pocket",
       "language": "en",
-      "path": "content/audio/nori-cloud-pocket.en.mp3",
       "status": "synthetic_draft_demo",
       "approval": "pending",
-      "script_sha256": "cda359b438bb6f5967b08c6d7f94a4808099fd4ec82940ca66db2896b790ea86",
-      "ssml_sha256": "e5fb025411dcff4fe59c1e08422bfaa490886af98aeca59e5d266645b61e5395",
-      "audio_sha256": "e3817785def405f5da29ee765600fdd33b0e1521c46a4b9673747ff8e4b2deb7",
-      "bytes": 1608558,
-      "duration_seconds": 201.038,
+      "final_audio_approval": "pending",
+      "script_sha256": "22a86bdc8ffc861d70778d96e32b29d1eb7acc66668603d3101170d833a06761",
+      "render_plan": {
+        "voice": "bf_emma",
+        "language": "en-gb",
+        "speed": 0.84,
+        "leading_silence_ms": 350,
+        "sentence_pause_seconds": 0.22,
+        "clause_pause_seconds": 0.08,
+        "segments": [
+          {
+            "text": "Nori had three treasures in her pocket: a feather, a blue button and a yellow ribbon. She had counted them at the garden door. By the gate, she counted four.\n\nThe fourth treasure sneezed.\n\n“Sorry,” said a very small voice.\n\nBetween the button and the feather floated a cloud no bigger than a little cake. It had two bumps and looked rather embarrassed.\n\n“I didn't mean to come in. The wind pushed me. My family went over the apple tree, and now I'm on my own.”",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Nori looked up. Clouds were crossing the garden, but none of them stopped.\n\n“We'll find a way to get you back. I'm Nori.”\n\n“I haven't got a name yet. I'm only three days old.”\n\nNori took out her feather and blew on it. The feather fluttered above her hand, then settled back into her palm. The cloud stayed on her finger.\n\n“Try being light like that!”\n\nThe cloud flattened itself until it looked like a pancake. It rose a little, spun round and landed on Nori's nose.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“Not quite so close!” she laughed. Her nose felt cool.\n\nNext she put the blue button on the wall.\n\n“Perhaps you need a good round shape.”\n\nThe cloud rolled into a ball. This time it floated as high as the gate handle. Then it sank slowly, like a bubble that had forgotten how to float.\n\nNori was about to suggest another shape when the cloud whispered,\n\n“In our family, we usually travel as boats.”\n\nIt stretched itself out. A hollow appeared in the middle, with a point at each end. Now it was a tiny white boat, with a belly to catch the air.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“Then we need to find some wind,” said Nori.\n\nShe held her yellow ribbon beside the gate. It hung still. By the apple tree, it hardly stirred. At the far end of the garden, next to the watering can, it began to dance.\n\nHigh above them, three clouds made big boat shapes. The smallest kept turning back. It was looking for someone.\n\n“There they are!” breathed the little cloud.\n\nNori stayed beside the ribbon. She didn't push her new friend. She waited until it was ready.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "If you like, imagine the little boat filling its belly. Very gently. There's nothing you have to get right.",
+            "pause_after_ms": 3000
+          },
+          {
+            "text": "The cloud settled into the moving air. Up it went, above the watering can, then above the apple tree. One pointed end stretched out to wave to Nori.\n\nThe three big boats slowed down. The little one slipped between them. Together, they became an enormous sailing ship.\n\nNori put the feather and the button back in her pocket. She tied the ribbon to the gate, so she could find the moving air another day.\n\nNext morning, a drop landed on the blue button. Just one. Nori looked up. A little white boat was crossing the garden.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“Hello, Four,” she said.\n\nAnd when she counted her treasures, she didn't need to keep every one of them in her pocket.",
+            "pause_after_ms": 800
+          }
+        ]
+      },
+      "render_plan_sha256": "076484e17296dc47c5c8f2cffe88dc3a603f5798715c7f6bdb624971acb47b45",
+      "audio_sha256": "aff8e0ed3bf9da8608a1939bca1c4cac51f6675d48f2026ccb740ec5bd03d54f",
+      "bytes": 2300232,
+      "duration_seconds": 191.634,
       "codec": "mp3",
       "sample_rate_hz": 22050,
       "channels": 1,
-      "engine": "eSpeak NG 1.52.0",
-      "voice": "en-gb",
-      "speed_words_per_minute": 105,
-      "pitch": 45,
-      "amplitude": 70,
-      "paragraph_pause_ms": 2000,
-      "invitation_pause_ms": 8000,
-      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
-      "final_audio_approval": "pending"
+      "engine": "Kokoro 82M v1.0",
+      "voice": "bf_emma",
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.en.mp3"
     },
     {
       "story_id": "pipo-sock-orchestra",
       "language": "fr",
-      "path": "content/audio/pipo-sock-orchestra.fr.mp3",
       "status": "synthetic_draft_demo",
       "approval": "pending",
-      "script_sha256": "a955a0e09361ef078fd483b06005669a4e3cf511bb892ce82fd127a466d78759",
-      "ssml_sha256": "9806d1c0a52fb9cf67026fa7f7b6ae76d2ac31a35996aef39d80d5df61a522fa",
-      "audio_sha256": "366457844bc74f9d5efc27142feb5daba6e334581fc7365c16afdd41524022a2",
-      "bytes": 1610021,
-      "duration_seconds": 201.221,
+      "final_audio_approval": "pending",
+      "script_sha256": "e9499d2498bcb19c4a0031dd4bcf0500e60150135badca4acb5a0c1c940e04fd",
+      "render_plan": {
+        "voice": "ff_siwis",
+        "language": "fr-fr",
+        "speed": 0.78,
+        "leading_silence_ms": 350,
+        "sentence_pause_seconds": 0.22,
+        "clause_pause_seconds": 0.08,
+        "segments": [
+          {
+            "text": "Dans le panier à linge, quelqu'un répétait : « Moi d'abord. Moi d'abord. Moi d'abord. »\n\nPipo souleva une serviette. Dessous, trois chaussettes se tenaient debout. Une rouge à rayures. Une verte à pois. Une violette avec un petit trou au talon.\n\n« Nous préparons un concert pour retrouver nos amies, expliqua la rouge. Nous sommes toutes séparées. Si elles reconnaissent notre musique, elles viendront. »\n\n« Bonne idée ! dit Pipo. Je peux vous aider ? »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "La rouge bondit aussitôt sur le bord du panier.\n\n« Je fais le début ! Boum ! Boum ! Boum ! »\n\n« Non, moi ! » protesta la verte. Elle tapa deux fois du bout du pied. « Tap tap ! Tap tap ! »\n\nElles commencèrent ensemble. La rouge sautait sur les tapotements de la verte. La verte accélérait pour rattraper les bonds de la rouge. On aurait dit deux personnes qui essayaient de passer la même porte en même temps.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Au fond du panier, la violette ne faisait aucun bruit.\n\nPipo leva une cuillère en bois, comme un chef d'orchestre.\n\n« Tout le monde me regarde. Un, deux, trois ! »\n\nLes deux chaussettes repartirent de plus belle. La rouge sauta si haut qu'elle coiffa la cuillère. La verte se mit à rire. Le concert s'arrêta avant d'avoir commencé.\n\n« Plus doucement », proposa Pipo.\n\nElles jouèrent doucement, mais toujours ensemble. Leurs petits bruits se poussaient encore. C'était une dispute en chuchotant.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "La violette s'avança.\n\n« Et moi ? »\n\n« Quel bruit sais-tu faire ? » demanda Pipo.\n\nLa violette prit une grande inspiration. Puis elle se tortilla, se gonfla, se secoua. Rien ne sortit.\n\n« Avec mon trou, l'air s'échappe. Je ne sers à rien. »\n\nLa violette regarda la porte. « Et si on écoutait ? » Pipo posa la cuillère. Pendant un instant, personne ne parla. On entendit alors deux petits coups derrière la porte. Tap tap.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "La verte se retourna.\n\n« C'est ma sœur ! Elle ne pouvait pas nous entendre avec tout ce bruit ! »\n\nPipo regarda la violette.\n\n« Attends. Tu viens de trouver ce qui manquait. Une place vide, pour laisser quelqu'un répondre. »\n\nIl installa la rouge à gauche, la verte au milieu et la violette à droite.\n\n« Chacune son tour. Rouge : un grand pas. Verte : deux petits. Violette : on attend. »",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Boum. Tap tap. Puis le silence.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Si tu veux, tu peux suivre ce petit rythme dans ta tête. Un grand pas, deux petits, et une place pour la réponse.",
+            "pause_after_ms": 3000
+          },
+          {
+            "text": "Derrière la porte : tap tap ! Sous le fauteuil : boum ! Sur le fil à linge, une chaussette violette remua. Personne ne l'avait remarquée. Elle attendait son tour, elle aussi.\n\nPipo ouvrit la porte. Six chaussettes se retrouvèrent au milieu du tapis. Les rouges firent un grand pas. Les vertes, deux petits. Les violettes laissèrent un joli silence.\n\nCette fois, toute la pièce semblait savoir quand répondre.\n\nAu moment de retourner dans le tiroir, la rouge demanda :",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "« Demain, qui commence ? »\n\nLa violette sourit.\n\n« D'abord, on écoute. »",
+            "pause_after_ms": 800
+          }
+        ]
+      },
+      "render_plan_sha256": "f05be070529692928cb66130917ef94386649e3df5a55abd0b7db209c5ae652b",
+      "audio_sha256": "bdc82285d5137f7a623cfacadc81412c0544d544ed993724c258c22865645ccf",
+      "bytes": 2602540,
+      "duration_seconds": 216.816,
       "codec": "mp3",
       "sample_rate_hz": 22050,
       "channels": 1,
-      "engine": "eSpeak NG 1.52.0",
-      "voice": "fr-fr",
-      "speed_words_per_minute": 105,
-      "pitch": 45,
-      "amplitude": 70,
-      "paragraph_pause_ms": 2000,
-      "invitation_pause_ms": 8000,
-      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
-      "final_audio_approval": "pending"
+      "engine": "Kokoro 82M v1.0",
+      "voice": "ff_siwis",
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.fr.mp3"
     },
     {
       "story_id": "pipo-sock-orchestra",
       "language": "en",
-      "path": "content/audio/pipo-sock-orchestra.en.mp3",
       "status": "synthetic_draft_demo",
       "approval": "pending",
-      "script_sha256": "c6dd79011435ccf830f0d71bd94650eb1b3480d691a1f07fd303372930bad926",
-      "ssml_sha256": "c76e2e405a28e1d07df7de149e32ab89f2c70b81762e058d82cb69b93f034a2e",
-      "audio_sha256": "9d3654370d547a7546a43e39421b797e6088437fa97bc3586fb7fef1efe15516",
-      "bytes": 1761114,
-      "duration_seconds": 220.108,
+      "final_audio_approval": "pending",
+      "script_sha256": "a5c3ec8cbf4746d06e73a09f428523249624e57e06d2b381a9e56e89aaa052fe",
+      "render_plan": {
+        "voice": "bf_emma",
+        "language": "en-gb",
+        "speed": 0.84,
+        "leading_silence_ms": 350,
+        "sentence_pause_seconds": 0.22,
+        "clause_pause_seconds": 0.08,
+        "segments": [
+          {
+            "text": "Someone in the laundry basket kept saying, “Me first. Me first. Me first.”\n\nPipo lifted a towel. Underneath stood three socks. A red stripy one. A green spotty one. And a purple one with a little hole in its heel.\n\n“We're giving a concert to find our friends,” explained Red. “We've all been separated. If they recognise our music, they'll come back.”\n\n“Good idea!” said Pipo. “Can I help?”\n\nRed immediately bounced onto the edge of the basket.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“I'll do the beginning! Boom! Boom! Boom!”\n\n“No, me!” said Green. It tapped its toe twice. “Tap tap! Tap tap!”\n\nThey started together. Red bounced over Green's tapping. Green sped up to catch Red's bouncing. They sounded like two people trying to squeeze through the same door at once.\n\nAt the bottom of the basket, Purple made no sound at all.\n\nPipo raised a wooden spoon like a conductor.\n\n“Everyone watch me. One, two, three!”",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "The two socks began again, louder than before. Red bounced so high it landed on top of the spoon. Green started laughing. The concert stopped before it had properly begun.\n\n“Let's try quietly,” said Pipo.\n\nThey played quietly, but still at the same time. Their little sounds kept pushing each other out of the way. Now it was an argument in whispers.\n\nPurple came forward.\n\n“What about me?”\n\n“What sound can you make?” asked Pipo.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "Purple took a big breath. It wriggled, puffed itself up and shook its heel. Nothing happened.\n\n“The air escapes through my hole. I'm no use.”\n\nPurple looked at the door. “What if we listen?” Pipo put down the spoon. For a moment, nobody spoke. And in that moment, two little taps came from behind the door. Tap tap.\n\nGreen turned round.\n\n“That's my sister! She couldn't hear us with all that noise!”\n\nPipo looked at Purple.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“Wait. You've just found what we were missing. An empty space, so someone else can answer.”\n\nPipo placed Red on the left, Green in the middle and Purple on the right.\n\n“One at a time. Red: one big step. Green: two little ones. Purple: we wait.”\n\nBoom. Tap tap. Then silence.",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "If you like, you can follow the little rhythm in your head. One big step, two little ones, and a space for an answer.",
+            "pause_after_ms": 3000
+          },
+          {
+            "text": "Behind the door came tap tap! Under the armchair came boom! A purple sock stirred on the washing line. Nobody had noticed it. It had been waiting for its turn too.\n\nPipo opened the door. Six socks met in the middle of the rug. The reds took one big step. The greens took two little ones. The purples left a lovely quiet space.\n\nThis time, the whole room seemed to know when to answer.\n\nAs they climbed back into the drawer, Red asked,",
+            "pause_after_ms": 350
+          },
+          {
+            "text": "“Who's going first tomorrow?”\n\nPurple smiled.\n\n“First, we listen.”",
+            "pause_after_ms": 800
+          }
+        ]
+      },
+      "render_plan_sha256": "a553e3d85ffac472c0aac44906547ee53e810fa50046db56177c9ed09a4c30ff",
+      "audio_sha256": "c28cb70f148f8c260ef0d26a6077fbaa16ed582b72c7cf155e7e951d807edec9",
+      "bytes": 2310890,
+      "duration_seconds": 192.522,
       "codec": "mp3",
       "sample_rate_hz": 22050,
       "channels": 1,
-      "engine": "eSpeak NG 1.52.0",
-      "voice": "en-gb",
-      "speed_words_per_minute": 105,
-      "pitch": 45,
-      "amplitude": 70,
-      "paragraph_pause_ms": 2000,
-      "invitation_pause_ms": 8000,
-      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
-      "final_audio_approval": "pending"
+      "engine": "Kokoro 82M v1.0",
+      "voice": "bf_emma",
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.en.mp3"
     }
   ],
   "age_note": {
@@ -160,8 +368,8 @@
     "en": "Editorial guidance for ages 4–7, for an adult to assess; not tested with children."
   },
   "preview_note": {
-    "fr": "Enregistrements de démonstration synthétiques, générés localement avec eSpeak NG. Voix robotique, non interprétée par un comédien. Fichiers téléchargeables pour écouter sans écran ; validation de l’audio final en attente.",
-    "en": "Synthetic demonstration recordings, generated locally with eSpeak NG. Robotic voice, not a performer’s narration. Downloadable files for listening away from a screen; final audio approval pending."
+    "fr": "Narration de démonstration par voix neurale locale. Textes révisés ; écoute finale en attente.",
+    "en": "Demonstration narration using a local neural voice. Revised stories; final listening approval pending."
   },
   "card_note": {
     "fr": "Cartes papier illustrées uniquement : elles ne déclenchent pas le lecteur à contacts. Le dessin d’une carte n’est pas son identifiant électronique.",
@@ -176,39 +384,33 @@
       "fr": {
         "title": "Milo et le courrier de la Lune",
         "subtitle": "Une histoire à écouter, un vœu à inventer.",
-        "script": "Ce soir-là, Milo trouva une enveloppe sur son oreiller. Elle était vide. Sur le devant, on avait écrit : « Pour la Lune. À remplir avec quelque chose qui ne tient pas dans une boîte. »\n\nMilo regarda sous son lit. Une chaussette ? Elle tenait dans une boîte. Un caillou ? Aussi. Son bâillement, en revanche, s'envola avant qu'il puisse l'attraper.\n\n« Voilà une piste », murmura-t-il.\n\nÀ la fenêtre attendait une petite factrice à vélo. Son vélo avait deux roues rondes et une sonnette en forme de croissant.\n\n« Je m'appelle Plume. Tu as du courrier ? »\n\n« Pas encore. Comment envoie-t-on un bâillement ? »\n\n« On le raconte. La Lune aime les lettres qui lui font imaginer la Terre. »\n\nMilo prit alors un crayon. Il dessina sa bouche toute ronde. Puis il ajouta le bruit de la pluie sur le toit, le parfum du pain grillé et le rire de son voisin.\n\nSi tu écrivais à la Lune, quel petit moment de ta journée choisirais-tu ? Tu peux le dire tout bas, ou simplement y penser.\n\nMilo glissa son dessin dans l'enveloppe. Mais un coin dépassait : il avait dessiné le rire beaucoup trop grand.\n\n« Il faut le plier ? » demanda-t-il.\n\nPlume secoua la tête. « Certains rires voyagent mieux dehors. »\n\nElle fixa l'enveloppe à son porte-bagages. Le rire flottait derrière comme un ruban. Le vélo partit sur le chemin, puis disparut au tournant. Milo ne vit pas comment Plume rejoignait la Lune. Cela resta le secret de la factrice.\n\nLe lendemain, une petite réponse attendait sur l'oreiller. Il n'y avait qu'un rond jaune et ces mots : « Merci. Ici, nous avons imaginé ton rire. Il était immense. »\n\nMilo sourit. Il rangea la lettre dans une boîte. Le sourire, lui, resta dehors.",
+        "script": "Trois coups minuscules résonnèrent à la fenêtre de Milo. Toc, toc, toc. Dehors, une factrice tenait son vélo par le guidon. Sa sacoche brillait comme une boîte de biscuits.\n\n« Dernier courrier pour la Lune ! annonça-t-elle. Je m'appelle Plume. Tu as quelque chose à envoyer ? »\n\nMilo chercha dans sa poche. Il en sortit un bouton rouge, un mouchoir et une miette de goûter. Plume secoua doucement la tête.\n\n« Des cailloux et des miettes, là-haut, il y en a déjà beaucoup. La Lune voudrait savoir comment on rit dans ta maison. Je repasse quand la grande aiguille sera tout en bas. »\n\nPuis elle repartit, avec une sonnette qui faisait un drôle de petit hoquet.\n\nMilo regarda l'horloge. Il avait le temps d'un bain pour préparer sa lettre. Mais comment mettre un rire dans une enveloppe ?\n\nIl essaya d'abord de rire dans un bocal. Ha, ha ! Vite, le couvercle ! Il colla l'oreille contre le verre. Rien. Il rouvrit le bocal. Toujours rien, sauf une odeur de confiture.\n\n« Mon rire s'est échappé. Ou bien il est devenu fraise. »\n\nIl dessina ensuite sa bouche avec toutes ses dents. Le dessin ressemblait à une fermeture éclair. Milo le regarda longtemps. Ce n'était pas drôle du tout.\n\nDans la cuisine, son papa tirait une chaise. La chaise poussa un petit cri de canard. Son papa s'arrêta. Il tira encore la chaise. Le canard recommença.\n\nMilo éclata de rire. Son papa aussi. Et plus ils essayaient de se taire, plus le canard semblait les encourager.\n\nCette fois, Milo ne courut pas chercher son bocal. Il prit une grande feuille. Il dessina son papa, la chaise et un canard très étonné. En dessous, il écrivit : « Chez nous, on rit quand les meubles se prennent pour des animaux. »\n\nIl ajouta le hoquet de la sonnette de Plume. Puis son rire à lui : un grand chemin jaune qui tournait autour du dessin.\n\nSi tu veux, imagine une chaise qui fait un bruit complètement différent. Tu peux garder cette idée pour toi.\n\nToc, toc, toc. Plume était revenue. L'aiguille pointait tout en bas.\n\nMilo lui tendit son dessin. Mais le chemin jaune dépassait des deux côtés de l'enveloppe. Il essaya de le plier. Le papa disparut. Il essaya dans l'autre sens. Plus de canard !\n\nAlors Milo prit une deuxième enveloppe, ouvrit ses côtés et la colla à la première. Voilà une lettre assez large pour laisser tout le monde rire ensemble.\n\nPlume lut la phrase. Elle regarda le canard. Sa sonnette eut un hoquet, et elle se mit à rire à son tour.\n\n« Il fonctionne ! dit Milo. Même sans bocal ! »\n\nLe lendemain soir, une enveloppe très longue attendait sur son oreiller. À l'intérieur, la Lune avait dessiné un cratère en forme de chaise. Sur la chaise, un canard tenait un petit panneau : « Encore ! »\n\nMilo appela son papa. Dans la cuisine, la chaise répondit avant lui.",
         "activity": "Avec un adulte si tu le souhaites, dessine une carte postale pour la Lune : un bruit, un parfum ou un moment de ta journée. Raconte-la, puis offre-la ou garde-la. Aucun matériel spécial : papier et crayons suffisent.",
         "card_activity": "Quel petit moment raconterais-tu à la Lune ? Dessine ta carte postale.",
-        "word_count": 303,
-        "preview_audio": "content/audio/milo-moon-post.fr.mp3",
-        "preview_audio_duration_seconds": 180.715
+        "word_count": 497,
+        "preview_audio": "content/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.fr.mp3",
+        "preview_audio_duration_seconds": 222.589
       },
       "en": {
         "title": "Milo and the Moon Post",
         "subtitle": "A story to hear. A little wish to imagine.",
-        "script": "That evening, Milo found an envelope on his pillow. It was empty. On the front, someone had written, “For the Moon. Please fill with something that will not fit inside a box.”\n\nMilo looked under his bed. A sock? That would fit in a box. A pebble? That would too. His yawn, however, floated away before he could catch it.\n\n“That might be a clue,” he whispered.\n\nA little postwoman was waiting outside his window. Her bicycle had two round wheels and a bell shaped like a crescent.\n\n“My name is Feather. Have you got any post?”\n\n“Not yet. How do you send a yawn?”\n\n“You tell its story. The Moon likes letters that help her imagine the Earth.”\n\nMilo picked up a pencil. He drew his wide, round mouth. Then he added the sound of rain on the roof, the smell of warm toast and his neighbour's laugh.\n\nIf you were writing to the Moon, which little moment from your day would you choose? You can whisper it, or just think about it.\n\nMilo slipped his drawing into the envelope. But one corner stuck out. He had drawn the laugh much too big.\n\n“Should I fold it?” he asked.\n\nFeather shook her head. “Some laughs travel better out in the open.”\n\nShe fastened the envelope to the back of her bicycle. The laugh floated behind her like a ribbon. The bicycle rolled down the path and disappeared around a bend. Milo never saw how Feather reached the Moon. That remained the postwoman's secret.\n\nThe next morning, a little reply was waiting on his pillow. There was just a yellow circle and these words: “Thank you. We imagined your laugh up here. It was enormous.”\n\nMilo smiled. He put the letter away in a box. His smile stayed out in the open.",
+        "script": "Three tiny knocks came at Milo's window. Tap, tap, tap. A postwoman stood outside, holding a bicycle. Her mailbag shone like a biscuit tin.\n\n“Last post for the Moon!” she called. “I'm Feather. Have you got anything to send?”\n\nMilo searched his pocket. Out came a red button, a tissue and a crumb from his afternoon snack. Feather shook her head gently.\n\n“They've plenty of stones and crumbs up there already. The Moon would like to know what makes your family laugh. I'll come back when the big hand points straight down.”\n\nOff she went. Her bicycle bell gave a funny little hiccup.\n\nMilo looked at the clock. He had about as long as a bath to make his letter. But how could he put a laugh inside an envelope?\n\nFirst he laughed into a jam jar. Ha, ha! Quick, on with the lid! He pressed his ear against the glass. Nothing. He opened the jar. Still nothing, except the smell of strawberries.\n\n“My laugh has escaped. Or turned into jam.”\n\nNext he drew his mouth, including every tooth. The picture looked like a zip. Milo stared at it. It wasn't funny at all.\n\nIn the kitchen, Dad pulled out a chair. It made a small, indignant duck noise. Dad stopped. He pulled the chair again. The duck complained again.\n\nMilo burst out laughing. So did Dad. The harder they tried to stop, the more the duck seemed to encourage them.\n\nThis time, Milo didn't fetch his jar. He found a big sheet of paper. He drew Dad, the chair and a very surprised duck. Underneath, he wrote, “In our house, we laugh when the furniture thinks it's an animal.”\n\nHe added Feather's hiccupping bell. Then he drew his own laugh: a long yellow path curling all the way round the picture.\n\nIf you like, imagine a chair that makes a completely different noise. You can keep your idea to yourself.\n\nTap, tap, tap. Feather was back. The big hand pointed straight down.\n\nMilo showed her the picture. But his yellow laugh stuck out on both sides of the envelope. He tried folding the paper. Dad vanished. He folded it the other way. No more duck!\n\nThen Milo fetched a second envelope. He opened its sides and joined it to the first. Now the letter was wide enough for everyone to laugh together.\n\nFeather read the words. She looked at the duck. Her bell gave a hiccup, and she started laughing too.\n\n“It works!” said Milo. “Even without a jar!”\n\nThe next evening, a very long envelope lay on his pillow. Inside, the Moon had drawn a crater shaped like a chair. A duck sat on it, holding a little sign. The sign said, “Again!”\n\nMilo called Dad. In the kitchen, the chair answered first.",
         "activity": "With an adult if you like, draw a postcard for the Moon: a sound, a smell or a little moment from your day. Tell its story, then give it to someone or keep it. All you need is paper and pencils.",
         "card_activity": "Which little moment would you tell the Moon about? Draw your postcard.",
-        "word_count": 302,
-        "preview_audio": "content/audio/milo-moon-post.en.mp3",
-        "preview_audio_duration_seconds": 195.448
+        "word_count": 465,
+        "preview_audio": "content/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.en.mp3",
+        "preview_audio_duration_seconds": 192.94
       },
       "art": "content/cards/milo-moon-post.svg",
       "script_approval": "pending",
       "audio_approval": "pending",
       "recording": {
-        "voice": "warm, unhurried; no sudden loud effects",
-        "pace_words_per_minute": [
-          85,
-          105
-        ],
-        "pauses_seconds": {
-          "paragraph": 2,
-          "listener_invitation": 8
-        },
-        "music": "none required",
+        "voice": "Local neural preset demonstration; final listening approval pending",
+        "direction": "Warm, conversational storytelling; distinct restrained dialogue; one optional invitation. No sudden effects or music.",
+        "engine_settings": "See the exact render plan and measured duration for each language in audio-generation.json.",
+        "music": "none supplied",
         "audio_file": null,
-        "review": "Review exact script revision, record, then review exact final audio separately."
+        "review": "Review exact script revision, then listen to and separately approve the exact final recording."
       }
     },
     {
@@ -219,39 +421,33 @@
       "fr": {
         "title": "Nori et le nuage de poche",
         "subtitle": "Un détour tout doux, à la vitesse d’un nuage.",
-        "script": "Nori avait une poche pour les trésors. Elle y gardait une feuille en forme de bateau, un bouton violet et un ticket de bus. Un matin, elle y trouva aussi un tout petit nuage.\n\n« Tu t'es perdu ? » demanda-t-elle.\n\n« Un peu. Je suivais les autres, puis j'ai regardé une fourmi. Maintenant, je ne vois plus le ciel. »\n\nNori ouvrit grand sa poche. « Le ciel est juste là. »\n\nLe nuage hésita. « Il est très grand. »\n\nNori s'assit sur un banc. « On peut commencer par regarder un petit morceau. »\n\nIls choisirent le carré de ciel entre deux branches. Un oiseau le traversa. Puis une feuille. Puis rien du tout.\n\nPendant un moment, ils écoutèrent. Nori entendit une roue sur les graviers, une porte qui se fermait et, très loin, quelqu'un qui appelait un chien.\n\nEt toi, si tu as envie, écoute autour de toi quelques instants. Quel son vient jusqu'à tes oreilles ? Tu peux aussi rester avec Nori dans l'histoire.\n\n« Je suis peut-être un nuage qui préfère les petites promenades », dit le nuage.\n\n« Moi aussi, parfois », répondit Nori.\n\nElle lui montra le bouton violet. Le nuage essaya de lui ressembler. Il devint rond, puis tout biscornu. Nori éclata de rire.\n\nIl essaya ensuite la feuille-bateau. Cette fois, il réussit une voile parfaite, mais oublia la coque.\n\n« C'est un bateau pour le ciel ! » dit Nori.\n\nLe nuage monta jusqu'au dossier du banc. De là, il reconnut un grand nuage qui ressemblait à une théière.\n\n« Ma tante ! Elle m'attend ! »\n\nIl s'envola, sans se presser. Nori agita la main.\n\nDans sa poche, il restait le bouton, la feuille et le ticket. Elle n'avait pas rapporté un nouveau trésor. Elle avait fait une petite promenade avec l'un d'eux. Et c'était déjà toute une aventure.",
+        "script": "Nori avait trois trésors dans sa poche : une plume, un bouton bleu et un ruban jaune. Elle les avait comptés au départ du jardin. Au bord de la barrière, elle en compta quatre.\n\nLe quatrième trésor éternua.\n\n« Pardon », dit une toute petite voix.\n\nEntre le bouton et la plume flottait un nuage de la taille d'une madeleine. Il avait deux bosses et l'air très embarrassé.\n\n« Je ne voulais pas entrer. Le vent m'a poussé. Ma famille est passée au-dessus du pommier, et maintenant je suis tout seul. »\n\nNori regarda le ciel. Des nuages traversaient le jardin, mais aucun ne s'arrêtait.\n\n« On va trouver comment tu peux les rejoindre. Moi, c'est Nori. »\n\n« Moi, je n'ai pas encore de nom. Je n'ai que trois jours. »\n\nNori sortit sa plume. Elle souffla dessus. La plume virevolta au-dessus de sa main, puis retomba dans sa paume. Le nuage, lui, resta sur son doigt.\n\n« Essaie d'être léger comme elle ! »\n\nLe nuage devint si plat qu'on aurait dit une crêpe. Il décolla un peu, tourna sur lui-même et atterrit sur le nez de Nori.\n\n« Pas si près ! » dit-elle en riant. Son nez était tout frais.\n\nElle posa ensuite le bouton bleu sur le muret.\n\n« Peut-être qu'il te faut une belle forme ronde. »\n\nLe nuage se roula en boule. Cette fois, il monta jusqu'à la poignée de la barrière. Puis il redescendit, lentement, comme une bulle qui avait oublié de flotter.\n\nNori allait proposer une autre forme quand le nuage murmura :\n\n« Chez nous, on voyage plutôt en bateau. »\n\nIl s'étira. Un petit creux apparut au milieu. Une pointe se forma de chaque côté. C'était un bateau tout blanc, avec un ventre pour attraper l'air.\n\n« Alors, on cherche du vent », décida Nori.\n\nElle tint son ruban jaune près de la barrière. Le ruban pendait. Près du pommier, il bougea à peine. Au bout du jardin, à côté de l'arrosoir, il se mit à danser.\n\nLà-haut, trois nuages formaient de grands bateaux. Le plus petit faisait toujours demi-tour. Il cherchait quelqu'un.\n\n« Les voilà ! » souffla le petit nuage.\n\nNori resta près du ruban. Elle ne poussa pas son nouvel ami. Elle attendit qu'il soit prêt.\n\nSi tu veux, imagine le petit bateau qui gonfle son ventre. Tout doucement. Il n'y a rien à réussir.\n\nLe nuage s'installa dans le courant d'air. Il monta au-dessus de l'arrosoir, puis du pommier. Une de ses pointes s'allongea pour saluer Nori.\n\nLes trois grands bateaux ralentirent. Le petit trouva sa place entre eux. Ensemble, ils prirent la forme d'un immense voilier.\n\nNori remit la plume et le bouton dans sa poche. Elle noua le ruban à la barrière, pour retrouver le courant d'air une autre fois.\n\nLe lendemain, une goutte tomba sur le bouton bleu. Une seule. Nori leva les yeux. Un petit bateau blanc passait au-dessus du jardin.\n\n« Bonjour, Quatre », dit-elle.\n\nCette fois, quand elle compta ses trésors, elle n'eut pas besoin de tous les garder dans sa poche.",
         "activity": "Depuis un endroit confortable et sûr, cherche trois formes dans les nuages ou dans les motifs d’un tissu. Tu peux aussi inventer tes propres nuages au crayon. Inutile de sortir : un dessin fait très bien le voyage.",
         "card_activity": "Invente un nuage-bateau. Où ferait-il sa petite promenade ?",
-        "word_count": 310,
-        "preview_audio": "content/audio/nori-cloud-pocket.fr.mp3",
-        "preview_audio_duration_seconds": 186.749
+        "word_count": 513,
+        "preview_audio": "content/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.fr.mp3",
+        "preview_audio_duration_seconds": 206.054
       },
       "en": {
         "title": "Nori and the Pocket Cloud",
         "subtitle": "A gentle detour, at the speed of a cloud.",
-        "script": "Nori had a pocket for treasures. Inside it she kept a boat-shaped leaf, a purple button and a bus ticket. One morning, she found a very small cloud in there too.\n\n“Are you lost?” she asked.\n\n“A little. I was following the others. Then I stopped to watch an ant. Now I cannot see the sky.”\n\nNori opened her pocket wide. “The sky is right there.”\n\nThe cloud hesitated. “It is very big.”\n\nNori sat down on a bench. “We could start by looking at a little piece.”\n\nThey chose the square of sky between two branches. A bird crossed it. Then a leaf. Then nothing at all.\n\nFor a while, they listened. Nori heard a wheel rolling over gravel, a door closing and, far away, somebody calling a dog.\n\nIf you feel like it, listen around you for a few moments. Which sound reaches your ears? Or you can stay with Nori inside the story.\n\n“Perhaps I am a cloud who prefers little walks,” said the cloud.\n\n“Sometimes I do too,” said Nori.\n\nShe showed the cloud her purple button. The cloud tried to copy its shape. First it became round, then wonderfully wonky. Nori laughed.\n\nNext it tried to copy the boat-shaped leaf. This time, it made a perfect sail, but forgot the boat underneath.\n\n“It is a boat for the sky!” said Nori.\n\nThe cloud floated up to the back of the bench. From there, it recognised a large cloud shaped like a teapot.\n\n“My aunt! She is waiting for me!”\n\nIt floated away, taking its time. Nori waved.\n\nIn her pocket, she still had the button, the leaf and the ticket. She had not brought home a new treasure. She had taken a little walk with one of them. And that had been quite an adventure.",
+        "script": "Nori had three treasures in her pocket: a feather, a blue button and a yellow ribbon. She had counted them at the garden door. By the gate, she counted four.\n\nThe fourth treasure sneezed.\n\n“Sorry,” said a very small voice.\n\nBetween the button and the feather floated a cloud no bigger than a little cake. It had two bumps and looked rather embarrassed.\n\n“I didn't mean to come in. The wind pushed me. My family went over the apple tree, and now I'm on my own.”\n\nNori looked up. Clouds were crossing the garden, but none of them stopped.\n\n“We'll find a way to get you back. I'm Nori.”\n\n“I haven't got a name yet. I'm only three days old.”\n\nNori took out her feather and blew on it. The feather fluttered above her hand, then settled back into her palm. The cloud stayed on her finger.\n\n“Try being light like that!”\n\nThe cloud flattened itself until it looked like a pancake. It rose a little, spun round and landed on Nori's nose.\n\n“Not quite so close!” she laughed. Her nose felt cool.\n\nNext she put the blue button on the wall.\n\n“Perhaps you need a good round shape.”\n\nThe cloud rolled into a ball. This time it floated as high as the gate handle. Then it sank slowly, like a bubble that had forgotten how to float.\n\nNori was about to suggest another shape when the cloud whispered,\n\n“In our family, we usually travel as boats.”\n\nIt stretched itself out. A hollow appeared in the middle, with a point at each end. Now it was a tiny white boat, with a belly to catch the air.\n\n“Then we need to find some wind,” said Nori.\n\nShe held her yellow ribbon beside the gate. It hung still. By the apple tree, it hardly stirred. At the far end of the garden, next to the watering can, it began to dance.\n\nHigh above them, three clouds made big boat shapes. The smallest kept turning back. It was looking for someone.\n\n“There they are!” breathed the little cloud.\n\nNori stayed beside the ribbon. She didn't push her new friend. She waited until it was ready.\n\nIf you like, imagine the little boat filling its belly. Very gently. There's nothing you have to get right.\n\nThe cloud settled into the moving air. Up it went, above the watering can, then above the apple tree. One pointed end stretched out to wave to Nori.\n\nThe three big boats slowed down. The little one slipped between them. Together, they became an enormous sailing ship.\n\nNori put the feather and the button back in her pocket. She tied the ribbon to the gate, so she could find the moving air another day.\n\nNext morning, a drop landed on the blue button. Just one. Nori looked up. A little white boat was crossing the garden.\n\n“Hello, Four,” she said.\n\nAnd when she counted her treasures, she didn't need to keep every one of them in her pocket.",
         "activity": "From somewhere comfortable and safe, find three shapes in the clouds or in the pattern of a piece of fabric. You can also draw your own clouds. No need to go outside: a drawing can make the journey too.",
         "card_activity": "Imagine a cloud shaped like a boat. Where would it take a little walk?",
-        "word_count": 300,
-        "preview_audio": "content/audio/nori-cloud-pocket.en.mp3",
-        "preview_audio_duration_seconds": 201.038
+        "word_count": 500,
+        "preview_audio": "content/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.en.mp3",
+        "preview_audio_duration_seconds": 191.634
       },
       "art": "content/cards/nori-cloud-pocket.svg",
       "script_approval": "pending",
       "audio_approval": "pending",
       "recording": {
-        "voice": "warm, unhurried; no sudden loud effects",
-        "pace_words_per_minute": [
-          85,
-          105
-        ],
-        "pauses_seconds": {
-          "paragraph": 2,
-          "listener_invitation": 8
-        },
-        "music": "none required",
+        "voice": "Local neural preset demonstration; final listening approval pending",
+        "direction": "Warm, conversational storytelling; distinct restrained dialogue; one optional invitation. No sudden effects or music.",
+        "engine_settings": "See the exact render plan and measured duration for each language in audio-generation.json.",
+        "music": "none supplied",
         "audio_file": null,
-        "review": "Review exact script revision, record, then review exact final audio separately."
+        "review": "Review exact script revision, then listen to and separately approve the exact final recording."
       }
     },
     {
@@ -262,40 +458,37 @@
       "fr": {
         "title": "Pipo et l’orchestre des chaussettes",
         "subtitle": "Une drôle de répétition, sans faire trembler la maison.",
-        "script": "Le jour de la grande lessive, Pipo trouva trois chaussettes sans leur jumelle. Une rayée, une à pois et une qui avait un petit trou au talon.\n\n« Nous voulons jouer un concert », annonça la chaussette rayée.\n\n« Très bien », dit Pipo. « De quels instruments jouez-vous ? »\n\nLes trois chaussettes se regardèrent. Elles n'en avaient aucune idée.\n\nLa chaussette à pois essaya de souffler. Cela fit : « Fffff. »\n\nLa rayée remua sur le tapis. Cela fit : « Chchch. »\n\nLa trouée ne fit rien du tout.\n\n« J'attends mon tour », expliqua-t-elle.\n\nPipo réfléchit. Il posa ses mains sur ses genoux et tapota doucement : « Pom, pom. »\n\nLa chaussette à pois répondit : « Fffff. » La rayée ajouta : « Chchch. » Et la trouée leva un doigt pour demander un silence.\n\nTout le monde s'arrêta. Dans ce silence, on entendit le tic-tac de l'horloge.\n\n« Il joue avec nous ! » chuchota Pipo.\n\nSi tu en as envie, tu peux essayer un petit rythme sur tes genoux. Tout doucement. Deux taps, puis un silence. Tu peux aussi l'imaginer sans bouger.\n\nIls répétèrent encore. Parfois, les chaussettes commençaient ensemble. Parfois, elles se trompaient et recommençaient en riant. Pipo décida que le concert serait court : juste le temps d'une chanson inventée.\n\nÀ cet instant, trois chaussettes identiques apparurent au bord du panier. Les jumelles !\n\n« Vous nous avez retrouvées ! » dit la rayée.\n\n« On a suivi la musique », répondirent-elles.\n\nL'orchestre comptait maintenant six chaussettes. C'était beaucoup pour un petit tapis.\n\nAlors, les trois nouvelles venues s'installèrent dans le public. Pipo fit une petite révérence. Le concert commença par deux taps, un souffle et un silence.\n\nPuis le public applaudit sans bruit : six petits pieds de laine s'agitèrent dans l'air. Pour ce premier concert, c'était exactement ce qu'il fallait.",
+        "script": "Dans le panier à linge, quelqu'un répétait : « Moi d'abord. Moi d'abord. Moi d'abord. »\n\nPipo souleva une serviette. Dessous, trois chaussettes se tenaient debout. Une rouge à rayures. Une verte à pois. Une violette avec un petit trou au talon.\n\n« Nous préparons un concert pour retrouver nos amies, expliqua la rouge. Nous sommes toutes séparées. Si elles reconnaissent notre musique, elles viendront. »\n\n« Bonne idée ! dit Pipo. Je peux vous aider ? »\n\nLa rouge bondit aussitôt sur le bord du panier.\n\n« Je fais le début ! Boum ! Boum ! Boum ! »\n\n« Non, moi ! » protesta la verte. Elle tapa deux fois du bout du pied. « Tap tap ! Tap tap ! »\n\nElles commencèrent ensemble. La rouge sautait sur les tapotements de la verte. La verte accélérait pour rattraper les bonds de la rouge. On aurait dit deux personnes qui essayaient de passer la même porte en même temps.\n\nAu fond du panier, la violette ne faisait aucun bruit.\n\nPipo leva une cuillère en bois, comme un chef d'orchestre.\n\n« Tout le monde me regarde. Un, deux, trois ! »\n\nLes deux chaussettes repartirent de plus belle. La rouge sauta si haut qu'elle coiffa la cuillère. La verte se mit à rire. Le concert s'arrêta avant d'avoir commencé.\n\n« Plus doucement », proposa Pipo.\n\nElles jouèrent doucement, mais toujours ensemble. Leurs petits bruits se poussaient encore. C'était une dispute en chuchotant.\n\nLa violette s'avança.\n\n« Et moi ? »\n\n« Quel bruit sais-tu faire ? » demanda Pipo.\n\nLa violette prit une grande inspiration. Puis elle se tortilla, se gonfla, se secoua. Rien ne sortit.\n\n« Avec mon trou, l'air s'échappe. Je ne sers à rien. »\n\nLa violette regarda la porte. « Et si on écoutait ? » Pipo posa la cuillère. Pendant un instant, personne ne parla. On entendit alors deux petits coups derrière la porte. Tap tap.\n\nLa verte se retourna.\n\n« C'est ma sœur ! Elle ne pouvait pas nous entendre avec tout ce bruit ! »\n\nPipo regarda la violette.\n\n« Attends. Tu viens de trouver ce qui manquait. Une place vide, pour laisser quelqu'un répondre. »\n\nIl installa la rouge à gauche, la verte au milieu et la violette à droite.\n\n« Chacune son tour. Rouge : un grand pas. Verte : deux petits. Violette : on attend. »\n\nBoum. Tap tap. Puis le silence.\n\nSi tu veux, tu peux suivre ce petit rythme dans ta tête. Un grand pas, deux petits, et une place pour la réponse.\n\nDerrière la porte : tap tap ! Sous le fauteuil : boum ! Sur le fil à linge, une chaussette violette remua. Personne ne l'avait remarquée. Elle attendait son tour, elle aussi.\n\nPipo ouvrit la porte. Six chaussettes se retrouvèrent au milieu du tapis. Les rouges firent un grand pas. Les vertes, deux petits. Les violettes laissèrent un joli silence.\n\nCette fois, toute la pièce semblait savoir quand répondre.\n\nAu moment de retourner dans le tiroir, la rouge demanda :\n\n« Demain, qui commence ? »\n\nLa violette sourit.\n\n« D'abord, on écoute. »",
         "activity": "Choisis un rythme très doux : deux tapes sur les genoux, puis un silence. Une autre personne peut répondre avec un rythme différent. Pas besoin de petits objets ni de faire du bruit : jouer le silence fait aussi partie du concert.",
         "card_activity": "Deux petits taps, puis un silence. À toi d’inventer la suite !",
-        "word_count": 313,
-        "preview_audio": "content/audio/pipo-sock-orchestra.fr.mp3",
-        "preview_audio_duration_seconds": 201.221
+        "word_count": 520,
+        "preview_audio": "content/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.fr.mp3",
+        "preview_audio_duration_seconds": 216.816
       },
       "en": {
         "title": "Pipo and the Sock Orchestra",
         "subtitle": "A curious rehearsal, without shaking the house.",
-        "script": "On washing day, Pipo found three socks without their partners. One had stripes, one had spots and one had a little hole in its heel.\n\n“We want to play a concert,” announced the stripy sock.\n\n“Very good,” said Pipo. “Which instruments do you play?”\n\nThe three socks looked at each other. They had absolutely no idea.\n\nThe spotty sock tried blowing. It went, “Fffff.”\n\nThe stripy sock shuffled across the rug. It went, “Shhh, shhh.”\n\nThe sock with the hole did nothing at all.\n\n“I am waiting for my turn,” it explained.\n\nPipo thought for a moment. He put his hands on his knees and tapped gently. “Pom, pom.”\n\nThe spotty sock answered, “Fffff.” The stripy sock added, “Shhh, shhh.” Then the sock with the hole raised one finger to ask for silence.\n\nEverybody stopped. In the quiet, they heard the clock going tick-tock.\n\n“It is playing with us!” whispered Pipo.\n\nIf you feel like it, you can try a little rhythm on your knees. Very gently. Two taps, then a silence. Or you can imagine it without moving.\n\nThey practised again. Sometimes the socks started together. Sometimes they got muddled and began again, laughing. Pipo decided the concert would be short: just long enough for one made-up song.\n\nJust then, three matching socks appeared at the edge of the washing basket. Their partners!\n\n“You found us!” said the stripy sock.\n\n“We followed the music,” they replied.\n\nThe orchestra now had six socks. That was rather a lot for a little rug.\n\nSo the three newcomers settled down in the audience. Pipo made a small bow. The concert began with two taps, a soft puff and a silence.\n\nThen the audience applauded without a sound. Six little woolly feet waved in the air. For this very first concert, that was exactly right.",
+        "script": "Someone in the laundry basket kept saying, “Me first. Me first. Me first.”\n\nPipo lifted a towel. Underneath stood three socks. A red stripy one. A green spotty one. And a purple one with a little hole in its heel.\n\n“We're giving a concert to find our friends,” explained Red. “We've all been separated. If they recognise our music, they'll come back.”\n\n“Good idea!” said Pipo. “Can I help?”\n\nRed immediately bounced onto the edge of the basket.\n\n“I'll do the beginning! Boom! Boom! Boom!”\n\n“No, me!” said Green. It tapped its toe twice. “Tap tap! Tap tap!”\n\nThey started together. Red bounced over Green's tapping. Green sped up to catch Red's bouncing. They sounded like two people trying to squeeze through the same door at once.\n\nAt the bottom of the basket, Purple made no sound at all.\n\nPipo raised a wooden spoon like a conductor.\n\n“Everyone watch me. One, two, three!”\n\nThe two socks began again, louder than before. Red bounced so high it landed on top of the spoon. Green started laughing. The concert stopped before it had properly begun.\n\n“Let's try quietly,” said Pipo.\n\nThey played quietly, but still at the same time. Their little sounds kept pushing each other out of the way. Now it was an argument in whispers.\n\nPurple came forward.\n\n“What about me?”\n\n“What sound can you make?” asked Pipo.\n\nPurple took a big breath. It wriggled, puffed itself up and shook its heel. Nothing happened.\n\n“The air escapes through my hole. I'm no use.”\n\nPurple looked at the door. “What if we listen?” Pipo put down the spoon. For a moment, nobody spoke. And in that moment, two little taps came from behind the door. Tap tap.\n\nGreen turned round.\n\n“That's my sister! She couldn't hear us with all that noise!”\n\nPipo looked at Purple.\n\n“Wait. You've just found what we were missing. An empty space, so someone else can answer.”\n\nPipo placed Red on the left, Green in the middle and Purple on the right.\n\n“One at a time. Red: one big step. Green: two little ones. Purple: we wait.”\n\nBoom. Tap tap. Then silence.\n\nIf you like, you can follow the little rhythm in your head. One big step, two little ones, and a space for an answer.\n\nBehind the door came tap tap! Under the armchair came boom! A purple sock stirred on the washing line. Nobody had noticed it. It had been waiting for its turn too.\n\nPipo opened the door. Six socks met in the middle of the rug. The reds took one big step. The greens took two little ones. The purples left a lovely quiet space.\n\nThis time, the whole room seemed to know when to answer.\n\nAs they climbed back into the drawer, Red asked,\n\n“Who's going first tomorrow?”\n\nPurple smiled.\n\n“First, we listen.”",
         "activity": "Choose a very gentle rhythm: two taps on your knees, then a silence. Somebody else can answer with a different rhythm. No small objects or loud sounds are needed. Playing the silence is part of the concert too.",
         "card_activity": "Two little taps, then a silence. What comes next?",
-        "word_count": 302,
-        "preview_audio": "content/audio/pipo-sock-orchestra.en.mp3",
-        "preview_audio_duration_seconds": 220.108
+        "word_count": 471,
+        "preview_audio": "content/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.en.mp3",
+        "preview_audio_duration_seconds": 192.522
       },
       "art": "content/cards/pipo-sock-orchestra.svg",
       "script_approval": "pending",
       "audio_approval": "pending",
       "recording": {
-        "voice": "warm, unhurried; no sudden loud effects",
-        "pace_words_per_minute": [
-          85,
-          105
-        ],
-        "pauses_seconds": {
-          "paragraph": 2,
-          "listener_invitation": 8
-        },
-        "music": "none required",
+        "voice": "Local neural preset demonstration; final listening approval pending",
+        "direction": "Warm, conversational storytelling; distinct restrained dialogue; one optional invitation. No sudden effects or music.",
+        "engine_settings": "See the exact render plan and measured duration for each language in audio-generation.json.",
+        "music": "none supplied",
         "audio_file": null,
-        "review": "Review exact script revision, record, then review exact final audio separately."
+        "review": "Review exact script revision, then listen to and separately approve the exact final recording."
       }
     }
-  ]
+  ],
+  "editorial_revision": 2,
+  "audio_generation": "content/audio/9feb067cf7a3db5e29a10cd8/generation.json",
+  "narration_credits": "content/TTS-NOTICES.md"
 }
