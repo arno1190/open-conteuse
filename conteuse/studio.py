@@ -72,6 +72,16 @@ class Studio:
         self.state["cards"][uid] = digest
         self.save()
 
+    def wifi_status(self, wifi_token):
+        from .wifi import Player
+        return Player(wifi_token).status()
+
+    def wifi_card(self, source, uid, wifi_token):
+        from .wifi import Player
+        result = Player(wifi_token).send_card(source, uid, self.state["approvals"])
+        self.assign_card(result["uid"], result["revision"])
+        return result
+
     def begin_pair(self, physical_presence=False):
         # Host simulator only: actual firmware must originate this event.
         if not physical_presence:
@@ -114,7 +124,7 @@ class Studio:
                 "approval_required": digest not in self.state["approvals"]}
 
 
-UI = br'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+UI = r'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
 <title>Galia parent studio</title><style>body{font:18px system-ui;max-width:48rem;margin:3rem auto;padding:1rem;background:#faf7ee;color:#213b35}input,button{font:inherit;padding:.6rem;margin:.3rem}pre{white-space:pre-wrap}</style>
 <h1>Parent studio</h1><p>Local prototype. Inspect a pack, review its contents locally, approve its exact revision, then activate it.</p>
 <label>Session token <input id="token" type="password" autocomplete="off"></label><br>
@@ -127,14 +137,32 @@ UI = br'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewp
 <label>Title <input id="title" value="My recordings"></label><button data-action="import">Import audio</button></details>
 <details><summary>Assign a card</summary><label>Card UID <input id="uid"></label>
 <label>Approved revision <input id="revision"></label><button data-action="card">Assign card</button></details>
+<details><summary>Wi-Fi player setup</summary><p>EVT setup: hold play/A + volume-up for 3 seconds during the first 15 seconds after the diagnostics-ready message. Read the temporary Wi-Fi password and setup token over USB serial, then connect this computer to the Galia Wi-Fi. Sessions end after 2 hours or 3 minutes without an authenticated request; large transfers on the conservative SD clock can take time. Audio stays muted in this firmware.</p>
+<label>Player setup token <input id="wifi-token" type="password" autocomplete="off"></label><br>
+<p>Inserted card: <output id="wifi-card-id">Not read</output></p><button data-action="wifi-status">Read inserted card</button><button data-action="wifi-card">Transfer approved pack and assign card</button>
+<p>Uses the pack directory and card ID above. Previous assignments remain usable if transfer fails. Only device-compatible PCM WAV packs are accepted; changing audio requires a new approval.</p></details>
+<details><summary>Print a replaceable card picture</summary><p>Choose a PNG, JPEG or WebP. The picture stays in this browser. Print at 100%, with headers/footers disabled. Cut to 33.6 × 38.6 mm and place behind the clear sheet; do not use adhesive.</p><input id="picture" type="file" accept="image/png,image/jpeg,image/webp"><button id="print-picture" disabled>Print picture</button><canvas id="picture-preview" width="672" height="772" style="width:168px;height:193px"></canvas></details>
+<div id="print-sheet"><canvas id="picture-print" width="672" height="772"></canvas><p>33.6 × 38.6 mm · print at 100%</p></div>
+<style>#print-sheet{display:none}@media print{@page{size:A4;margin:15mm}body>*{display:none!important}#print-sheet{display:block!important}#picture-print{box-sizing:border-box;width:33.6mm;height:38.6mm;border:0.1mm solid #999}#print-sheet p{font-size:8pt}}</style>
 <pre id="result" role="status"></pre><script>
-for(const button of document.querySelectorAll('button'))button.onclick=async()=>{
-const action=button.dataset.action;
+for(const button of document.querySelectorAll('button[data-action]'))button.onclick=async()=>{
+const action=button.dataset.action;button.disabled=true;document.getElementById('result').textContent='Working… keep this window open and stay connected.';
 let payload={source:document.getElementById('source').value};
 if(action==='import')payload={files:document.getElementById('files').value.split('\n').filter(x=>x.trim()),destination:document.getElementById('destination').value,title:document.getElementById('title').value};
+if(action==='wifi-status')payload={wifi_token:document.getElementById('wifi-token').value};
+if(action==='wifi-card')payload={source:document.getElementById('source').value,uid:document.getElementById('uid').value,wifi_token:document.getElementById('wifi-token').value};
 if(action==='card')payload={uid:document.getElementById('uid').value,revision:document.getElementById('revision').value};
-try{const r=await fetch('/api/'+action,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+document.getElementById('token').value},body:JSON.stringify(payload)});document.getElementById('result').textContent=JSON.stringify(await r.json(),null,2)}catch(e){document.getElementById('result').textContent=String(e)}};
-</script></html>'''
+try{const r=await fetch('/api/'+action,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+document.getElementById('token').value},body:JSON.stringify(payload)});const reply=await r.json();if(action==='wifi-status'&&r.ok){document.getElementById('uid').value=reply.result.current_card||'';document.getElementById('wifi-card-id').textContent=reply.result.current_card||'No card inserted';}document.getElementById('result').textContent=JSON.stringify(reply,null,2)}catch(e){document.getElementById('result').textContent=String(e)}finally{button.disabled=false}};
+let pictureGeneration=0;
+document.getElementById('picture').onchange=async event=>{
+const generation=++pictureGeneration;
+const file=event.target.files[0],button=document.getElementById('print-picture');button.disabled=true;
+for(const id of ['picture-preview','picture-print']){const c=document.getElementById(id);c.getContext('2d').clearRect(0,0,c.width,c.height);}
+if(!file||!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>5*1024*1024){document.getElementById('result').textContent='Choose a PNG/JPEG/WebP smaller than 5MB.';return;}
+document.getElementById('result').textContent='Preparing picture…';
+try{const image=await createImageBitmap(file);if(generation!==pictureGeneration){image.close();return;}for(const id of ['picture-preview','picture-print']){const canvas=document.getElementById(id),ctx=canvas.getContext('2d'),scale=Math.max(canvas.width/image.width,canvas.height/image.height);ctx.fillStyle='white';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(image,(canvas.width-image.width*scale)/2,(canvas.height-image.height*scale)/2,image.width*scale,image.height*scale);}image.close();button.disabled=false;document.getElementById('result').textContent='Picture ready. Print at 100%, with headers and footers disabled.';}catch(error){if(generation===pictureGeneration)document.getElementById('result').textContent='Unable to decode picture.';}};
+document.getElementById('print-picture').onclick=()=>window.print();
+</script></html>'''.encode('utf-8')
 
 
 def make_server(studio, token, port=8765):
@@ -183,6 +211,8 @@ def make_server(studio, token, port=8765):
                     "/api/publish": (studio.publish, (("source", str),)),
                     "/api/import": (studio.import_audio, (("files", list), ("destination", str), ("title", str))),
                     "/api/card": (studio.assign_card, (("uid", str), ("revision", str))),
+                    "/api/wifi-status": (studio.wifi_status, (("wifi_token", str),)),
+                    "/api/wifi-card": (studio.wifi_card, (("source", str), ("uid", str), ("wifi_token", str))),
                 }.get(self.path)
                 if operation is None:
                     return self.send(404, {"error": "unknown operation"})

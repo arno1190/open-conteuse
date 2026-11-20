@@ -11,7 +11,7 @@ def source_paths():
     return sorted(list(ENCLOSURE.glob('*.scad')) + [ROOT / p for p in (
         'scripts/export_enclosure.py', 'scripts/mesh.py', 'scripts/stl.py',
         'scripts/project.py', 'scripts/cad_contract.py',
-        'hardware/mini/components.json', 'hardware/explore/components.json')])
+        'enclosure/card-window.svg', 'hardware/mini/components.json', 'hardware/explore/components.json')])
 
 
 def expectations():
@@ -29,6 +29,8 @@ def expectations():
     for name in ('front', 'back', 'print_front', 'pcb'):
         expected[f'enclosure/print/story-card/{name}.stl'] = 1
     expected['work/current/card_sweep_interference.stl'] = 'empty'
+    expected['work/current/card-window-clearance.stl'] = 'empty'
+    expected['work/current/card-shell-clearance.stl'] = 'empty'
     expected['work/current/wrong_card_interference.stl'] = 'positive'
     return expected
 

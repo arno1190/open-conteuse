@@ -100,14 +100,15 @@ def validate(measure=False):
         for f in (HERE/directory).iterdir():
             assert f.read_bytes()==(PUBLIC/directory/f.name).read_bytes(),str(f)
     labels=json.loads((HERE/'cartridge-labels.json').read_text())
-    assert labels['label_size']==[33.6,38.6] and labels['recess_xy']==[3,4,37,43]
-    assert labels['label_xy']==[3.2,4.2,36.8,42.8] and labels['maximum_total_paper_adhesive_thickness']==.15
-    assert labels['nominal_edge_clearance']==.2 and labels['label_visible_height_when_inserted']==15.8
+    assert labels['label_size']==[33.6,38.6] and labels['window_xy']==[3,7,37,46]
+    assert labels['label_xy']==[3.2,7.2,36.8,45.8] and labels['maximum_paper_thickness']==.15
+    assert labels['pocket_xy']==[2.8,6.8,37.2,46.2] and labels['label_to_pocket_clearance_per_edge']==.4
+    assert labels['label_inset_from_window_edge']==.2 and labels['label_visible_height_when_inserted']==12.8
     assert labels['physical_validation']=='pending' and labels['electronic_rom_supplied'] is False
     assert set(labels['artwork_keys'])==ids
-    assert labels['recognition_header_cartridge_y']==[5.4,18.2]
-    assert labels['recognition_header_label_top_y']==[1.2,14.0]
-    assert labels['recognition_header_cartridge_y'][1]<labels['inserted_cartridge_exposed_y'][1]
+    assert labels['recognition_header_cartridge_y']==[8.4,20.0]
+    assert labels['recognition_header_label_top_y']==[1.2,12.8]
+    assert labels['recognition_header_cartridge_y'][1]<=labels['inserted_cartridge_exposed_y'][1]
     for f in (HERE/'cartridge-labels').glob('*.svg'):
         assert ET.parse(f).getroot().attrib['viewBox']=='0 0 336 386'
     assert {p.name for p in (HERE/'audio').iterdir()}=={batch}

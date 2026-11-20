@@ -1,15 +1,16 @@
 {
   "physical_validation": "pending",
   "sources": {
-    "enclosure/card.scad": "333d1afdabddf2d01f1e5ed350f245572fdb2b0faf4a7a85548efed5720a7f60",
+    "enclosure/card-window.svg": "914c7bdc4aa07d230a20a751acff8313b9b2f45c9479b59299a771c640a5873f",
+    "enclosure/card.scad": "6ab0d15a93de2bea2b9065203cb94870ce3c496b7f9579f5c866c5b28ff5d252",
     "enclosure/contact-data.scad": "4edc47d094704ddc0b116fd2ad55c1b13fc785d7e15f3e072403269ba14acde7",
     "enclosure/design.scad": "5ae6b0ad6df8683fa549d8fd5979dfb522cdd75c740adbccc9ca9838709eee3f",
     "enclosure/explore-data.scad": "d9e5cec8fdf2c827f5c07de8fb2cd0f76c52ef9d81a6e8363a76d3ff82d5a669",
     "enclosure/mini-data.scad": "a7b44a6cf63f40bdf2b15cd35e5782a143b5bf77e23bafccc79d6f92ba0b2bb3",
     "hardware/explore/components.json": "de0555291f76208df8cf2875471841b71e573ea7a61975bca089a645342d1920",
     "hardware/mini/components.json": "54b8c450696609dc5157e3eaf258668f40bf0fb0ff9cca8ab32cc95ffce40b26",
-    "scripts/cad_contract.py": "7bdb83ff5f98be8a384cac355b056f6a5b0226c5df1e9f319adc20037e7ed4e5",
-    "scripts/export_enclosure.py": "30147492b3725560ddbe4b36dd3b96e27c3d5a3a8c1923cffa8d8fe878859b6c",
+    "scripts/cad_contract.py": "c29789840e292b9ba3149d540c256bbb92a631015e8273b506c56764c48efb4b",
+    "scripts/export_enclosure.py": "5089b0bdaa725486fa7c21c0d3984848cc41855b83225827ee94c79f6cc0362b",
     "scripts/mesh.py": "9c86f87ecb2b547d764f860c1730baa95c6d775a16ba88225117a163b3322f46",
     "scripts/project.py": "ded7fe4325cafd3ae451783fd473714e6be6451e7968567493e3772ecae153e7",
     "scripts/stl.py": "e00c98bad98c1d1743fc194422314466348bd5e1c1dcc5589991dac85753db30"
@@ -32,7 +33,7 @@
         ]
       ],
       "volume_cm3": 0.27574,
-      "sha256": "5c28d0fcae9b2d62c3b9f9b8d7ec55fadf805d79d7eb1458e98f0e0cdd6049ab"
+      "sha256": "345c5865aab8a9658fc14295a791541ff07b345ddc798c889d03faad189761d6"
     },
     "enclosure/print/mini/cap_1.stl": {
       "triangles": 712,
@@ -50,7 +51,7 @@
         ]
       ],
       "volume_cm3": 0.38785,
-      "sha256": "50a682f0cd29b2382bb8aba6a071719a16dd6701c0a6d98ccc58d06dc27f1e73"
+      "sha256": "15a8ef8cc1028ce09b702150d6a3ece0cfe010d9e78d186a964ee9ec2d9a3118"
     },
     "enclosure/print/mini/cap_2.stl": {
       "triangles": 696,
@@ -86,7 +87,7 @@
         ]
       ],
       "volume_cm3": 0.18848,
-      "sha256": "a4193c37e1ae84baf7c976889bcf6a088e170d28c2b96d36983e9316d3368be3"
+      "sha256": "7a494fed217f8416f2dd258259af8fb21cdeea9f6f9746937fc9e102592e10a3"
     },
     "enclosure/print/mini/cap_4.stl": {
       "triangles": 716,
@@ -104,7 +105,7 @@
         ]
       ],
       "volume_cm3": 0.1872,
-      "sha256": "29ae65ff6c58b984f7b9480974cee44cd7a1b455c32e74bfcf34220d2b424a09"
+      "sha256": "d42234f5665ef771c29da41b20935c9726216f63a5783e66aeb0e371fe60a388"
     },
     "enclosure/print/mini/front.stl": {
       "triangles": 11120,
@@ -122,7 +123,7 @@
         ]
       ],
       "volume_cm3": 17.72725,
-      "sha256": "55317ebb44bf48d10175123e31039bfcb814face9055cd0db39320c3b330e4df"
+      "sha256": "bdaf49f9a0ff41d5f88dfb3ee4de7428ce84d748c12a08d76628f1242ce121ef"
     },
     "enclosure/print/mini/back.stl": {
       "triangles": 4332,
@@ -140,7 +141,7 @@
         ]
       ],
       "volume_cm3": 18.72409,
-      "sha256": "a5dfa4320923c2a53ff023aa89c11df281c912fa1139e8c451e9e7935603ddea"
+      "sha256": "535d421fe5f414a7f57991c7ec8a98a1c7ca5c08958bf356e268ae07e239d62d"
     },
     "enclosure/print/mini/print_front.stl": {
       "triangles": 11120,
@@ -158,7 +159,7 @@
         ]
       ],
       "volume_cm3": 17.72725,
-      "sha256": "df2b8ac3d928ec5d030b66a328a2542da6dd9cedb85d2ae219fc0c554bf75c84"
+      "sha256": "77a1946d1adb0398d1f629a9150ca7e108b9588578e16133a436b79c7cc917ca"
     },
     "enclosure/print/mini/button.stl": {
       "triangles": 696,
@@ -176,7 +177,7 @@
         ]
       ],
       "volume_cm3": 0.27574,
-      "sha256": "feb1190c3f65ba370ec645d00653abc1963e26b73dd30b64c32c5965ed32818f"
+      "sha256": "70d8b6010e66dd3071b1e48f36988579ceba3678364e8ccf0b3b68866699cce1"
     },
     "enclosure/print/mini/buttons.stl": {
       "triangles": 3504,
@@ -194,7 +195,7 @@
         ]
       ],
       "volume_cm3": 1.31501,
-      "sha256": "c37ebc321f75b9a3d6864467c6f10228e4f998df86be2016d5588dae48ac8ca4"
+      "sha256": "42c9b7a723ba22e8b7155ac24591d72e68d5d6694c7ef1e8c522b9c5ee1d0de7"
     },
     "enclosure/print/mini/coupon.stl": {
       "triangles": 992,
@@ -212,7 +213,7 @@
         ]
       ],
       "volume_cm3": 2.27808,
-      "sha256": "72532e21d76ca2af16f01af58ea1833eee954371153dbaf347b318a755a17557"
+      "sha256": "f7576899313bcce5d0082d6cae9a36dc14fb8dced6772202947ba4e01e72812c"
     },
     "enclosure/print/mini/port_coupon.stl": {
       "triangles": 420,
@@ -230,7 +231,7 @@
         ]
       ],
       "volume_cm3": 2.1267,
-      "sha256": "793ceb2c8d28d16c10098f7f8d45de4fcf88a0a6bc80baa457ba1b0eca065e08"
+      "sha256": "e249ab88a67a31b68aeb4ffc5b25ac9b1534ad205900c5b1a926784e8b4c94a6"
     },
     "enclosure/print/mini/bridge.stl": {
       "triangles": 760,
@@ -248,7 +249,7 @@
         ]
       ],
       "volume_cm3": 0.06185,
-      "sha256": "b32a92f78be259fb35016d8f93e160a9dbf46a358c34446bc9bfd926b72ddd02"
+      "sha256": "c54bc39856441b169f6fd0c7b7f04a301cbe88c3cb9ed5b2072f98ffdce12f9f"
     },
     "work/current/mini-plugs.stl": {
       "triangles": 488,
@@ -266,7 +267,7 @@
         ]
       ],
       "volume_cm3": 1.6503,
-      "sha256": "fbac4bee21ddbe2a7ec3c5f78c2baaf4b7c58e9d6fe6714fba166d69787133c3"
+      "sha256": "0bfcd74b981377d234aab0786faf1b457527c92ee566b4914a4813f29972b89c"
     },
     "work/current/mini-pcb.stl": {
       "triangles": 924,
@@ -284,7 +285,7 @@
         ]
       ],
       "volume_cm3": 5.94882,
-      "sha256": "f37dc893909dd6629deb6b12b936cd0494c336f096a3d2c80409655763e0a42f"
+      "sha256": "64aa0b6f128b2132da3f99a94fa123199c4f78dad42f7612a1ca7e340c6035d0"
     },
     "work/current/mini-shell_interference.stl": {
       "empty": true
@@ -326,7 +327,7 @@
         ]
       ],
       "volume_cm3": 0.20765,
-      "sha256": "f911b38d6c5ba9f4ca0ac21eff3850abc343774d158b72256ab9e3ff2aa58bd2"
+      "sha256": "9f859f83783c2ff97acf278e5638998e33adff5e6a4678cd1b382dd33239068d"
     },
     "enclosure/print/explore/cap_1.stl": {
       "triangles": 712,
@@ -344,7 +345,7 @@
         ]
       ],
       "volume_cm3": 0.38785,
-      "sha256": "09b35fc8a0a794ab1e5f3eb1b6f881417289c11be9b9ddec2abe91bf6e0fe687"
+      "sha256": "4aa29e15f8a3323c300a927c3b3e9a8d0fcca7c405b34f84b60c6aca75db455c"
     },
     "enclosure/print/explore/cap_2.stl": {
       "triangles": 680,
@@ -362,7 +363,7 @@
         ]
       ],
       "volume_cm3": 0.20765,
-      "sha256": "c06a5b2e36b3fae137825b8d01e7cff18935dac9511288f68ac00561d06e3f8e"
+      "sha256": "01ed26f16c4e05254b98438db3898daa5fa808b23a43e7c6446f6a2b0177f131"
     },
     "enclosure/print/explore/cap_3.stl": {
       "triangles": 680,
@@ -380,7 +381,7 @@
         ]
       ],
       "volume_cm3": 0.20765,
-      "sha256": "90db6f415d51cfc74de542c4d6e2f9ba3e4cae5bd5465f4c1740026d3863fbbd"
+      "sha256": "ca7dbc30d8090c34220643a772faa0b2f940e021838291c5618996d6217367d2"
     },
     "enclosure/print/explore/cap_4.stl": {
       "triangles": 680,
@@ -398,7 +399,7 @@
         ]
       ],
       "volume_cm3": 0.20765,
-      "sha256": "9feb2c7c678c2bb103418254a971f95461905c3cca3292e53ac0959a29e15c9c"
+      "sha256": "0ac4c49b7a4c578c6948b6d9d2a3bc3e4fde4d94af59ddb250665a74cf839924"
     },
     "enclosure/print/explore/cap_5.stl": {
       "triangles": 704,
@@ -416,7 +417,7 @@
         ]
       ],
       "volume_cm3": 0.22901,
-      "sha256": "413a396ed8587acd6b6942ae81c98d045d7842dce26cdaed8ec00f7352211ef2"
+      "sha256": "4cb79a607de2ba18908ea8a0dee962d03265f9a98e30486deb41898ca1f38dbd"
     },
     "enclosure/print/explore/cap_6.stl": {
       "triangles": 684,
@@ -434,7 +435,7 @@
         ]
       ],
       "volume_cm3": 0.18848,
-      "sha256": "875744ac6d9e26f209c2e3d8d0f4f5ba056d1f3bc17958633c5fab80ccf0fa18"
+      "sha256": "bd3828fb6aa7a63a14078407bf04d0fea2410ffd3b2a754cd0ab7599937ec01d"
     },
     "enclosure/print/explore/cap_7.stl": {
       "triangles": 716,
@@ -452,7 +453,7 @@
         ]
       ],
       "volume_cm3": 0.1872,
-      "sha256": "e33c19d21426f00900e956b1291bd2746dc3e247fa08b791edee2c607975de87"
+      "sha256": "be2a614c41451552e9907e2f6cb332df576f0c4cb527e38f4096dc67780ab45c"
     },
     "enclosure/print/explore/front.stl": {
       "triangles": 11664,
@@ -470,7 +471,7 @@
         ]
       ],
       "volume_cm3": 13.45995,
-      "sha256": "054f7ae6023e7c98e2ad85e56aef36114f5f97b3479d0c5c189d6b65d6d316d9"
+      "sha256": "8af078a93c16105689e62c2b16eddeb8f88d5ff6c4c291c584872e97ad5aa19e"
     },
     "enclosure/print/explore/back.stl": {
       "triangles": 4280,
@@ -488,7 +489,7 @@
         ]
       ],
       "volume_cm3": 19.15545,
-      "sha256": "6ef4f32399dbf72ac7833bb56c5b16d1acd1ff463cd201cd742589d46116eca3"
+      "sha256": "cd016f7f526cbf2b9897869cba7ebc63d30de2bf8580b29a91cd318ae82b6353"
     },
     "enclosure/print/explore/print_front.stl": {
       "triangles": 11664,
@@ -506,7 +507,7 @@
         ]
       ],
       "volume_cm3": 13.45994,
-      "sha256": "261a09727507d1c550ddb2ed0c35141ac3054a2744d27c3862f3f9ada17f6582"
+      "sha256": "187edcce01dc5b86547b667725e27c62719f1de57af316f8e1612dcaf87283b7"
     },
     "enclosure/print/explore/button.stl": {
       "triangles": 680,
@@ -524,7 +525,7 @@
         ]
       ],
       "volume_cm3": 0.20765,
-      "sha256": "5f1b191fac4a2b44fb8c809fcaa81c5bb814927a91b321569fd97da2c28767e8"
+      "sha256": "a65a1cbf5279bb9e0740910ff5bd1665a1f8d7e137c7dfb8f4a02fe7e4d8538a"
     },
     "enclosure/print/explore/buttons.stl": {
       "triangles": 5536,
@@ -542,7 +543,7 @@
         ]
       ],
       "volume_cm3": 1.82312,
-      "sha256": "dcd2ad13e4d95c64943685bb409ce3c90f9c72e5d73c25ea386cb53b7b4e3739"
+      "sha256": "e14aad64de901e7a329d1363705c305c7127ea9ecf7d234c6bcc6c0b39f73e35"
     },
     "enclosure/print/explore/coupon.stl": {
       "triangles": 992,
@@ -560,7 +561,7 @@
         ]
       ],
       "volume_cm3": 2.27808,
-      "sha256": "d43f4fef6e19bfdd9937a301cc92c5eaab7a5df1e559e4652c90c2442df85bc3"
+      "sha256": "dc8cfc78ddcd1a2a9f6c03f727b55ad177858c14a924ec365946494eed03493a"
     },
     "enclosure/print/explore/port_coupon.stl": {
       "triangles": 420,
@@ -578,7 +579,7 @@
         ]
       ],
       "volume_cm3": 2.1267,
-      "sha256": "793ceb2c8d28d16c10098f7f8d45de4fcf88a0a6bc80baa457ba1b0eca065e08"
+      "sha256": "be393b23550107d1290c77aa2821a237d8fd48113eed30bf2190dc3ce49829b4"
     },
     "enclosure/print/explore/bridge.stl": {
       "triangles": 760,
@@ -596,7 +597,7 @@
         ]
       ],
       "volume_cm3": 0.06185,
-      "sha256": "edd1a4483ff2ba334a628275cf249d5f5262509fd4789b2de36ad92cab8d0474"
+      "sha256": "5937b536c5479b39ce1aadd8d0459a32961cf02970844674cf9561b72c605292"
     },
     "work/current/explore-plugs.stl": {
       "triangles": 488,
@@ -614,7 +615,7 @@
         ]
       ],
       "volume_cm3": 1.6503,
-      "sha256": "10862ddfec3391f1a326dff0e3e92de33f5ae63d336f7a62e969a96fe7a6e4f1"
+      "sha256": "3a340b1706af280242542feaca7a53b7d3b1e6056eef78e34b75feb7c0fb4741"
     },
     "work/current/explore-pcb.stl": {
       "triangles": 924,
@@ -632,7 +633,7 @@
         ]
       ],
       "volume_cm3": 5.94882,
-      "sha256": "35b2364474eaea6040f38d4da1a54b94d376c2d57558024e5868feddb5cb3e8a"
+      "sha256": "8e26544c9932b3cbd7fb53d4b0311ca3e609d922db5d6e9c54884dcb6e52956b"
     },
     "work/current/explore-shell_interference.stl": {
       "empty": true
@@ -674,10 +675,10 @@
         ]
       ],
       "volume_cm3": 0.74028,
-      "sha256": "9f0bf1b03a28956f2f8e0cbcbb440520616fefa2b63cdf1bf2bba9defa99e568"
+      "sha256": "d4f8bff41b7f2ef210f7ab224db2b2aea463d23b274c5bf41dade2dee37c5a76"
     },
     "enclosure/print/story-card/front.stl": {
-      "triangles": 1540,
+      "triangles": 1644,
       "components": 1,
       "bounds_mm": [
         [
@@ -691,11 +692,11 @@
           4.3
         ]
       ],
-      "volume_cm3": 5.09682,
-      "sha256": "e5ddfeca2a3af1715d500df765d31f7da4d94da6ff3524c8547efedd92e54286"
+      "volume_cm3": 2.3727,
+      "sha256": "8108432ed41feebb27b266ec8be517a6a76c1035aef7826a0cfe4be1c6194a06"
     },
     "enclosure/print/story-card/back.stl": {
-      "triangles": 1596,
+      "triangles": 1620,
       "components": 1,
       "bounds_mm": [
         [
@@ -706,14 +707,14 @@
         [
           42.0,
           60.0,
-          2.0
+          2.8
         ]
       ],
-      "volume_cm3": 4.44736,
-      "sha256": "9933c6146df2373cd618951bca18f6cb4b855a96f5b6b8047039e98a7361b07c"
+      "volume_cm3": 5.49651,
+      "sha256": "b97f0aa271b4c7b0986f4608759a9737be5c4831a8b870dad23ddcab97dde2dd"
     },
     "enclosure/print/story-card/print_front.stl": {
-      "triangles": 1540,
+      "triangles": 1644,
       "components": 1,
       "bounds_mm": [
         [
@@ -727,8 +728,8 @@
           3.3
         ]
       ],
-      "volume_cm3": 5.09681,
-      "sha256": "cf193448b7fd4c87f00aea353afa83a0c2e2194e34d38597adaef98c87ff7ab6"
+      "volume_cm3": 2.3727,
+      "sha256": "fecd6f721f3de8d559c7113dd1e1f49fa0a6349f6806f4195931d96798f247d8"
     },
     "enclosure/print/story-card/pcb.stl": {
       "triangles": 404,
@@ -747,6 +748,12 @@
       ],
       "volume_cm3": 0.18794,
       "sha256": "f9963dbcdd4786aaf81a43d89c31f019208c083dfba20393e8d427884f3ce823"
+    },
+    "work/current/card-window-clearance.stl": {
+      "empty": true
+    },
+    "work/current/card-shell-clearance.stl": {
+      "empty": true
     },
     "work/current/wrong_card_interference.stl": {
       "triangles": 112,

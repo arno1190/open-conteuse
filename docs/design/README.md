@@ -29,7 +29,7 @@ Native projects: [Galia Mini](../../hardware/mini/mini.kicad_pro), [Galia Explor
 
 Each variant has front/rear/side/top/bottom, open-front/open-rear, exploded, PCB and battery-service views, plus six section views. Boards are green(Galia Mini) and blue(Galia Explore); orange sections identify cut faces. Component bodies are documented nominal envelopes, not supplier-certified STEP models. Harness routing is illustrative and requires actual strain relief and service-loop checks.
 
-[Printable paper cards](../../content/starter/cards.pdf) · [Electronic cartridge artwork labels](../../content/starter/cartridge-labels.pdf):33.6×38.6mm labels, paper+adhesive≤0.15mm assumption, physical fit pending.
+[Printable paper cards](../../content/starter/cards.pdf) · [Electronic cartridge artwork labels](../../content/starter/cartridge-labels.pdf):33.6×38.6mm labels, replaceable paper≤0.15mm behind a34×39×0.50mm clear PETG sheet; adult screw access, physical fit pending.
 
 ![Galia Mini](images/mini-hero-front.png)
 ![Galia Mini open](images/mini-open-front.png)
@@ -54,14 +54,14 @@ Cartridge screws are ISO7045-Z M1.6×3, heads outside the handle, no metal over 
 4. Heat-set four M2 inserts using a coupon-qualified process. Fit insulated protected pouch with bonded103AT-2 NTC; retain with a soft band, avoiding compression/puncture. Verify battery connector polarity independently; connector gender is not a polarity guarantee. Check thermistor open/short fault response before battery charging.
 5. Fit speaker/gasket and bridge with two M1.6×4 keeper screws. Route harnesses outside screw/pinch/antenna/button/FPC paths. Galia Mini harness: mainJ7 positions1=3V2,2=GND,6=GPIO8 to readerJ1 pads 1/2/3; leave otherpositions empty. Verify continuity before mating.
 6. Fit reader with the specified standard M1.6×4 screws. Measure loaded tip-to-pad separation, reader deflection and insertion force; shim only with an agreed insulating drawing. Confirm no spring ever exceeds its minimum loaded height or maximum working height during a full stroke. Fail the build if stack cannot meet the supplier range.
-7. Fit DS2401 token PCB on locating pegs, bare wear pads facing springs; install front cover and two M1.6×3 screws. Test ROM family/CRC repeatedly during slow/fast insertion and withdrawal. Attach original artwork only after fit/wear checks; do not cover contacts/key/stop.
+7. Fit DS2401 token PCB on locating pegs, bare wear pads facing springs; install front cover and two M1.6×3 screws. Test ROM family/CRC repeatedly during slow/fast insertion and withdrawal. Install the clear window and replaceable paper insert per [card assembly](CARDS.md) only after fit/wear checks; do not cover contacts/key/stop.
 8. Galia Explore: verify received LCD FPC contact face/pin1, fit supported panel/lens and protected fold. Never bend at solder termination or clamp glass. Current boost layout needs DFM review before ordering.
 9. Close with four M2×14 screws. Check enclosure seam/ports/button travel, strain relief, screw-tip clearance and protected-cell freedom. Finish/paint must be masked off fits; coating thickness requires new coupons. Reopen and inspect after insertion/drop/thermal trials.
 10. Audio remains muted until codec driver, headphone insertion event/latch, fail-silent I2C behaviour and acoustic limits are measured. Record every serial number, board/CAD revision and actual measurements in the acceptance report. No unattended charging or child use is authorized by CAD/build results.
 
 ## Cost and release boundaries
 
-Galia Mini one-off reference recurring allowance€77.99–173.40 including one cartridge; Galia Explore€71.91–162.06. Add€100–250 setup reserve; engineering, finishing/manual assembly, shipping/tax, conformity and narration are excluded. A token reference material allowance is€5.23–11.30, not a bulk quote. Retail goals€99/129TTC require new volume quotes and a viable margin model; neither is an offered sale price.
+Galia Mini one-off reference recurring allowance€78.07–173.75 including one cartridge; Galia Explore€71.91–162.06. Add€100–250 setup reserve; engineering, finishing/manual assembly, shipping/tax, conformity and narration are excluded. A token reference material allowance is€5.31–11.65, not a bulk quote. Retail goals€99/129TTC require new volume quotes and a viable margin model; neither is an offered sale price.
 
 [RFQ](../../rfq/README.md) requests a supplier-engineered prototype and written cost breakdown, including unresolved gates. Physical fit, electrical/audio/RF/thermal/battery safety and conformity remain pending. No parts or fabrication ordered.
 
@@ -71,7 +71,7 @@ Galia Mini SW1(15,60)=LEFT/previous, SW2(32.5,60)=A/play-pause, SW3(50,60)=RIGHT
 
 The source-generated `enclosure/<variant>-marking.svg` defines a proposed2D front-marking guide, not an engraving already present in the STL. Supplier must qualify contrast/ink/adhesion/wear and registration against actual buttons and finish; never put conductive metallic decoration over the antenna.
 
-For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.90–335.46, or€249.90–585.46 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote. Personalization/MCP/TTS integrations and any third-party subscription/API charges remain additional and unassessed.
+For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.98–335.81, or€249.98–585.81 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote. Personalization/MCP/TTS integrations and any third-party subscription/API charges remain additional and unassessed.
 
 ## Rebuilding the engineering artifacts
 
@@ -84,3 +84,5 @@ The Galia Explore case was shortened from the earlier exploration envelope to95m
 ## Battery band fit allowance
 
 Both back shells now provide **11 × 2 mm clear slots** for the specified nominal10mm ONE-WRAP band, within13mm-long anchors. The source allowance is a **maximum band thickness1.5mm**, leaving nominal1.0mm total width clearance (0.5mm per side) and0.5mm total thickness clearance (0.25mm per side). This is not a measured manufacturer thickness. The band supplier, thickness, assembled threading and retention must be confirmed before fabrication acceptance. Two source-defined10×1.5mm band gauges are checked against each complete back shell. Anchors have nominal0.8mm material above/below the slot and at least0.5mm lateral clearance to the nearest PCB standoff; strength remains a physical gate.
+
+Card update: [replaceable picture, dedicated exploded views and parent Wi-Fi workflow](CARDS.md). The outer card/reader geometry is retained; the internal picture support and retaining frame are revised.

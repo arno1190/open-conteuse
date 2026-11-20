@@ -14,3 +14,6 @@ work/card-id-test
 
 c++ -std=c++17 -Wall -Wextra -Werror firmware/controls_test.cpp -o /tmp/conteuse-controls-test
 /tmp/conteuse-controls-test
+
+c++ -std=c++17 -Wall -Wextra -Werror -Ifirmware/.pio/libdeps/mini/ArduinoJson/src firmware/admin_protocol_test.cpp -o work/admin-protocol-test
+work/admin-protocol-test

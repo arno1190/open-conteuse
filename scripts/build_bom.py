@@ -25,7 +25,7 @@ for name in BOARDS:
     r=dict(next(r for r in base if r['reference']==ref));r['basis']='planning allowance; not a quote';rows.append(r)
   else:
    rows +=[extra('HAR3','SHR-07V-S + SSH-003T-P0.2','7way JSTSH housing; only positions1,2,6 populated, 28AWG three-wire harness',1,.6,2,'https://www.jst-mfg.com/product/pdf/eng/eSH.pdf'),extra('SCR3','ISO7045-Z-M1.6x4-A2','Two standard M1.6x4 pan-head reader screws; head envelope3.2x1.3mm; qualify actual fit/pullout',2,.04,.15,'https://www.accu.co.uk/pozi-pan-head-screws')]
- elif name=='story-card':rows +=[extra('CASE','OC-ID-CARD-CASE','Two printed cartridge halves and label; no audio storage',1,.5,2,'enclosure/card.scad'),extra('SCR','ISO7045-Z-M1.6x3-A2','Two cartridge handle panhead screws',2,.04,.15),extra('PCB','OC-ID-CARD-PCB','20x12x0.8mm 2layer selective hardgold wear pads; MOQ/NRE excluded',1,1,4,'hardware/story-card/story-card.kicad_pcb')]
+ elif name=='story-card':rows +=[extra('WINDOW','OC-ID-WINDOW-R1','Clear PETG sheet34x39x0.50mm, cut/deburred; supplier tolerance/retention pending',1,.08,.35,'enclosure/card-window.svg'),extra('CASE','OC-ID-CARD-CASE','Two printed cartridge halves and replaceable paper insert; no audio storage',1,.5,2,'enclosure/card.scad'),extra('SCR','ISO7045-Z-M1.6x3-A2','Two cartridge handle panhead screws',2,.04,.15),extra('PCB','OC-ID-CARD-PCB','20x12x0.8mm 2layer selective hardgold wear pads; MOQ/NRE excluded',1,1,4,'hardware/story-card/story-card.kicad_pcb')]
  else:rows +=[extra('PCB','OC-ID-READER-PCB','50x11x1.6mm 2layer FR4 reader; MOQ/NRE excluded',1,1,3,'hardware/card-reader/card-reader.kicad_pcb')]
  for row in rows:
   if not row['source']:row['source']='docs/design/README.md'

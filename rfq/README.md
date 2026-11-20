@@ -6,7 +6,7 @@ Start with the [single RFQ launch playbook](LAUNCH-PLAYBOOK.md): package links, 
 
 ## Scope to quote
 
-Base: one complete Galia Mini 65×95×24mm contact-ID player, one spare assembled mainboard/reader, three completed DS2401 cartridges. Separate option: one Galia Explore 67×95×24mm display player and spare PCBA. Also price 5/25 prototypes and 100/1000 production feasibility with explicit MOQ. Current hardware is the sole baseline; no NFC/modular alternatives are part of this RFQ.
+Base: one complete Galia Mini 65×95×24mm contact-ID player, one spare assembled mainboard/reader, three completed DS2401 cartridges, each with the specified clear PETG window and replaceable picture. Separate option: one Galia Explore 67×95×24mm display player and spare PCBA. Also price 5/25 prototypes and 100/1000 production feasibility with explicit MOQ. Current hardware is the sole baseline; no NFC/modular alternatives are part of this RFQ.
 
 Use [design/assembly dossier](../docs/design/README.md), [electrical notes](../docs/design/ELECTRICAL.md), native KiCad in hardware/, current enclosure/ sources, each board's BOM.csv and [cost assumptions](costs.json). [Quote-only Gerber/drill/placement references](manufacturing-notes.md) are included to support costing, without fabrication authorization. Manufacturing outputs must be regenerated from the accepted engineering revision after DFM signoff. No Gerber/centroid export is an approval to manufacture.
 
@@ -18,7 +18,7 @@ Review charger/thermistor/current mode, TPS63020 rail margin and transient budge
 
 Quote the current [UX contract](../docs/design/UX.md): distinct tactile caps, contrast-marked controls, softened edges, rounded port openings and physical usability/retention/travel validation. MCP and provider/TTS integration is a later software assessment, not a service already included in this hardware build.
 
-Firmware completion must be priced explicitly: integrated local PCM playback, approved-library/card selection and bookmarks, the UX control/state/feedback contract, Galia Explore library browsing and French/English font/text handling, fail-mute faults and a clearly defined USB transfer or removable-SD workflow. Provide source, build instructions and measured device tests. The current diagnostics are not that deliverable. MCP/provider integration is outside this initial hardware prototype scope.
+Firmware completion must be priced explicitly: integrated local PCM playback, approved-library/card selection and bookmarks, the UX control/state/feedback contract, Galia Explore library browsing and French/English font/text handling, fail-mute faults and a clearly defined USB transfer or removable-SD workflow. Provide source, build instructions and measured device tests. The current diagnostics are not that full playback deliverable. Parent-only Wi-Fi transfer, verification and card assignment now have implemented source and software tests; qualify them on real hardware rather than quoting them as absent. MCP/provider integration is outside this initial hardware prototype scope.
 
 Acceptance proposal must include: incoming inspection, serialised build log, ERC/DRC on revised natives, clean dimensional stack, power/thermal/charge faults, native USB / SD,5 Galia Mini / 8 Galia Explore keys, repeated token insert/removal/CRC behaviour, audio/headphone mute/acoustic tests, connector strain, enclosure seam/finish, battery transport documentation and applicable conformity roadmap. Supply raw measurements/photos and all source changes. Physical validation is pending; certification is not implied.
 
@@ -33,8 +33,8 @@ No supplier has accepted this design or supplied a binding quote. No outreach or
 
 ## Pricing basis
 
-Current [cost worksheet](costs.json) is an allowance model, not an exact supplier quote. Galia Mini q1 recurring€77.99–173.40, Galia Explore€71.91–162.06; add€100–250setup reserve. Engineering/firmware, finishing/manual assembly, taxes, shipping and compliance are unquoted. Three cartridges and spare assemblies are additional to the one-card Galia Mini baseline. Ask for a full delivered RFQ total rather than comparing bare BOM subtotals.
+Current [cost worksheet](costs.json) is an allowance model, not an exact supplier quote. Galia Mini q1 recurring€78.07–173.75, Galia Explore€71.91–162.06; add€100–250setup reserve. Engineering/firmware, finishing/manual assembly, taxes, shipping and compliance are unquoted. Three cartridges and spare assemblies are additional to the one-card Galia Mini baseline. Ask for a full delivered RFQ total rather than comparing bare BOM subtotals.
 
 [Commercial positioning](../site/PRICING.md): conditional retail goals€99Mini/€129Explore incl.France20%VAT, production landed/tested COGS goals≤€35/45. Not achieved at q1, no sales or preorder flow. Current public source release does not claim a child-ready product.
 
-For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.90–335.46, or€249.90–585.46 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote.
+For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.98–335.81, or€249.98–585.81 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote.

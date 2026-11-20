@@ -16,9 +16,10 @@ for name in BOARDS:
  for kind in ['erc','drc']:
   report=(HARDWARE/name/'checks'/(kind+'.rpt')).read_text()
   assert ('ERC messages: 0' in report if kind=='erc' else 'Found 0 DRC violations' in report and 'Found 0 unconnected pads' in report and 'Found 0 Footprint errors' in report)
-for name in ['mini','explore']:
+for name in ['mini','explore','card']:
  receipt=json.loads((DOCS/(name+'-render-receipt.json')).read_text())
  assert receipt['physical_validation']=='pending'
+ if name=='card':assert set(receipt['images'])=={f'docs/design/images/card-{v}.png' for v in ('exploded','front','rear','section')}
  for fn,sha in receipt['prepared_meshes'].items():
   if (ROOT/fn).exists():assert hashlib.sha256((ROOT/fn).read_bytes()).hexdigest()==sha,fn
  for mapping in ['sources','images']:

@@ -5,6 +5,7 @@ const html=fs.readFileSync('site/index.html','utf8');
 const cad=parseHTML(html).document.querySelectorAll('.cad-section img');
 assert.deepEqual(Array.from(cad,image=>image.getAttribute('src')),['assets/mini-current-cad.png','assets/explore-current-cad.png']);
 for(const variant of ['mini','explore']) assert.equal(fs.existsSync('site/assets/'+variant+'-cad.png'),false);
+assert.equal(parseHTML(html).document.querySelector('[data-i18n-alt=cardAlt]').getAttribute('src'),'design/images/card-exploded.png');
 const js=fs.readFileSync('site/strings.js','utf8')+'\n'+fs.readFileSync('site/app.js','utf8');
 const source=JSON.parse(fs.readFileSync('site/content/index.json','utf8'));
 async function setup(data=source,tts=false){

@@ -1,10 +1,10 @@
 # Galia RFQ launch playbook
 
-**One place to launch and compare quotes.** RFQ ID **GALIA-EVT-001**, revision **v0.2.1-rfq**, 20 November 2026. This requests engineering and prototype quotations. It is not a purchase order or fabrication release. The Mini and Explore sources are engineering baselines; a supplier must quote the unresolved work explicitly.
+**One place to launch and compare quotes.** RFQ ID **GALIA-EVT-001**, revision **v0.3.0-rfq**, 20 November 2026. This requests engineering and prototype quotations. It is not a purchase order or fabrication release. The Mini and Explore sources are engineering baselines; a supplier must quote the unresolved work explicitly.
 
 ## 1. Download the controlled package
 
-Use [the release paired with this playbook](https://github.com/arno1190/open-conteuse/releases/tag/v0.2.1-rfq), then download its **Source code ZIP**. Keep the tag and `rfq/manifest.json` with every quote. Do not mix main-branch files with a released revision. [Release source ZIP](https://github.com/arno1190/open-conteuse/archive/refs/tags/v0.2.1-rfq.zip).
+Use [the release paired with this playbook](https://github.com/arno1190/open-conteuse/releases/tag/v0.3.0-rfq), then download its **Source code ZIP**. Keep the tag and `rfq/manifest.json` with every quote. Do not mix main-branch files with a released revision. [Release source ZIP](https://github.com/arno1190/open-conteuse/archive/refs/tags/v0.3.0-rfq.zip).
 
 The ZIP contains everything below; send the release link with the small playbook/dossier PDFs. The complete source archive is large; do not split it across emails or mix revisions. The locally generated `galia-rfq.zip` is an optional filtered equivalent, with its own manifest. It is not necessary to buy a service or upload to a PCB ordering cart to request this quote.
 
@@ -26,7 +26,7 @@ Before sending: fill your name/company, reply address, delivery country/postcode
 
 ## 2. Ask for the same pilot from everyone
 
-**Base pilot:** one assembled Galia Mini, one spare assembled Mini mainboard plus reader, **three complete DS2401 contact-ID cartridges**, and all firmware/source/test evidence. The Mini enclosure is nominally 65 × 95 × 24 mm; caps add 0.6 mm depth, and a seated cartridge adds 20 mm height.
+**Base pilot:** one assembled Galia Mini, one spare assembled Mini mainboard plus reader, **three complete DS2401 contact-ID cartridges with clear windows and replaceable paper inserts**, and all firmware/source/test evidence. The Mini enclosure is nominally 65 × 95 × 24 mm; caps add 0.6 mm depth, and a seated cartridge adds 20 mm height.
 
 **Separate option:** one assembled Galia Explore plus one spare Explore mainboard, nominal case 67 × 95 × 24 mm. Include its specified display, lens, battery, speaker and finished enclosure. No NFC alternative or old modular design is in scope.
 
@@ -40,7 +40,7 @@ Require one accountable integrator for sourcing, design corrections, programming
 
 > Hello,
 >
-> We are seeking an engineering/box-build partner for a compact children's audio-player development prototype. Please quote against release v0.2.1-rfq and its attached source package/manifest. This is a request for quotation only; do not manufacture, procure chargeable parts or start paid engineering without a separate written authorization.
+> We are seeking an engineering/box-build partner for a compact children's audio-player development prototype. Please quote against release v0.3.0-rfq and its attached source package/manifest. This is a request for quotation only; do not manufacture, procure chargeable parts or start paid engineering without a separate written authorization.
 >
 > Base scope: one complete Galia Mini, one spare assembled mainboard plus contact reader, and three complete DS2401 story-selector cartridges. Please quote Galia Explore plus a spare PCBA as a separate option. Also provide 5/25 prototype and 100/1,000 production-feasibility pricing, with explicit MOQ.
 >
@@ -89,7 +89,7 @@ Use [quote-comparison.csv](quote-comparison.csv). Require **separate totals** fo
 5. Shipping, packaging, battery compliance handling, currency, tax/duty assumptions and Incoterm. Ask for a delivered total plus a clear tax/duty breakdown.
 6. Quote validity, payment stages, calendar lead time from accepted DFM, rework/warranty terms, ownership of native CAD/firmware/tooling and reproducible handover.
 
-**Cost sanity check, not a supplier offer:** current one-card recurring allowances are Mini **€77.99–173.40**, Explore **€71.91–162.06**. One of each with one Mini card is **€149.90–335.46**, plus a shared **€100–250** setup reserve. These omit engineering, firmware, manual finishing/assembly, shipping, tax and conformity. The RFQ's extra two cards and spare PCBAs are additional. **There is no honest delivered pilot total until itemized supplier quotes arrive.** Retail €99/€129 including French VAT are unachieved volume positioning targets, not prototype budgets.
+**Cost sanity check, not a supplier offer:** current one-card recurring allowances are Mini **€78.07–173.75**, Explore **€71.91–162.06**. One of each with one Mini card is **€149.98–335.81**, plus a shared **€100–250** setup reserve. These omit engineering, firmware, manual finishing/assembly, shipping, tax and conformity. The RFQ's extra two cards and spare PCBAs are additional. **There is no honest delivered pilot total until itemized supplier quotes arrive.** Retail €99/€129 including French VAT are unachieved volume positioning targets, not prototype budgets.
 
 ## 7. Evaluate before choosing
 

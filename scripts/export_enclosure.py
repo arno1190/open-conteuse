@@ -38,6 +38,8 @@ jobs.append((ENCLOSURE/'design.scad',WORK/'mini-reader-pcb.stl',dict(variant='mi
 # Slow sweep is a separate explicit geometry gate.
 for part in ('front','back','print_front','pcb'):
  jobs.append((ENCLOSURE/'card.scad',ENCLOSURE/'print/story-card'/(part+'.stl'),dict(part=part),False))
+for gate in ('window','shell'):
+ jobs.append((ENCLOSURE/'card.scad',WORK/('card-'+gate+'-clearance.stl'),dict(part=gate+'_clearance'),True))
 for part in ('wrong_card_interference','card_sweep_interference'):
  jobs.append((ENCLOSURE/'design.scad',WORK/(part+'.stl'),dict(variant='mini',part=part),part=='card_sweep_interference'))
 for _,out,_,_ in jobs:

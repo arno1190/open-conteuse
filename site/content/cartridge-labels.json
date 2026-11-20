@@ -5,39 +5,46 @@
     33.6,
     38.6
   ],
-  "recess_xy": [
+  "window_xy": [
     3,
-    4,
+    7,
     37,
-    43
+    46
+  ],
+  "pocket_xy": [
+    2.8,
+    6.8,
+    37.2,
+    46.2
   ],
   "label_xy": [
     3.2,
-    4.2,
+    7.2,
     36.8,
-    42.8
+    45.8
   ],
-  "nominal_edge_clearance": 0.2,
-  "maximum_total_paper_adhesive_thickness": 0.15,
+  "label_inset_from_window_edge": 0.2,
+  "label_to_pocket_clearance_per_edge": 0.4,
+  "maximum_paper_thickness": 0.15,
   "physical_validation": "pending",
   "inserted_cartridge_exposed_y": [
     0,
     20
   ],
-  "label_visible_height_when_inserted": 15.8,
+  "label_visible_height_when_inserted": 12.8,
   "recognition_header_label_top_y": [
     1.2,
-    14.0
+    12.8
   ],
   "recognition_header_cartridge_y": [
-    5.4,
-    18.2
+    8.4,
+    20.0
   ],
   "recognition_header_contents": [
     "distinct character icon",
     "MILO / NORI / PIPO short name"
   ],
-  "recognition_header_assumption": "Label top maps to handleward canonical Y4.2; nominal inserted exposure ends at cartridge Y20. Physical placement, occlusion and readability remain pending.",
+  "recognition_header_assumption": "Label top maps to handleward canonical Y7.2; lower cream header background is hidden when inserted; nominal inserted exposure ends at cartridge Y20. Physical placement, occlusion and readability remain pending.",
   "electronic_rom_supplied": false,
   "requires": "assembled DS2401 cartridge and parent-created local assignment",
   "artwork_keys": {

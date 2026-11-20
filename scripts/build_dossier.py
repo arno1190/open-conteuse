@@ -16,10 +16,10 @@ styles=getSampleStyleSheet()
 for k in styles.byName:styles[k].fontName='D'
 styles.add(ParagraphStyle(name='Tiny',fontName='D',fontSize=6.5,leading=9))
 styles['BodyText'].fontSize=9;styles['BodyText'].leading=13
-inputs=[ROOT/p for p in ['scripts/build_dossier.py','rfq/LAUNCH-PLAYBOOK.md','docs/AUDIT.md','rfq/README.md','rfq/manufacturing-notes.md','docs/design/README.md','docs/design/UX.md','docs/PERSONALIZATION.md','docs/design/ELECTRICAL.md','docs/VALIDATION.md','site/PRICING.md','content/starter/cards-preview.png','content/starter/cartridge-labels-preview.png']]+[HARDWARE/n/'BOM.csv' for n in BOARDS]+sorted((DOCS/'images').glob('*.png'))
+inputs=[ROOT/p for p in ['scripts/build_dossier.py','docs/design/CARDS.md','rfq/LAUNCH-PLAYBOOK.md','docs/AUDIT.md','rfq/README.md','rfq/manufacturing-notes.md','docs/design/README.md','docs/design/UX.md','docs/PERSONALIZATION.md','docs/design/ELECTRICAL.md','docs/VALIDATION.md','site/PRICING.md','content/starter/cards-preview.png','content/starter/cartridge-labels-preview.png']]+[HARDWARE/n/'BOM.csv' for n in BOARDS]+sorted((DOCS/'images').glob('*.png'))
 frozen={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}
 def board_label(name):
- return {'mini':'Galia Mini','explore':'Galia Explore','card-reader':'Contact-ID reader','story-card':'Story cartridge'}.get(name,name)
+ return {'card':'Galia Mini story card','mini':'Galia Mini','explore':'Galia Explore','card-reader':'Contact-ID reader','story-card':'Story cartridge'}.get(name,name)
 def view_label(p):
  name=p.stem.replace('explore-cut-card-springs','explore-upper-assembly-section').replace('explore-cut-card-reader','explore-connector-plane-section')
  model,view=name.split('-',1)
@@ -38,7 +38,7 @@ def emit_table(lines):
   t=Table(rows,colWidths=[519/len(rows[0])]*len(rows[0]),repeatRows=1)
   t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BACKGROUND',(0,0),(-1,0),'#d7e8e0'),('LINEBELOW',(0,0),(-1,-1),.25,'#d0d0d0'),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]));flow.append(t);flow.append(Spacer(1,8))
 
-for name in ['rfq/LAUNCH-PLAYBOOK.md','docs/AUDIT.md','rfq/README.md' ,'rfq/manufacturing-notes.md','docs/design/README.md','docs/design/UX.md','docs/PERSONALIZATION.md','docs/design/ELECTRICAL.md','docs/VALIDATION.md','site/PRICING.md']:
+for name in ['docs/design/CARDS.md','rfq/LAUNCH-PLAYBOOK.md','docs/AUDIT.md','rfq/README.md' ,'rfq/manufacturing-notes.md','docs/design/README.md','docs/design/UX.md','docs/PERSONALIZATION.md','docs/design/ELECTRICAL.md','docs/VALIDATION.md','site/PRICING.md']:
  if flow:flow.append(PageBreak())
  text=(ROOT/name).read_text();block=[];table=[]
  for line in text.splitlines()+['']:

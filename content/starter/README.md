@@ -36,7 +36,7 @@ Voicebox offers local preset voices and a stories editor. For a comparable manua
 
 ## Paper cards and electronic labels
 
-The printable paper cards are40 × 60 mm fronts/activity backs. They **do not** trigger the electronic reader. Labels are33.6×38.6mm, centered in a34×39mm recess, with0.2mm nominal edge clearance and an assumed maximum paper+adhesive stack0.15mm. Print at100%, check the40mm ruler and have an adult prepare them. Fit, placement, adhesion, wear and child readability remain physically unvalidated.
+The printable paper cards are40 × 60 mm fronts/activity backs. They **do not** trigger the electronic reader. Inserts are33.6×38.6mm paper, maximum0.15mm thick without adhesive, behind a34×39×0.50mm clear PETG window. The internal pocket is34.4×39.4mm; paper is inset0.2mm from the window edges and0.4mm from the pocket edges. An adult opens the two card screws to replace it. Print at100%, check the40mm ruler and have an adult prepare them. Fit, placement, window retention, wear and child readability remain physically unvalidated.
 
 Electronic-cartridge keys MILO-01/NORI-02/PIPO-03 are artwork identifiers, not DS2401 ROMs. A specified assembled serial-ID PCB and a parent-created local assignment are required. The recognition icon/name occupies cartridgeY5.4–18.2mm, inside the nominal exposed20mm handle; it remains a layout assumption, not measured recognition evidence.
 

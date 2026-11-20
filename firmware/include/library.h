@@ -18,14 +18,10 @@ inline std::string fileHash(File& file) {
     char hex[65];for(unsigned i=0;i<32;++i)sprintf(hex+2*i,"%02x",digest[i]);
     return std::string(hex,64);
 }
-inline bool loadPointer(const char* pointer,Content& output,std::string& directory) {
-    File active=SD.open(pointer,FILE_READ);
-    if(!active||active.size()>128)return false;
-    StaticJsonDocument<256> pointerDoc;
-    if(deserializeJson(pointerDoc,active)||!nonempty(pointerDoc["revision"]))return false;
-    std::string revision=pointerDoc["revision"].as<const char*>();
+inline bool loadRevision(const std::string& revision,Content& output,std::string& directory,
+                         const std::string& root="/library/versions/") {
     if(!digestValid(revision))return false;
-    std::string base="/library/versions/"+revision+"/";
+    std::string base=root+revision+"/";
     File manifest=SD.open((base+"manifest.json").c_str(),FILE_READ);
     if(!manifest||!manifest.size()||manifest.size()>16384||fileHash(manifest)!=revision)return false;
     if(!manifest.seek(0))return false;
@@ -41,6 +37,13 @@ inline bool loadPointer(const char* pointer,Content& output,std::string& directo
         if(!file||file.size()!=asset.bytes||fileHash(file)!=asset.sha)return false;
     }
     candidate.revision=revision;output=std::move(candidate);directory=base;return true;
+}
+inline bool loadPointer(const char* pointer,Content& output,std::string& directory) {
+    File active=SD.open(pointer,FILE_READ);
+    if(!active||active.size()>128)return false;
+    StaticJsonDocument<256> doc;
+    if(deserializeJson(doc,active)||!nonempty(doc["revision"]))return false;
+    return loadRevision(doc["revision"].as<const char*>(),output,directory);
 }
 inline bool loadLibrary(Content& output,std::string& directory) {
     return loadPointer("/library/active.json",output,directory)||loadPointer("/library/previous.json",output,directory);

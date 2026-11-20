@@ -1,9 +1,18 @@
 {
   "sources": {
+    "firmware/include/admin_protocol.h": "6ddc146fd77cba35b335afd470eefd2eee7f2a4d7eee08d3f9db948a482b656c",
     "firmware/include/board_pins.h": "1fd2905940881061d4cccc2e299a97eef16293126b1d7de6b80b9310aafb4ff3",
+    "firmware/include/bounded_http.h": "ece62c6b76d7628f7b4de7def6ccda177837c668ff3fd8e4db28e078dacfa11a",
+    "firmware/include/card_id.h": "54d0881e1d71c942ec35fe6100e3346f751af24f5c0ba1edbab935823d571f01",
+    "firmware/include/card_mapping.h": "c58f0d10b84c9750b4dc89ac243349747965ff7ebaa9913568b51c4848e838a2",
+    "firmware/include/content.h": "2dcc798c37f7ddc8270209365ce9dd13eb85354e6e51be7a363e63c698f7655d",
     "firmware/include/controls.h": "1dedbca43c8b90cc84103c6ecef12b1e57eed813f0cace9e3de518cc3425aa20",
+    "firmware/include/library.h": "634a85ae87b167cc1b30a9fae932386b5337491d1d40faa0863691c4ebf8ab47",
+    "firmware/include/policy.h": "2216881b75a243910dc44fd61c0195b3287c03e9c69b9393fc8bb22d9e6e6511",
+    "firmware/include/wav.h": "d4b6c2f4a36000deca5a6c89f87bf1dbc8d81f386641220c4e2127980a245f54",
+    "firmware/include/wifi_admin.h": "46b6b96aa31411907f1880df3cc712ee09769e9537fe1ac937612a9e0365a4f4",
     "firmware/platformio.ini": "8e10474403354cb01855593e8ab19f0cbc7b97ccb24d2f4cd72c7a21eb2fb1b8",
-    "firmware/src/compact_bringup.cpp": "d8f0b400e4daa19b5f1f9de91c38a78ae05ee80c38ad74606b7d690f5e75f2d4",
+    "firmware/src/compact_bringup.cpp": "48b462e3369c43bef23d7c1758ff90d49b9946ed99f0e1da2e3b0888044d3389",
     "hardware/card-reader/Compact.kicad_sym": "c12ed1cdee1f7946306e5283845a150f685fdb4b21ba04c17886c03ca365ff68",
     "hardware/card-reader/Compact.pretty/Mount_M1_6.kicad_mod": "302aa939dd7c2d8623770298ff564bd5b3a84781bd7aae70613cc244fac16268",
     "hardware/card-reader/Compact.pretty/Pogo_P70_1000045.kicad_mod": "547bba1903233859074a10fd4ea7eb478b8c3ca55368550972796372c5970c31",
@@ -44,17 +53,17 @@
     "hardware/story-card/story-card.kicad_sch": "02a9270552333b3922786ad58edb4948cb88cc5c3ca6e9f2e5a3a8aea05f2781",
     "hardware/story-card/sym-lib-table": "1a9dea37ca13bf3cdf8aac3b7710a97b5780c512830d89c1d5840d139cbbf7d0",
     "scripts/check_board_contracts.py": "780ed4a31d0ad10779dc2646f41dab912abd8f44a4b8e9792266d61b3a62809a",
-    "scripts/check_native.py": "b964eb7b2afa62b5eb69f8684579d075ce3b865e2d623a6fab229c3ffe8e2fea"
+    "scripts/check_native.py": "d53735659ae550bd4f12c9f25f6b049c247503dd54c1ace2e7836c2818f4cab6"
   },
   "reports": {
-    "hardware/mini/checks/erc.rpt": "cb0c2b744e29cbe0166292d8e0a622d0a1da66553d6180a3080ff8fe02bef91b",
-    "hardware/mini/checks/drc.rpt": "d36220efedb882112d4965c72fded8c4fc95b2df4f149f9a49394cdd3c7034ac",
-    "hardware/explore/checks/erc.rpt": "69e5d172561ead803d73c5a7f8ab71fea96b9043721f3e7b63d4330029750001",
-    "hardware/explore/checks/drc.rpt": "cd5b64b30047b057d0a1021fd8db1e19277df57df5fa5ab5dc47fa11219a6bc6",
-    "hardware/card-reader/checks/erc.rpt": "cd30e4e3adef902bd5b20095757a1347eb701848cd31515b054af0e44a4a1f5f",
-    "hardware/card-reader/checks/drc.rpt": "25978cdadf17ee4e8a0b2e52a9b54909be05c4521b2106e98428406f2fa4320e",
-    "hardware/story-card/checks/erc.rpt": "593ca8cb93a8a5dc69d356cca71dbfb4cc47272b1fcff034feab6b9518f77104",
-    "hardware/story-card/checks/drc.rpt": "a26ab6c556cb6e9d8ed91866329b8d4dbf77a1382ebd5a0e3a84ae66cd5d05a4"
+    "hardware/mini/checks/erc.rpt": "2a32a5ee19eab0c522d6b9cea99d49bf4253b8d1deb332f768b5d693b4287942",
+    "hardware/mini/checks/drc.rpt": "0d6cf4d8bdc1e05a589afb857bbd27063b331762abfbe6349853b064d117d2f5",
+    "hardware/explore/checks/erc.rpt": "2c046bbaf4972c9bf2bf054c79528963857a8d6f2792b1ce63b47ca23b866bb2",
+    "hardware/explore/checks/drc.rpt": "bf01d402554079ddb3d72c85b169f8c77b51aa191ce0629da6c0cf4b18b9836a",
+    "hardware/card-reader/checks/erc.rpt": "cc9381bd2722b630ee751684476903d2e1464382b610199982672cb2c7e5ea02",
+    "hardware/card-reader/checks/drc.rpt": "2924900b9f61267090ff207ee4068aa139d758f5291d9a93fb90b1822c4b5010",
+    "hardware/story-card/checks/erc.rpt": "cc9381bd2722b630ee751684476903d2e1464382b610199982672cb2c7e5ea02",
+    "hardware/story-card/checks/drc.rpt": "1390b887f85c53adcdef2bcdab20065e0428f731868d3f162b05715741826a89"
   },
   "tool_version": "9.0.2",
   "checks": [
