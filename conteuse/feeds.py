@@ -39,7 +39,7 @@ def fetch(url, limit=LIMIT, redirects=3):
         try:
             connection.sock = connection._context.wrap_socket(raw, server_hostname=parsed.hostname)
             connection.request("GET", (parsed.path or "/") + ("?" + parsed.query if parsed.query else ""),
-                               headers={"Accept-Encoding": "identity", "User-Agent": "OpenConteuse/0.1"})
+                               headers={"Accept-Encoding": "identity", "User-Agent": "Galia/0.1"})
             response = connection.getresponse()
             if response.status in (301, 302, 303, 307, 308):
                 location = response.getheader("Location")

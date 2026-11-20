@@ -1,9 +1,9 @@
-# Open Conteuse · Les Petits Détours
+# Galia
 
 Two current custom handheld designs and an original bilingual listening collection. **Engineering RFQ release: physical validation and integrated audio firmware remain pending. No hardware is offered for sale.**
 
-- **Mini contact ID:** 65 × 95 × 24 mm; a keyed cartridge selects audio stored inside the player. Passive DS2401 serial ID, two wear contacts, no NFC or audio on the card. Cartridge protrudes 20 mm when seated.
-- **Explore:** 67 × 95 × 24 mm, 2.4-inch display and button navigation. USB-C charging/data and 3.5 mm headphones on both.
+- **Galia Mini (contact ID):** 65 × 95 × 24 mm; a keyed cartridge selects audio stored inside the player. Passive DS2401 serial ID, two wear contacts, no NFC or audio on the card. Cartridge protrudes 20 mm when seated.
+- **Galia Explore:** 67 × 95 × 24 mm, 2.4-inch display and button navigation. USB-C charging/data and 3.5 mm headphones on both.
 - **Parent studio:** existing local import, exact-revision approval, card assignment and export foundation. Never deployed publicly.
 
 [French showcase](https://arno1190.github.io/open-conteuse/?lang=fr) · [English showcase](https://arno1190.github.io/open-conteuse/?lang=en) · [RFQ](rfq/README.md) · [Design/assembly dossier](docs/design/README.md)

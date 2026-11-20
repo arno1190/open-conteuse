@@ -31,4 +31,4 @@ The CLI also provides `download FEED_URL EPISODE_GUID NEW_FILE`: bounded parent-
 
 This is a local prototype workflow. It does not yet provide waveform preview, a full graphical graph editor, automatic backups/RSS scheduling, signed packages, OTA firmware updates or a production HTTP server. These are explicit follow-on scope, not hidden completed features.
 
-The current original [bilingual collection](../content/starter/README.md) includes scripts, activities, paper cards and electronic-cartridge artwork labels. None is automatically approved or activated; artwork catalogue IDs are not the DS2401 ROM IDs printed by the muted Mini diagnostics.
+The current original [bilingual collection](../content/starter/README.md) includes scripts, activities, paper cards and electronic-cartridge artwork labels. None is automatically approved or activated; artwork catalogue IDs are not the DS2401 ROM IDs printed by the muted Galia Mini diagnostics.

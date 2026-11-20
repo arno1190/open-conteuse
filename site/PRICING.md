@@ -9,11 +9,11 @@ Observed 20 November 2026. Public consumer pricing is a market reference, not a 
 | Lunii Ma Fabrique à Histoires | €69.90 regular / €52.40 promotion | [Official shop](https://lunii.com/fr-fr/boutique) opened 20 November; Black Friday -25% through 30 November displayed |
 | Lunii FLAM | €99.90 regular / €74.90 promotion | Same official shop, same dated promotion |
 
-Mini's **€99 incl. 20% French VAT** and Explore's **€129 incl. VAT** are positioning objectives, displayed as unconfirmed targets. They are not the cheapest in this market: Mini is above the observed regular Merlin/Lunii prices and below Mallow's displayed price; Explore is above these entry-level references. A premium must be earned by the finished experience, build and content. No such commercial outcome is established by the source release.
+Galia Mini's **€99 incl. 20% French VAT** and Galia Explore's **€129 incl. VAT** are positioning objectives, displayed as unconfirmed targets. They are not the cheapest in this market: Galia Mini is above the observed regular Merlin/Lunii prices and below Mallow's displayed price; Galia Explore is above these entry-level references. A premium must be earned by the finished experience, build and content. No such commercial outcome is established by the source release.
 
 ## Direct-sales model, not a quote
 
-| Planning item | Mini | Explore |
+| Planning item | Galia Mini | Galia Explore |
 |---|---:|---:|
 | Target retail incl. 20% VAT | €99.00 | €129.00 |
 | Net retail before VAT | €82.50 | €107.50 |
@@ -27,6 +27,6 @@ Retail/wholesale distribution requires another margin model; do not apply the di
 
 ## Editorial direction
 
-Mallow informed a warm, child-led invitation and tangible play ritual. Merlin informed a clear adult library story. Lunii informed imaginative listening and activities that continue off screen. Our words, stories, characters, artwork, colours and mark are original. No competitor testimonials, claimed benefits, catalogue rights, logos, photographs or voice-interaction functionality are reused. “Petits Détours” / “Little Detours” remains a working identity pending naming clearance.
+Mallow informed a warm, child-led invitation and tangible play ritual. Merlin informed a clear adult library story. Lunii informed imaginative listening and activities that continue off screen. Our words, stories, characters, artwork, colours and mark are original. No competitor testimonials, claimed benefits, catalogue rights, logos, photographs or voice-interaction functionality are reused. “Galia” remains a working identity pending naming clearance.
 
 Third-party AI/TTS subscription charges, API usage and future integration work are not included in the retail objectives. A consumer subscription must not be assumed to provide API credits or audio-export rights. No provider is connected or billed by this showcase.

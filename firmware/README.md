@@ -6,9 +6,9 @@ Build only `mini` and `explore` with PlatformIO6.1.18 / espressif32 platform6.9.
 sh scripts/firmware-check.sh
 ```
 
-Mini reads DS2401P+ on GPIO8 with external4.3k pull-up. ROM family01 + Dallas CRC8 and stable-read insertion/removal filter are host tested. The read slot uses nominal3µs low +5µs until sampling to leave GPIO-call overhead margin within the datasheet15µs read window; only scope measurements can confirm that timing. The bit timing, protection/pull-up budget, partial insertion and removal behaviour need a scope and real hardware. GPIO9 is unconnected and not driven. No PN532 dependency remains.
+Galia Mini reads DS2401P+ on GPIO8 with external4.3k pull-up. ROM family01 + Dallas CRC8 and stable-read insertion/removal filter are host tested. The read slot uses nominal3µs low +5µs until sampling to leave GPIO-call overhead margin within the datasheet15µs read window; only scope measurements can confirm that timing. The bit timing, protection/pull-up budget, partial insertion and removal behaviour need a scope and real hardware. GPIO9 is unconnected and not driven. No PN532 dependency remains.
 
-Explore initializes the SPI panel with limited backlight. Both inspect I2C controls/codec, mount SD, disable Wi-Fi and hold speaker request LOW and mute-latch clear asserted. Codec headphone/speaker playback and event configuration remain a supplier firmware/bench milestone.
+Galia Explore initializes the SPI panel with limited backlight. Both inspect I2C controls/codec, mount SD, disable Wi-Fi and hold speaker request LOW and mute-latch clear asserted. Codec headphone/speaker playback and event configuration remain a supplier firmware/bench milestone.
 
 Portable content/policy tests remain for the existing host export contract. Default diagnostics do not load/play approved libraries. Do not enable audio until voltage, headphone event, acoustic and power checks pass. Original firmware GPL-3.0-or-later; see THIRD_PARTY.md.
 

@@ -13,7 +13,7 @@ for prefix in include:
 files=sorted(set(files))
 manifest={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
 (RFQ/'manifest.json').write_text(json.dumps(dict(physical_validation='pending',fabrication_release=False,files=manifest),indent=2)+'\n')
-out=RFQ/'open-conteuse-rfq.zip'
+out=RFQ/'galia-rfq.zip'
 with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
  for p in files+[RFQ/'manifest.json']:z.write(p,str(p.relative_to(ROOT)))
 print(out,len(files),'files',out.stat().st_size,'bytes')

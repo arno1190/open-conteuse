@@ -1,6 +1,6 @@
 # Current requirements
 
-Mini must be close to the Miyoo Mini footprint, screen-free, with a keyed plug-in **ID** cartridge selecting parent-approved audio already stored on microSD. Explore adds a 2.4-inch display and button navigation. Current envelopes: Mini65×95×24 mm; Explore67×95×24 mm.
+Galia Mini must be close to the Miyoo Galia Mini footprint, screen-free, with a keyed plug-in **ID** cartridge selecting parent-approved audio already stored on microSD. Galia Explore adds a 2.4-inch display and button navigation. Current envelopes: Mini65×95×24 mm; Explore67×95×24 mm.
 
 Both use USB-C charging/data, retain 3.5mm headphones, provide physical playback/volume/navigation controls, protected rechargeable cell with bonded thermistor, native USB and Wi-Fi for parent-managed functions. Offline playback is the intended normal mode. No microphone/cloud conversation is required. Card IDs are selectors, not authentication.
 

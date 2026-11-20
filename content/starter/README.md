@@ -1,4 +1,4 @@
-# Les petits détours / Little Detours
+# Galia
 
 Three original, fictional listening stories in French and English, each around 300 words, with an optional activity away from the screen. The working collection name is not a cleared trademark. Mallow informed the broad idea of a warm, audio-first family experience; these texts, characters and illustrations are original and do not adapt or reproduce a competitor's catalogue.
 

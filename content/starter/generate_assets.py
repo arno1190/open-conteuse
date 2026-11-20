@@ -51,7 +51,7 @@ def art(s,back=False):
   text(d,30,47,'PAPIER / PAPER · CC0',16,'DTBold');text(d,30,24,'Ne déclenche pas le lecteur / Artwork only',13)
   return d
  rect(d,0,250,400,350,s['color'],24)
- text(d,30,563,'LES PETITS DÉTOURS',18,'DTBold')
+ text(d,30,563,'Galia',18,'DTBold')
  if s['id']=='milo-moon-post':
   circle(d,276,439,73,CREAM);circle(d,301,462,68,s['color'])
   for x,y,r in [(64,488,11),(323,334,9),(74,350,8)]:star(d,x,y,r,INK)
@@ -91,7 +91,7 @@ if '--labels-only' not in sys.argv:
    svg=svg.replace('<title>...</title>', '<title>'+escape(s['fr']['title']+' / '+s['en']['title'])+'</title>').replace('<desc>...</desc>', '<desc>Original printable paper artwork. Does not activate the electronic reader.</desc>')
    path.write_text(svg)
  # Three fronts then three backs, deliberately single-sided cut-and-pair, not uncalibrated duplex.
- c=canvas.Canvas(str(HERE/'cards.pdf'),pagesize=A4);c.setTitle('Les petits détours — cartes papier / printable paper cards')
+ c=canvas.Canvas(str(HERE/'cards.pdf'),pagesize=A4);c.setTitle('Galia — cartes papier / printable paper cards')
  w,h=A4
  c.setFillColor(HexColor(INK));c.setFont('DTBold',19);c.drawString(20*mm,h-22*mm,'Des histoires à tenir dans la main')
  c.setFont('DTSans',10);c.drawString(20*mm,h-30*mm,'Original paper artwork · 3 fronts + 3 activity backs · CC0-1.0')
@@ -114,13 +114,13 @@ if '--labels-only' not in sys.argv:
  c.line(20*mm,22*mm,60*mm,22*mm);c.line(20*mm,20*mm,20*mm,24*mm);c.line(60*mm,20*mm,60*mm,24*mm);c.setFont('DTSans',8);c.drawString(65*mm,21*mm,'40 mm — check after printing / vérifier après impression')
  c.showPage();c.save()
  styles=getSampleStyleSheet();styles.add(ParagraphStyle(name='BodyDT',fontName='DTSans',fontSize=10.5,leading=14.5,spaceAfter=6,textColor=HexColor(INK)));styles.add(ParagraphStyle(name='HeadDT',fontName='DTSerif',fontSize=26,leading=30,spaceAfter=15,textColor=HexColor(INK)));styles.add(ParagraphStyle(name='SmallDT',fontName='DTSans',fontSize=9,leading=13,spaceAfter=9,textColor=HexColor(INK)))
- flow=[Paragraph('Les petits détours<br/>Little Detours',styles['HeadDT']),Paragraph('Trois histoires originales et leurs activités, en français et en anglais.<br/>Three original stories and activities, in French and English.',styles['BodyDT']),Paragraph('Collection de démonstration · Editorial draft · 20 November 2026 · CC0-1.0',styles['SmallDT']),Paragraph('Intended ages 4–7 are editorial guidance for an adult to assess, not a tested age rating. These gentle fictional stories have not been tested with children. A child can simply listen; speaking and moving are always optional.',styles['BodyDT']),Paragraph('Read aloud at an unhurried pace. Leave about two seconds between paragraphs and eight seconds after an invitation to imagine or listen. No music or effects are needed. An adult prepares the paper cards. The paper cards do not trigger the electronic player.',styles['BodyDT']),Paragraph('Script approval: pending. Final audio approval: pending. This collection contains no final audio. The website’s optional browser voice is a synthetic demonstration and varies by device. Review scripts first and review the exact final recording separately before activating it in a child’s library.',styles['BodyDT']),PageBreak()]
+ flow=[Paragraph('Galia',styles['HeadDT']),Paragraph('Trois histoires originales et leurs activités, en français et en anglais.<br/>Three original stories and activities, in French and English.',styles['BodyDT']),Paragraph('Collection de démonstration · Editorial draft · 20 November 2026 · CC0-1.0',styles['SmallDT']),Paragraph('Intended ages 4–7 are editorial guidance for an adult to assess, not a tested age rating. These gentle fictional stories have not been tested with children. A child can simply listen; speaking and moving are always optional.',styles['BodyDT']),Paragraph('Read aloud at an unhurried pace. Leave about two seconds between paragraphs and eight seconds after an invitation to imagine or listen. No music or effects are needed. An adult prepares the paper cards. The paper cards do not trigger the electronic player.',styles['BodyDT']),Paragraph('Script approval: pending. Final audio approval: pending. This collection contains no final audio. The website’s optional browser voice is a synthetic demonstration and varies by device. Review scripts first and review the exact final recording separately before activating it in a child’s library.',styles['BodyDT']),PageBreak()]
  for s in DATA['stories']:
   for lang in ['fr','en']:
    z=s[lang];flow.extend([Paragraph(escape(z['title']),styles['HeadDT']),Paragraph(escape(z['subtitle']),styles['BodyDT']),Paragraph(f"{lang.upper()} · {z['word_count']} words / mots · ~4 min estimate · draft / brouillon",styles['SmallDT'])])
    flow.extend(Paragraph(escape(p),styles['BodyDT']) for p in z['script'].split('\n\n'))
    flow.extend([Spacer(1,10),Paragraph('Loin de l’écran / Away from the screen',styles['BodyDT']),Paragraph(escape(z['activity']),styles['BodyDT']),PageBreak()])
- SimpleDocTemplate(str(HERE/'collection.pdf'),pagesize=A4,rightMargin=20*mm,leftMargin=20*mm,topMargin=18*mm,bottomMargin=18*mm,title='Les petits détours / Little Detours — original bilingual stories',author='Open Conteuse').build(flow)
+ SimpleDocTemplate(str(HERE/'collection.pdf'),pagesize=A4,rightMargin=20*mm,leftMargin=20*mm,topMargin=18*mm,bottomMargin=18*mm,title='Galia — original bilingual stories',author='Galia').build(flow)
 
 # Separate adhesive labels for the actual electronic cartridge artwork recess.
 # Canonical recess x3..37, y4..43 =34x39mm. Centered label x3.2..36.8,
@@ -146,7 +146,7 @@ def cartridge_label(story):
  badge.scale(.34,.34);badge.translate(15,494);d.add(badge)
  name,fr,en,key=short[story['id']]
  text(d,139,302,name,42,'DTBold')
- text(d,140,276,'PETITS DÉTOURS',13,'DTBold')
+ text(d,140,276,'Galia',13,'DTBold')
  rect(d,12,12,312,120,CREAM,10)
  y=wrapped(d,fr,105,21,280,'DTBold');y-=5
  y=wrapped(d,en,y,19,280,'DTSans')

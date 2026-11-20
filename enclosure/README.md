@@ -1,6 +1,6 @@
 # Current enclosure and cartridge sources
 
-Millimetres. `design.scad` selects Mini or Explore with `variant="mini"` / `"explore"`; `card.scad` defines the shared Mini serial-ID cartridge. Generated `*-data.scad` inputs come from current native KiCad component/pad coordinates through `scripts/export_mechanical.py`.
+Millimetres. `design.scad` selects Galia Mini or Galia Explore with `variant="mini"` / `"explore"`; `card.scad` defines the shared Galia Mini serial-ID cartridge. Generated `*-data.scad` inputs come from current native KiCad component/pad coordinates through `scripts/export_mechanical.py`.
 
 Mini65×95×24mm, Explore67×95×24mm; nominal walls1.8mm. Current source datum is case front-view left/topXY and rear exteriorZ0. Export mirrorsY to retain physical PCB handedness. No production shrink, paint allowance, mould draft or material qualification is established.
 

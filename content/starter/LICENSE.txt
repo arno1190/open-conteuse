@@ -1,8 +1,7 @@
 CC0 1.0 Universal — original collection text and artwork
 
-To the extent possible under law, the contributors to Open Conteuse waive
-all copyright and related or neighboring rights to the original Les petits
-détours / Little Detours story texts and card illustrations in this directory.
+To the extent possible under law, the contributors to Galia waive
+all copyright and related or neighboring rights to the original Galia story texts and card illustrations in this directory.
 
 This dedication applies to the original .md story files, catalogue text and
 original artwork in .svg and .pdf derivatives. It does not apply to embedded
