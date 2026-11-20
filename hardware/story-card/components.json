@@ -1,0 +1,143 @@
+{
+  "variant": "story-card",
+  "status": "engineering_reference_for_rfq",
+  "pcb": {
+    "outline": [
+      0,
+      0,
+      20,
+      12
+    ],
+    "thickness": 0.8,
+    "holes": [
+      [
+        2,
+        2
+      ],
+      [
+        18,
+        10
+      ]
+    ],
+    "edge_polygon": [
+      [
+        0,
+        0
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        12
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "ref": "U1",
+      "mpn": "DS2401P+",
+      "footprint": "Package_SO_J-Lead:TSOC-6_3.76x3.94mm_P1.27mm",
+      "xy": [
+        10,
+        6
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "CARD_DQ",
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null
+      },
+      "size": [
+        3.76,
+        3.94,
+        1.5
+      ],
+      "cost_eur": [
+        3.65,
+        5
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ds2401.pdf"
+    },
+    {
+      "ref": "J1",
+      "mpn": "OC-ID-CONTACTS",
+      "footprint": "Compact:ContactPads_Bottom",
+      "xy": [
+        0,
+        0
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "CARD_DQ"
+      },
+      "size": [
+        0,
+        0,
+        0
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "selective hard-gold contact drawing; no audio storage"
+    },
+    {
+      "ref": "H1",
+      "mpn": "M1.6",
+      "footprint": "Compact:Mount_M1_6",
+      "xy": [
+        2,
+        2
+      ],
+      "pins": {},
+      "size": [
+        3.6,
+        3.6,
+        0
+      ],
+      "section": "mounts",
+      "cost_eur": [
+        0,
+        0
+      ],
+      "angle": 0,
+      "source": ""
+    },
+    {
+      "ref": "H2",
+      "mpn": "M1.6",
+      "footprint": "Compact:Mount_M1_6",
+      "xy": [
+        18,
+        10
+      ],
+      "pins": {},
+      "size": [
+        3.6,
+        3.6,
+        0
+      ],
+      "section": "mounts",
+      "cost_eur": [
+        0,
+        0
+      ],
+      "angle": 0,
+      "source": ""
+    }
+  ],
+  "physical_validation": "pending",
+  "fabrication_release": false
+}

@@ -1,0 +1,759 @@
+{
+  "physical_validation": "pending",
+  "sources": {
+    "enclosure/card.scad": "333d1afdabddf2d01f1e5ed350f245572fdb2b0faf4a7a85548efed5720a7f60",
+    "enclosure/contact-data.scad": "4edc47d094704ddc0b116fd2ad55c1b13fc785d7e15f3e072403269ba14acde7",
+    "enclosure/design.scad": "124acdec8f380644bddbfc2fa2d9a8a28d25a93fbea20957ace653fdd7f20394",
+    "enclosure/explore-data.scad": "d9e5cec8fdf2c827f5c07de8fb2cd0f76c52ef9d81a6e8363a76d3ff82d5a669",
+    "enclosure/mini-data.scad": "045663546ef5210b4506a9b70e903d70cf8bb15c72e680908646d939cb1fee63"
+  },
+  "exports": {
+    "enclosure/print/mini/cap_0.stl": {
+      "triangles": 696,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -5.05,
+          -5.05,
+          0.0
+        ],
+        [
+          5.05,
+          5.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.27574,
+      "sha256": "20f9d2f0e70bc99651b9f3ce95f591a3a5a3eda396ed187a3a52ad5de59a83b3"
+    },
+    "enclosure/print/mini/cap_1.stl": {
+      "triangles": 712,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -6.05,
+          -6.05,
+          0.0
+        ],
+        [
+          6.05,
+          6.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.38785,
+      "sha256": "09b35fc8a0a794ab1e5f3eb1b6f881417289c11be9b9ddec2abe91bf6e0fe687"
+    },
+    "enclosure/print/mini/cap_2.stl": {
+      "triangles": 696,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -5.05,
+          -5.05,
+          0.0
+        ],
+        [
+          5.05,
+          5.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.27574,
+      "sha256": "0782bef3fe030d660374a18b11200a9e27f1f167e84dd7031f7520871572a77c"
+    },
+    "enclosure/print/mini/cap_3.stl": {
+      "triangles": 684,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.05,
+          -4.05,
+          0.0
+        ],
+        [
+          4.05,
+          4.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.18848,
+      "sha256": "5a7b98aa993d79342cb9457e711e1afcb4ad3e60924c572fadb1c328321f734a"
+    },
+    "enclosure/print/mini/cap_4.stl": {
+      "triangles": 716,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.05,
+          -4.05,
+          0.0
+        ],
+        [
+          4.05,
+          4.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.1872,
+      "sha256": "3ea9ac4cb8b9b6bde7e4a42ca69548a6e94ca11673e4e3704ee7c91e4bdac467"
+    },
+    "enclosure/print/mini/front.stl": {
+      "triangles": 11120,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          11.7
+        ],
+        [
+          65.0,
+          95.0,
+          24.0
+        ]
+      ],
+      "volume_cm3": 17.72725,
+      "sha256": "b1824a1cc2fc3ac8dbf7e2907f6ec075727d3249b30bfde02c6d877cbd96e70b"
+    },
+    "enclosure/print/mini/back.stl": {
+      "triangles": 4332,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          65.0,
+          95.0,
+          13.8
+        ]
+      ],
+      "volume_cm3": 18.68289,
+      "sha256": "5facc151fd42c4f4d5259928d5bacbc5ebc8fc3865501866f0f1d06388dc36c7"
+    },
+    "enclosure/print/mini/print_front.stl": {
+      "triangles": 11120,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          65.0,
+          95.0,
+          12.3
+        ]
+      ],
+      "volume_cm3": 17.72725,
+      "sha256": "eec98b57dac36327f6d41125c45792266ac26ed1d7500f409f86776729c29f14"
+    },
+    "enclosure/print/mini/button.stl": {
+      "triangles": 696,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -5.05,
+          -5.05,
+          0.0
+        ],
+        [
+          5.05,
+          5.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.27574,
+      "sha256": "a8f6b3990be3adbc27b5ec2d58b87d74b87efceeb46473152346f46b775dfa57"
+    },
+    "enclosure/print/mini/buttons.stl": {
+      "triangles": 3504,
+      "components": 5,
+      "bounds_mm": [
+        [
+          2.95,
+          1.95,
+          0.0
+        ],
+        [
+          57.05,
+          27.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 1.31501,
+      "sha256": "c0130fead8a91186f5b9dce38abce1419f54f991eff2fc09c35bb17377978708"
+    },
+    "enclosure/print/mini/coupon.stl": {
+      "triangles": 992,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          48.0,
+          20.0,
+          3.0
+        ]
+      ],
+      "volume_cm3": 2.27808,
+      "sha256": "3c6c2b6caca5d2d4a7f2fab63e801658680e5bfa8b8d6916fc8d7afca6d073e5"
+    },
+    "enclosure/print/mini/port_coupon.stl": {
+      "triangles": 420,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          42.0,
+          20.0,
+          3.0
+        ]
+      ],
+      "volume_cm3": 2.1267,
+      "sha256": "be393b23550107d1290c77aa2821a237d8fd48113eed30bf2190dc3ce49829b4"
+    },
+    "enclosure/print/mini/bridge.stl": {
+      "triangles": 760,
+      "components": 1,
+      "bounds_mm": [
+        [
+          34.0,
+          75.3,
+          0.0
+        ],
+        [
+          43.5,
+          93.1,
+          1.8
+        ]
+      ],
+      "volume_cm3": 0.06185,
+      "sha256": "f8953df629c1946df17ffe5fa43ac4379fa722eec109ea29374d92af3db2187b"
+    },
+    "work/current/mini-plugs.stl": {
+      "triangles": 488,
+      "components": 2,
+      "bounds_mm": [
+        [
+          25.0,
+          -14.0,
+          10.2
+        ],
+        [
+          56.25,
+          3.95,
+          18.2
+        ]
+      ],
+      "volume_cm3": 1.6503,
+      "sha256": "ab8aa57d716f3526e82c7b3f374deab9b6dd5ccdd95f08d110ad737b0696fec0"
+    },
+    "work/current/mini-pcb.stl": {
+      "triangles": 924,
+      "components": 1,
+      "bounds_mm": [
+        [
+          2.5,
+          3.0,
+          10.5
+        ],
+        [
+          62.5,
+          86.0,
+          11.7
+        ]
+      ],
+      "volume_cm3": 5.94882,
+      "sha256": "e38fc4f5e90657b33572fdd52ede42a6a8c1bb3956e11b3f7667d2b82ea5005d"
+    },
+    "work/current/mini-shell_interference.stl": {
+      "empty": true
+    },
+    "work/current/mini-interference.stl": {
+      "empty": true
+    },
+    "work/current/mini-internal_interference.stl": {
+      "empty": true
+    },
+    "work/current/mini-cap_shell_interference.stl": {
+      "empty": true
+    },
+    "work/current/mini-cap_pair_interference.stl": {
+      "empty": true
+    },
+    "work/current/mini-headphone_plug_clearance.stl": {
+      "empty": true
+    },
+    "work/current/mini-usb_plug_clearance.stl": {
+      "empty": true
+    },
+    "enclosure/print/explore/cap_0.stl": {
+      "triangles": 680,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.3,
+          -4.3,
+          0.0
+        ],
+        [
+          4.3,
+          4.3,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.20765,
+      "sha256": "22fcc14bd1d921e24f1536d4bc104807e03f311a5ac9647c83d516e979ccd758"
+    },
+    "enclosure/print/explore/cap_1.stl": {
+      "triangles": 712,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -6.05,
+          -6.05,
+          0.0
+        ],
+        [
+          6.05,
+          6.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.38785,
+      "sha256": "29ee34180c510158dac8874643a823c605696af36c53d5e3df3796694a0e2979"
+    },
+    "enclosure/print/explore/cap_2.stl": {
+      "triangles": 680,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.3,
+          -4.3,
+          0.0
+        ],
+        [
+          4.3,
+          4.3,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.20765,
+      "sha256": "fb7368f2cdd717017386684bc12e79b1999882e954875d9f8b0387a551ac31e1"
+    },
+    "enclosure/print/explore/cap_3.stl": {
+      "triangles": 680,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.3,
+          -4.3,
+          0.0
+        ],
+        [
+          4.3,
+          4.3,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.20765,
+      "sha256": "84750cb1003150f68e736893a971d1883584108076d633ba5c251e96af503929"
+    },
+    "enclosure/print/explore/cap_4.stl": {
+      "triangles": 680,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.3,
+          -4.3,
+          0.0
+        ],
+        [
+          4.3,
+          4.3,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.20765,
+      "sha256": "7400f95f74eac0bd4009d0547938930477ede8acae1463bc973aa6f7ba54bb57"
+    },
+    "enclosure/print/explore/cap_5.stl": {
+      "triangles": 704,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.55,
+          -4.55,
+          0.0
+        ],
+        [
+          4.55,
+          4.55,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.22901,
+      "sha256": "4cb79a607de2ba18908ea8a0dee962d03265f9a98e30486deb41898ca1f38dbd"
+    },
+    "enclosure/print/explore/cap_6.stl": {
+      "triangles": 684,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.05,
+          -4.05,
+          0.0
+        ],
+        [
+          4.05,
+          4.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.18848,
+      "sha256": "960fac4e17146dd90edff8faf1b9b30bc77e9e877353c32e6fe65462330f8808"
+    },
+    "enclosure/print/explore/cap_7.stl": {
+      "triangles": 716,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.05,
+          -4.05,
+          0.0
+        ],
+        [
+          4.05,
+          4.05,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.1872,
+      "sha256": "b677fba30ce744a1229e89a66f28f440e9a6cf8ba9eb6d79cd9776058d555f03"
+    },
+    "enclosure/print/explore/front.stl": {
+      "triangles": 11664,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          11.7
+        ],
+        [
+          67.0,
+          95.0,
+          24.0
+        ]
+      ],
+      "volume_cm3": 13.45995,
+      "sha256": "8181ee9dad934c5e33482e27f2f4c30a4f89d108f1828c474a2cf5793a34f698"
+    },
+    "enclosure/print/explore/back.stl": {
+      "triangles": 4280,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          67.0,
+          95.0,
+          13.8
+        ]
+      ],
+      "volume_cm3": 19.11425,
+      "sha256": "7e4a42a4e090f81f7609e23f550eb3b5a4083360038ec95c9a00fb943754ff1d"
+    },
+    "enclosure/print/explore/print_front.stl": {
+      "triangles": 11664,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          67.0,
+          95.0,
+          12.3
+        ]
+      ],
+      "volume_cm3": 13.45994,
+      "sha256": "ef4e87ffc33797f0033ebb0bb29f230b4a34fde39d74b423b87fccd1cab7a093"
+    },
+    "enclosure/print/explore/button.stl": {
+      "triangles": 680,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -4.3,
+          -4.3,
+          0.0
+        ],
+        [
+          4.3,
+          4.3,
+          10.9
+        ]
+      ],
+      "volume_cm3": 0.20765,
+      "sha256": "5f1b191fac4a2b44fb8c809fcaa81c5bb814927a91b321569fd97da2c28767e8"
+    },
+    "enclosure/print/explore/buttons.stl": {
+      "triangles": 5536,
+      "components": 8,
+      "bounds_mm": [
+        [
+          3.7,
+          1.95,
+          0.0
+        ],
+        [
+          57.3,
+          27.55,
+          10.9
+        ]
+      ],
+      "volume_cm3": 1.82312,
+      "sha256": "ecca974052d155c71545f1578fb69ae2e2cb81476f8e23adea4a19e85d09a662"
+    },
+    "enclosure/print/explore/coupon.stl": {
+      "triangles": 992,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          48.0,
+          20.0,
+          3.0
+        ]
+      ],
+      "volume_cm3": 2.27808,
+      "sha256": "10fd2219835ab14dfb103a18c729d5ba046225bc5d970443841f318efe0af160"
+    },
+    "enclosure/print/explore/port_coupon.stl": {
+      "triangles": 420,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          42.0,
+          20.0,
+          3.0
+        ]
+      ],
+      "volume_cm3": 2.1267,
+      "sha256": "f19bf1a4dbc2ef52d8ac3d0dda73404b32869fed07184fe215b17f2f44effea6"
+    },
+    "enclosure/print/explore/bridge.stl": {
+      "triangles": 760,
+      "components": 1,
+      "bounds_mm": [
+        [
+          34.0,
+          75.3,
+          0.0
+        ],
+        [
+          43.5,
+          93.1,
+          1.8
+        ]
+      ],
+      "volume_cm3": 0.06185,
+      "sha256": "73433f3ddca269d7ad6a5306671dc79144041391805ba602978004d613b84d85"
+    },
+    "work/current/explore-plugs.stl": {
+      "triangles": 488,
+      "components": 2,
+      "bounds_mm": [
+        [
+          25.0,
+          -14.0,
+          10.2
+        ],
+        [
+          56.25,
+          3.95,
+          18.2
+        ]
+      ],
+      "volume_cm3": 1.6503,
+      "sha256": "95d051a04646e1ab8012045f31b5f2d5232b93dbdf7281a5b4c8ab860013d9a6"
+    },
+    "work/current/explore-pcb.stl": {
+      "triangles": 924,
+      "components": 1,
+      "bounds_mm": [
+        [
+          2.5,
+          3.0,
+          10.5
+        ],
+        [
+          62.5,
+          86.0,
+          11.7
+        ]
+      ],
+      "volume_cm3": 5.94882,
+      "sha256": "0125fd25fcc613482d3c7066dabcfbca7cd1b5257e6bbef2e49ba4db290f6890"
+    },
+    "work/current/explore-shell_interference.stl": {
+      "empty": true
+    },
+    "work/current/explore-interference.stl": {
+      "empty": true
+    },
+    "work/current/explore-internal_interference.stl": {
+      "empty": true
+    },
+    "work/current/explore-cap_shell_interference.stl": {
+      "empty": true
+    },
+    "work/current/explore-cap_pair_interference.stl": {
+      "empty": true
+    },
+    "work/current/explore-headphone_plug_clearance.stl": {
+      "empty": true
+    },
+    "work/current/explore-usb_plug_clearance.stl": {
+      "empty": true
+    },
+    "work/current/mini-reader-pcb.stl": {
+      "triangles": 420,
+      "components": 1,
+      "bounds_mm": [
+        [
+          6.5,
+          54.0,
+          13.35
+        ],
+        [
+          56.5,
+          65.0,
+          14.95
+        ]
+      ],
+      "volume_cm3": 0.74028,
+      "sha256": "9f0bf1b03a28956f2f8e0cbcbb440520616fefa2b63cdf1bf2bba9defa99e568"
+    },
+    "enclosure/print/story-card/front.stl": {
+      "triangles": 1540,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -2.0,
+          0.0,
+          1.0
+        ],
+        [
+          42.0,
+          60.0,
+          4.3
+        ]
+      ],
+      "volume_cm3": 5.09682,
+      "sha256": "7e0c1ebb29e5226c82005e79655521689e3b691c4223d130f90077c8376b0476"
+    },
+    "enclosure/print/story-card/back.stl": {
+      "triangles": 1596,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          42.0,
+          60.0,
+          2.0
+        ]
+      ],
+      "volume_cm3": 4.44736,
+      "sha256": "0b20c0a73f7cd4a79017da4ed81da0d9954241b0eae808fba125078d5e27873e"
+    },
+    "enclosure/print/story-card/print_front.stl": {
+      "triangles": 1540,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          42.0,
+          60.0,
+          3.3
+        ]
+      ],
+      "volume_cm3": 5.09681,
+      "sha256": "7146a3d30b4e268d4c7f42d32bb3730c19b9f1ff43c7f67f657d08606bc4ea87"
+    },
+    "enclosure/print/story-card/pcb.stl": {
+      "triangles": 404,
+      "components": 1,
+      "bounds_mm": [
+        [
+          10.0,
+          1.0,
+          0.5
+        ],
+        [
+          30.0,
+          13.0,
+          1.3
+        ]
+      ],
+      "volume_cm3": 0.18794,
+      "sha256": "726fb10b5c371bc83ff749fc28638501625d2df2956335e8e37582e0bb903fb6"
+    },
+    "work/current/wrong_card_interference.stl": {
+      "triangles": 112,
+      "components": 2,
+      "bounds_mm": [
+        [
+          12.5,
+          65.4016,
+          18.1
+        ],
+        [
+          13.3,
+          93.0,
+          20.9
+        ]
+      ],
+      "volume_cm3": 0.01546,
+      "sha256": "5ee04cdca2b9d1a75f019fd763c891a0933fa21e3de863d408d06e4a91877235"
+    },
+    "work/current/card_sweep_interference.stl": {
+      "empty": true
+    }
+  }
+}

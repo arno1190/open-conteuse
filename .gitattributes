@@ -1,4 +1,2 @@
-enclosure/integrated/**/*.stl binary
-enclosure/compact-r1/**/*.stl binary
+*.stl binary
 *.pdf binary
-hardware/compact-r1/*-BOM.csv whitespace=cr-at-eol

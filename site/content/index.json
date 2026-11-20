@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "collection": {
+    "fr": "Les petits détours",
+    "en": "Little Detours"
+  },
+  "release_date": "2026-11-20",
+  "license": "CC0-1.0",
+  "status": "editorial_draft",
+  "script_approval": "pending",
+  "audio_approval": "pending",
+  "audio_assets": [
+    {
+      "story_id": "milo-moon-post",
+      "language": "fr",
+      "path": "content/audio/milo-moon-post.fr.mp3",
+      "status": "synthetic_draft_demo",
+      "approval": "pending",
+      "script_sha256": "c4ca1bec439eb2ca73b83800b082b032b4abf36c46df29fbea8ec7628ef49b68",
+      "ssml_sha256": "a4e5899a35046308c4f851694d6ff69b19a3d5655cbd6d1375440d930b9678c7",
+      "audio_sha256": "48d48fc6d6e0732f19238cda6c2f15c4b5536f2462a213b7e192da0cdb903b22",
+      "bytes": 1445972,
+      "duration_seconds": 180.715,
+      "codec": "mp3",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "engine": "eSpeak NG 1.52.0",
+      "voice": "fr-fr",
+      "speed_words_per_minute": 105,
+      "pitch": 45,
+      "amplitude": 70,
+      "paragraph_pause_ms": 2000,
+      "invitation_pause_ms": 8000,
+      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
+      "final_audio_approval": "pending"
+    },
+    {
+      "story_id": "milo-moon-post",
+      "language": "en",
+      "path": "content/audio/milo-moon-post.en.mp3",
+      "status": "synthetic_draft_demo",
+      "approval": "pending",
+      "script_sha256": "cc04585817b29fb655ab3b77402c2ebc5c37bc61f0635b19295253d2791418fe",
+      "ssml_sha256": "61e3caccb24afef0d404e45c26420d8ba4decc0882ae45f649d907b32541e98a",
+      "audio_sha256": "4edf5970fa93dda06fa18d7562831cd676c6087c513695272db11f6afb94283e",
+      "bytes": 1563837,
+      "duration_seconds": 195.448,
+      "codec": "mp3",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "engine": "eSpeak NG 1.52.0",
+      "voice": "en-gb",
+      "speed_words_per_minute": 105,
+      "pitch": 45,
+      "amplitude": 70,
+      "paragraph_pause_ms": 2000,
+      "invitation_pause_ms": 8000,
+      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
+      "final_audio_approval": "pending"
+    },
+    {
+      "story_id": "nori-cloud-pocket",
+      "language": "fr",
+      "path": "content/audio/nori-cloud-pocket.fr.mp3",
+      "status": "synthetic_draft_demo",
+      "approval": "pending",
+      "script_sha256": "3a6d1ace2e3bd9474f4a68a26d57558ea5562f073bb43ec0ff50317cbafc9bfa",
+      "ssml_sha256": "c9b8454e99183b15b96124135fe8600836b02e38f47c7becf7cc1bbf84f2ff35",
+      "audio_sha256": "abf62845f2bea05f4cd86fb9a803849a1573a862b251d8bec9da910ffe695698",
+      "bytes": 1494247,
+      "duration_seconds": 186.749,
+      "codec": "mp3",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "engine": "eSpeak NG 1.52.0",
+      "voice": "fr-fr",
+      "speed_words_per_minute": 105,
+      "pitch": 45,
+      "amplitude": 70,
+      "paragraph_pause_ms": 2000,
+      "invitation_pause_ms": 8000,
+      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
+      "final_audio_approval": "pending"
+    },
+    {
+      "story_id": "nori-cloud-pocket",
+      "language": "en",
+      "path": "content/audio/nori-cloud-pocket.en.mp3",
+      "status": "synthetic_draft_demo",
+      "approval": "pending",
+      "script_sha256": "cda359b438bb6f5967b08c6d7f94a4808099fd4ec82940ca66db2896b790ea86",
+      "ssml_sha256": "e5fb025411dcff4fe59c1e08422bfaa490886af98aeca59e5d266645b61e5395",
+      "audio_sha256": "e3817785def405f5da29ee765600fdd33b0e1521c46a4b9673747ff8e4b2deb7",
+      "bytes": 1608558,
+      "duration_seconds": 201.038,
+      "codec": "mp3",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "engine": "eSpeak NG 1.52.0",
+      "voice": "en-gb",
+      "speed_words_per_minute": 105,
+      "pitch": 45,
+      "amplitude": 70,
+      "paragraph_pause_ms": 2000,
+      "invitation_pause_ms": 8000,
+      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
+      "final_audio_approval": "pending"
+    },
+    {
+      "story_id": "pipo-sock-orchestra",
+      "language": "fr",
+      "path": "content/audio/pipo-sock-orchestra.fr.mp3",
+      "status": "synthetic_draft_demo",
+      "approval": "pending",
+      "script_sha256": "a955a0e09361ef078fd483b06005669a4e3cf511bb892ce82fd127a466d78759",
+      "ssml_sha256": "9806d1c0a52fb9cf67026fa7f7b6ae76d2ac31a35996aef39d80d5df61a522fa",
+      "audio_sha256": "366457844bc74f9d5efc27142feb5daba6e334581fc7365c16afdd41524022a2",
+      "bytes": 1610021,
+      "duration_seconds": 201.221,
+      "codec": "mp3",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "engine": "eSpeak NG 1.52.0",
+      "voice": "fr-fr",
+      "speed_words_per_minute": 105,
+      "pitch": 45,
+      "amplitude": 70,
+      "paragraph_pause_ms": 2000,
+      "invitation_pause_ms": 8000,
+      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
+      "final_audio_approval": "pending"
+    },
+    {
+      "story_id": "pipo-sock-orchestra",
+      "language": "en",
+      "path": "content/audio/pipo-sock-orchestra.en.mp3",
+      "status": "synthetic_draft_demo",
+      "approval": "pending",
+      "script_sha256": "c6dd79011435ccf830f0d71bd94650eb1b3480d691a1f07fd303372930bad926",
+      "ssml_sha256": "c76e2e405a28e1d07df7de149e32ab89f2c70b81762e058d82cb69b93f034a2e",
+      "audio_sha256": "9d3654370d547a7546a43e39421b797e6088437fa97bc3586fb7fef1efe15516",
+      "bytes": 1761114,
+      "duration_seconds": 220.108,
+      "codec": "mp3",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "engine": "eSpeak NG 1.52.0",
+      "voice": "en-gb",
+      "speed_words_per_minute": 105,
+      "pitch": 45,
+      "amplitude": 70,
+      "paragraph_pause_ms": 2000,
+      "invitation_pause_ms": 8000,
+      "ffmpeg_filter": "loudnorm=I=-23:TP=-3:LRA=7",
+      "final_audio_approval": "pending"
+    }
+  ],
+  "age_note": {
+    "fr": "Indication éditoriale 4–7 ans à apprécier par un adulte ; aucun test auprès d’enfants réalisé.",
+    "en": "Editorial guidance for ages 4–7, for an adult to assess; not tested with children."
+  },
+  "preview_note": {
+    "fr": "Enregistrements de démonstration synthétiques, générés localement avec eSpeak NG. Voix robotique, non interprétée par un comédien. Fichiers téléchargeables pour écouter sans écran ; validation de l’audio final en attente.",
+    "en": "Synthetic demonstration recordings, generated locally with eSpeak NG. Robotic voice, not a performer’s narration. Downloadable files for listening away from a screen; final audio approval pending."
+  },
+  "card_note": {
+    "fr": "Cartes papier illustrées uniquement : elles ne déclenchent pas le lecteur à contacts. Le dessin d’une carte n’est pas son identifiant électronique.",
+    "en": "Illustrated paper cards only: they do not trigger the contact reader. Card artwork is not its electronic identifier."
+  },
+  "stories": [
+    {
+      "id": "milo-moon-post",
+      "color": "#F1B747",
+      "age": "4–7 · indication / guidance",
+      "duration": "~4 min · estimation / estimate",
+      "fr": {
+        "title": "Milo et le courrier de la Lune",
+        "subtitle": "Une histoire à écouter, un vœu à inventer.",
+        "script": "Ce soir-là, Milo trouva une enveloppe sur son oreiller. Elle était vide. Sur le devant, on avait écrit : « Pour la Lune. À remplir avec quelque chose qui ne tient pas dans une boîte. »\n\nMilo regarda sous son lit. Une chaussette ? Elle tenait dans une boîte. Un caillou ? Aussi. Son bâillement, en revanche, s'envola avant qu'il puisse l'attraper.\n\n« Voilà une piste », murmura-t-il.\n\nÀ la fenêtre attendait une petite factrice à vélo. Son vélo avait deux roues rondes et une sonnette en forme de croissant.\n\n« Je m'appelle Plume. Tu as du courrier ? »\n\n« Pas encore. Comment envoie-t-on un bâillement ? »\n\n« On le raconte. La Lune aime les lettres qui lui font imaginer la Terre. »\n\nMilo prit alors un crayon. Il dessina sa bouche toute ronde. Puis il ajouta le bruit de la pluie sur le toit, le parfum du pain grillé et le rire de son voisin.\n\nSi tu écrivais à la Lune, quel petit moment de ta journée choisirais-tu ? Tu peux le dire tout bas, ou simplement y penser.\n\nMilo glissa son dessin dans l'enveloppe. Mais un coin dépassait : il avait dessiné le rire beaucoup trop grand.\n\n« Il faut le plier ? » demanda-t-il.\n\nPlume secoua la tête. « Certains rires voyagent mieux dehors. »\n\nElle fixa l'enveloppe à son porte-bagages. Le rire flottait derrière comme un ruban. Le vélo partit sur le chemin, puis disparut au tournant. Milo ne vit pas comment Plume rejoignait la Lune. Cela resta le secret de la factrice.\n\nLe lendemain, une petite réponse attendait sur l'oreiller. Il n'y avait qu'un rond jaune et ces mots : « Merci. Ici, nous avons imaginé ton rire. Il était immense. »\n\nMilo sourit. Il rangea la lettre dans une boîte. Le sourire, lui, resta dehors.",
+        "activity": "Avec un adulte si tu le souhaites, dessine une carte postale pour la Lune : un bruit, un parfum ou un moment de ta journée. Raconte-la, puis offre-la ou garde-la. Aucun matériel spécial : papier et crayons suffisent.",
+        "card_activity": "Quel petit moment raconterais-tu à la Lune ? Dessine ta carte postale.",
+        "word_count": 303,
+        "preview_audio": "content/audio/milo-moon-post.fr.mp3",
+        "preview_audio_duration_seconds": 180.715
+      },
+      "en": {
+        "title": "Milo and the Moon Post",
+        "subtitle": "A story to hear. A little wish to imagine.",
+        "script": "That evening, Milo found an envelope on his pillow. It was empty. On the front, someone had written, “For the Moon. Please fill with something that will not fit inside a box.”\n\nMilo looked under his bed. A sock? That would fit in a box. A pebble? That would too. His yawn, however, floated away before he could catch it.\n\n“That might be a clue,” he whispered.\n\nA little postwoman was waiting outside his window. Her bicycle had two round wheels and a bell shaped like a crescent.\n\n“My name is Feather. Have you got any post?”\n\n“Not yet. How do you send a yawn?”\n\n“You tell its story. The Moon likes letters that help her imagine the Earth.”\n\nMilo picked up a pencil. He drew his wide, round mouth. Then he added the sound of rain on the roof, the smell of warm toast and his neighbour's laugh.\n\nIf you were writing to the Moon, which little moment from your day would you choose? You can whisper it, or just think about it.\n\nMilo slipped his drawing into the envelope. But one corner stuck out. He had drawn the laugh much too big.\n\n“Should I fold it?” he asked.\n\nFeather shook her head. “Some laughs travel better out in the open.”\n\nShe fastened the envelope to the back of her bicycle. The laugh floated behind her like a ribbon. The bicycle rolled down the path and disappeared around a bend. Milo never saw how Feather reached the Moon. That remained the postwoman's secret.\n\nThe next morning, a little reply was waiting on his pillow. There was just a yellow circle and these words: “Thank you. We imagined your laugh up here. It was enormous.”\n\nMilo smiled. He put the letter away in a box. His smile stayed out in the open.",
+        "activity": "With an adult if you like, draw a postcard for the Moon: a sound, a smell or a little moment from your day. Tell its story, then give it to someone or keep it. All you need is paper and pencils.",
+        "card_activity": "Which little moment would you tell the Moon about? Draw your postcard.",
+        "word_count": 302,
+        "preview_audio": "content/audio/milo-moon-post.en.mp3",
+        "preview_audio_duration_seconds": 195.448
+      },
+      "art": "content/cards/milo-moon-post.svg",
+      "script_approval": "pending",
+      "audio_approval": "pending",
+      "recording": {
+        "voice": "warm, unhurried; no sudden loud effects",
+        "pace_words_per_minute": [
+          85,
+          105
+        ],
+        "pauses_seconds": {
+          "paragraph": 2,
+          "listener_invitation": 8
+        },
+        "music": "none required",
+        "audio_file": null,
+        "review": "Review exact script revision, record, then review exact final audio separately."
+      }
+    },
+    {
+      "id": "nori-cloud-pocket",
+      "color": "#B9D7D2",
+      "age": "4–7 · indication / guidance",
+      "duration": "~4 min · estimation / estimate",
+      "fr": {
+        "title": "Nori et le nuage de poche",
+        "subtitle": "Un détour tout doux, à la vitesse d’un nuage.",
+        "script": "Nori avait une poche pour les trésors. Elle y gardait une feuille en forme de bateau, un bouton violet et un ticket de bus. Un matin, elle y trouva aussi un tout petit nuage.\n\n« Tu t'es perdu ? » demanda-t-elle.\n\n« Un peu. Je suivais les autres, puis j'ai regardé une fourmi. Maintenant, je ne vois plus le ciel. »\n\nNori ouvrit grand sa poche. « Le ciel est juste là. »\n\nLe nuage hésita. « Il est très grand. »\n\nNori s'assit sur un banc. « On peut commencer par regarder un petit morceau. »\n\nIls choisirent le carré de ciel entre deux branches. Un oiseau le traversa. Puis une feuille. Puis rien du tout.\n\nPendant un moment, ils écoutèrent. Nori entendit une roue sur les graviers, une porte qui se fermait et, très loin, quelqu'un qui appelait un chien.\n\nEt toi, si tu as envie, écoute autour de toi quelques instants. Quel son vient jusqu'à tes oreilles ? Tu peux aussi rester avec Nori dans l'histoire.\n\n« Je suis peut-être un nuage qui préfère les petites promenades », dit le nuage.\n\n« Moi aussi, parfois », répondit Nori.\n\nElle lui montra le bouton violet. Le nuage essaya de lui ressembler. Il devint rond, puis tout biscornu. Nori éclata de rire.\n\nIl essaya ensuite la feuille-bateau. Cette fois, il réussit une voile parfaite, mais oublia la coque.\n\n« C'est un bateau pour le ciel ! » dit Nori.\n\nLe nuage monta jusqu'au dossier du banc. De là, il reconnut un grand nuage qui ressemblait à une théière.\n\n« Ma tante ! Elle m'attend ! »\n\nIl s'envola, sans se presser. Nori agita la main.\n\nDans sa poche, il restait le bouton, la feuille et le ticket. Elle n'avait pas rapporté un nouveau trésor. Elle avait fait une petite promenade avec l'un d'eux. Et c'était déjà toute une aventure.",
+        "activity": "Depuis un endroit confortable et sûr, cherche trois formes dans les nuages ou dans les motifs d’un tissu. Tu peux aussi inventer tes propres nuages au crayon. Inutile de sortir : un dessin fait très bien le voyage.",
+        "card_activity": "Invente un nuage-bateau. Où ferait-il sa petite promenade ?",
+        "word_count": 310,
+        "preview_audio": "content/audio/nori-cloud-pocket.fr.mp3",
+        "preview_audio_duration_seconds": 186.749
+      },
+      "en": {
+        "title": "Nori and the Pocket Cloud",
+        "subtitle": "A gentle detour, at the speed of a cloud.",
+        "script": "Nori had a pocket for treasures. Inside it she kept a boat-shaped leaf, a purple button and a bus ticket. One morning, she found a very small cloud in there too.\n\n“Are you lost?” she asked.\n\n“A little. I was following the others. Then I stopped to watch an ant. Now I cannot see the sky.”\n\nNori opened her pocket wide. “The sky is right there.”\n\nThe cloud hesitated. “It is very big.”\n\nNori sat down on a bench. “We could start by looking at a little piece.”\n\nThey chose the square of sky between two branches. A bird crossed it. Then a leaf. Then nothing at all.\n\nFor a while, they listened. Nori heard a wheel rolling over gravel, a door closing and, far away, somebody calling a dog.\n\nIf you feel like it, listen around you for a few moments. Which sound reaches your ears? Or you can stay with Nori inside the story.\n\n“Perhaps I am a cloud who prefers little walks,” said the cloud.\n\n“Sometimes I do too,” said Nori.\n\nShe showed the cloud her purple button. The cloud tried to copy its shape. First it became round, then wonderfully wonky. Nori laughed.\n\nNext it tried to copy the boat-shaped leaf. This time, it made a perfect sail, but forgot the boat underneath.\n\n“It is a boat for the sky!” said Nori.\n\nThe cloud floated up to the back of the bench. From there, it recognised a large cloud shaped like a teapot.\n\n“My aunt! She is waiting for me!”\n\nIt floated away, taking its time. Nori waved.\n\nIn her pocket, she still had the button, the leaf and the ticket. She had not brought home a new treasure. She had taken a little walk with one of them. And that had been quite an adventure.",
+        "activity": "From somewhere comfortable and safe, find three shapes in the clouds or in the pattern of a piece of fabric. You can also draw your own clouds. No need to go outside: a drawing can make the journey too.",
+        "card_activity": "Imagine a cloud shaped like a boat. Where would it take a little walk?",
+        "word_count": 300,
+        "preview_audio": "content/audio/nori-cloud-pocket.en.mp3",
+        "preview_audio_duration_seconds": 201.038
+      },
+      "art": "content/cards/nori-cloud-pocket.svg",
+      "script_approval": "pending",
+      "audio_approval": "pending",
+      "recording": {
+        "voice": "warm, unhurried; no sudden loud effects",
+        "pace_words_per_minute": [
+          85,
+          105
+        ],
+        "pauses_seconds": {
+          "paragraph": 2,
+          "listener_invitation": 8
+        },
+        "music": "none required",
+        "audio_file": null,
+        "review": "Review exact script revision, record, then review exact final audio separately."
+      }
+    },
+    {
+      "id": "pipo-sock-orchestra",
+      "color": "#E99B82",
+      "age": "4–7 · indication / guidance",
+      "duration": "~4 min · estimation / estimate",
+      "fr": {
+        "title": "Pipo et l’orchestre des chaussettes",
+        "subtitle": "Une drôle de répétition, sans faire trembler la maison.",
+        "script": "Le jour de la grande lessive, Pipo trouva trois chaussettes sans leur jumelle. Une rayée, une à pois et une qui avait un petit trou au talon.\n\n« Nous voulons jouer un concert », annonça la chaussette rayée.\n\n« Très bien », dit Pipo. « De quels instruments jouez-vous ? »\n\nLes trois chaussettes se regardèrent. Elles n'en avaient aucune idée.\n\nLa chaussette à pois essaya de souffler. Cela fit : « Fffff. »\n\nLa rayée remua sur le tapis. Cela fit : « Chchch. »\n\nLa trouée ne fit rien du tout.\n\n« J'attends mon tour », expliqua-t-elle.\n\nPipo réfléchit. Il posa ses mains sur ses genoux et tapota doucement : « Pom, pom. »\n\nLa chaussette à pois répondit : « Fffff. » La rayée ajouta : « Chchch. » Et la trouée leva un doigt pour demander un silence.\n\nTout le monde s'arrêta. Dans ce silence, on entendit le tic-tac de l'horloge.\n\n« Il joue avec nous ! » chuchota Pipo.\n\nSi tu en as envie, tu peux essayer un petit rythme sur tes genoux. Tout doucement. Deux taps, puis un silence. Tu peux aussi l'imaginer sans bouger.\n\nIls répétèrent encore. Parfois, les chaussettes commençaient ensemble. Parfois, elles se trompaient et recommençaient en riant. Pipo décida que le concert serait court : juste le temps d'une chanson inventée.\n\nÀ cet instant, trois chaussettes identiques apparurent au bord du panier. Les jumelles !\n\n« Vous nous avez retrouvées ! » dit la rayée.\n\n« On a suivi la musique », répondirent-elles.\n\nL'orchestre comptait maintenant six chaussettes. C'était beaucoup pour un petit tapis.\n\nAlors, les trois nouvelles venues s'installèrent dans le public. Pipo fit une petite révérence. Le concert commença par deux taps, un souffle et un silence.\n\nPuis le public applaudit sans bruit : six petits pieds de laine s'agitèrent dans l'air. Pour ce premier concert, c'était exactement ce qu'il fallait.",
+        "activity": "Choisis un rythme très doux : deux tapes sur les genoux, puis un silence. Une autre personne peut répondre avec un rythme différent. Pas besoin de petits objets ni de faire du bruit : jouer le silence fait aussi partie du concert.",
+        "card_activity": "Deux petits taps, puis un silence. À toi d’inventer la suite !",
+        "word_count": 313,
+        "preview_audio": "content/audio/pipo-sock-orchestra.fr.mp3",
+        "preview_audio_duration_seconds": 201.221
+      },
+      "en": {
+        "title": "Pipo and the Sock Orchestra",
+        "subtitle": "A curious rehearsal, without shaking the house.",
+        "script": "On washing day, Pipo found three socks without their partners. One had stripes, one had spots and one had a little hole in its heel.\n\n“We want to play a concert,” announced the stripy sock.\n\n“Very good,” said Pipo. “Which instruments do you play?”\n\nThe three socks looked at each other. They had absolutely no idea.\n\nThe spotty sock tried blowing. It went, “Fffff.”\n\nThe stripy sock shuffled across the rug. It went, “Shhh, shhh.”\n\nThe sock with the hole did nothing at all.\n\n“I am waiting for my turn,” it explained.\n\nPipo thought for a moment. He put his hands on his knees and tapped gently. “Pom, pom.”\n\nThe spotty sock answered, “Fffff.” The stripy sock added, “Shhh, shhh.” Then the sock with the hole raised one finger to ask for silence.\n\nEverybody stopped. In the quiet, they heard the clock going tick-tock.\n\n“It is playing with us!” whispered Pipo.\n\nIf you feel like it, you can try a little rhythm on your knees. Very gently. Two taps, then a silence. Or you can imagine it without moving.\n\nThey practised again. Sometimes the socks started together. Sometimes they got muddled and began again, laughing. Pipo decided the concert would be short: just long enough for one made-up song.\n\nJust then, three matching socks appeared at the edge of the washing basket. Their partners!\n\n“You found us!” said the stripy sock.\n\n“We followed the music,” they replied.\n\nThe orchestra now had six socks. That was rather a lot for a little rug.\n\nSo the three newcomers settled down in the audience. Pipo made a small bow. The concert began with two taps, a soft puff and a silence.\n\nThen the audience applauded without a sound. Six little woolly feet waved in the air. For this very first concert, that was exactly right.",
+        "activity": "Choose a very gentle rhythm: two taps on your knees, then a silence. Somebody else can answer with a different rhythm. No small objects or loud sounds are needed. Playing the silence is part of the concert too.",
+        "card_activity": "Two little taps, then a silence. What comes next?",
+        "word_count": 302,
+        "preview_audio": "content/audio/pipo-sock-orchestra.en.mp3",
+        "preview_audio_duration_seconds": 220.108
+      },
+      "art": "content/cards/pipo-sock-orchestra.svg",
+      "script_approval": "pending",
+      "audio_approval": "pending",
+      "recording": {
+        "voice": "warm, unhurried; no sudden loud effects",
+        "pace_words_per_minute": [
+          85,
+          105
+        ],
+        "pauses_seconds": {
+          "paragraph": 2,
+          "listener_invitation": 8
+        },
+        "music": "none required",
+        "audio_file": null,
+        "review": "Review exact script revision, record, then review exact final audio separately."
+      }
+    }
+  ]
+}

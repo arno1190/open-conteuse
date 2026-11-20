@@ -1,67 +1,15 @@
-# Roadmap and handoff state
+# Current release state
 
-Updated 2026-11-19. This is a source-only bench prototype, not a complete validated handheld. See [VALIDATION.md](VALIDATION.md) for commands/results and [hardware assembly gates](../hardware/ASSEMBLY.md) for pending measurements.
+Updated 20 November 2026.
 
-## M1 — host content core and simulator: implemented and host tested
+Implemented: local parent studio/content validation and staged export; two current native four-layer main PCBs; Mini reader and passive token native two-layer PCBs; parametric cases, keyed cartridge, source-derived views; exact-identity BOM with drawing-defined manufactured items; machine-assembly RFQ; original FR/EN starter collection and public showcase.
 
-Versioned JSON Schema; canonical immutable revision; bounded asset sizes/hashes and safe paths; duplicate, unreachable and trapped-branch checks. Deterministic play/pause/choice/back/end, bookmarks and Mini/Explore adapters. Staging, revalidation, durable POSIX pointer replacement, retained versions and verified previous-pointer fallback. Text-story and interruption/restart demo runs without hardware or API keys. Device export checks the current firmware's tighter limits and canonical PCM capability.
+Checked: host behaviour, two muted diagnostic firmware builds, passive-ID CRC/debounce native tests, native ERC/DRC and schematic parity on four boards. Enclosure geometry checks and their actual outcomes are recorded in [validation](VALIDATION.md). These are engineering checks, not evidence of physical safety or production readiness.
 
-## M2 — local parent studio: working local slice, host tested
+Next hardware gates: independent DFM, RF/boost/power review; confirm standard reader screw fit/pullout; dimensional coupons and received-part measurement; spring travel and reader stiffness; staged power/charger/thermal tests; codec and headphone mute driver; acoustic limits; USB/card/SD/brownout behaviour; finished-enclosure qualification; applicable conformity and battery shipping documentation. No supplier quote, order, physical prototype or compliance evidence exists.
 
-Loopback web UI imports local recording/playlist paths, inspects packs, approves exact revisions, activates a library and assigns cards. CLI provides the same core and direct SD export. Bounded public HTTPS RSS/audio ingestion, GUID handling and changing-byte detection; fixture tests for network boundaries. Parent-approved direct-radio registry and capability decisions (HLS unsupported). One-use physical-presence pairing and authenticated transfer are **simulated on host**, including interruption recovery, not claimed as device onboarding. No public deployment or background subscription service was started.
+Content: three original bilingual scripts and card artworks are drafts. Six downloadable local synthetic MP3 recordings and optional browser speech are demonstrations only; exact script and final recording approvals are separate and pending. Local studio never auto-approves them.
 
-The local prototype does not yet offer a full graph editor, in-browser waveform/audio preview, multi-pack device index, unattended RSS scheduler, backup UI or network OTA. Those are further product increments; they are not prerequisites for the checked USB/SD bench slice. One process owns private studio state.
+Public release means source, documentation and showcase publication. It does not mean a shippable child-ready product.
 
-## M3 — firmware bench prototype: built, physical tests blocked
-
-Exact target: ESP32-S3-DevKitC-1 / WROOM-1-N16R8. GPIO allocation reserves USB, OPI memory and strapping pins. Original firmware is GPL-3.0-or-later because the selected radio library is GPL; no ESPuino/STUdio code was copied. Adafruit PN532, ILI9341, SD and I2S driver paths compile. Default Mini/Explore builds are muted; explicit audio-opt-in builds compile PCM-WAV local playback and direct HTTP MP3/AAC radio with bounded connection attempts and a 15-minute stop. Firmware verifies exported canonical manifest/asset bytes and story graph before use, with previous-version fallback. Native policy/parser tests pass.
-
-**Pending:** all board flashing, SD/NFC/display/audio measurements, continuous concurrent-load tests, radio buffering/reconnect measurements, hardware headphone insertion mute, acoustic limits, battery/power management and FAT brownout recovery. HTTPS device radio, ICY/HLS, persistent device bookmarks and OTA pairing are not implemented. Review AAC/Helix licence compatibility before any binary distribution; this PR publishes sources only. Host HTTPS fetch and device HTTP streaming are different capabilities.
-
-## M4 — controls PCB and enclosure sources: CAD checked, fit pending
-
-Native KiCad 9 schematic, local symbols and routed 70×65 mm two-layer common controls daughterboard. ERC and DRC include all warnings and schematic parity: zero violations, zero unrouted pads, zero parity issues, no exclusions. This is **not the final audio/power carrier**. BOM identifies actual bench module choices and explicitly unresolved analogue/battery parts. Assembly procedure and pin/polarity contract are documented.
-
-OpenSCAD provides alternate Mini/Explore fronts, common back, captive plunger and fit coupon. All eight variant/part exports render as simple single solids without warnings. Source checks align PCB holes and actuators with the shell. Nominal 100×174×38 mm shell and module/clearance assumptions are recorded in `enclosure/DIMENSIONS.md`. No mesh or PCB order was submitted; nothing was printed or measured.
-
-## M5 — AI editorial boundary: offline provider slice tested
-
-Source citations, script revision/approval, pluggable narration callable, separate final-audio approval and publication metadata. Script/source/audio changes invalidate publication. Deterministic fake provider emits a short tone for tests, not speech or approved facts. Real source gathering/TTS, licensed voices and a finished editorial UI need a separately selected provider and credentials on the studio host. No keys are needed for offline playback and no unrestricted child AI chat exists.
-
-## Next milestone / blocking evidence
-
-Next is **adult bench bring-up**, starting with exact module markings/drawings and switch/header measurements, then coupon fit and USB-only SD/NFC/display tests. The environment has no physical modules, instruments or permission to purchase/order fabrication. Do not bypass these gates by presenting the final battery/headphone carrier or shell as ready.
-
-Before final carrier integration: freeze the headphone DAC/amp/jack and independent insertion-mute circuit; choose a protected cell and review power-path/regulator/USB-C/thermal design; measure board/module/harness/plug dimensions. Then revise exact mounts, connector cutouts, battery retention and fastener lengths, and repeat ERC/DRC/CAD plus physical tests. Record electrical, acoustic, thermal, runtime, NFC, drop and retention results explicitly. Home Lunii/Merlin generations also remain unidentified; no proprietary interoperation was attempted.
-
-Follow AGENTS.md: independent review, resolve actionable findings, confirm checks for the exact PR head, record the reviewed SHA/merge authorization, and merge when satisfied without another owner confirmation. No purchasing, fabrication order or public studio exposure.
-
-## Post-merge review material
-
-Merged PR #1 on 2026-11-17 after successful host/firmware/CAD checks and explicit owner instruction. Added PNG exterior/PCB views and a labelled provisional component-integration plan in `docs/previews`; these do not close physical fit gates. Revised hardware/prototype cost allowances and current module-price evidence are in `docs/HARDWARE_COST.md`.
-
-## Integrated modular revision (2026-11-17)
-
-Detailed catalogue, sourcing/search links, manufacturer-CAD meshes and conservative envelopes now drive `hardware/integration/layout.json` and `enclosure/integrated/integrated.scad`. This supersedes the original shell for component integration. New 45×45 mm independent mute-latch PCB is routed with native KiCad sources. Prototype STL exports and source-derived PNGs are provided; exact quote gaps, unavailable parts, uncertain MCU assembled height/switch actuator, integrated codec firmware and all physical validation remain release gates. See `hardware/integration/README.md`; do not interpret downloadable STLs as a verified-fit production release.
-
-
-## Visual design atlas 2026-11-18
-
-The combined Mini/Explore atlas adds72 shaded source-derived PNG views, including16 section cuts, native custom-board detail and service/mount close-ups, plus a printable PDF and full-resolution figure index in `docs/visual-atlas`. Colours distinguish PCB laminate, packages, metal and proposed printed finishes. Rigid native-board transforms preserve handedness; exact solid clipping preserves hollow sections. Regression checks cover case section area and all eight actuator centres. The source/artifact and complete-render receipts bind the exported views to the reviewed inputs. Existing manufacturing and firmware sources remain the baseline; received-part dimensions, slicing and all physical validation remain pending.
-
-## Compact hardware and Telmi streams 2026-11-18
-
-The owner requests a Miyoo Mini sized, much cheaper successor and a separate console-software assessment. `docs/research/COMPACT_HARDWARE.md` records65×95×22mm screenless Mini and65×100×24mm2.4inch Explore **targets**, integration choices, cost assumptions and a same-scale comparison. `enclosure/compact-study` is an envelope study, not a fitted or printable compact design. The previous112×210×50mm manufacturing baseline and atlas remain intact.
-
-`docs/research/TELMI_ASSESSMENT.md` assesses pinned TelmiOS/Sync sources against the full brief. Upstream already has desktop RSS podcast import. The preferred first experiment is an approved-content export bridge to stock Telmi, with a small GPL device fork/integration later for safe library activation, authenticated wireless sync or radio. Original Mini has no Wi-Fi; model/revision compatibility must be checked. The pinned upstream build produces ARM binaries, with an unresolved libbz2 linker-search warning and no device runtime proof; see `hardware/compact/verification.json`.
-
-The compact custom R1 milestone below now carries those hardware choices into native CAD; separately implement and fixture-test the Telmi export subset and storage-recovery protocol. No remote fork, purchasing or fabrication order was performed. Physical validation remains pending.
-
-
-## Compact custom R1 — full digital prototypes; physical qualification pending
-
-The [combined compact dossier](compact-r1/README.md) supersedes the envelope-only study for the custom hardware stream. Mini is65×95×22mm and Explore67×100×24mm, excluding0.6mm keys. Both have native four-layer1.2mm PCB/schematic sources, selected power/charging/headphone/speaker circuits, documented pin contracts, source-derived coloured3D views, six sections each, printable shells/keys/coupons, searchable exact-identity BOMs, quantity-sensitive cost assumptions and staged assembly/qualification instructions. The larger Explore width reserves the display FPC fold; Mini uses the specified small NFC module/antenna.
-
-Six firmware environments compile: four existing baseline images plus two muted compact diagnostic images. The compact codec playback integration is not complete. Native ERC/DRC, mesh/handedness, nominal body clearance, source/hash and host checks are recorded in the compact validation artefacts. Clean digital checks do not establish physical safety or fit. No purchase, fabrication order or physical build occurred.
-
-Next: print coupons and inspect actual received cells/connectors/panel/NFC parts, obtain binding procurement/assembly quotes, assemble a current-limited first article, validate power/charging/audio/RF/thermal behaviour and complete the compact codec driver. Production release remains blocked on these measurements. The independent Telmi export/recovery stream remains separate.
+UX refinement: distinct tactile cap sizes/symbols at existing PCB switch centres, clear5/8-control hierarchy, no essential long presses, and host-tested context/debounce/repeat/volume policy. Diagnostic firmware logs actions only. Parent-owned personalization is the product target; MCP/provider/TTS/subscription eligibility remains a later assessment per PERSONALIZATION.md, with no connected service or implicit API entitlement.

@@ -1,0 +1,602 @@
+{
+  "variant": "card-reader",
+  "status": "engineering_reference_for_rfq",
+  "pcb": {
+    "outline": [
+      -2,
+      1,
+      50,
+      11
+    ],
+    "thickness": 1.6,
+    "holes": [
+      [
+        0,
+        9
+      ],
+      [
+        46,
+        10
+      ]
+    ],
+    "edge_polygon": [
+      [
+        -2,
+        1
+      ],
+      [
+        48,
+        1
+      ],
+      [
+        48,
+        12
+      ],
+      [
+        10.5,
+        12
+      ],
+      [
+        10.5,
+        3.25
+      ],
+      [
+        1.5,
+        3.25
+      ],
+      [
+        1.5,
+        11
+      ],
+      [
+        -2,
+        11
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "ref": "J1",
+      "mpn": "OC-WIRE-3",
+      "footprint": "Compact:Wire3_Top",
+      "xy": [
+        35.0,
+        9.0
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND",
+        "3": "IO8"
+      },
+      "size": [
+        6.4,
+        2,
+        0.8
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "drawing-defined solder-wire termination",
+      "body_box": [
+        31.775,
+        7.975,
+        11.7,
+        6.45,
+        2.05,
+        0.8
+      ],
+      "pads": [
+        {
+          "xy": [
+            32.5,
+            9.0
+          ],
+          "size": [
+            1.3,
+            1.8
+          ],
+          "net": "/3V2",
+          "pin": "1"
+        },
+        {
+          "xy": [
+            35.0,
+            9.0
+          ],
+          "size": [
+            1.3,
+            1.8
+          ],
+          "net": "/GND",
+          "pin": "2"
+        },
+        {
+          "xy": [
+            37.5,
+            9.0
+          ],
+          "size": [
+            1.3,
+            1.8
+          ],
+          "net": "/IO8",
+          "pin": "3"
+        }
+      ],
+      "case_body_box": [
+        40.275,
+        36.975,
+        14.95,
+        6.45,
+        2.05,
+        0.8
+      ]
+    },
+    {
+      "ref": "P1",
+      "mpn": "P70-1000045R",
+      "footprint": "Compact:Pogo_P70_1000045",
+      "xy": [
+        21.0,
+        6.0
+      ],
+      "pins": {
+        "1": "GND"
+      },
+      "size": [
+        2,
+        2,
+        3.5
+      ],
+      "cost_eur": [
+        0.8,
+        1.8
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "https://www.harwin.com/products/P70-1000045R",
+      "body_box": [
+        19.975,
+        4.975,
+        11.7,
+        2.05,
+        2.05,
+        3.5
+      ],
+      "pads": [
+        {
+          "xy": [
+            21.0,
+            6.0
+          ],
+          "size": [
+            2.2,
+            2.2
+          ],
+          "net": "/GND",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "ref": "P2",
+      "mpn": "P70-1000045R",
+      "footprint": "Compact:Pogo_P70_1000045",
+      "xy": [
+        27.0,
+        6.0
+      ],
+      "pins": {
+        "1": "CARD_DQ"
+      },
+      "size": [
+        2,
+        2,
+        3.5
+      ],
+      "cost_eur": [
+        0.8,
+        1.8
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "https://www.harwin.com/products/P70-1000045R",
+      "body_box": [
+        25.975,
+        4.975,
+        11.7,
+        2.05,
+        2.05,
+        3.5
+      ],
+      "pads": [
+        {
+          "xy": [
+            27.0,
+            6.0
+          ],
+          "size": [
+            2.2,
+            2.2
+          ],
+          "net": "/CARD_DQ",
+          "pin": "1"
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "mpn": "RC0603FR-074K3L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        14.0,
+        3.0
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "IO8"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "body_box": [
+        13.15,
+        2.5375,
+        11.7,
+        1.7,
+        0.925,
+        0.55
+      ],
+      "pads": [
+        {
+          "xy": [
+            13.175,
+            3.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ],
+          "net": "/3V2",
+          "pin": "1"
+        },
+        {
+          "xy": [
+            14.825,
+            3.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ],
+          "net": "/IO8",
+          "pin": "2"
+        }
+      ],
+      "case_body_box": [
+        21.65,
+        31.5375,
+        14.95,
+        1.7,
+        0.925,
+        0.55
+      ]
+    },
+    {
+      "ref": "R2",
+      "mpn": "RC0603FR-07330RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        21.0,
+        3.0
+      ],
+      "pins": {
+        "1": "IO8",
+        "2": "CARD_DQ"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors",
+      "body_box": [
+        20.15,
+        2.5375,
+        11.7,
+        1.7,
+        0.925,
+        0.55
+      ],
+      "pads": [
+        {
+          "xy": [
+            20.175,
+            3.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ],
+          "net": "/IO8",
+          "pin": "1"
+        },
+        {
+          "xy": [
+            21.825,
+            3.0
+          ],
+          "size": [
+            0.8,
+            0.95
+          ],
+          "net": "/CARD_DQ",
+          "pin": "2"
+        }
+      ],
+      "case_body_box": [
+        28.65,
+        31.5375,
+        14.95,
+        1.7,
+        0.925,
+        0.55
+      ]
+    },
+    {
+      "ref": "D1",
+      "mpn": "TPD1E10B06DPYR",
+      "footprint": "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm",
+      "xy": [
+        30.0,
+        6.0
+      ],
+      "pins": {
+        "1": "CARD_DQ",
+        "2": "GND"
+      },
+      "size": [
+        0.6,
+        1,
+        0.5
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+      "body_box": [
+        29.45,
+        5.65,
+        11.7,
+        1.1,
+        0.7,
+        0.5
+      ],
+      "pads": [
+        {
+          "xy": [
+            29.65,
+            6.0
+          ],
+          "size": [
+            0.3,
+            0.5
+          ],
+          "net": "/CARD_DQ",
+          "pin": "1"
+        },
+        {
+          "xy": [
+            30.35,
+            6.0
+          ],
+          "size": [
+            0.3,
+            0.5
+          ],
+          "net": "/GND",
+          "pin": "2"
+        }
+      ],
+      "case_body_box": [
+        37.95,
+        34.65,
+        14.95,
+        1.1,
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "ref": "D2",
+      "mpn": "BAT54S,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "xy": [
+        14.0,
+        7.0
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "3V2",
+        "3": "IO8"
+      },
+      "size": [
+        2.9,
+        2.4,
+        1.1
+      ],
+      "cost_eur": [
+        0.05,
+        0.2
+      ],
+      "section": "card",
+      "angle": 0.0,
+      "source": "https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf",
+      "body_box": [
+        13.3,
+        5.5,
+        11.7,
+        1.4,
+        3.0,
+        1.1
+      ],
+      "pads": [
+        {
+          "xy": [
+            13.0625,
+            6.05
+          ],
+          "size": [
+            1.475,
+            0.6
+          ],
+          "net": "/GND",
+          "pin": "1"
+        },
+        {
+          "xy": [
+            13.0625,
+            7.95
+          ],
+          "size": [
+            1.475,
+            0.6
+          ],
+          "net": "/3V2",
+          "pin": "2"
+        },
+        {
+          "xy": [
+            14.9375,
+            7.0
+          ],
+          "size": [
+            1.475,
+            0.6
+          ],
+          "net": "/IO8",
+          "pin": "3"
+        }
+      ],
+      "case_body_box": [
+        21.8,
+        34.5,
+        14.95,
+        1.4,
+        3.0,
+        1.1
+      ]
+    },
+    {
+      "ref": "H1",
+      "mpn": "M1.6",
+      "footprint": "Compact:Mount_M1_6",
+      "xy": [
+        0.0,
+        9.0
+      ],
+      "pins": {},
+      "size": [
+        3.6,
+        3.6,
+        0
+      ],
+      "section": "mounts",
+      "cost_eur": [
+        0,
+        0
+      ],
+      "angle": 0.0,
+      "source": "",
+      "body_box": [
+        -1.8,
+        7.2,
+        11.7,
+        3.6,
+        3.6,
+        0
+      ],
+      "pads": [
+        {
+          "xy": [
+            0.0,
+            9.0
+          ],
+          "size": [
+            1.8,
+            1.8
+          ],
+          "net": "",
+          "pin": ""
+        }
+      ]
+    },
+    {
+      "ref": "H2",
+      "mpn": "M1.6",
+      "footprint": "Compact:Mount_M1_6",
+      "xy": [
+        46.0,
+        10.0
+      ],
+      "pins": {},
+      "size": [
+        3.6,
+        3.6,
+        0
+      ],
+      "section": "mounts",
+      "cost_eur": [
+        0,
+        0
+      ],
+      "angle": 0.0,
+      "source": "",
+      "body_box": [
+        44.2,
+        8.2,
+        11.7,
+        3.6,
+        3.6,
+        0
+      ],
+      "pads": [
+        {
+          "xy": [
+            46.0,
+            10.0
+          ],
+          "size": [
+            1.8,
+            1.8
+          ],
+          "net": "",
+          "pin": ""
+        }
+      ]
+    }
+  ],
+  "physical_validation": "pending",
+  "fabrication_release": false
+}

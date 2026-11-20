@@ -1,0 +1,280 @@
+{
+  "variant": "card-reader",
+  "status": "engineering_reference_for_rfq",
+  "pcb": {
+    "outline": [
+      -2,
+      1,
+      50,
+      11
+    ],
+    "thickness": 1.6,
+    "holes": [
+      [
+        0,
+        9
+      ],
+      [
+        46,
+        10
+      ]
+    ],
+    "edge_polygon": [
+      [
+        -2,
+        1
+      ],
+      [
+        48,
+        1
+      ],
+      [
+        48,
+        12
+      ],
+      [
+        10.5,
+        12
+      ],
+      [
+        10.5,
+        3.25
+      ],
+      [
+        1.5,
+        3.25
+      ],
+      [
+        1.5,
+        11
+      ],
+      [
+        -2,
+        11
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "ref": "J1",
+      "mpn": "OC-WIRE-3",
+      "footprint": "Compact:Wire3_Top",
+      "xy": [
+        35,
+        9
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "GND",
+        "3": "IO8"
+      },
+      "size": [
+        6.4,
+        2,
+        0.8
+      ],
+      "cost_eur": [
+        0,
+        0
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "drawing-defined solder-wire termination"
+    },
+    {
+      "ref": "P1",
+      "mpn": "P70-1000045R",
+      "footprint": "Compact:Pogo_P70_1000045",
+      "xy": [
+        21,
+        6
+      ],
+      "pins": {
+        "1": "GND"
+      },
+      "size": [
+        2,
+        2,
+        3.5
+      ],
+      "cost_eur": [
+        0.8,
+        1.8
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://www.harwin.com/products/P70-1000045R"
+    },
+    {
+      "ref": "P2",
+      "mpn": "P70-1000045R",
+      "footprint": "Compact:Pogo_P70_1000045",
+      "xy": [
+        27,
+        6
+      ],
+      "pins": {
+        "1": "CARD_DQ"
+      },
+      "size": [
+        2,
+        2,
+        3.5
+      ],
+      "cost_eur": [
+        0.8,
+        1.8
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://www.harwin.com/products/P70-1000045R"
+    },
+    {
+      "ref": "R1",
+      "mpn": "RC0603FR-074K3L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        14,
+        3
+      ],
+      "pins": {
+        "1": "3V2",
+        "2": "IO8"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors"
+    },
+    {
+      "ref": "R2",
+      "mpn": "RC0603FR-07330RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        21,
+        3
+      ],
+      "pins": {
+        "1": "IO8",
+        "2": "CARD_DQ"
+      },
+      "size": [
+        1.6,
+        0.8,
+        0.55
+      ],
+      "cost_eur": [
+        0.01,
+        0.06
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://www.yageo.com/en/Product/Index/product_type/chip-resistors"
+    },
+    {
+      "ref": "D1",
+      "mpn": "TPD1E10B06DPYR",
+      "footprint": "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm",
+      "xy": [
+        30,
+        6
+      ],
+      "pins": {
+        "1": "CARD_DQ",
+        "2": "GND"
+      },
+      "size": [
+        0.6,
+        1,
+        0.5
+      ],
+      "cost_eur": [
+        0.15,
+        0.5
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
+    },
+    {
+      "ref": "D2",
+      "mpn": "BAT54S,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "xy": [
+        14,
+        7
+      ],
+      "pins": {
+        "1": "GND",
+        "2": "3V2",
+        "3": "IO8"
+      },
+      "size": [
+        2.9,
+        2.4,
+        1.1
+      ],
+      "cost_eur": [
+        0.05,
+        0.2
+      ],
+      "section": "card",
+      "angle": 0,
+      "source": "https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf"
+    },
+    {
+      "ref": "H1",
+      "mpn": "M1.6",
+      "footprint": "Compact:Mount_M1_6",
+      "xy": [
+        0,
+        9
+      ],
+      "pins": {},
+      "size": [
+        3.6,
+        3.6,
+        0
+      ],
+      "section": "mounts",
+      "cost_eur": [
+        0,
+        0
+      ],
+      "angle": 0,
+      "source": ""
+    },
+    {
+      "ref": "H2",
+      "mpn": "M1.6",
+      "footprint": "Compact:Mount_M1_6",
+      "xy": [
+        46,
+        10
+      ],
+      "pins": {},
+      "size": [
+        3.6,
+        3.6,
+        0
+      ],
+      "section": "mounts",
+      "cost_eur": [
+        0,
+        0
+      ],
+      "angle": 0,
+      "source": ""
+    }
+  ],
+  "physical_validation": "pending",
+  "fabrication_release": false
+}

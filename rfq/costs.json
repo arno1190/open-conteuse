@@ -1,0 +1,82 @@
+{
+  "mini": {
+    "reference_materials_including_print_and_one_card_eur": [
+      50.01,
+      108.52
+    ],
+    "main_pcb_and_machine_assembly_allowance_eur": [
+      25,
+      55
+    ],
+    "reader_and_token_assembly_allowance_eur": [
+      3,
+      10
+    ],
+    "one_off_recurring_reference_eur": [
+      78.01,
+      173.52
+    ],
+    "first_unit_with_setup_reserve_eur": [
+      178.01,
+      423.52
+    ],
+    "retail_target_vat_included_eur": 99,
+    "volume_landed_cogs_goal_eur": 35
+  },
+  "explore": {
+    "reference_materials_including_print_and_one_card_eur": [
+      46.91,
+      107.06
+    ],
+    "main_pcb_and_machine_assembly_allowance_eur": [
+      25,
+      55
+    ],
+    "reader_and_token_assembly_allowance_eur": [
+      0,
+      0
+    ],
+    "one_off_recurring_reference_eur": [
+      71.91,
+      162.06
+    ],
+    "first_unit_with_setup_reserve_eur": [
+      171.91,
+      412.06
+    ],
+    "retail_target_vat_included_eur": 129,
+    "volume_landed_cogs_goal_eur": 45
+  },
+  "both_players_reference_recurring_eur": [
+    149.92,
+    335.58
+  ],
+  "both_players_first_batch_with_shared_setup_reserve_eur": [
+    249.92,
+    585.58
+  ],
+  "story_card_reference_materials_eur": [
+    5.23,
+    11.3
+  ],
+  "assumptions": {
+    "date": "2026-11-20",
+    "currency": "EUR",
+    "quote_status": "No binding quote received",
+    "physical_validation": "pending",
+    "orders_placed": false,
+    "setup_reserve_eur": [
+      100,
+      250
+    ],
+    "excludes": [
+      "engineering and integrated codec firmware",
+      "manual box assembly, finishing, debug labour",
+      "shipping, import charges, VAT",
+      "certification, tooling and extra spins",
+      "audio production"
+    ],
+    "retail_note": "Retail prices are business targets at production volume, not prices supported by q1 prototypes. RFQ must quantify MOQ, assembly, yield, warranty, packaging, channel margin and engineering amortization.",
+    "reader_fastener": "ISO7045-Z-M1.6x4-A2 standard panhead3.2x1.3mm at revised reader mount; qualify fit/pullout and supplier drawing."
+  }
+}

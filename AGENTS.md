@@ -24,7 +24,7 @@ For the first iteration, a single agent doing all work itself may commit and pus
 - Approve downloaded podcast audio revisions, not only feed titles; dynamic ads may change bytes.
 - AI drafts are not validated facts. Script approval and final audio approval are separate. Content changes invalidate approval.
 - Firmware validates packages before activation; interrupted transfers leave the previous library usable.
-- NFC cards identify local assignments; they are not authentication credentials or containers for audio.
+- Contact-ID cards identify local assignments; they are not authentication credentials or containers for audio.
 - Select exact module variants and reserve USB/flash/PSRAM/boot pins before assigning GPIOs.
 - Preserve upstream licences. ESPuino is GPL-3.0; STUdio is MPL-2.0. Do not copy their code into MIT-only files.
 - Do not extract, bundle or redistribute proprietary firmware, keys or commercial story libraries.
