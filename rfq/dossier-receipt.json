@@ -2,8 +2,8 @@
   "physical_validation": "pending",
   "sources": {
     "scripts/build_dossier.py": "8f9d164b450e1426caf899aee57d11a60d3e6617ce6d41d45a7fc4a9f374accc",
-    "rfq/LAUNCH-PLAYBOOK.md": "1539867674d4a0181a6e896e332034aab9893f010bf1f4a512cc5990f0dc8730",
-    "docs/AUDIT.md": "3a65a8300c8242360a8fec5e9660f7dce252e6fce8bd74868e6dc6a1e2f4dfb0",
+    "rfq/LAUNCH-PLAYBOOK.md": "e39a280807d0e0966d53ca198f9f6f3069358d953c7864f2abc197b29ab79a23",
+    "docs/AUDIT.md": "37e7247589b6ad70235d5124d95bbb90f2978880378f3ddb4d7c20973f3129c2",
     "rfq/README.md": "c400f549cf070d46a9d73ec914ea274325d35636e95304578d7516ddc3f449e1",
     "rfq/manufacturing-notes.md": "483d72950607b6fa2c45266ffc41a18142b97ff09cfb2e86c856a36f178c68c0",
     "docs/design/README.md": "d535f35956551b30fc79d5f5434ea0927ca6faf1baf3a2688355a4cb7283666e",
@@ -66,7 +66,7 @@
     "docs/design/images/mini-top.png": "a915d9abf523e82da33bf3aa62d88f573ed2ad9b3cc7cda2ae73e837f7a6611d"
   },
   "outputs": {
-    "rfq/engineering-dossier.pdf": "d25dcebcb32d3695e5f14df88e7697aff649738afe76b1a569f4376ad3f92d78",
+    "rfq/engineering-dossier.pdf": "b53aa7b3b7693e33f897eb573569f30ca5e3c12f49d56290e0438026570de608",
     "docs/design/gallery.html": "ec3657e9a9daa4b6a206fe87e583a1a33c1db2ec31066be4b4e4284c13fa68c3",
     "docs/design/bom.html": "c7702c2d683753dad1183fcc5ade7d7f88d943e008e493c4a845ea43fcb21917"
   }

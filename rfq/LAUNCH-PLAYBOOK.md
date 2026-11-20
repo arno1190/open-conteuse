@@ -1,10 +1,10 @@
 # Galia RFQ launch playbook
 
-**One place to launch and compare quotes.** RFQ ID **GALIA-EVT-001**, revision **v0.2.0-rfq**, 20 November 2026. This requests engineering and prototype quotations. It is not a purchase order or fabrication release. The Mini and Explore sources are engineering baselines; a supplier must quote the unresolved work explicitly.
+**One place to launch and compare quotes.** RFQ ID **GALIA-EVT-001**, revision **v0.2.1-rfq**, 20 November 2026. This requests engineering and prototype quotations. It is not a purchase order or fabrication release. The Mini and Explore sources are engineering baselines; a supplier must quote the unresolved work explicitly.
 
 ## 1. Download the controlled package
 
-Use [the release paired with this playbook](https://github.com/arno1190/open-conteuse/releases/tag/v0.2.0-rfq), then download its **Source code ZIP**. Keep the tag and `rfq/manifest.json` with every quote. Do not mix main-branch files with a released revision. [Release source ZIP](https://github.com/arno1190/open-conteuse/archive/refs/tags/v0.2.0-rfq.zip).
+Use [the release paired with this playbook](https://github.com/arno1190/open-conteuse/releases/tag/v0.2.1-rfq), then download its **Source code ZIP**. Keep the tag and `rfq/manifest.json` with every quote. Do not mix main-branch files with a released revision. [Release source ZIP](https://github.com/arno1190/open-conteuse/archive/refs/tags/v0.2.1-rfq.zip).
 
 The ZIP contains everything below; send the release link with the small playbook/dossier PDFs. The complete source archive is large; do not split it across emails or mix revisions. The locally generated `galia-rfq.zip` is an optional filtered equivalent, with its own manifest. It is not necessary to buy a service or upload to a PCB ordering cart to request this quote.
 
@@ -40,7 +40,7 @@ Require one accountable integrator for sourcing, design corrections, programming
 
 > Hello,
 >
-> We are seeking an engineering/box-build partner for a compact children's audio-player development prototype. Please quote against release v0.2.0-rfq and its attached source package/manifest. This is a request for quotation only; do not manufacture, procure chargeable parts or start paid engineering without a separate written authorization.
+> We are seeking an engineering/box-build partner for a compact children's audio-player development prototype. Please quote against release v0.2.1-rfq and its attached source package/manifest. This is a request for quotation only; do not manufacture, procure chargeable parts or start paid engineering without a separate written authorization.
 >
 > Base scope: one complete Galia Mini, one spare assembled mainboard plus contact reader, and three complete DS2401 story-selector cartridges. Please quote Galia Explore plus a spare PCBA as a separate option. Also provide 5/25 prototype and 100/1,000 production-feasibility pricing, with explicit MOQ.
 >

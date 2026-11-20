@@ -9,9 +9,11 @@ ROOT = Path(__file__).resolve().parent
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.references=[]; self.keys=set(); self.forbidden=[]
+        super().__init__(); self.references=[]; self.keys=set(); self.forbidden=[]; self.cad_images=[]
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
+        if tag == 'img' and attrs.get('data-i18n-alt') in ('cadMiniAlt','cadExploreAlt'):
+            self.cad_images.append((attrs['data-i18n-alt'],attrs.get('src')))
         if tag in {'form','iframe'}: self.forbidden.append(tag)
         for key in ('src','href'):
             value=attrs.get(key,'')
@@ -22,6 +24,8 @@ class Page(HTMLParser):
 page=Page();page.feed((ROOT/'index.html').read_text())
 assert not page.forbidden, page.forbidden
 generated={f'assets/{v}-current-cad.png':ROOT.parent/f'docs/design/images/{v}-hero-front.png' for v in ('mini','explore')}
+assert page.cad_images == [('cadMiniAlt','assets/mini-current-cad.png'),('cadExploreAlt','assets/explore-current-cad.png')], 'CAD elements must display current generated aliases'
+assert not any((ROOT/'assets'/f'{v}-cad.png').exists() for v in ('mini','explore')), 'stale static CAD copies'
 for reference in page.references:
     assert generated.get(reference,ROOT/reference).is_file(), reference
 script=(ROOT/'strings.js').read_text()
