@@ -79,7 +79,7 @@
       ],
       "section": "card",
       "angle": 0.0,
-      "source": "drawing-defined solder-wire termination",
+      "source": "hardware/card-reader/Compact.pretty/Wire3_Top.kicad_mod",
       "body_box": [
         31.775,
         7.975,

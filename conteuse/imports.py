@@ -7,6 +7,10 @@ from .feeds import fetch, parse_rss
 
 
 def import_playlist(files, destination, title="Imported playlist"):
+    if not isinstance(title, str) or not isinstance(files, (list, tuple)):
+        raise ValueError("playlist title must be text and files must be a list")
+    if any(not isinstance(path, (str, Path)) for path in files):
+        raise ValueError("playlist file paths must be text or Paths")
     files, destination = list(map(Path, files)), Path(destination)
     if not files or len(files) > 1000 or not title.strip():
         raise ValueError("playlist needs a title and 1..1000 files")

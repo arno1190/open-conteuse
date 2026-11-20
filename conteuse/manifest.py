@@ -62,13 +62,20 @@ def validate(pack):
             errors.append(f"unreachable node: {key}")
     # Every reachable node must have a path to a terminal node. Optional loops
     # with an exit remain useful; a closed strongly connected region is trapped.
+    # Visit each edge once; repeated full scans block the local studio on long
+    # otherwise-valid playlists. Missing targets are reported above.
+    reverse = {key: [] for key in graph}
+    for key, targets in graph.items():
+        for target in targets:
+            if target in reverse:
+                reverse[target].append(key)
     escaping = {key for key, targets in graph.items() if not targets}
-    changed = True
-    while changed:
-        previous = len(escaping)
-        escaping.update(key for key, targets in graph.items()
-                        if any(target in escaping for target in targets))
-        changed = len(escaping) != previous
+    pending = list(escaping)
+    while pending:
+        for predecessor in reverse[pending.pop()]:
+            if predecessor not in escaping:
+                escaping.add(predecessor)
+                pending.append(predecessor)
     for key in sorted(graph.keys() - escaping):
         errors.append(f"trapped node: {key}")
     return errors

@@ -61,7 +61,7 @@ Cartridge screws are ISO7045-Z M1.6×3, heads outside the handle, no metal over 
 
 ## Cost and release boundaries
 
-Galia Mini one-off reference recurring allowance€78.01–173.52 including one cartridge; Galia Explore€71.91–162.06. Add€100–250 setup reserve; engineering, finishing/manual assembly, shipping/tax, conformity and narration are excluded. A token reference material allowance is€5.23–11.30, not a bulk quote. Retail goals€99/129TTC require new volume quotes and a viable margin model; neither is an offered sale price.
+Galia Mini one-off reference recurring allowance€77.99–173.40 including one cartridge; Galia Explore€71.91–162.06. Add€100–250 setup reserve; engineering, finishing/manual assembly, shipping/tax, conformity and narration are excluded. A token reference material allowance is€5.23–11.30, not a bulk quote. Retail goals€99/129TTC require new volume quotes and a viable margin model; neither is an offered sale price.
 
 [RFQ](../../rfq/README.md) requests a supplier-engineered prototype and written cost breakdown, including unresolved gates. Physical fit, electrical/audio/RF/thermal/battery safety and conformity remain pending. No parts or fabrication ordered.
 
@@ -71,7 +71,7 @@ Galia Mini SW1(15,60)=LEFT/previous, SW2(32.5,60)=A/play-pause, SW3(50,60)=RIGHT
 
 The source-generated `enclosure/<variant>-marking.svg` defines a proposed2D front-marking guide, not an engraving already present in the STL. Supplier must qualify contrast/ink/adhesion/wear and registration against actual buttons and finish; never put conductive metallic decoration over the antenna.
 
-For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.92–335.58, or€249.92–585.58 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote. Personalization/MCP/TTS integrations and any third-party subscription/API charges remain additional and unassessed.
+For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.90–335.46, or€249.90–585.46 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote. Personalization/MCP/TTS integrations and any third-party subscription/API charges remain additional and unassessed.
 
 ## Rebuilding the engineering artifacts
 
@@ -80,3 +80,7 @@ Native sources are authoritative. Toolchain used: KiCad9.0.2 with its Python pcb
 After an intentional source change: export mechanical/copper data with `/usr/bin/python3 scripts/export_mechanical.py` and `export_copper.py`; run `sh scripts/cad-check.sh`; prepare exact label textures with `python3 scripts/prepare_render_assets.py`; render with `blender -b --python scripts/render_design.py`; export quote references with `python3 scripts/export_manufacturing_reference.py`; build the PDF/gallery/BOM with `python3 scripts/build_dossier.py`; package with `python3 scripts/package_rfq.py`; run `sh scripts/check.sh`; assemble the static site with `python3 scripts/build_site.py`. Regenerate receipts rather than relabelling old images. Set writable XDG config/cache/data paths as in cad-check.sh.
 
 The Galia Explore case was shortened from the earlier exploration envelope to95mm high because its native PCB already shares the Galia Mini board outline. This removes5mm of unnecessary lower-case recess without moving the LCD or switch centres. Both current variants are95mm high; only current meshes are shipped.
+
+## Battery band fit allowance
+
+Both back shells now provide **11 × 2 mm clear slots** for the specified nominal10mm ONE-WRAP band, within13mm-long anchors. The source allowance is a **maximum band thickness1.5mm**, leaving nominal1.0mm total width clearance (0.5mm per side) and0.5mm total thickness clearance (0.25mm per side). This is not a measured manufacturer thickness. The band supplier, thickness, assembled threading and retention must be confirmed before fabrication acceptance. Two source-defined10×1.5mm band gauges are checked against each complete back shell. Anchors have nominal0.8mm material above/below the slot and at least0.5mm lateral clearance to the nearest PCB standoff; strength remains a physical gate.

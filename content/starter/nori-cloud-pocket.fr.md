@@ -1,50 +1,74 @@
 # Nori et le nuage de poche
 
-nori-cloud-pocket · fr · CC0-1.0 · Editorial draft / Brouillon éditorial
+nori-cloud-pocket · fr · CC0-1.0 · Editorial revision 2
 
-Script approval: pending. Final audio approval: pending. No final audio included.
+Script approval: pending. Final audio approval: pending.
 
 ## Recording direction / Direction de lecture
 
-Warm, unhurried voice, 85–105 words/minute. Leave 2 seconds between paragraphs and 8 seconds after the listener invitation. Speak the story only: these directions are not narration. No sudden effects; music is optional and none is supplied. Child may listen without answering or moving.
+Warm, conversational storyteller. Distinct but restrained dialogue; no cartoon squeaks. Natural pace, short scene pauses and one optional reflection pause. Read only the script. No music or effects are supplied. Never imply a listener answer was heard. Full listening/editorial approval remains pending.
 
 ## Story / Histoire
 
-Nori avait une poche pour les trésors. Elle y gardait une feuille en forme de bateau, un bouton violet et un ticket de bus. Un matin, elle y trouva aussi un tout petit nuage.
+Nori avait trois trésors dans sa poche : une plume, un bouton bleu et un ruban jaune. Elle les avait comptés au départ du jardin. Au bord de la barrière, elle en compta quatre.
 
-« Tu t'es perdu ? » demanda-t-elle.
+Le quatrième trésor éternua.
 
-« Un peu. Je suivais les autres, puis j'ai regardé une fourmi. Maintenant, je ne vois plus le ciel. »
+« Pardon », dit une toute petite voix.
 
-Nori ouvrit grand sa poche. « Le ciel est juste là. »
+Entre le bouton et la plume flottait un nuage de la taille d'une madeleine. Il avait deux bosses et l'air très embarrassé.
 
-Le nuage hésita. « Il est très grand. »
+« Je ne voulais pas entrer. Le vent m'a poussé. Ma famille est passée au-dessus du pommier, et maintenant je suis tout seul. »
 
-Nori s'assit sur un banc. « On peut commencer par regarder un petit morceau. »
+Nori regarda le ciel. Des nuages traversaient le jardin, mais aucun ne s'arrêtait.
 
-Ils choisirent le carré de ciel entre deux branches. Un oiseau le traversa. Puis une feuille. Puis rien du tout.
+« On va trouver comment tu peux les rejoindre. Moi, c'est Nori. »
 
-Pendant un moment, ils écoutèrent. Nori entendit une roue sur les graviers, une porte qui se fermait et, très loin, quelqu'un qui appelait un chien.
+« Moi, je n'ai pas encore de nom. Je n'ai que trois jours. »
 
-Et toi, si tu as envie, écoute autour de toi quelques instants. Quel son vient jusqu'à tes oreilles ? Tu peux aussi rester avec Nori dans l'histoire.
+Nori sortit sa plume. Elle souffla dessus. La plume virevolta au-dessus de sa main, puis retomba dans sa paume. Le nuage, lui, resta sur son doigt.
 
-« Je suis peut-être un nuage qui préfère les petites promenades », dit le nuage.
+« Essaie d'être léger comme elle ! »
 
-« Moi aussi, parfois », répondit Nori.
+Le nuage devint si plat qu'on aurait dit une crêpe. Il décolla un peu, tourna sur lui-même et atterrit sur le nez de Nori.
 
-Elle lui montra le bouton violet. Le nuage essaya de lui ressembler. Il devint rond, puis tout biscornu. Nori éclata de rire.
+« Pas si près ! » dit-elle en riant. Son nez était tout frais.
 
-Il essaya ensuite la feuille-bateau. Cette fois, il réussit une voile parfaite, mais oublia la coque.
+Elle posa ensuite le bouton bleu sur le muret.
 
-« C'est un bateau pour le ciel ! » dit Nori.
+« Peut-être qu'il te faut une belle forme ronde. »
 
-Le nuage monta jusqu'au dossier du banc. De là, il reconnut un grand nuage qui ressemblait à une théière.
+Le nuage se roula en boule. Cette fois, il monta jusqu'à la poignée de la barrière. Puis il redescendit, lentement, comme une bulle qui avait oublié de flotter.
 
-« Ma tante ! Elle m'attend ! »
+Nori allait proposer une autre forme quand le nuage murmura :
 
-Il s'envola, sans se presser. Nori agita la main.
+« Chez nous, on voyage plutôt en bateau. »
 
-Dans sa poche, il restait le bouton, la feuille et le ticket. Elle n'avait pas rapporté un nouveau trésor. Elle avait fait une petite promenade avec l'un d'eux. Et c'était déjà toute une aventure.
+Il s'étira. Un petit creux apparut au milieu. Une pointe se forma de chaque côté. C'était un bateau tout blanc, avec un ventre pour attraper l'air.
+
+« Alors, on cherche du vent », décida Nori.
+
+Elle tint son ruban jaune près de la barrière. Le ruban pendait. Près du pommier, il bougea à peine. Au bout du jardin, à côté de l'arrosoir, il se mit à danser.
+
+Là-haut, trois nuages formaient de grands bateaux. Le plus petit faisait toujours demi-tour. Il cherchait quelqu'un.
+
+« Les voilà ! » souffla le petit nuage.
+
+Nori resta près du ruban. Elle ne poussa pas son nouvel ami. Elle attendit qu'il soit prêt.
+
+Si tu veux, imagine le petit bateau qui gonfle son ventre. Tout doucement. Il n'y a rien à réussir.
+
+Le nuage s'installa dans le courant d'air. Il monta au-dessus de l'arrosoir, puis du pommier. Une de ses pointes s'allongea pour saluer Nori.
+
+Les trois grands bateaux ralentirent. Le petit trouva sa place entre eux. Ensemble, ils prirent la forme d'un immense voilier.
+
+Nori remit la plume et le bouton dans sa poche. Elle noua le ruban à la barrière, pour retrouver le courant d'air une autre fois.
+
+Le lendemain, une goutte tomba sur le bouton bleu. Une seule. Nori leva les yeux. Un petit bateau blanc passait au-dessus du jardin.
+
+« Bonjour, Quatre », dit-elle.
+
+Cette fois, quand elle compta ses trésors, elle n'eut pas besoin de tous les garder dans sa poche.
 
 ## Away from the screen / Loin de l’écran
 

@@ -21,11 +21,13 @@ class Page(HTMLParser):
 
 page=Page();page.feed((ROOT/'index.html').read_text())
 assert not page.forbidden, page.forbidden
+generated={f'assets/{v}-current-cad.png':ROOT.parent/f'docs/design/images/{v}-hero-front.png' for v in ('mini','explore')}
 for reference in page.references:
-    assert (ROOT/reference).is_file(), reference
-script=(ROOT/'app.js').read_text()
+    assert generated.get(reference,ROOT/reference).is_file(), reference
+script=(ROOT/'strings.js').read_text()
+copy=json.loads(script[script.index('{'):script.rindex('}')+1])
 for key in page.keys:
-    assert re.search(r'\b'+re.escape(key)+r'\s*:',script), f'Missing English key: {key}'
+    assert key in copy['strings']['en'], f'Missing English key: {key}'
 content=json.loads((ROOT/'content/index.json').read_text())
 assert len(content['stories'])>=3
 for story in content['stories']:

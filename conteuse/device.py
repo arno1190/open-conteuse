@@ -6,6 +6,22 @@ from .packages import canonical, check_pack
 
 def check_device_pack(source):
     pack = check_pack(source)
+    # ArduinoJson consumes C strings and permits twelve container levels.
+    # Never silently project or truncate an approved host manifest on export.
+    pending = [(pack, 0)]
+    while pending:
+        value, depth = pending.pop()
+        if isinstance(value, (dict, list)):
+            depth += 1
+            if depth > 12:
+                raise ValueError('pack exceeds firmware nesting limit of 12')
+            if isinstance(value, dict):
+                pending.extend((key, depth) for key in value)
+                pending.extend((item, depth) for item in value.values())
+            else:
+                pending.extend((item, depth) for item in value)
+        elif isinstance(value, str) and '\x00' in value:
+            raise ValueError('device strings must not contain NUL')
     if len(canonical(pack)) > 16384 or len(pack['nodes']) > 128 or len(pack.get('assets', [])) > 64:
         raise ValueError('pack exceeds current firmware capability limits')
     sizes = {a['path']: a['size'] for a in pack.get('assets', [])}

@@ -21,7 +21,7 @@ for v in VARIANTS:
  d['extras']=[dict(id='cell',mpn='Adafruit 258',box=[15.5,24,3,34,62,5],color='battery',basis='supplier nominal; measure actual protection/lead envelope'),dict(id='speaker',mpn='AS01508AO-WP-R',box=[34,78.9,18.4,15,11,3],color='black',basis='supplier nominal; gasket and cable qualification pending')]
  d['clearance_reserves']=[dict(id='battery_service',box=[14.5,23,2.5,36,64,7]),dict(id='wifi_keepout',box=[8.5,0,0,48,9,24]),dict(id='usb_plug',box=[45.3,d['case'][1]-7,10.1,11.4,12,6.4]),dict(id='headphone_plug',box=[24.6,d['case'][1]-5,9.8,8.8,12,8.8])]
  if v=='explore':
-  d['extras'] += [dict(id='lcd',mpn='RB024D18N01B1',box=[3.37,7,19.45,60.26,42.72,2.55],color='glass',basis='drawing2.55mm; received FPC face/tail pending'),dict(id='lens',mpn='OC-LENS-EX',box=[6,8.5,22.5,55,40,.5],color='glass',basis='drawing-defined cut polycarbonate')]
+  d['extras'] += [dict(id='lcd',mpn='RB024D18N01B1',box=[3.37,7,19.45,60.26,42.72,2.55],color='glass',basis='drawing2.55mm; received FPC face/tail pending'),dict(id='lens',mpn='OC-LENS-EX-R1',box=[6,8.5,22.5,55,40,.5],color='glass',basis='drawing-defined cut polycarbonate')]
   d['clearance_reserves'].append(dict(id='fpc_fold',box=[61,10,15,3.5,35,6.5]))
  (HARDWARE/v/'mechanical.json').write_text(json.dumps(d,indent=2)+'\n')
  def a(x):return json.dumps(x,separators=(',',':'))

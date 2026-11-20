@@ -1,54 +1,84 @@
 # Pipo et l’orchestre des chaussettes
 
-pipo-sock-orchestra · fr · CC0-1.0 · Editorial draft / Brouillon éditorial
+pipo-sock-orchestra · fr · CC0-1.0 · Editorial revision 2
 
-Script approval: pending. Final audio approval: pending. No final audio included.
+Script approval: pending. Final audio approval: pending.
 
 ## Recording direction / Direction de lecture
 
-Warm, unhurried voice, 85–105 words/minute. Leave 2 seconds between paragraphs and 8 seconds after the listener invitation. Speak the story only: these directions are not narration. No sudden effects; music is optional and none is supplied. Child may listen without answering or moving.
+Warm, conversational storyteller. Distinct but restrained dialogue; no cartoon squeaks. Natural pace, short scene pauses and one optional reflection pause. Read only the script. No music or effects are supplied. Never imply a listener answer was heard. Full listening/editorial approval remains pending.
 
 ## Story / Histoire
 
-Le jour de la grande lessive, Pipo trouva trois chaussettes sans leur jumelle. Une rayée, une à pois et une qui avait un petit trou au talon.
+Dans le panier à linge, quelqu'un répétait : « Moi d'abord. Moi d'abord. Moi d'abord. »
 
-« Nous voulons jouer un concert », annonça la chaussette rayée.
+Pipo souleva une serviette. Dessous, trois chaussettes se tenaient debout. Une rouge à rayures. Une verte à pois. Une violette avec un petit trou au talon.
 
-« Très bien », dit Pipo. « De quels instruments jouez-vous ? »
+« Nous préparons un concert pour retrouver nos amies, expliqua la rouge. Nous sommes toutes séparées. Si elles reconnaissent notre musique, elles viendront. »
 
-Les trois chaussettes se regardèrent. Elles n'en avaient aucune idée.
+« Bonne idée ! dit Pipo. Je peux vous aider ? »
 
-La chaussette à pois essaya de souffler. Cela fit : « Fffff. »
+La rouge bondit aussitôt sur le bord du panier.
 
-La rayée remua sur le tapis. Cela fit : « Chchch. »
+« Je fais le début ! Boum ! Boum ! Boum ! »
 
-La trouée ne fit rien du tout.
+« Non, moi ! » protesta la verte. Elle tapa deux fois du bout du pied. « Tap tap ! Tap tap ! »
 
-« J'attends mon tour », expliqua-t-elle.
+Elles commencèrent ensemble. La rouge sautait sur les tapotements de la verte. La verte accélérait pour rattraper les bonds de la rouge. On aurait dit deux personnes qui essayaient de passer la même porte en même temps.
 
-Pipo réfléchit. Il posa ses mains sur ses genoux et tapota doucement : « Pom, pom. »
+Au fond du panier, la violette ne faisait aucun bruit.
 
-La chaussette à pois répondit : « Fffff. » La rayée ajouta : « Chchch. » Et la trouée leva un doigt pour demander un silence.
+Pipo leva une cuillère en bois, comme un chef d'orchestre.
 
-Tout le monde s'arrêta. Dans ce silence, on entendit le tic-tac de l'horloge.
+« Tout le monde me regarde. Un, deux, trois ! »
 
-« Il joue avec nous ! » chuchota Pipo.
+Les deux chaussettes repartirent de plus belle. La rouge sauta si haut qu'elle coiffa la cuillère. La verte se mit à rire. Le concert s'arrêta avant d'avoir commencé.
 
-Si tu en as envie, tu peux essayer un petit rythme sur tes genoux. Tout doucement. Deux taps, puis un silence. Tu peux aussi l'imaginer sans bouger.
+« Plus doucement », proposa Pipo.
 
-Ils répétèrent encore. Parfois, les chaussettes commençaient ensemble. Parfois, elles se trompaient et recommençaient en riant. Pipo décida que le concert serait court : juste le temps d'une chanson inventée.
+Elles jouèrent doucement, mais toujours ensemble. Leurs petits bruits se poussaient encore. C'était une dispute en chuchotant.
 
-À cet instant, trois chaussettes identiques apparurent au bord du panier. Les jumelles !
+La violette s'avança.
 
-« Vous nous avez retrouvées ! » dit la rayée.
+« Et moi ? »
 
-« On a suivi la musique », répondirent-elles.
+« Quel bruit sais-tu faire ? » demanda Pipo.
 
-L'orchestre comptait maintenant six chaussettes. C'était beaucoup pour un petit tapis.
+La violette prit une grande inspiration. Puis elle se tortilla, se gonfla, se secoua. Rien ne sortit.
 
-Alors, les trois nouvelles venues s'installèrent dans le public. Pipo fit une petite révérence. Le concert commença par deux taps, un souffle et un silence.
+« Avec mon trou, l'air s'échappe. Je ne sers à rien. »
 
-Puis le public applaudit sans bruit : six petits pieds de laine s'agitèrent dans l'air. Pour ce premier concert, c'était exactement ce qu'il fallait.
+La violette regarda la porte. « Et si on écoutait ? » Pipo posa la cuillère. Pendant un instant, personne ne parla. On entendit alors deux petits coups derrière la porte. Tap tap.
+
+La verte se retourna.
+
+« C'est ma sœur ! Elle ne pouvait pas nous entendre avec tout ce bruit ! »
+
+Pipo regarda la violette.
+
+« Attends. Tu viens de trouver ce qui manquait. Une place vide, pour laisser quelqu'un répondre. »
+
+Il installa la rouge à gauche, la verte au milieu et la violette à droite.
+
+« Chacune son tour. Rouge : un grand pas. Verte : deux petits. Violette : on attend. »
+
+Boum. Tap tap. Puis le silence.
+
+Si tu veux, tu peux suivre ce petit rythme dans ta tête. Un grand pas, deux petits, et une place pour la réponse.
+
+Derrière la porte : tap tap ! Sous le fauteuil : boum ! Sur le fil à linge, une chaussette violette remua. Personne ne l'avait remarquée. Elle attendait son tour, elle aussi.
+
+Pipo ouvrit la porte. Six chaussettes se retrouvèrent au milieu du tapis. Les rouges firent un grand pas. Les vertes, deux petits. Les violettes laissèrent un joli silence.
+
+Cette fois, toute la pièce semblait savoir quand répondre.
+
+Au moment de retourner dans le tiroir, la rouge demanda :
+
+« Demain, qui commence ? »
+
+La violette sourit.
+
+« D'abord, on écoute. »
 
 ## Away from the screen / Loin de l’écran
 

@@ -175,16 +175,22 @@ def make_server(studio, token, port=8765):
                 if not 0 < size <= MAX_MANIFEST:
                     raise ValueError("invalid request size")
                 body = json.loads(self.rfile.read(size))
-                action = {
-                    "/api/inspect": lambda b: studio.inspect(b["source"]),
-                    "/api/approve": lambda b: studio.approve(b["source"]),
-                    "/api/publish": lambda b: studio.publish(b["source"]),
-                    "/api/import": lambda b: studio.import_audio(b["files"], b["destination"], b["title"]),
-                    "/api/card": lambda b: studio.assign_card(b["uid"], b["revision"]),
+                if not isinstance(body, dict):
+                    raise ValueError("request must be a JSON object")
+                operation = {
+                    "/api/inspect": (studio.inspect, (("source", str),)),
+                    "/api/approve": (studio.approve, (("source", str),)),
+                    "/api/publish": (studio.publish, (("source", str),)),
+                    "/api/import": (studio.import_audio, (("files", list), ("destination", str), ("title", str))),
+                    "/api/card": (studio.assign_card, (("uid", str), ("revision", str))),
                 }.get(self.path)
-                if action is None:
+                if operation is None:
                     return self.send(404, {"error": "unknown operation"})
-                self.send(200, {"result": action(body)})
+                action, fields = operation
+                for field, expected in fields:
+                    if not isinstance(body.get(field), expected):
+                        raise ValueError("invalid field: " + field)
+                self.send(200, {"result": action(*(body[field] for field, _ in fields))})
             except (ValueError, OSError, KeyError, TypeError, RecursionError) as exc:
                 self.send(400, {"error": str(exc)})
     server = HTTPServer(("127.0.0.1", port), Handler)

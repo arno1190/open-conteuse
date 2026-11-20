@@ -6,6 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include <stdint.h>
+#include <cstring>
 namespace conteuse {
 struct Asset { std::string path,sha; uint32_t bytes; };
 struct Choice { std::string label,target; };
@@ -26,8 +27,22 @@ inline bool pathValid(const std::string& value) {
     for(unsigned char c:value)if(c<32 || c=='\\' || c==':')return false;
     return value!="manifest.json";
 }
+inline bool stringsValid(JsonVariantConst value) {
+    if (!value.isNull() && value.is<const char*>()) {
+        JsonString text=value.as<JsonString>();
+        if(text.size()!=std::strlen(text.c_str()))return false;
+    } else if(value.is<JsonArrayConst>()) {
+        for(JsonVariantConst child:value.as<JsonArrayConst>())if(!stringsValid(child))return false;
+    } else if(value.is<JsonObjectConst>()) {
+        for(JsonPairConst pair:value.as<JsonObjectConst>()) {
+            if(pair.key().size()!=std::strlen(pair.key().c_str()) || !stringsValid(pair.value()))return false;
+        }
+    }
+    return true;
+}
 inline bool nonempty(JsonVariantConst value) {
     if(!value.is<const char*>())return false;
+    if(!stringsValid(value))return false;
     const char* s=value.as<const char*>();
     for(;*s;++s)if(*s!=' '&&*s!='\n'&&*s!='\r'&&*s!='\t')return true;
     return false;
@@ -42,6 +57,7 @@ inline bool parseContent(const std::string& raw,Content& output) {
     if(raw.empty()||raw.size()>16384)return false;
     DynamicJsonDocument doc(98304);
     if(deserializeJson(doc,raw,DeserializationOption::NestingLimit(12)))return false;
+    if(!stringsValid(doc.as<JsonVariantConst>()))return false;
     if(!doc.is<JsonObject>() || !doc["format_version"].is<int>() || doc["format_version"].as<int>()!=1
        || !nonempty(doc["id"]) || !nonempty(doc["title"]) || !nonempty(doc["start"]) || !doc["nodes"].is<JsonArray>())return false;
     Content c;c.title=doc["title"].as<const char*>();c.start=doc["start"].as<const char*>();

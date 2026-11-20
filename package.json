@@ -1,0 +1,7 @@
+{
+  "name": "galia-development-checks",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {"test:site": "node tests/site-playback.cjs"},
+  "devDependencies": {"linkedom": "0.18.15"}
+}

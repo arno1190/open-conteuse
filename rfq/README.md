@@ -2,6 +2,8 @@
 
 Engineering source release, 20 November 2026. **Request for quotation only; no purchase or fabrication authorization.** Ask suppliers for feasibility, engineering changes and a delivered, tested exploration prototype—not an unqualified production build.
 
+Start with the [single RFQ launch playbook](LAUNCH-PLAYBOOK.md): package links, copyable supplier message, comparison worksheet, engineering scope and acceptance/decision gates. [Printable playbook](rfq-launch-playbook.pdf).
+
 ## Scope to quote
 
 Base: one complete Galia Mini 65×95×24mm contact-ID player, one spare assembled mainboard/reader, three completed DS2401 cartridges. Separate option: one Galia Explore 67×95×24mm display player and spare PCBA. Also price 5/25 prototypes and 100/1000 production feasibility with explicit MOQ. Current hardware is the sole baseline; no NFC/modular alternatives are part of this RFQ.
@@ -31,8 +33,8 @@ No supplier has accepted this design or supplied a binding quote. No outreach or
 
 ## Pricing basis
 
-Current [cost worksheet](costs.json) is an allowance model, not an exact supplier quote. Galia Mini q1 recurring€78.01–173.52, Galia Explore€71.91–162.06; add€100–250setup reserve. Engineering/firmware, finishing/manual assembly, taxes, shipping and compliance are unquoted. Three cartridges and spare assemblies are additional to the one-card Galia Mini baseline. Ask for a full delivered RFQ total rather than comparing bare BOM subtotals.
+Current [cost worksheet](costs.json) is an allowance model, not an exact supplier quote. Galia Mini q1 recurring€77.99–173.40, Galia Explore€71.91–162.06; add€100–250setup reserve. Engineering/firmware, finishing/manual assembly, taxes, shipping and compliance are unquoted. Three cartridges and spare assemblies are additional to the one-card Galia Mini baseline. Ask for a full delivered RFQ total rather than comparing bare BOM subtotals.
 
 [Commercial positioning](../site/PRICING.md): conditional retail goals€99Mini/€129Explore incl.France20%VAT, production landed/tested COGS goals≤€35/45. Not achieved at q1, no sales or preorder flow. Current public source release does not claim a child-ready product.
 
-For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.92–335.58, or€249.92–585.58 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote.
+For one of each player, including one Galia Mini cartridge, the combined recurring reference allowance is€149.90–335.46, or€249.90–585.46 with one shared€100–250setup reserve. Engineering, manual finishing/boxbuild, shipping/tax, extra RFQ cards and spare assemblies remain additional and unquoted. This is not a delivered prototype quote.

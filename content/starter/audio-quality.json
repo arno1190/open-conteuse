@@ -1,0 +1,87 @@
+{
+  "sources": {
+    "content/starter/validate.py": "203b1cea5e460b396553aa129068d2b4d07ce5827f2963703330347ce4348110",
+    "content/starter/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.fr.mp3": "6753b7c2caf4c2f1909beb183c9aa7d2815d7a2d6d7960b12731989b3aaa344b",
+    "content/starter/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.en.mp3": "e3ba491b7177ff973fdd7e520fe8bc7999a5951d15098a6e38e576123c9e4ef7",
+    "content/starter/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.fr.mp3": "713b193ad601aa7adebf0d6417eb7556d2cd235766bec63166e12fe573a8296a",
+    "content/starter/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.en.mp3": "aff8e0ed3bf9da8608a1939bca1c4cac51f6675d48f2026ccb740ec5bd03d54f",
+    "content/starter/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.fr.mp3": "bdc82285d5137f7a623cfacadc81412c0544d544ed993724c258c22865645ccf",
+    "content/starter/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.en.mp3": "c28cb70f148f8c260ef0d26a6077fbaa16ed582b72c7cf155e7e951d807edec9"
+  },
+  "measurements": [
+    {
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.fr.mp3",
+      "sha256": "6753b7c2caf4c2f1909beb183c9aa7d2815d7a2d6d7960b12731989b3aaa344b",
+      "duration_seconds": 222.589,
+      "codec": "mp3",
+      "channels": 1,
+      "sample_rate_hz": 22050,
+      "integrated_lufs": -23.71,
+      "true_peak_dbtp": -4.23,
+      "full_decode": "passed",
+      "embedded_credits": "Galia original script CC0; Kokoro 82M preset ff_siwis (Apache-2.0 model). SIWIS: Yamagishi, Honnet, Garner, Lazaridis (2017), University of Edinburgh; https://doi.org/10.7488/ds/1705 ; CC BY 4.0. New synthetic speech; pacing/loudness processed; no endorsement. https://arno1190.github.io/open-conteuse/content/TTS-NOTICES.md"
+    },
+    {
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/milo-moon-post.en.mp3",
+      "sha256": "e3ba491b7177ff973fdd7e520fe8bc7999a5951d15098a6e38e576123c9e4ef7",
+      "duration_seconds": 192.94,
+      "codec": "mp3",
+      "channels": 1,
+      "sample_rate_hz": 22050,
+      "integrated_lufs": -23.55,
+      "true_peak_dbtp": -4.38,
+      "full_decode": "passed",
+      "embedded_credits": "Galia original script CC0; Kokoro 82M preset bf_emma (Apache-2.0 model). New synthetic speech; pacing/loudness processed; no endorsement. https://arno1190.github.io/open-conteuse/content/TTS-NOTICES.md"
+    },
+    {
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.fr.mp3",
+      "sha256": "713b193ad601aa7adebf0d6417eb7556d2cd235766bec63166e12fe573a8296a",
+      "duration_seconds": 206.054,
+      "codec": "mp3",
+      "channels": 1,
+      "sample_rate_hz": 22050,
+      "integrated_lufs": -23.48,
+      "true_peak_dbtp": -3.9,
+      "full_decode": "passed",
+      "embedded_credits": "Galia original script CC0; Kokoro 82M preset ff_siwis (Apache-2.0 model). SIWIS: Yamagishi, Honnet, Garner, Lazaridis (2017), University of Edinburgh; https://doi.org/10.7488/ds/1705 ; CC BY 4.0. New synthetic speech; pacing/loudness processed; no endorsement. https://arno1190.github.io/open-conteuse/content/TTS-NOTICES.md"
+    },
+    {
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/nori-cloud-pocket.en.mp3",
+      "sha256": "aff8e0ed3bf9da8608a1939bca1c4cac51f6675d48f2026ccb740ec5bd03d54f",
+      "duration_seconds": 191.634,
+      "codec": "mp3",
+      "channels": 1,
+      "sample_rate_hz": 22050,
+      "integrated_lufs": -23.46,
+      "true_peak_dbtp": -3.87,
+      "full_decode": "passed",
+      "embedded_credits": "Galia original script CC0; Kokoro 82M preset bf_emma (Apache-2.0 model). New synthetic speech; pacing/loudness processed; no endorsement. https://arno1190.github.io/open-conteuse/content/TTS-NOTICES.md"
+    },
+    {
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.fr.mp3",
+      "sha256": "bdc82285d5137f7a623cfacadc81412c0544d544ed993724c258c22865645ccf",
+      "duration_seconds": 216.816,
+      "codec": "mp3",
+      "channels": 1,
+      "sample_rate_hz": 22050,
+      "integrated_lufs": -23.49,
+      "true_peak_dbtp": -4.34,
+      "full_decode": "passed",
+      "embedded_credits": "Galia original script CC0; Kokoro 82M preset ff_siwis (Apache-2.0 model). SIWIS: Yamagishi, Honnet, Garner, Lazaridis (2017), University of Edinburgh; https://doi.org/10.7488/ds/1705 ; CC BY 4.0. New synthetic speech; pacing/loudness processed; no endorsement. https://arno1190.github.io/open-conteuse/content/TTS-NOTICES.md"
+    },
+    {
+      "path": "content/audio/9feb067cf7a3db5e29a10cd8/pipo-sock-orchestra.en.mp3",
+      "sha256": "c28cb70f148f8c260ef0d26a6077fbaa16ed582b72c7cf155e7e951d807edec9",
+      "duration_seconds": 192.522,
+      "codec": "mp3",
+      "channels": 1,
+      "sample_rate_hz": 22050,
+      "integrated_lufs": -23.47,
+      "true_peak_dbtp": -4.47,
+      "full_decode": "passed",
+      "embedded_credits": "Galia original script CC0; Kokoro 82M preset bf_emma (Apache-2.0 model). New synthetic speech; pacing/loudness processed; no endorsement. https://arno1190.github.io/open-conteuse/content/TTS-NOTICES.md"
+    }
+  ],
+  "human_listening_approval": "pending",
+  "acoustic_validation": "pending"
+}
