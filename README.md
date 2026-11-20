@@ -2,7 +2,7 @@
 
 Two current custom handheld designs and an original bilingual listening collection. **Engineering RFQ release: physical validation and integrated audio firmware remain pending. No hardware is offered for sale.**
 
-- **Galia Mini (contact ID):** 65 × 95 × 24 mm; a keyed cartridge selects audio stored inside the player. Passive DS2401 serial ID, two wear contacts, no NFC or audio on the card. Cartridge protrudes 20 mm when seated.
+- **Galia Mini (contact ID):** 65 × 95 × 24 mm; a keyed cartridge selects audio stored inside the player, with an adult-replaceable picture behind a clear window. Passive DS2401 serial ID, two wear contacts, no NFC or audio on the card. Cartridge protrudes 20 mm when seated.
 - **Galia Explore:** 67 × 95 × 24 mm, 2.4-inch display and button navigation. USB-C charging/data and 3.5 mm headphones on both.
 - **Parent studio:** existing local import, exact-revision approval, card assignment and export foundation. Never deployed publicly.
 
@@ -29,3 +29,5 @@ python3 -m conteuse.studio --root .studio
 Python host has no runtime dependencies. KiCad 9, OpenSCAD and PlatformIO are separate CAD/build requirements. The studio binds loopback and prints a per-launch token. Current firmware diagnostics keep audio muted; codec playback, hardware transfer and physical validation are unfinished.
 
 Only the current designs are kept on main; earlier iterations remain in Git history. Original host/CAD/docs MIT; firmware GPL-3.0-or-later; original starter stories/art CC0-1.0. Dependencies retain upstream licences. No proprietary story libraries are included.
+
+[Card exploded view and Wi-Fi administration](docs/design/CARDS.md): source-implemented parent setup/transfer/assignment and replaceable printed pictures; physical device and audio playback qualification remain pending.

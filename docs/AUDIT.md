@@ -8,10 +8,10 @@ This is an engineering-source/RFQ audit, **not a declaration of a finished child
 
 | ID / severity | Reproduced issue | Correction and regression evidence |
 |---|---|---|
-| A01 / P1 | Specified10mm battery band could not fit6×1mm slots |13mm anchors,11×2mm slots,10×1.5mm source gauges for both back shells;56 export/check contract. Supplier band dimensions/strength still pending |
+| A01 / P1 | Specified10mm battery band could not fit6×1mm slots |13mm anchors,11×2mm slots,10×1.5mm source gauges for both back shells;58 export/check contract. Supplier band dimensions/strength still pending |
 | A02 / P2 | Two zero-cost manual/copper BOM features linked prose as nonexistent drawing paths | Actual footprint drawing paths; not-purchased classification; all local BOM sources must resolve |
 | A03 / P2 | Stored ERC/DRC reports were not tied to current sources | Native source/report hashes, tool version, all-four physical pad-net checks and shared firmware GPIO/key contract |
-| A04 / P2 | Mechanical receipt could omit critical gates; empty-export branch could accept errors | Exact56-entry contract, all shell/internal/cap/plug/card/band gates, cap/plug component counts; reject unexpected error/warning/exit |
+| A04 / P2 | Mechanical receipt could omit critical gates; empty-export branch could accept errors | Exact58-entry contract, all shell/internal/cap/plug/card/band gates, cap/plug component counts; reject unexpected error/warning/exit |
 | A05 / P2 | A→B→B activation discarded rollback A | Preserve last different verified revision; corruption recovery regression |
 | A06 / P2 | Embedded NULs changed approved content on device; deep metadata exceeded firmware parser limit | Host and firmware reject NUL strings; export bounds nesting to12; shared Python/C++ fixtures |
 | A07 / P2 | I²C outage preserved stale held/repeating input | Invalidate input state; first valid recovery sample starts a new observed25ms release boundary; hold/chord/recovery/wrap tests |
@@ -22,12 +22,20 @@ This is an engineering-source/RFQ audit, **not a declaration of a finished child
 | A12 / P2 | Audio generation could publish mixed versions or trust corrupt existing MP3s | Complete staged immutable batches, exact existing-byte verification, explicit approval reset, failure/reuse regressions, build preflight |
 | A13 / P2 | Stories lacked causal payoff; robotic formant narration was unsuitable as showcase audio | Three rewritten bilingual plots, local neural presets, connected dialogue and revised pacing; text review plus digital/automatic transcript QA; human listening still pending |
 | A14 / P3 | Obsolete carrier/lid/retainer logs remained on main |20 stale generated logs removed; earlier versions remain in Git history |
-| A15 / P2 | SD/hash helper was not even compiled by current profiles | SDK compile coverage now included; helper explicitly remains inactive prototype code, with fail-closed read/seek checks. Real SD fault and playback integration remain pending |
+| A15 / P2 | SD/hash helper was not even compiled by current profiles | Legacy pointer helper now has SDK compile coverage and fail-closed read/seek checks; the new card feature uses a separate active incremental verifier. Real SD fault and playback integration remain pending |
 | A16 / P3 | Generated BOM used its previous output as an input; copy and playback logic were mixed | Authoritative `hardware/common-parts.json`; separate FR/EN copy file; pinned minimal DOM test dependency and repeatable artifact builders |
 
 | A17 / P2 | Legacy Mini R25 paralleled the stated4.3k reader pull-up; R26 had an unused terminal | Removed both resistors and private power stubs from native PCB/schematic/BOM; preserve shared bus/power routes. Semantic single-pull-up and no-unused-resistor checks plus fresh ERC/DRC/parity; real bus timing still pending |
 
 | A18 / P2 | Public HTML still referenced old static CAD aliases while the builder copied fresh renders under different names | Bind the two actual CAD image elements to generated current aliases; remove old static copies; source/DOM/build byte checks prevent stale illustration reuse |
+
+| A19 / P3 | Baseline card PCB keepers slightly intersected rear locating pegs | Shifted keeper centres to(10.8,47.8)/(29.2,58.2); dedicated anti-coplanar shell-clearance gate now empty |
+
+## Card feature implementation review
+
+New-feature review caught and corrected raw-binary truncation in Arduino WebServer, synchronous full-file verification exceeding request timeouts, body allocation before application limits, drip-fed request locking, an image-decode ordering race, ambiguous assignment-timeout wording, and dedicated-render transform/contact-placement errors. The implementation now uses bounded esp_http_server, strict binary-safe base64 chunks, incremental verification/status polling, enforced connection closure and absolute body deadlines, fault-testable two-slot mapping storage and generation-guarded local picture printing. Firmware-native tests cover all byte values, bounds/deadline wrap and corrupt/interrupted mapping operations; host HTTP peer and actual-UI tests cover transfer/approval/retry and picture ordering. No real board test is claimed.
+
+The same review found the legacy SD exporter still wrote only cards.json while the new selector consumes per-ROM slots. Export now emits the current format, gates approval/presence/ROM validity, preserves the old slot, reports skips and has an actual CLI-to-shared-decoder check. Host and firmware now require the same strict three-field record schema; invalid higher-generation records with extra NUL/deep metadata cannot cause export to overwrite the only valid slot.
 
 ## Evidence and verification boundaries
 

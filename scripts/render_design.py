@@ -38,7 +38,7 @@ def stl(name,path,c,g):
   faces.append(list(reversed(f)) if name in ['Back shell','Front shell','Actual PCB outline','Speaker keeper','Reader PCB','Reference plugs'] else f)
  me=bpy.data.meshes.new(name);me.from_pydata(verts,[],faces);me.update();o=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(o);o.data.materials.append(mat(c));return tag(o,g)
 def label_texture():
- x,y,z,w,h=15.7,-15.8,21.55,33.6,38.6
+ x,y,z,w,h=15.7,-12.8,20.25,33.6,38.6
  o=mesh('Milo cartridge artwork',[(x,y,z),(x+w,y,z),(x+w,y+h,z),(x,y+h,z)],[(0,1,2,3)],'silk','peripheral')
  uv=o.data.uv_layers.new(name='Artwork UV')
  for loop,co in zip(uv.data,[(0,1),(1,1),(1,0),(0,0)]):loop.uv=co

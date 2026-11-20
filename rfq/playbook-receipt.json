@@ -1,12 +1,12 @@
 {
   "sources": {
-    "rfq/LAUNCH-PLAYBOOK.md": "e39a280807d0e0966d53ca198f9f6f3069358d953c7864f2abc197b29ab79a23",
+    "rfq/LAUNCH-PLAYBOOK.md": "0777c0c12f08fb5ace8234804f7d714469b396fc044988dd2f68ea8b122f9080",
     "rfq/quote-comparison.csv": "4725010394802474d6b7b01e10eca683b88593b593cf0f3c42c2fb9e31fc1e38",
     "scripts/build_playbook.py": "fe985348af7ff7bf01285f63cfdfb61cdea629f709e18ce6a03b5311115393bc"
   },
   "outputs": {
-    "rfq/rfq-launch-playbook.pdf": "a3b861a8091d40eca93bde4a796743e85870e6501ee290e72c9ecc4516f12ea8",
-    "rfq/rfq-launch-playbook.html": "f5e6b489cfd4573ff18039bd2894afdb2d390acc8afc78ade22fdf489955010f"
+    "rfq/rfq-launch-playbook.pdf": "afb47094f76ac5c910a2582e515f9789fc483a2c6bedcf5a9819781f7b02b803",
+    "rfq/rfq-launch-playbook.html": "5bb010b923de7d354dc74201e83af6ba4f6b71ac3851033849c79c33b9ae968c"
   },
   "fabrication_release": false
 }

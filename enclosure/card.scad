@@ -17,10 +17,14 @@ module card_common(){difference(){card_blank();
  translate([9.85,46.85,.5])cube([20.3,12.3,2.9]);
  for(x=[15.2,21.2]){translate([x,47,-.1])cube([3.6,12.001,.601]);contact_ramp_cut(x);}
  for(x=[8,32])translate([x,4,-.1])cylinder(d=1.8,h=4.5);
- // Artwork recess; supplied label is not a manufacturer part.
- translate([3,4,4.1])cube([34,39,.3]);
+ // Internal picture pocket: paper <=0.15mm + clear PETG0.50mm.
+ // 0.20mm lateral allowance per window edge; aperture retains it by1mm.
+ translate([2.8,6.8,2])cube([34.4,39.4,1.55]);
+ translate([4,8,3.54])cube([32,37,1]);
 }}
 module card_back(){union(){difference(){intersection(){card_common();translate([-3,-3,-1])cube([46,66,3]);}for(x=[8,32])translate([x,4,.8])cylinder(d=4.3,h=1.4);}
+ // Picture support atZ2.8; stack endsZ3.45 below frame undersideZ3.55.
+ translate([3.1,7.1,2])cube([33.8,38.8,.8]);
  // Polymer locating pegs pass through the two NPTH holes.
  for(q=[[12,49],[28,57]])translate([q[0],q[1],.45])cylinder(d=1.5,h=1.05);
 }}
@@ -29,15 +33,21 @@ module card_front(){difference(){union(){
  // Blind screw bosses are in the exposed handle, outside the player's RF region.
  for(x=[8,32])translate([x,4,1])cylinder(d=4,h=3.1);
  // PCB corner keepers contact only bare board margins.
- for(q=[[11,48],[29,58]])translate([q[0]-.5,q[1]-.5,1.3])cube([1,1,2.8]);
+ for(q=[[10.8,47.8],[29.2,58.2]])translate([q[0]-.5,q[1]-.5,1.3])cube([1,1,2.8]);
  }for(x=[8,32])translate([x,4,.9])cylinder(d=1.25,h=2.9);
 }}
 module card_board(){translate([10,47,.5])difference(){cube([20,12,.8]);for(q=[[2,2],[18,10]])translate([q[0],q[1],-.1])cylinder(d=1.8,h=1);}}
-module card_assembly(){color([.07,.32,.38])card_back();color([.08,.42,.48])card_front();color([.04,.25,.15])card_board();color([.06,.06,.06])translate([18.12,51.03,1.3])cube([3.76,3.94,1.5]);
+module card_picture(){translate([3.2,7.2,2.8])cube([33.6,38.6,.15]);}
+module card_window(){translate([3,7,2.95])cube([34,39,.5]);}
+module card_assembly(){color([1,1,.9])card_picture();color([.6,.9,1,.18])card_window();color([.07,.32,.38])card_back();color([.08,.42,.48])card_front();color([.04,.25,.15])card_board();color([.06,.06,.06])translate([18.12,51.03,1.3])cube([3.76,3.94,1.5]);
  for(x=[8,32])color([.6,.6,.6])translate([x,4,-1.3])cylinder(d=3.2,h=1.3);
 }
 if(part=="back")translate([0,60,0])mirror([0,1,0])card_back();
 else if(part=="front")translate([0,60,0])mirror([0,1,0])card_front();
 else if(part=="print_front")translate([0,0,4.3])mirror([0,0,1])card_front();
 else if(part=="pcb")translate([0,60,0])mirror([0,1,0])card_board();
+else if(part=="window")card_window();
+else if(part=="picture")card_picture();
+else if(part=="shell_clearance")intersection(){card_back();translate([0,0,.001])card_front();}
+else if(part=="window_clearance")intersection(){union(){card_front();card_back();}union(){translate([0,0,.001])card_window();translate([0,0,.001])card_picture();}}
 else card_assembly();

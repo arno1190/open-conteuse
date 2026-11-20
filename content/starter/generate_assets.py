@@ -124,9 +124,9 @@ if '--labels-only' not in sys.argv:
    flow.extend([Spacer(1,10),Paragraph('Loin de l’écran / Away from the screen',styles['BodyDT']),Paragraph(escape(z['activity']),styles['BodyDT']),PageBreak()])
  SimpleDocTemplate(str(HERE/'collection.pdf'),pagesize=A4,rightMargin=20*mm,leftMargin=20*mm,topMargin=18*mm,bottomMargin=18*mm,title='Galia — original bilingual stories',author='Galia').build(flow)
 
-# Separate adhesive labels for the actual electronic cartridge artwork recess.
-# Canonical recess x3..37, y4..43 =34x39mm. Centered label x3.2..36.8,
-# y4.2..42.8 =33.6x38.6mm, leaving0.2mm nominal edge clearance.
+# Separate replaceable paper inserts for the actual electronic cartridge artwork recess.
+# Canonical recess x3..37, y7..46 =34x39mm. Centered label x3.2..36.8,
+# y7.2..45.8 =33.6x38.6mm, leaving0.2mm nominal edge clearance.
 LABEL_MM=(33.6,38.6)
 short={'milo-moon-post':('MILO','Le courrier de la Lune','The Moon Post','MILO-01'),
        'nori-cloud-pocket':('NORI','Le nuage de poche','The Pocket Cloud','NORI-02'),
@@ -138,8 +138,8 @@ def cartridge_label(story):
  for shape in art(story).contents[3:]:
   if not isinstance(shape,String):icon.add(copy.deepcopy(shape))
  icon.scale(.56,.56);icon.translate(100,-6);d.add(icon)
- # Visible handle header: label top1.2..14.0mm => cartridgeY5.4..18.2mm.
- # Inserted cartridge exposesY0..20mm. Icon+name remain inside that band.
+ # Visible handle header: label top1.2..14.0mm => cartridgeY8.4..21.2mm.
+ # Inserted cartridge exposesY0..20mm. Essential icon/name fit; lower background extends under the player.
  rect(d,12,246,312,128,CREAM,11)
  rect(d,22,259,103,103,story['color'],12)
  badge=Group()
@@ -175,10 +175,10 @@ for i,st in enumerate(DATA['stories']):
    c.line(xx-2*mm,yy,xx-.5*mm,yy);c.line(xx,yy-2*mm,xx,yy-.5*mm)
  c.setFont('DTSans',8);c.drawString(x,y-6*mm,short[st['id']][3]+' · artwork key only')
 notes=[
- ('Dimensions / Dimensions','Label: 33.6 × 38.6 mm. Recess: 34 × 39 mm, canonical X3–37, Y4–43 mm.'),
- ('Nominal placement / Position nominale','Centered label: X3.2–36.8, Y4.2–42.8 mm; 0.2 mm nominal clearance per edge.'),
- ('Visible handle / Poignée visible','Icon + name occupy label top 1.2–14.0 mm, inside the nominal exposed cartridge Y0–20 mm.'),
- ('Material assumption / Hypothèse matière','Paper + adhesive total thickness ≤0.15 mm. Adhesion, wear and actual fit remain unvalidated.'),
+ ('Dimensions / Dimensions','Paper: 33.6 × 38.6 mm. Window: 34 × 39 mm. Internal pocket: 34.4 × 39.4 mm.'),
+ ('Nominal placement / Position nominale','Centered label: X3.2–36.8, Y7.2–45.8 mm; 0.2 mm inset from window edge.'),
+ ('Visible handle / Poignée visible','Recognition icon/name fit within the first 12.8 mm; lower header background is partly hidden when inserted.'),
+ ('Material assumption / Hypothèse matière','Paper only, no adhesive total thickness ≤0.15 mm. Window retention, wear and actual fit remain unvalidated.'),
  ('Preparation / Préparation','Adult preparation. Check printed ruler, cut around each label, fit without obstructing the contact area.'),
  ('Artwork is not electronics / Illustration uniquement','No DS2401 ROM is supplied. Printing a label does not create or activate an electronic cartridge.'),
  ('Use / Utilisation','Requires an assembled DS2401 cartridge and a parent-created local assignment to approved audio.'),
@@ -195,14 +195,14 @@ for xx in [20,60]:c.line(xx*mm,21*mm,xx*mm,25*mm)
 c.setFont('DTSans',9);c.drawString(65*mm,22*mm,'40 mm — verify printed scale / vérifier l’échelle imprimée')
 c.showPage();c.save()
 label_spec={'status':'engineering_draft','units':'mm','label_size':[33.6,38.6],
- 'recess_xy':[3,4,37,43],'label_xy':[3.2,4.2,36.8,42.8],'nominal_edge_clearance':.2,
- 'maximum_total_paper_adhesive_thickness':.15,'physical_validation':'pending',
+ 'window_xy':[3,7,37,46],'pocket_xy':[2.8,6.8,37.2,46.2],'label_xy':[3.2,7.2,36.8,45.8],'label_inset_from_window_edge':.2,'label_to_pocket_clearance_per_edge':.4,
+ 'maximum_paper_thickness':.15,'physical_validation':'pending',
  'inserted_cartridge_exposed_y':[0,20],
- 'label_visible_height_when_inserted':15.8,
- 'recognition_header_label_top_y':[1.2,14.0],
- 'recognition_header_cartridge_y':[5.4,18.2],
+ 'label_visible_height_when_inserted':12.8,
+ 'recognition_header_label_top_y':[1.2,12.8],
+ 'recognition_header_cartridge_y':[8.4,20.0],
  'recognition_header_contents':['distinct character icon','MILO / NORI / PIPO short name'],
- 'recognition_header_assumption':'Label top maps to handleward canonical Y4.2; nominal inserted exposure ends at cartridge Y20. Physical placement, occlusion and readability remain pending.',
+ 'recognition_header_assumption':'Label top maps to handleward canonical Y7.2; lower cream header background is hidden when inserted; nominal inserted exposure ends at cartridge Y20. Physical placement, occlusion and readability remain pending.',
  'electronic_rom_supplied':False,'requires':'assembled DS2401 cartridge and parent-created local assignment',
  'artwork_keys':{st['id']:short[st['id']][3] for st in DATA['stories']}}
 (HERE/'cartridge-labels.json').write_text(json.dumps(label_spec,ensure_ascii=False,indent=2)+'\n')

@@ -11,8 +11,8 @@ def source_paths():
     return sorted([p for p in HARDWARE.rglob('*') if p.is_file() and
         (p.suffix in suffixes or p.name in {'fp-lib-table', 'sym-lib-table', 'components.json'})] +
         [ROOT / p for p in ('scripts/check_native.py', 'scripts/check_board_contracts.py',
-         'firmware/include/board_pins.h', 'firmware/include/controls.h',
-         'firmware/src/compact_bringup.cpp', 'firmware/platformio.ini')])
+         'firmware/src/compact_bringup.cpp', 'firmware/platformio.ini')] +
+        list((ROOT / 'firmware/include').glob('*.h')))
 
 
 def hashes(paths):

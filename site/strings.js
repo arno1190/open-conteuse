@@ -143,7 +143,13 @@ window.GaliaCopy = {
       "voiceError": "The recording could not play. Retry, read the text, or choose the optional browser voice below.",
       "loadError": "The collection could not load. You can still download the printable cards or read the source texts.",
       "ageLabel": "Suggested ages 4–7",
-      "durationLabel": "About 4 minutes · estimate"
+      "durationLabel": "About 4 minutes · estimate",
+      "cardTitle": "A picture to change. A story to find.",
+      "cardBody": "The card carries only an identifier. Stories stay inside the player. An adult can open the two screwed halves, replace the paper picture behind its clear window, and assign the card to different approved content.",
+      "cardStatus": "Current CAD and local parent tools. Wi-Fi setup firmware is implemented for engineering tests; physical fit and device operation still need prototype validation.",
+      "cardView": "Explore the card, layer by layer",
+      "cardPrint": "Print the picture inserts",
+      "cardAlt": "Exploded CAD view of the card: frame, clear window, paper insert, ID board, rear shell and screws"
     }
   },
   "extraFr": {
@@ -158,6 +164,12 @@ window.GaliaCopy = {
     "voiceError": "L’enregistrement n’a pas pu être lu. Réessayez, lisez le texte ou choisissez la voix du navigateur ci-dessous.",
     "loadError": "La collection n’a pas pu se charger. Vous pouvez télécharger les cartes ou consulter les textes sources.",
     "ageLabel": "4–7 ans · indication",
-    "durationLabel": "Environ 4 minutes · estimation"
+    "durationLabel": "Environ 4 minutes · estimation",
+    "cardTitle": "Une image à changer. Une histoire à retrouver.",
+    "cardBody": "La carte porte seulement un identifiant. Les histoires restent dans la conteuse. Un adulte peut ouvrir les deux coques vissées, changer l’image en papier derrière sa protection transparente et associer la carte à un autre contenu approuvé.",
+    "cardStatus": "CAO actuelle et outils parentaux locaux. Le logiciel de configuration Wi-Fi est réalisé pour les essais ; ajustement et fonctionnement sur appareil restent à valider sur prototype.",
+    "cardView": "Découvrir la carte, couche par couche",
+    "cardPrint": "Imprimer les images à glisser",
+    "cardAlt": "Vue éclatée CAO de la carte : cadre, protection transparente, image papier, carte électronique, dos et vis"
   }
 };

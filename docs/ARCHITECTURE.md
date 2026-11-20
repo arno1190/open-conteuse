@@ -9,3 +9,5 @@ The card is keyed mechanically and has longer ground wear pad. Its leading ramp 
 Host modules remain split into immutable content validation, playback state, staging/library activation, import/feed policy and local parent studio. Firmware diagnostics prove compilation and interfaces only, keep speaker request LOW, and do not implement finished integrated-codec playback. No public parent studio is deployed.
 
 The proposed parent-personalization/MCP boundary is specified in PERSONALIZATION.md. It is not a live provider integration. The current UX contract separates button/input policy already implemented from device playback/transfer and physical qualification still pending.
+
+Parent Wi-Fi setup and multi-pack per-card mapping are now implemented per [CARDS.md](design/CARDS.md). The radio is enabled only by the parent setup gesture. Immutable pack verification is incremental in both setup and Mini card selection; physical audio outputs remain muted. The setup token, rather than the card ID, authorizes transfers.

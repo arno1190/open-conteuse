@@ -1,0 +1,24 @@
+{
+  "physical_validation": "pending",
+  "nominal_envelopes": true,
+  "prepared_meshes": {},
+  "sources": {
+    "scripts/render_card.py": "d032c7febd27d4bb49f3ba652058dbee1ce482bcad788355e2e8fef3152fbeef",
+    "scripts/render_design.py": "117b93295a20f4093ddbe3b56a691cfb753f4e3e545f9951d19f49422430b521",
+    "scripts/annotate_card_views.py": "cc6591e392a27e05748a1dcf451aec34d096fa4ddaa454c1c14855c5f3d3f394",
+    "enclosure/card.scad": "6ab0d15a93de2bea2b9065203cb94870ce3c496b7f9579f5c866c5b28ff5d252",
+    "enclosure/card-window.svg": "914c7bdc4aa07d230a20a751acff8313b9b2f45c9479b59299a771c640a5873f",
+    "hardware/story-card/story-card.kicad_pcb": "e19f6e56f2c7672552f63c06384476421e0d374aa26289732fbb30818346de65",
+    "docs/design/textures/milo-moon-post.png": "78df87de8fac17927e206519f43e5b8c2dc1e5215d21e40ba64d5270072378f4",
+    "content/starter/cartridge-labels.pdf": "e901a104ef2b4ffdd7e0b6a3b19a21a9c714f06bee9875f799599bb12e164580",
+    "enclosure/print/story-card/front.stl": "8108432ed41feebb27b266ec8be517a6a76c1035aef7826a0cfe4be1c6194a06",
+    "enclosure/print/story-card/back.stl": "b97f0aa271b4c7b0986f4608759a9737be5c4831a8b870dad23ddcab97dde2dd",
+    "enclosure/print/story-card/pcb.stl": "f9963dbcdd4786aaf81a43d89c31f019208c083dfba20393e8d427884f3ce823"
+  },
+  "images": {
+    "docs/design/images/card-exploded.png": "86b3143de0d953ae2c550b65e98112f17811f83648f925988dc6c7fdff369ad2",
+    "docs/design/images/card-front.png": "f015d4cfa06580a3c045913c9a35d69cdcaf03d8548d2724768fdfd12ab07120",
+    "docs/design/images/card-rear.png": "4149f604b5c38a4c9354241271f17cc6920670b0b7c28da229dbd54d303a8cfc",
+    "docs/design/images/card-section.png": "8a749649f2a1c6a3dba446448da013bb10cb5cf919e1a9b95305671328bfc4e9"
+  }
+}

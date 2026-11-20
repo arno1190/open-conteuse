@@ -30,7 +30,10 @@ def main():
         result=activate(args.source,args.destination,digest)
         from .packages import atomic_json
         from pathlib import Path
+        from .card_export import export_assignments
+        mappings=export_assignments(args.destination,studio.state["cards"],studio.state["approvals"])
         atomic_json(Path(args.destination)/"cards.json",studio.state["cards"])
+        result={"revision":result,**mappings}
         atomic_json(Path(args.destination)/"stations.json",studio.state["stations"])
     else:result=getattr(studio,args.action)(args.source)
     print(json.dumps(result,indent=2))
