@@ -146,8 +146,18 @@ class WifiTests(unittest.TestCase):
         with patch('conteuse.card_export.atomic_json',side_effect=OSError('interrupted')):
             with self.assertRaises(OSError):export_assignments(target,{UID:second},self.studio.state['approvals'])
         self.assertEqual(read_slot(first,UID),record)
-        export_assignments(target,{UID:second},self.studio.state['approvals'])
-        self.assertEqual(read_slot(target/'cards'/f'{UID}.1.json',UID)['generation'],2)
+        for extra in ['bad\x00value',{'deep':[[[[[[[[[[[[]]]]]]]]]]]]}]:
+            invalid={'revision':second,'generation':2,'sha256':checksum(UID,second,2),'extra':extra}
+            higher=target/'cards'/f'{UID}.1.json';higher.write_bytes(canonical(invalid))
+            self.assertIsNone(read_slot(higher,UID))
+            export_assignments(target,{UID:second},self.studio.state['approvals'])
+            self.assertEqual(read_slot(first,UID),record)
+            self.assertEqual(read_slot(higher,UID)['generation'],2)
+        for suffix in (b' ',b'garbage'):
+            higher.write_bytes(canonical({'revision':second,'generation':2,'sha256':checksum(UID,second,2)})+suffix)
+            self.assertIsNone(read_slot(higher,UID))
+            export_assignments(target,{UID:second},self.studio.state['approvals'])
+            self.assertEqual(read_slot(first,UID),record)
 
     def test_sd_export_skips_legacy_unapproved_and_missing_content(self):
         from conteuse.card_export import export_assignments

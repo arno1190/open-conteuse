@@ -91,6 +91,35 @@ int main(int argc, char **argv) {
   std::string first(64, 'a'), second(64, 'b');
   assert(admin::writeMapping(store, id, first, testHash));
   assert(admin::readMapping(store, id, testHash).revision == first);
+  std::string deep = "[]";
+  for (int i = 0; i < 12; ++i)
+    deep = "[" + deep + "]";
+  for (const auto &extra : {std::string(",\"extra\":\"bad\\u0000value\""),
+                            ",\"extra\":{\"deep\":" + deep + "}"}) {
+    FakeStore parity = store;
+    assert(admin::writeMapping(parity, id, second, testHash));
+    auto active = admin::mappingPath(id, 0), higher = admin::mappingPath(id, 1);
+    const auto old = parity.files[active];
+    auto raw = parity.files[higher];
+    raw.pop_back();
+    parity.files[higher] = raw + extra + "}";
+    StaticJsonDocument<2048> fixture;
+    assert(!deserializeJson(fixture, parity.files[higher],
+                            DeserializationOption::NestingLimit(32)));
+    assert(admin::readMapping(parity, id, testHash).revision == first);
+    assert(admin::writeMapping(parity, id, second, testHash));
+    assert(parity.files[active] == old);
+  }
+  for (const char *suffix : {" ", "garbage"}) {
+    FakeStore parity = store;
+    assert(admin::writeMapping(parity, id, second, testHash));
+    auto active = admin::mappingPath(id, 0), higher = admin::mappingPath(id, 1);
+    const auto old = parity.files[active];
+    parity.files[higher] += suffix;
+    assert(admin::readMapping(parity, id, testHash).revision == first);
+    assert(admin::writeMapping(parity, id, second, testHash));
+    assert(parity.files[active] == old);
+  }
   for (int fault = 0; fault < 4; ++fault) {
     FakeStore damaged = store;
     damaged.shortWrite = fault == 0;

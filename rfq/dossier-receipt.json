@@ -2,9 +2,9 @@
   "physical_validation": "pending",
   "sources": {
     "scripts/build_dossier.py": "bc0bdb168db094fe585de4b83115197d5ea333778a1913f93a082f4540c6220b",
-    "docs/design/CARDS.md": "0ad5b829bc8cd6ccefb1af4f08b2f1ec313992d6e8fa7549016887181b19ee64",
+    "docs/design/CARDS.md": "37524430e0f1b3803a7a81bdeda26c41f05424bca9c99d9ea828768d320d40a2",
     "rfq/LAUNCH-PLAYBOOK.md": "0777c0c12f08fb5ace8234804f7d714469b396fc044988dd2f68ea8b122f9080",
-    "docs/AUDIT.md": "df37df7a180f421c7924e2f31118328e44e842ed07aa535989649088b6311aea",
+    "docs/AUDIT.md": "4f8acd1daba4eb01e7cf0955eb2eecaf7088f1bf8698df3cb475e473010d5265",
     "rfq/README.md": "59a0d1d74c06d6c2f34aa30976e2ac0dfa14435c7eb4877cdd9c1ee5ef10f10a",
     "rfq/manufacturing-notes.md": "483d72950607b6fa2c45266ffc41a18142b97ff09cfb2e86c856a36f178c68c0",
     "docs/design/README.md": "e6cf2a32f598d6d8e11a5a9376662007693fa78db7af99ab4a5dec48f62dbe0e",
@@ -71,7 +71,7 @@
     "docs/design/images/mini-top.png": "20fd84e6718c981f98eac5e43c96840220f65bf3453c5464041f59a6906e9fd2"
   },
   "outputs": {
-    "rfq/engineering-dossier.pdf": "8bf089695abcaaa6ee16c9a36baec49b99c302df452bfe59b854d680096d21b5",
+    "rfq/engineering-dossier.pdf": "847e1762c5d7e2f28d9ceecbaa2b60ea7101796a79f3fd1d6d3749e4e6528ed2",
     "docs/design/gallery.html": "0cd7f74b90e87d645cd577bef6f5b48ef921ac84a60258acfddd5ce581313b1e",
     "docs/design/bom.html": "d891e2813c727d6fa1b718cd36cd016171271c974e82df466a10d80286aab840"
   }

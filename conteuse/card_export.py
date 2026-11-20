@@ -4,7 +4,7 @@ import hmac
 import json
 from pathlib import Path
 from .device import check_device_pack
-from .packages import HEX, atomic_json, revision
+from .packages import HEX, atomic_json, canonical, revision
 from .wifi import card_uid
 
 
@@ -15,14 +15,16 @@ def checksum(uid, digest, generation):
 def read_slot(path, uid):
     try:
         if path.stat().st_size > 512: return None
-        value = json.loads(path.read_bytes())
-        if not isinstance(value, dict): return None
+        raw = path.read_bytes()
+        value = json.loads(raw)
+        if not isinstance(value, dict) or set(value) != {'revision','generation','sha256'}: return None
         digest, generation, sha = (value.get(k) for k in ('revision','generation','sha256'))
         if (not isinstance(digest,str) or not HEX.fullmatch(digest)
                 or not isinstance(generation,int) or isinstance(generation,bool)
                 or not 1 <= generation <= 0xffffffff or not isinstance(sha,str)
                 or not hmac.compare_digest(sha,checksum(uid,digest,generation))):
             return None
+        if canonical(value) != raw: return None
         return value
     except (OSError,ValueError,TypeError):
         return None

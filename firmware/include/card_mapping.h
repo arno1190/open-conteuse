@@ -8,6 +8,11 @@ struct Mapping {
   uint32_t generation = 0;
   int slot = -1;
 };
+inline std::string mappingJson(const std::string &revision, uint32_t generation,
+                               const std::string &digest) {
+  return "{\"generation\":" + std::to_string(generation) + ",\"revision\":\"" +
+         revision + "\",\"sha256\":\"" + digest + "\"}";
+}
 // Store is an injected filesystem seam. Hash is SHA256 on device.
 template <class Hash>
 Mapping decodeMapping(const std::string &raw, const std::string &id, int slot,
@@ -16,7 +21,8 @@ Mapping decodeMapping(const std::string &raw, const std::string &id, int slot,
   if (raw.size() > 512 || !uidValid(id))
     return out;
   StaticJsonDocument<768> d;
-  if (deserializeJson(d, raw) ||
+  if (deserializeJson(d, raw) || !d.template is<JsonObject>() ||
+      d.size() != 3 ||
       !conteuse::stringsValid(d.template as<JsonVariantConst>()) ||
       !d["generation"].template is<uint32_t>() ||
       !conteuse::nonempty(d["revision"]) || !conteuse::nonempty(d["sha256"]))
@@ -26,6 +32,9 @@ Mapping decodeMapping(const std::string &raw, const std::string &id, int slot,
   if (!gen || !conteuse::digestValid(revision) ||
       hash(id + ":" + revision + ":" + std::to_string(gen)) !=
           d["sha256"].template as<const char *>())
+    return out;
+  const auto expected = hash(id + ":" + revision + ":" + std::to_string(gen));
+  if (raw != mappingJson(revision, gen, expected))
     return out;
   out.revision = revision;
   out.generation = gen;
@@ -59,12 +68,11 @@ bool writeMapping(Store &store, const std::string &id,
   uint32_t generation = before.generation + 1;
   int slot = before.slot == 0 ? 1 : 0;
   auto path = mappingPath(id, slot), temp = path + ".tmp";
-  StaticJsonDocument<768> d;
-  d["revision"] = revision;
-  d["generation"] = generation;
-  d["sha256"] = hash(id + ":" + revision + ":" + std::to_string(generation));
-  std::string raw;
-  serializeJson(d, raw);
+  const auto digest =
+      hash(id + ":" + revision + ":" + std::to_string(generation));
+  if (!conteuse::digestValid(digest))
+    return false;
+  const std::string raw = mappingJson(revision, generation, digest);
   if (!store.write(temp, raw))
     return false;
   auto verified = decodeMapping(store.read(temp), id, slot, hash);

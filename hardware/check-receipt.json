@@ -4,7 +4,7 @@
     "firmware/include/board_pins.h": "1fd2905940881061d4cccc2e299a97eef16293126b1d7de6b80b9310aafb4ff3",
     "firmware/include/bounded_http.h": "ece62c6b76d7628f7b4de7def6ccda177837c668ff3fd8e4db28e078dacfa11a",
     "firmware/include/card_id.h": "54d0881e1d71c942ec35fe6100e3346f751af24f5c0ba1edbab935823d571f01",
-    "firmware/include/card_mapping.h": "c58f0d10b84c9750b4dc89ac243349747965ff7ebaa9913568b51c4848e838a2",
+    "firmware/include/card_mapping.h": "9da748d8f041d79b46cafd8d1476a71fea21eef2b6dc94dc5903f9efb2804b3b",
     "firmware/include/content.h": "2dcc798c37f7ddc8270209365ce9dd13eb85354e6e51be7a363e63c698f7655d",
     "firmware/include/controls.h": "1dedbca43c8b90cc84103c6ecef12b1e57eed813f0cace9e3de518cc3425aa20",
     "firmware/include/library.h": "634a85ae87b167cc1b30a9fae932386b5337491d1d40faa0863691c4ebf8ab47",
@@ -56,14 +56,14 @@
     "scripts/check_native.py": "d53735659ae550bd4f12c9f25f6b049c247503dd54c1ace2e7836c2818f4cab6"
   },
   "reports": {
-    "hardware/mini/checks/erc.rpt": "2a32a5ee19eab0c522d6b9cea99d49bf4253b8d1deb332f768b5d693b4287942",
-    "hardware/mini/checks/drc.rpt": "0d6cf4d8bdc1e05a589afb857bbd27063b331762abfbe6349853b064d117d2f5",
-    "hardware/explore/checks/erc.rpt": "2c046bbaf4972c9bf2bf054c79528963857a8d6f2792b1ce63b47ca23b866bb2",
-    "hardware/explore/checks/drc.rpt": "bf01d402554079ddb3d72c85b169f8c77b51aa191ce0629da6c0cf4b18b9836a",
-    "hardware/card-reader/checks/erc.rpt": "cc9381bd2722b630ee751684476903d2e1464382b610199982672cb2c7e5ea02",
-    "hardware/card-reader/checks/drc.rpt": "2924900b9f61267090ff207ee4068aa139d758f5291d9a93fb90b1822c4b5010",
-    "hardware/story-card/checks/erc.rpt": "cc9381bd2722b630ee751684476903d2e1464382b610199982672cb2c7e5ea02",
-    "hardware/story-card/checks/drc.rpt": "1390b887f85c53adcdef2bcdab20065e0428f731868d3f162b05715741826a89"
+    "hardware/mini/checks/erc.rpt": "59703a34844d857a3c5848076be2ad906dbefc1073456f91a1968ff991909f49",
+    "hardware/mini/checks/drc.rpt": "4ba2fa2ac1ba4c4282e732d5258765f26a7df57c45c9c08afc23dd15b096bb9f",
+    "hardware/explore/checks/erc.rpt": "4291266d920e2a3cdd85a46cd5f57f6306f30ee52fd333bdb9f1e24ddf461197",
+    "hardware/explore/checks/drc.rpt": "14913418b986930023a0a02f64ed296926e6e94d7c40a237364b5b7ae3289452",
+    "hardware/card-reader/checks/erc.rpt": "48e4bcebd336284ef7fbc4657ca53105fba08b1e9602f0bdc47f5a5604f4542b",
+    "hardware/card-reader/checks/drc.rpt": "e361161e161f7139b8f812ee6744fa37ee2ae12c90c0b6f11bc86172fc93aab8",
+    "hardware/story-card/checks/erc.rpt": "61592671620b3f2afb5ac6aae121464512b625708b45e17f7aa75da9b89d5582",
+    "hardware/story-card/checks/drc.rpt": "23e9f0b89573ac2f2632598337d12209948126f4c2c32fb6db46216ddb35a52f"
   },
   "tool_version": "9.0.2",
   "checks": [
