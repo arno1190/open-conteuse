@@ -27,6 +27,8 @@ This is an engineering-source/RFQ audit, **not a declaration of a finished child
 
 | A17 / P2 | Legacy Mini R25 paralleled the stated4.3k reader pull-up; R26 had an unused terminal | Removed both resistors and private power stubs from native PCB/schematic/BOM; preserve shared bus/power routes. Semantic single-pull-up and no-unused-resistor checks plus fresh ERC/DRC/parity; real bus timing still pending |
 
+| A18 / P2 | Public HTML still referenced old static CAD aliases while the builder copied fresh renders under different names | Bind the two actual CAD image elements to generated current aliases; remove old static copies; source/DOM/build byte checks prevent stale illustration reuse |
+
 ## Evidence and verification boundaries
 
 - Four native board projects: all-severity ERC, DRC, schematic parity, complete declared native pad nets (including duplicate-number pads), GPIO/address/key mappings. `hardware/check-receipt.json` binds exact inputs and reports.

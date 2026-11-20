@@ -2,6 +2,9 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {parseHTML}=require('linkedom');
 const html=fs.readFileSync('site/index.html','utf8');
+const cad=parseHTML(html).document.querySelectorAll('.cad-section img');
+assert.deepEqual(Array.from(cad,image=>image.getAttribute('src')),['assets/mini-current-cad.png','assets/explore-current-cad.png']);
+for(const variant of ['mini','explore']) assert.equal(fs.existsSync('site/assets/'+variant+'-cad.png'),false);
 const js=fs.readFileSync('site/strings.js','utf8')+'\n'+fs.readFileSync('site/app.js','utf8');
 const source=JSON.parse(fs.readFileSync('site/content/index.json','utf8'));
 async function setup(data=source,tts=false){
