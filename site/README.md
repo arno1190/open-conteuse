@@ -1,6 +1,6 @@
-# Petits Détours showcase
+# Galia showcase
 
-Original static French/English showcase for the Open Conteuse engineering project. The identity is a working name; no trademark clearance is implied. `index.html?lang=fr` and `index.html?lang=en` select the language. Everything uses relative asset paths for GitHub Pages project hosting.
+Original static French/English showcase for the Galia engineering project. The identity is a working name; no trademark clearance is implied. `index.html?lang=fr` and `index.html?lang=en` select the language. Everything uses relative asset paths for GitHub Pages project hosting.
 
 Serve this directory over HTTP (fetch is required for the story collection). No build dependencies, analytics, account, form or microphone permission. The six local eSpeak NG recordings are downloadable synthetic demonstrations, not approved final narration. Browser speech synthesis remains a device-dependent fallback and may use a network voice service. Stop, closing the story, changing language and leaving the page cancel the reading. Text remains available when voice support is missing.
 

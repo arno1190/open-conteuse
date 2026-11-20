@@ -9,7 +9,7 @@ def triangles(path):
   vs=[tuple(map(float,l.split()[1:])) for l in data.decode().splitlines() if l.strip().startswith('vertex ')]
   for i in range(0,len(vs),3):yield vs[i:i+3]
 def binary_stl(path):
- tris=list(triangles(path));data=bytearray(b'Open Conteuse prototype STL'.ljust(80,b'\0'))
+ tris=list(triangles(path));data=bytearray(b'Galia prototype STL'.ljust(80,b'\0'))
  data.extend(struct.pack('<I',len(tris)))
  for tri in tris:data.extend(struct.pack('<12fH',0,0,0,*tri[0],*tri[1],*tri[2],0))
  path.write_bytes(data)

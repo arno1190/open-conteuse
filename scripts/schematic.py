@@ -41,7 +41,7 @@ def make_schematic(d,dest,v):
   libs.append(f'(symbol "Compact:FLAG{i}" (power) (in_bom no) (on_board no) '+prop('Reference',ref,0,0,True)+prop('Value','PWR_FLAG',0,0,True)+f'(symbol "FLAG{i}_1_1" (pin power_out line (at 0 0 90) (length 0) (name "pwr" {font}) (number "1" {font}))))')
   symbols.append(f'(symbol (lib_id "Compact:FLAG{i}") (at {x} {y} 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "{uid(v+ref)}")'+prop('Reference',ref,x,y,True)+prop('Value','PWR_FLAG',x,y,True)+f'(pin "1" (uuid "{uid(v+ref+"pin")}")) (instances (project "{v}" (path "/{uid(v+"root")}" (reference "{ref}") (unit 1)))))')
   symbols.append(f'(label "{net}" (at {x} {y} 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "{uid(v+ref+"label")}"))')
- source=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid "{uid(v+"root")}") (paper "User" 1400 1900) (title_block (title "Open Conteuse {v} - engineering reference") (rev "RFQ-2026-11-20") (date "2026-11-20"))\n(lib_symbols '+''.join(libs)+')\n'+'\n'.join(symbols)+'\n(sheet_instances (path "/" (page "1"))) (embedded_fonts no))'
+ source=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid "{uid(v+"root")}") (paper "User" 1400 1900) (title_block (title "Galia {v.title()} - engineering reference") (rev "RFQ-2026-11-20") (date "2026-11-20"))\n(lib_symbols '+''.join(libs)+')\n'+'\n'.join(symbols)+'\n(sheet_instances (path "/" (page "1"))) (embedded_fonts no))'
  def snap(m):return m.group(1)+str(round(round(float(m.group(2))/1.27)*1.27,4))+' '+str(round(round(float(m.group(3))/1.27)*1.27,4))
  source=re.sub(r'(\((?:at|xy) )(-?[0-9.]+) (-?[0-9.]+)',snap,source)
  (dest/(v+'.kicad_sch')).write_text(source)

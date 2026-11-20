@@ -115,7 +115,7 @@ class Studio:
 
 
 UI = br'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
-<title>Open Conteuse parent studio</title><style>body{font:18px system-ui;max-width:48rem;margin:3rem auto;padding:1rem;background:#faf7ee;color:#213b35}input,button{font:inherit;padding:.6rem;margin:.3rem}pre{white-space:pre-wrap}</style>
+<title>Galia parent studio</title><style>body{font:18px system-ui;max-width:48rem;margin:3rem auto;padding:1rem;background:#faf7ee;color:#213b35}input,button{font:inherit;padding:.6rem;margin:.3rem}pre{white-space:pre-wrap}</style>
 <h1>Parent studio</h1><p>Local prototype. Inspect a pack, review its contents locally, approve its exact revision, then activate it.</p>
 <label>Session token <input id="token" type="password" autocomplete="off"></label><br>
 <label>Pack directory <input id="source" value="examples/first-adventure"></label><br>

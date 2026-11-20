@@ -2,15 +2,15 @@
 
 20 November 2026. The sources now implement distinct cap sizes, tactile symbols and testable button-event policy. The full player/audio experience remains a target until codec, device playback and physical usability validation are complete. This document is the contract for implementation and RFQ review, not a claim of a finished commercial product.
 
-Case-body dimensions are Mini 65×95×24mm and Explore 67×95×24mm; caps add0.6mm depth. The Mini’s inserted cartridge adds20mm height. These are nominal CAD dimensions, not measured received assemblies.
+Case-body dimensions are Galia Mini 65×95×24mm and Galia Explore 67×95×24mm; caps add0.6mm depth. The Galia Mini’s inserted cartridge adds20mm height. These are nominal CAD dimensions, not measured received assemblies.
 
 ## Child’s first minute
 
-An adult prepares approved audio. The child chooses an illustrated cartridge, slides it into the only keyed orientation and hears that selection. Inserting an assigned cartridge should start/resume its approved local selection; removing it should fade/pause and retain position. Timing/retention are acceptance targets, not measured capabilities. No microphone, child account, subscription login or network conversation is required on the Mini.
+An adult prepares approved audio. The child chooses an illustrated cartridge, slides it into the only keyed orientation and hears that selection. Inserting an assigned cartridge should start/resume its approved local selection; removing it should fade/pause and retain position. Timing/retention are acceptance targets, not measured capabilities. No microphone, child account, subscription login or network conversation is required on the Galia Mini.
 
 The recognition badge is deliberately in the exposed handle: character icon and MILO/NORI/PIPO names fit within cartridgeY5.4–18.2mm, inside the20mm that remains visible after insertion. The remainder of the label adds detail when the cartridge is held. Paper play cards are separate from these electronic selectors.
 
-## Mini: five controls, three clear jobs
+## Galia Mini: five controls, three clear jobs
 
 | Control | Physical identification | Intended action |
 |---|---|---|
@@ -18,15 +18,15 @@ The recognition badge is deliberately in the exposed handle: character icon and 
 | Previous/next | Two8.5mm teal caps on either side of play, tactile bar-and-triangle symbols | Move between items/chapters within this cartridge’s assigned selection. |
 | Volume−/+ | Two smaller6.5mm sage caps below, tactile minus/plus | One bounded level per press; deliberate holding repeats slowly. |
 
-Colour is redundant: size, position and tactile symbols carry the meaning. No essential action depends on a long press or button combination. Play during silent loading cancels/pauses the pending start; an Explore back press also cancels loading and returns to the library. A delayed file load must never start unexpectedly after the child has paused it. Background transfer must preserve the active playing context and its pause action. Navigation never repeats on a hold. There is no hidden child gesture for raising the parent’s volume ceiling or activating unreviewed content.
+Colour is redundant: size, position and tactile symbols carry the meaning. No essential action depends on a long press or button combination. Play during silent loading cancels/pauses the pending start; an Galia Explore back press also cancels loading and returns to the library. A delayed file load must never start unexpectedly after the child has paused it. Background transfer must preserve the active playing context and its pause action. Navigation never repeats on a hold. There is no hidden child gesture for raising the parent’s volume ceiling or activating unreviewed content.
 
 Previous always selects the previous item; at the first/single item it restarts that item. There is no hidden elapsed-time rule. Next at the final item does not wrap into unrelated content: keep the selection and give a quiet end cue if an approved cue exists. Play at the end restarts the selected item. With no assigned selection, play requests a help cue/status and never falls through to other audio. Track boundaries and actual playback/bookmark behaviour still need integration tests on hardware.
 
 During a spoken branch, left/right change the spoken option and play confirms it. The narration must explain this when offering choices. When a choice prompt/option is speaking, play pauses it; another fresh press resumes it. Confirm is available when the spoken option is waiting silently. Choice navigation remains choice navigation while its announcement is playing or paused; the implementation must retain that context. No voice recognition is implied. The three starter stories currently invite imagination and optional activity; they do not claim interactive voice handling.
 
-## Explore: the same primary action, plus visible navigation
+## Galia Explore: the same primary action, plus visible navigation
 
-Explore retains8physical switches: four directional caps in a cross,10.5mm primary play/confirm,7.5mm back with a tactile return symbol, and6.5mm volume−/+. It has four separate directional caps, not an unimplemented single-piece rocker.
+Galia Explore retains8physical switches: four directional caps in a cross,10.5mm primary play/confirm,7.5mm back with a tactile return symbol, and6.5mm volume−/+. It has four separate directional caps, not an unimplemented single-piece rocker.
 
 In the library, up/down move through items, left/right move between pages, play confirms, and back returns one level. On the playback page, play pauses/resumes, left/right move tracks, back returns to the approved library; up/down do not silently become volume controls. On a choice page, directions move through choices and play confirms. Screen labels must match the current context and selected item. The displayed library contains approved content only.
 

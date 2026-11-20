@@ -2,7 +2,7 @@
 
 The common ESP32-S3-WROOM-1-N16R8 custom main board contains USB-C, BQ24074 charger/power path, TPS63020 nominal3.174V logic rail, TLV75518 codec supply, TLV320DAC3100 headphones, separate MAX98357A speaker amp, hardware event mute latch, microSD and TCA9534 eight-button controls.
 
-Mini exposes GPIO8 through a 330ohm protected reader with 4.3k pull-up, primary TVS and secondary Schottky clamps. A passive DS2401P+ in the cartridge answers with factory ROM serial/family/CRC. The firmware accepts three matching CRC-valid reads, removes after two misses and clears a changed selection before new debounce. One card only; no audio storage/authentication on the token. Explore uses GPIO8/9 for LCD backlight/reset instead.
+Galia Mini exposes GPIO8 through a 330ohm protected reader with 4.3k pull-up, primary TVS and secondary Schottky clamps. A passive DS2401P+ in the cartridge answers with factory ROM serial/family/CRC. The firmware accepts three matching CRC-valid reads, removes after two misses and clears a changed selection before new debounce. One card only; no audio storage/authentication on the token. Galia Explore uses GPIO8/9 for LCD backlight/reset instead.
 
 The card is keyed mechanically and has longer ground wear pad. Its leading ramp avoids sweeping full rear plastic thickness over spring contacts. Received-part tolerances and repeated insertion require physical qualification.
 

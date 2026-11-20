@@ -23,4 +23,4 @@ Print only the named plastic parts below. Nominal geometry; slicer/material/shri
 
 Do not count the two front orientations as two physical parts. Native KiCad files define actual PCBs. Cartridge artwork labels are33.6×38.6mm, intended for a34×39mm recess; total paper/adhesive≤0.15mm is an unvalidated assumption. Ordinary nonmetallic artwork only; confirm fit and RF behaviour on a prototype.
 
-PrimaryA is10.5mm, Mini previous/next8.5mm, volumes6.5mm; Explore directions7mm and back7.5mm. Symbols are debossed and the top rim is chamfered. Full batch and individual cap files are alternatives, not cumulative print quantities. See the UX contract for switch order, colours, tactile meaning and physical travel qualification.
+PrimaryA is10.5mm, Galia Mini previous/next8.5mm, volumes6.5mm; Galia Explore directions7mm and back7.5mm. Symbols are debossed and the top rim is chamfered. Full batch and individual cap files are alternatives, not cumulative print quantities. See the UX contract for switch order, colours, tactile meaning and physical travel qualification.

@@ -1,1 +1,1 @@
-"""Open Conteuse host content tools."""
+"""Galia host content tools."""
